@@ -1,14 +1,14 @@
 ---
-name: game-name-radar
+name: new-game-radar
 description: |
   监控竞争站 Sitemap、itch.io HTML5 游戏列表与 RSS，识别新增游戏名，建立 Google Trends 和 SERP 验证队列。
 
   触发条件：
   - 用户要求发现新游戏名、监控游戏 Sitemap、寻找 HTML5 游戏 SEO 趋势词
-  - 用户要求运行 Game Name Radar 或解释候选评分
+  - 用户要求运行 New Game Radar 或解释候选评分
 ---
 
-# Game Name Radar
+# New Game Radar
 
 ## 目标
 

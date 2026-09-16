@@ -73,14 +73,14 @@ Blocking issues: none
 - [`examples/goblincremental.md`](./examples/goblincremental.md) — embed lesson from Goblincremental
 - [`examples/scam-artist.md`](./examples/scam-artist.md) — successful end-to-end embed test pattern
 
-## Relationship to Game Name Radar
+## Relationship to New Game Radar
 
-This repository already contains **Game Name Radar**, which discovers and evaluates game keywords.
+This repository already contains **New Game Radar**, which discovers and evaluates game keywords.
 
 The intended pipeline is:
 
 ```text
-Game Name Radar
+New Game Radar
     ↓
 Selected keyword
     ↓

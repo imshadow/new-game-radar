@@ -1,4 +1,4 @@
-# Game Name Radar
+# New Game Radar
 
 面向游戏 SEO 趋势站的自动化游戏关键词发现工具。它从游戏平台、Steam、RSS、榜单、Google Trends Rising 和竞争站 Sitemap 中发现候选，再通过需求、传播与竞争证据筛选真正值得检查的游戏词。
 
@@ -60,9 +60,13 @@
 下载型游戏（`wiki` 渠道）：
 
 - Steam 热门新发行 / 最新独立游戏
+- Steam 独立游戏热门新发行（`popularnew` + `tags=492`，把榜单收窄到独立游戏）
+- Steam 即将推出的独立游戏（`comingsoon`，默认排序即当天解锁的作品；
+  比 `popularcomingsoon` 更早——后者要求游戏已积累热度才会上榜）
 - Steam 热门即将推出（`popularcomingsoon`，比 Top Wishlists 更早）
 - Steam 官方 RSS：新发行、周销量榜
 - Alpha Beta Gamer（专报刚开启测试的独立游戏）
+- IndieGamesPlus（独立游戏媒体，feed 即近期新作报道）
 - Hacker News Show HN 游戏帖
 
 其他：
@@ -79,10 +83,33 @@
 |---|---|
 | Steam 官方 RSS | 无需 HTML 抓取，结构最稳定；周销量榜直接给出排名 |
 | Steam 热门即将推出 | 愿望单的前置指标，比正式榜单早 |
+| Steam 即将推出的独立游戏 | `comingsoon` 不要求已有热度，是全部榜单里最早的一档 |
+| Steam 独立游戏热门新发行 | 同一份 `popularnew`，`tags=492` 滤掉 3A，留下独立游戏 |
 | Alpha Beta Gamer | 只报刚开启测试的独立游戏，天然是低竞争新词 |
+| IndieGamesPlus | 独立游戏媒体，报道通常早于商店收录 |
 | Hacker News Show HN | 开发者自发帖，通常比上架早数周 |
 | GitHub `topic:html5-game` | 作者自述可在浏览器运行，早于任何门户收录 |
 | Armor Games | 老牌浏览器游戏门户，补齐 online 渠道 |
+
+新增的 3 个源没有引入新解析器：两个 Steam 榜单复用 `steam-listing`，
+IndieGamesPlus 复用 `press-feed`。复用是有意的——解析器已经过验证，
+新源的风险被限制在「URL 选得对不对」，而不是「解析器写得对不对」。
+
+加源不能只看“能不能抓到”，还要看“是不是重复抓”。实测各榜单各取 50 条，
+按 Steam app id 去重后的独有贡献：
+
+| 榜单 | 独有条数 |
+|---|---|
+| `steam-latest-indie` | 50 / 50 |
+| `steam-upcoming-indie`（`comingsoon`） | 48 / 50 |
+| `steam-upcoming-wishlist`（`popularcomingsoon`） | 48 / 50 |
+| `steam-popular-new` | 24 / 50 |
+| `steam-popular-new-indie` | 24 / 50 |
+
+两组容易误判的对照：`comingsoon` 与 `popularcomingsoon` **零重叠**（50 vs 50 全不重合），
+`popularnew` 与 `popularnew+tags=492` 只重叠 26 条——Steam 是先按标签筛再排序，
+所以加标签的那一份不是无标签版的子集，能捞出后者进不去的独立游戏。
+如果当初只凭“名字很像”就判定重复，这两个源都会被误删。
 
 ### 解析器要点
 
@@ -99,6 +126,10 @@
   但都不是游戏。
 - `armorgames-listing`：锚点的 `data-content` 属性里嵌了原始 HTML，
   用 `[^>]*` 扫描属性会在第一个 `>` 处截断，静默丢掉大半个页面。
+- `steam-listing` 的 `sort_by` 参数是个陷阱：**未发售**作品的发行日大多是占位值，
+  实测 `filter=comingsoon` 配 `sort_by=Released_DESC` 会捞出 2077 / 2999 / 9000 年
+  这种垃圾条目；去掉 `sort_by` 用默认排序，拿到的才是当天解锁的作品。
+  已发售榜单（`popularnew`、`Released_DESC` 的独立游戏榜）不受影响。
 
 ### 加新源时要改哪里：`lib/source-registry.mjs`
 

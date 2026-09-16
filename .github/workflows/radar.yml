@@ -1,4 +1,4 @@
-name: Game Name Radar
+name: New Game Radar
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: game-name-radar
+  group: new-game-radar
   cancel-in-progress: true
 
 jobs:

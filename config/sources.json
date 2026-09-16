@@ -214,5 +214,35 @@
     "enabled": true,
     "baselineOnly": false,
     "note": "topic:html5-game 是作者自述可在浏览器运行，仓库名即游戏名；sort=updated 让新仓库滚动进入榜单"
+  },
+  {
+    "id": "steam-upcoming-indie",
+    "name": "Steam 即将推出的独立游戏",
+    "url": "https://store.steampowered.com/search/?filter=comingsoon&tags=492&category1=998&ndl=1",
+    "kind": "steam-upcoming",
+    "fetchKind": "steam-listing",
+    "enabled": true,
+    "baselineOnly": true,
+    "note": "comingsoon 比 popularcomingsoon 更早——后者要求游戏已积累热度才会上榜。tags=492 与 category1=998 把结果限定为独立游戏本体，滤掉DLC/原声/工具。不要加 sort_by=Released_DESC：未发售作品的发行日多是占位值（实测出现 2077/2999/9000 年），按它倒序会先捞到这些垃圾；用默认排序得到的是当天解锁的作品，实测与 steam-latest-indie 零重叠、48/50 条为本源独有。榜单会长期挂住未发售作品，故首轮只建基线"
+  },
+  {
+    "id": "steam-popular-new-indie",
+    "name": "Steam 独立游戏热门新发行",
+    "url": "https://store.steampowered.com/search/?filter=popularnew&tags=492&category1=998&sort_by=Released_DESC&ndl=1",
+    "kind": "steam-popular-new",
+    "fetchKind": "steam-listing",
+    "enabled": true,
+    "baselineOnly": true,
+    "note": "与 steam-popular-new 同为 popularnew 榜单，但限定 tags=492，把范围收窄到独立游戏。它不是 steam-popular-new 的子集——实测两者各 50 条只重叠 26 条，本源独有 24 条，说明 Steam 的标签过滤是先筛标签再排序，会捞出无过滤榜单进不去的独立游戏。榜单会长期挂住已发售作品（如 Valheim），故首轮只建基线"
+  },
+  {
+    "id": "indiegamesplus",
+    "name": "IndieGamesPlus",
+    "url": "https://www.indiegamesplus.com/feed",
+    "kind": "press-new",
+    "fetchKind": "press-feed",
+    "enabled": true,
+    "baselineOnly": false,
+    "note": "独立游戏媒体，feed 即近期新作报道，首轮全量收录；press-feed 解析器会过滤 press kit／访谈／盘点类噪声"
   }
 ]

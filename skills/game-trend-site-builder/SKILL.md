@@ -739,16 +739,16 @@ A polished fake player is worse than an honest `Play on official site` fallback.
 
 ---
 
-# Relationship to Game Name Radar
+# Relationship to New Game Radar
 
-`game-name-radar` finds and evaluates emerging game keywords.
+`new-game-radar` finds and evaluates emerging game keywords.
 
 This skill takes a selected keyword and turns it into a researched, game-native website.
 
 Recommended pipeline:
 
 ```text
-Game Name Radar
+New Game Radar
   → selected game keyword
   → Game Trend Site Builder
   → embed verification
