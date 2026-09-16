@@ -84,7 +84,7 @@ test('prioritizes an unreleased high-wishlist game with guide depth and trailer 
 
 test('allows a verified open-market Steam opportunity after growth, search and spillover all pass', () => {
   const candidate = prelaunchCandidate();
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.equal(candidate.recommendation, 'independent');
   assert.equal(candidate.wikiPrelaunch.classification, 'priority');
   assert.match(candidate.siteType.reasons.join(' '), /Steam愿望单榜当前第18名/);
@@ -105,7 +105,7 @@ test('routes a high-wishlist game to a low-cost test when independent social spi
   assert.equal(result.classification, 'prepare');
   assert.equal(result.hasExternalSpillover, false);
 
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.equal(candidate.recommendation, 'test-now');
   assert.equal(candidate.opportunity.hardGates.externalSpillover, false);
   assert.equal(candidate.opportunity.allowsTest, true);
@@ -121,7 +121,7 @@ test('blocks a wishlist-hot game when a dedicated wiki already occupies the quer
       ],
     },
   });
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.notEqual(candidate.recommendation, 'independent');
   assert.equal(candidate.marketFreshness.status, 'occupied');
 });

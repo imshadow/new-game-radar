@@ -4,6 +4,12 @@ export const config = {
   maxDuration: 60,
 };
 
+// Leave headroom below `maxDuration` so we can serialise a response instead of
+// being killed by the platform and returning a 504 with no body at all.
+const TOTAL_BUDGET_MS = Math.max(5_000, Number(process.env.SCAN_TOTAL_BUDGET_MS || 45_000));
+const PER_SOURCE_BUDGET_MS = Math.max(3_000, Number(process.env.SCAN_SOURCE_BUDGET_MS || 12_000));
+const CONCURRENCY = Math.max(1, Math.min(10, Number(process.env.SCAN_CONCURRENCY || 5)));
+
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
 
@@ -22,10 +28,31 @@ export default async function handler(req, res) {
     kind: String(source.kind || 'auto'),
   })).filter((source) => source.url);
 
+  const startedAt = Date.now();
+  const deadline = startedAt + TOTAL_BUDGET_MS;
   const results = [];
-  for (let index = 0; index < normalized.length; index += 4) {
-    const chunk = normalized.slice(index, index + 4);
-    const settled = await Promise.allSettled(chunk.map((source) => scanSource(source)));
+
+  for (let index = 0; index < normalized.length; index += CONCURRENCY) {
+    if (Date.now() >= deadline) {
+      // Report the untouched remainder explicitly rather than dropping it.
+      for (const source of normalized.slice(index)) {
+        results.push({
+          ok: false,
+          sourceId: source.id,
+          sourceName: source.name,
+          sourceUrl: source.url,
+          error: '扫描总预算已用完，未执行',
+          entries: [],
+          scannedAt: new Date().toISOString(),
+        });
+      }
+      break;
+    }
+    const chunk = normalized.slice(index, index + CONCURRENCY);
+    const settled = await Promise.allSettled(chunk.map((source) => scanSource(source, {
+      budgetMs: PER_SOURCE_BUDGET_MS,
+      deadline: Math.min(deadline, Date.now() + PER_SOURCE_BUDGET_MS),
+    })));
     settled.forEach((item, itemIndex) => {
       const source = chunk[itemIndex];
       if (item.status === 'fulfilled') {
@@ -44,5 +71,11 @@ export default async function handler(req, res) {
     });
   }
 
-  return res.status(200).json({ results, scannedAt: new Date().toISOString() });
+  return res.status(200).json({
+    results,
+    scannedAt: new Date().toISOString(),
+    elapsedMs: Date.now() - startedAt,
+    budgetMs: TOTAL_BUDGET_MS,
+    truncated: Date.now() >= deadline,
+  });
 }

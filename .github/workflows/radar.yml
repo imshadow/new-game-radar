@@ -103,13 +103,12 @@ jobs:
           node-version: 22
 
       - name: Install scanner dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
 
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
 
       - name: Run parser and scoring tests
-        continue-on-error: true
         run: npm test
 
       - name: Discover games and build source evidence

@@ -5,6 +5,7 @@ import { classifySiteType } from '../lib/site-type.mjs';
 import { calculateFastSignals } from '../lib/fast-signals.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { analyzeOnlineSocialBuzz, SOCIAL_MODEL_VERSION } from '../lib/social-buzz.mjs';
+import { SEO_MODEL_VERSION } from '../lib/model-versions.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -207,7 +208,7 @@ const candidates = Array.isArray(payload) ? payload : payload.candidates || [];
 for (const candidate of candidates) candidate.siteType = classifySiteType(candidate);
 const queue = candidates
   .filter((candidate) => ['online', 'wiki'].includes(candidate.siteType?.type))
-  .filter((candidate) => candidate.seo?.modelVersion === 5 && ['independent', 'page'].includes(candidate.seo?.classification))
+  .filter((candidate) => candidate.seo?.modelVersion === SEO_MODEL_VERSION && ['independent', 'page'].includes(candidate.seo?.classification))
   .filter((candidate) => (candidate.siteType?.type === 'wiki' || candidate.siteType?.browserPlayable) && Number(candidate.seo?.nameRisk ?? 30) <= 20)
   .filter(needsCheck)
   .sort((a, b) => priority(b) - priority(a))

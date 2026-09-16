@@ -144,5 +144,75 @@
     "fetchKind": "lagged-listing",
     "enabled": true,
     "baselineOnly": false
+  },
+  {
+    "id": "armorgames-new",
+    "name": "Armor Games 首页推荐",
+    "url": "https://armorgames.com/",
+    "kind": "armorgames-new",
+    "fetchKind": "armorgames-listing",
+    "enabled": true,
+    "baselineOnly": true,
+    "note": "首页为编辑精选，含大量老游戏，故首轮只建立基线，之后只收录新出现的作品"
+  },
+  {
+    "id": "steam-upcoming-wishlist",
+    "name": "Steam 热门即将推出",
+    "url": "https://store.steampowered.com/search/?filter=popularcomingsoon&ndl=1",
+    "kind": "steam-upcoming",
+    "fetchKind": "steam-listing",
+    "enabled": true,
+    "baselineOnly": false,
+    "note": "popularcomingsoon 榜单是愿望单的前置指标，比 Top Wishlists 更早"
+  },
+  {
+    "id": "steam-feed-newreleases",
+    "name": "Steam 官方新发行 RSS",
+    "url": "https://store.steampowered.com/feeds/newreleases.xml",
+    "kind": "steam-new",
+    "fetchKind": "steam-feed",
+    "enabled": true,
+    "baselineOnly": true,
+    "note": "官方 RSS，无 HTML 抓取脆弱性；标题形如「Now Available on Steam - X」，链接为新闻页故名字取自标题"
+  },
+  {
+    "id": "steam-feed-topsellers",
+    "name": "Steam 周销量榜 RSS",
+    "url": "https://store.steampowered.com/feeds/weeklytopsellers.xml",
+    "kind": "steam-popular-new",
+    "fetchKind": "steam-feed",
+    "enabled": true,
+    "baselineOnly": true,
+    "note": "标题形如「#1 - WARDOGS」，链接为真实 /app/ 页面，可直接得到排名；榜上常驻 CS2/Dota2 这类超大游戏，故只收录新进榜的作品"
+  },
+  {
+    "id": "alphabetagamer",
+    "name": "Alpha Beta Gamer",
+    "url": "https://www.alphabetagamer.com/feed/",
+    "kind": "press-new",
+    "fetchKind": "press-feed",
+    "enabled": true,
+    "baselineOnly": false,
+    "note": "专报刚开启测试的独立游戏，标题形如「Game – Beta Demo」，解析时剥离后缀；feed 即最近一周新作，首轮全量收录"
+  },
+  {
+    "id": "hn-showhn",
+    "name": "Hacker News Show HN 游戏",
+    "url": "https://hn.algolia.com/api/v1/search_by_date?query=game&tags=show_hn&restrictSearchableAttributes=title&hitsPerPage=100",
+    "kind": "hn-showhn",
+    "fetchKind": "hn-listing",
+    "enabled": true,
+    "baselineOnly": false,
+    "note": "开发者自发帖，通常比上架早数周；restrictSearchableAttributes=title 限定标题搜索，再按「是否描述一个可玩的游戏」过滤引擎/SDK/Wiki 类噪声"
+  },
+  {
+    "id": "github-html5-games",
+    "name": "GitHub 新建 HTML5 游戏仓库",
+    "url": "https://api.github.com/search/repositories?q=topic:html5-game+created:%3E2026-01-01&sort=updated&order=desc&per_page=50",
+    "kind": "github-game",
+    "fetchKind": "github-listing",
+    "enabled": true,
+    "baselineOnly": false,
+    "note": "topic:html5-game 是作者自述可在浏览器运行，仓库名即游戏名；sort=updated 让新仓库滚动进入榜单"
   }
 ]

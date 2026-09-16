@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { calculateSeoVerdict, cleanGameName, estimateNameRisk } from '../lib/seo-verifier.mjs';
 import { calculateFastSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const candidatesPath=path.join(root,'data','candidates.json');
@@ -18,7 +19,10 @@ const slots=[
   {id:'1',key:process.env.GOOGLE_CSE_API_KEY||'',cx:process.env.GOOGLE_CSE_CX||'',limit:Math.max(1,Number(process.env.GOOGLE_CSE_DAILY_LIMIT_1||DEFAULT_DAILY))},
   {id:'2',key:process.env.GOOGLE_CSE_API_KEY_2||'',cx:process.env.GOOGLE_CSE_CX_2||'',limit:Math.max(1,Number(process.env.GOOGLE_CSE_DAILY_LIMIT_2||DEFAULT_DAILY))},
 ].filter(x=>x.key&&x.cx);
-const STRATEGIC=new Set(['trends-rising-7d','trends-rising-30d','itch-featured','itch-popular','steam-popular-new','newgrounds-top','competitor-sitemap']);
+// Declared in lib/source-registry.mjs. NOTE: this script is not invoked by
+// .github/workflows/radar.yml — the Google CSE path was superseded by Serper.
+// See the review report; it is a candidate for deletion.
+const STRATEGIC=POLICY_SETS.GOOGLE_CSE_STRATEGIC;
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}

@@ -47,14 +47,79 @@
 
 ## 自动数据源
 
+浏览器在线游戏（`online` 渠道）：
+
 - itch.io 最新网页游戏
 - itch.io New & Popular
 - itch.io New Feed / Featured Feed
-- Steam 热门新发行 / 最新独立游戏
 - Newgrounds Daily Top Five / 最新通过作品
 - CrazyGames、Poki、Y8、GamePix、Lagged 新游戏
+- Armor Games 首页推荐
+- GitHub `topic:html5-game` 新建仓库
+
+下载型游戏（`wiki` 渠道）：
+
+- Steam 热门新发行 / 最新独立游戏
+- Steam 热门即将推出（`popularcomingsoon`，比 Top Wishlists 更早）
+- Steam 官方 RSS：新发行、周销量榜
+- Alpha Beta Gamer（专报刚开启测试的独立游戏）
+- Hacker News Show HN 游戏帖
+
+其他：
+
 - Google Trends 相关上涨查询
 - 可配置竞争站 Sitemap / Sitemap Index
+
+每个来源在 `config/sources.json` 里用 `fetchKind` 指定解析器。加新源之前先用
+`npm run probe:source` 试一次，确认解析器能读懂返回体，而不是等到线上才发现它是空的。
+
+### 为什么这些源值得加
+
+| 来源 | 为什么 |
+|---|---|
+| Steam 官方 RSS | 无需 HTML 抓取，结构最稳定；周销量榜直接给出排名 |
+| Steam 热门即将推出 | 愿望单的前置指标，比正式榜单早 |
+| Alpha Beta Gamer | 只报刚开启测试的独立游戏，天然是低竞争新词 |
+| Hacker News Show HN | 开发者自发帖，通常比上架早数周 |
+| GitHub `topic:html5-game` | 作者自述可在浏览器运行，早于任何门户收录 |
+| Armor Games | 老牌浏览器游戏门户，补齐 online 渠道 |
+
+### 解析器要点
+
+这些源里有一半“看起来坏了、其实只是解析器读不懂”，所以每个新源都配了专门的
+`fetchKind`：
+
+- `steam-feed`：Steam 的 `newreleases.xml` 链接指向**新闻页**而不是游戏页，名字只能从标题里取；
+  同时要丢掉 `Update Released`、补丁说明这类噪声。`weeklytopsellers.xml` 的标题形如
+  `#1 - WARDOGS`，解析时会拆出排名。
+- `press-feed`：独立游戏媒体的标题形如 `Game – Beta Demo`，后缀不是名字的一部分；
+  同时过滤 press kit、访谈、盘点等非游戏文章。
+- `hn-listing` / `github-listing`：返回 JSON，HTML/XML 解析器读不了。
+  HN 的判定标准是“是否在描述一个**可玩**的东西”——引擎、SDK、Wiki、数据集都会提到 game，
+  但都不是游戏。
+- `armorgames-listing`：锚点的 `data-content` 属性里嵌了原始 HTML，
+  用 `[^>]*` 扫描属性会在第一个 `>` 处截断，静默丢掉大半个页面。
+
+### 加新源时要改哪里：`lib/source-registry.mjs`
+
+**只需要改这一个文件。** 它同时声明两件事：
+
+1. **语义**——每个 tag（`kind` 或 `sourceId`）的 `channel`（`online` / `wiki` / `shared` / `pending`）
+   和 `evidence`（这个源单独出现，是否足以断言渠道）。
+   `shared` 表示两种渠道都可能有（上涨查询、竞争站 sitemap）；`pending` 表示只是一个名字，
+   还不能判断。`evidence: false` 的典型是 `itch-new`——它是 `online` 渠道，
+   但一个 itch 列表条目只是名字，不等于这个游戏能在浏览器里玩。
+2. **策略**——`POLICY_SETS`，每个消费方用到的集合。`site-type`、`fast-signals`、
+   `trend-queue`、`wiki-prelaunch` 以及 5 个脚本都从这里 `import`，不再各自维护一份。
+
+以前同一个源要在 9 个文件里各写一遍，漏一处不会报错，只是被静默降权——
+上一轮新增的 5 个源就是这样只接进了 2 处。现在漏掉会在测试里直接失败。
+
+注意这些集合**彼此并不相同**，不要合并：`SEO_QUEUE_STRATEGIC` 故意不含几个大平台
+（它分配稀缺的 SEO 名额，大平台已覆盖充分），而 `TREND_ONLINE_STRATEGIC` 含它们。
+
+`tests/source-registry.test.mjs` 会检查：源是否登记了渠道、有没有文件在注册表之外
+私自声明集合、每个启用源是否至少被一个消费方当作信号、新增源是否覆盖了所有该覆盖的集合。
 
 ## 机会评分与硬门槛
 
@@ -149,7 +214,10 @@ Steam/Wiki 候选和在线小游戏都会进入该层，避免 Steam 高愿望�
 3. 每轮最多验证50个SEO候选
 4. 计算全部当前候选的快速热度
 5. 只把快速层通过的候选送入 Google Trends
-6. 提交 `data/state.json`、`data/candidates.json` 和 `data/latest-report.json`
+6. 提交 `data/state.json`、`data/candidates.json`、`data/dashboard.json` 和 `data/latest-report.json`
+
+`npm test` 失败会让工作流失败。测试套件用固定时钟运行（见 `npm run test:frozen`），
+避免出现“当时通过、过一段时间自己变红”的时间炸弹测试。
 
 ## 可选 YouTube 验证
 
@@ -173,10 +241,26 @@ YOUTUBE_API_KEY
 ## 本地运行
 
 ```bash
-npm install
-npm test
+npm ci            # 按 package-lock.json 安装，保证可复现
+npm test          # 解析与评分测试
+npm run test:frozen   # 用固定时钟跑测试，防止时间炸弹测试
+npm run check     # 语法检查 + 测试
+npm run verify:sources   # 逐个抓取 config/sources.json 里启用的源，报告解析结果
 npm run scan
 ```
+
+`npm run verify:sources` 用来在加源或改源之后做一次体检：某个源抓不到东西时它会
+以非零退出码结束，而不是让线上扫描“看起来是绿的、实际什么都没发现”。
+只想看某几个源时传入 id 片段即可，例如 `npm run verify:sources -- steam itch`。
+
+试一个新源能不能用：
+
+```bash
+npm run probe:source -- https://example.com/new-games auto
+npm run probe:source -- https://example.com/api/list hn-listing --show
+```
+
+`--show` 会打印响应开头，是判断“这个站该配哪个解析器”最快的方式。
 
 前端本地预览：
 
@@ -203,6 +287,11 @@ vercel dev
 
 首次运行只建立基线，第二次开始识别新增 URL。
 
+`baselineOnly` 只影响**首次**扫描：为 `true` 时第一轮只记录快照、不导入存量，
+适合“榜单常驻大厂游戏”“首页编辑精选老游戏”这类源——否则会把 CS2、Dota 2
+和 2012 年的老游戏一次性灌进候选池。反过来，像 Alpha Beta Gamer、Show HN
+这种“feed 本身就是最近几天新作”的源，应当设为 `false`，首轮就全量收录。
+
 ## Vercel 部署
 
 1. 在 Vercel 导入 GitHub 仓库
@@ -212,11 +301,26 @@ vercel dev
 
 前端直接读取 GitHub 中的最新结果数据，因此自动扫描更新数据时不需要重新部署页面。
 
+前端读取的地址由 `index.html` 里的 `radar-data-base` 决定。Fork 之后把它改成自己的仓库地址
+（或同源的 `/data`），否则页面会继续展示上游作者的扫描结果。
+
 ## 数据文件
 
 - `data/state.json`：来源快照、URL和榜单位置
-- `data/candidates.json`：候选、SEO、快速热度、YouTube和Trends结果
+- `data/candidates.json`：候选、SEO、快速热度、YouTube和Trends结果（内部完整状态，已压缩为单行 JSON）
+- `data/dashboard.json`：前端专用的精简投影，只保留页面实际渲染的字段，并跳过从未验证过的候选
 - `data/latest-report.json`：最近一次扫描统计
+
+`data/candidates.json` 每个扫描周期都会被提交，所以它的大小直接决定仓库增长速度。
+以下两类内容不会写入：
+
+1. **可重算的派生结果**（`opportunity`、`marketFreshness`、`wikiPrelaunch`）只对可行动候选保留。
+   它们是对 `sources`/`seo`/`trend` 的纯函数，`npm run classify` 在做任何决策前都会重算一遍，
+   给从未验证过的候选保存这些字段只是在存占位符。
+2. **前端不需要的字段**不会进入 `dashboard.json`（例如 `exactResultUrls`、`serpSnapshot`）。
+
+候选数量上限由 `DASHBOARD_MAX_CANDIDATES`（默认 800）控制，被省略的数量会写在
+`omittedCandidates` 字段里，页面会显示出来。
 
 ## 合规提醒
 

@@ -8,12 +8,15 @@ import { verifyGameKeyword, cleanGameName, estimateNameRisk } from '../lib/seo-v
 import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
 import { calculateFastSignals, verifyYoutubeSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
+import { SEO_MODEL_VERSION, TREND_MODEL_VERSION } from '../lib/model-versions.mjs';
+import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact, applyRetention } from '../lib/persistence.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const sourcesPath=path.join(root,'config','sources.json');
 const statePath=path.join(root,'data','state.json');
 const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
+const dashboardPath=path.join(root,'data','dashboard.json');
 const VERIFY_LIMIT=Math.max(0,Math.min(50,Number(process.env.SEO_VERIFY_LIMIT ?? 30)));
 const TREND_LIMIT=Math.max(0,Math.min(10,Number(process.env.TRENDS_VERIFY_LIMIT ?? 3)));
 const YOUTUBE_LIMIT=Math.max(0,Math.min(10,Number(process.env.YOUTUBE_VERIFY_LIMIT||3)));
@@ -25,8 +28,6 @@ const TREND_ERROR_RETRY=3600000;
 const TREND_BATCH_INTERVAL=30*60000;
 const RISING_DISCOVERY_INTERVAL=3*3600000;
 const YOUTUBE_MAX_AGE=6*3600000;
-const SEO_MODEL_VERSION=5;
-const TREND_MODEL_VERSION=4;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
@@ -39,9 +40,14 @@ function updateDiscovery(candidate){
   if(kinds.has('trends-rising-7d'))score+=8;
   if(kinds.has('trends-rising-30d'))score+=6;
   if(kinds.has('steam-popular-new'))score+=4;
+  if(kinds.has('steam-upcoming'))score+=4;
   if(kinds.has('itch-jam-popular'))score+=4;
   if(kinds.has('itch-jam-new'))score+=2;
   if(kinds.has('newgrounds-top'))score+=2;
+  if(kinds.has('hn-showhn'))score+=3;
+  if(kinds.has('armorgames-new'))score+=2;
+  if(kinds.has('press-new'))score+=2;
+  if(kinds.has('github-game'))score+=2;
   candidate.discoveryScore=Math.min(20,score);
   candidate.discoveryLevel=candidateLevel(candidate.discoveryScore);
 }
@@ -142,6 +148,7 @@ function shouldAutoVerify(candidate){
   const kinds=sourceKinds(candidate);
   const risk=estimateNameRisk(candidate.gameName);
   return kinds.has('trends-rising-7d')||kinds.has('trends-rising-30d')||kinds.has('steam-popular-new')||
+    kinds.has('steam-upcoming')||kinds.has('press-new')||kinds.has('hn-showhn')||
     candidate.sources?.length>=2||kinds.has('itch-featured')||kinds.has('itch-popular')||kinds.has('itch-jam-popular')||
     kinds.has('newgrounds-top')||(kinds.has('steam-new')&&risk<=12)||(kinds.has('itch-new')&&risk<=12)||
     ((candidate.discoveryScore||0)>=7&&risk<=16);
@@ -156,6 +163,11 @@ function verifyPriority(candidate){
   if(kinds.has('itch-popular'))score+=12;
   if(kinds.has('newgrounds-top'))score+=10;
   if(kinds.has('steam-popular-new'))score+=10;
+  if(kinds.has('steam-upcoming'))score+=10;
+  if(kinds.has('press-new'))score+=6;
+  if(kinds.has('hn-showhn'))score+=5;
+  if(kinds.has('armorgames-new'))score+=5;
+  if(kinds.has('github-game'))score+=4;
   if(kinds.has('itch-new'))score+=4;
   if((candidate.sources||[]).length>=2)score+=10;
   return score;
@@ -189,6 +201,8 @@ function trendPriority(candidate){
   if(kinds.has('itch-popular'))score+=14;
   if(kinds.has('newgrounds-top'))score+=12;
   if(kinds.has('steam-popular-new'))score+=10;
+  if(kinds.has('steam-upcoming'))score+=10;
+  if(kinds.has('press-new'))score+=6;
   if(candidate.seo?.classification==='independent')score+=18;
   const age=Date.now()-Date.parse(candidate.firstSeen||0);
   if(Number.isFinite(age)&&age<2*86400000)score+=8;
@@ -310,13 +324,20 @@ if(trendBatchDue){
   if(trendQueue.length)radarState.lastTrendBatch=now;
 }
 
+const scanNowMs=Date.parse(now);
 for(const candidate of candidates){
   if(isTrendEligible(candidate)&&!candidate.trend)candidate.trend={modelVersion:TREND_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待Google Trends需求验证']};
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate,scanNowMs);
 }
 
 candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.finalScore||0)-(a.finalScore||0)||(b.fast?.score||0)-(a.fast?.score||0)||(b.trend?.score||0)-(a.trend?.score||0)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
-if(candidates.length>3000)candidates.length=3000;
+// Membership is decided by retention policy, not by the display sort above.
+// Truncating the sorted array used to drop the candidates discovered this very
+// run, because `pending` always sorts last (see lib/persistence.mjs).
+const beforeRetention=candidates.length;
+candidates=applyRetention(candidates,scanNowMs);
+const evictedCount=beforeRetention-candidates.length;
+if(evictedCount>0)console.log(`Retention: kept ${candidates.length}/${beforeRetention} candidates, evicted ${evictedCount} least-recently-seen.`);
 
 const recommendationCounts={independent:0,'test-now':0,page:0,watch:0,reject:0,pending:0,error:0};
 for(const candidate of candidates)recommendationCounts[candidate.recommendation||'pending']=(recommendationCounts[candidate.recommendation||'pending']||0)+1;
@@ -330,7 +351,11 @@ const trendValidatedCount=candidates.filter(candidate=>isTrendEligible(candidate
 const risingCount=candidates.filter(candidate=>['rising','breakout'].includes(candidate.trend?.classification)).length;
 const globalRisingCount=candidates.filter(candidate=>['rising','breakout'].includes(candidate.trend?.globalClassification)).length;
 radarState.lastScan=now;
-await fs.writeFile(statePath,JSON.stringify(radarState,null,2)+'\n');
-await fs.writeFile(candidatesPath,JSON.stringify({updatedAt:now,candidates},null,2)+'\n');
+// Derived evaluation blocks are recomputed by `npm run classify` before any
+// decision, so only actionable candidates keep them (see lib/persistence.mjs).
+for(const candidate of candidates)stripDerivedBlocks(candidate);
+await writeJsonCompact(statePath,radarState);
+await writeJsonCompact(candidatesPath,{updatedAt:now,candidates});
+await writeJsonCompact(dashboardPath,buildDashboardPayload(candidates,{scannedAt:now}));
 await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,targetMarket:TARGET_MARKET,primaryMarket:'US',referenceMarket:'WORLDWIDE',totalAdded,sources:logs,seoVerified,seoErrors,fastModelVersion:FAST_MODEL_VERSION,fastPassedCount,fastWatchCount,fastRejectedCount,youtubeEnabled:Boolean(YOUTUBE_API_KEY),youtubeConfigured:Boolean(YOUTUBE_API_KEY),youtubeVerified,youtubeErrors,trendsVerified,trendErrors,trendBatchRan,trendQueueSize,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,seoPassedCount,trendEligibleCount,trendPendingCount,trendValidatedCount,risingCount,globalRisingCount,recommendationCounts},null,2)+'\n');
 console.log(`Scan complete. Market ${TARGET_MARKET}; YouTube ${YOUTUBE_API_KEY?'enabled':'disabled'}; ${totalAdded} names added; ${seoVerified} SEO checks; ${fastPassedCount} fast-pass; ${trendsVerified} Trends checks; ${trendPendingCount} trend candidates pending.`);

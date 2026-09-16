@@ -5,6 +5,7 @@ import { calculateSeoVerdict, cleanGameName, estimateNameRisk } from '../lib/seo
 import { calculateFastSignals } from '../lib/fast-signals.mjs';
 import { classifySiteType } from '../lib/site-type.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -22,9 +23,13 @@ const LANGUAGE = String(process.env.SEO_LANGUAGE || 'en-US').split('-')[0].toLow
 const DAY = 86400000;
 const MIN_PRIORITY = Math.max(0, Number(process.env.SERPER_MIN_PRIORITY || 80));
 
-const ONLINE_STRATEGIC = new Set(['crazygames-new', 'poki-new', 'newgrounds-top', 'newgrounds-new', 'itch-popular']);
-const ONLINE_SECONDARY = new Set(['y8-new', 'gamepix-new', 'lagged-new']);
-const WIKI_STRATEGIC = new Set(['steam-popular-new', 'steam-new', 'itch-featured', 'itch-popular', 'newgrounds-top', 'competitor-sitemap']);
+// Kept in sync with lib/source-registry.mjs. `sourceKinds()` below matches on
+// BOTH kind and sourceId, so these sets intentionally mix the two.
+// Declared in lib/source-registry.mjs. `sourceKinds()` below matches on BOTH
+// kind and sourceId, so these sets intentionally mix the two.
+const ONLINE_STRATEGIC = POLICY_SETS.SERPER_ONLINE_STRATEGIC;
+const ONLINE_SECONDARY = POLICY_SETS.SERPER_ONLINE_SECONDARY;
+const WIKI_STRATEGIC = POLICY_SETS.SERPER_WIKI_STRATEGIC;
 
 async function readJson(file, fallback) { try { return JSON.parse(await fs.readFile(file, 'utf8')); } catch { return fallback; } }
 function today() { return new Date().toISOString().slice(0, 10); }

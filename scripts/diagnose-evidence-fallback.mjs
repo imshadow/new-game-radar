@@ -4,20 +4,17 @@ import { fileURLToPath } from 'node:url';
 import { estimateNameRisk, cleanGameName } from '../lib/seo-verifier.mjs';
 import { classifySiteType } from '../lib/site-type.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
 const outputPath = path.join(root, 'data', 'evidence-fallback-diagnostics.json');
 
-const ONLINE = new Set([
-  'crazygames-new', 'poki-new', 'y8-new', 'gamepix-new', 'lagged-new',
-  'newgrounds-daily-top', 'newgrounds-latest',
-  'itch-new-popular-web', 'itch-featured-feed', 'itch-newest-web',
-]);
-const WIKI = new Set([
-  'steam-popular-new', 'steam-latest-indie', 'itch-featured-feed',
-  'itch-new-popular-web', 'newgrounds-daily-top', 'competitor-sitemap',
-]);
+// Declared in lib/source-registry.mjs, which is the only place these lists live
+// now. These two are deliberately narrower than the FALLBACK_* sets that the
+// verifier itself uses — see the note in the registry.
+const ONLINE = POLICY_SETS.DIAGNOSE_ONLINE_STRATEGIC;
+const WIKI = POLICY_SETS.DIAGNOSE_WIKI_STRATEGIC;
 
 function inc(object, key) { object[key] = (object[key] || 0) + 1; }
 function sourceIds(candidate) {

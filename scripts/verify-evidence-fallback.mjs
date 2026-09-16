@@ -5,6 +5,7 @@ import { estimateNameRisk, cleanGameName } from '../lib/seo-verifier.mjs';
 import { classifySiteType, sourcePlatformKey } from '../lib/site-type.mjs';
 import { calculateFastSignals } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -12,18 +13,10 @@ const reportPath = path.join(root, 'data', 'latest-report.json');
 const LIMIT = Math.max(0, Number(process.env.SEO_EVIDENCE_FALLBACK_LIMIT || 300));
 const DAY = 86400000;
 
-const ONLINE_STRATEGIC = new Set([
-  'crazygames-new', 'poki-new', 'y8-new', 'gamepix-new', 'lagged-new',
-  'newgrounds-daily-top', 'newgrounds-latest',
-  'itch-new-popular-web', 'itch-featured-feed', 'itch-newest-web',
-  'newgrounds-top', 'newgrounds-new', 'itch-popular',
-]);
-const WIKI_STRATEGIC = new Set([
-  'steam-popular-new', 'steam-latest-indie',
-  'itch-featured-feed', 'itch-new-popular-web',
-  'newgrounds-daily-top', 'competitor-sitemap',
-  'steam-new', 'itch-featured', 'itch-popular', 'newgrounds-top',
-]);
+// Declared in lib/source-registry.mjs. Matching is done on source *aliases*
+// (kind + sourceId + a few legacy names), so both appear in these sets.
+const ONLINE_STRATEGIC = POLICY_SETS.FALLBACK_ONLINE_STRATEGIC;
+const WIKI_STRATEGIC = POLICY_SETS.FALLBACK_WIKI_STRATEGIC;
 
 async function readJson(file, fallback) {
   try { return JSON.parse(await fs.readFile(file, 'utf8')); }

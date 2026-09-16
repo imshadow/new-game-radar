@@ -80,7 +80,7 @@ test('treats an exact-match wiki domain as an occupied keyword, not a new opport
   assert.deepEqual(market.dedicatedDomains, ['mistfallhunter.wiki']);
   assert.equal(market.allowsIndependent, false);
 
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.notEqual(candidate.recommendation, 'independent');
   assert.match(candidate.siteType.reasons[0], /mistfallhunter\.wiki/);
 });
@@ -107,7 +107,7 @@ test('treats a historically established term as mature even when it rises again'
   assert.equal(market.status, 'established');
   assert.equal(market.allowsIndependent, false);
 
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.notEqual(candidate.recommendation, 'independent');
   assert.match(candidate.siteType.reasons[0], /老词|成熟词/);
 });
@@ -119,7 +119,7 @@ test('allows a genuinely new online term when market and social evidence both pa
   assert.equal(market.dedicatedDomains.length, 0);
   assert.equal(market.allowsIndependent, true);
 
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.equal(candidate.recommendation, 'independent');
   assert.equal(candidate.social.allowsIndependent, true);
 });
@@ -148,7 +148,7 @@ test('routes an unknown-history rising term to test-now instead of strict indepe
   assert.equal(market.status, 'unconfirmed-new');
   assert.equal(market.allowsIndependent, false);
 
-  applyFinalRecommendation(candidate);
+  applyFinalRecommendation(candidate, NOW);
   assert.equal(candidate.recommendation, 'test-now');
   assert.equal(candidate.opportunity.allowsIndependent, false);
   assert.equal(candidate.opportunity.allowsTest, true);

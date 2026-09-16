@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { verifyGameKeyword, estimateNameRisk } from '../lib/seo-verifier.mjs';
 import { calculateFastSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -11,10 +12,9 @@ const reportPath = path.join(root, 'data', 'latest-report.json');
 const LIMIT = Math.max(0, Math.min(50, Number(process.env.SEO_EXPAND_LIMIT || 30)));
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const STRATEGIC_KINDS = new Set([
-  'trends-rising-7d', 'trends-rising-30d', 'itch-featured', 'itch-popular',
-  'steam-popular-new', 'newgrounds-top', 'competitor-sitemap',
-]);
+// Declared in lib/source-registry.mjs, alongside every other consumer's copy of
+// the same list. See the note there for why these live together.
+const STRATEGIC_KINDS = POLICY_SETS.SEO_QUEUE_STRATEGIC;
 
 async function readJson(file, fallback) {
   try { return JSON.parse(await fs.readFile(file, 'utf8')); } catch { return fallback; }

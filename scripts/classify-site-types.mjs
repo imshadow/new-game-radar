@@ -4,9 +4,11 @@ import { fileURLToPath } from 'node:url';
 import { classifySiteType, SITE_TYPE_MODEL_VERSION } from '../lib/site-type.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
+import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact } from '../lib/persistence.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
+const dashboardPath = path.join(root, 'data', 'dashboard.json');
 const reportPath = path.join(root, 'data', 'latest-report.json');
 const serpUsagePath = path.join(root, 'data', 'serpapi-usage.json');
 const serperUsagePath = path.join(root, 'data', 'serper-usage.json');
@@ -21,6 +23,24 @@ async function readJson(file, fallback) {
 
 const payload = await readJson(candidatesPath, { candidates: [] });
 const candidates = Array.isArray(payload) ? payload : payload.candidates || [];
+
+/**
+ * Classify must be a pure function of `data/candidates.json`.
+ *
+ * It used to read the wall clock, and every derived block stamped a fresh
+ * `checkedAt`, so running it twice produced two different files even when the
+ * input had not changed. The workflow runs this script three times per cycle,
+ * which meant three spurious rewrites of a 10 MB file per run — and made
+ * "did anything actually change?" unanswerable from the diff.
+ *
+ * `updatedAt` is the scan timestamp written by `scripts/scan.mjs`. Deriving the
+ * clock from it keeps the freshness windows anchored to when the evidence was
+ * gathered, which is also more correct than "whatever time classify happened to
+ * run".
+ */
+const scanNowMs = Date.parse(payload.updatedAt || '');
+const nowMs = Number.isFinite(scanNowMs) ? scanNowMs : Date.now();
+
 const counts = { online: 0, wiki: 0, pending: 0 };
 const wikiPrelaunchCounts = { priority: 0, prepare: 0, watch: 0, weak: 0 };
 const trendProviderCounts = {};
@@ -28,8 +48,8 @@ const seoProviderCounts = {};
 const recommendationCounts = { independent: 0, 'test-now': 0, page: 0, watch: 0, reject: 0, pending: 0, error: 0 };
 
 for (const candidate of candidates) {
-  candidate.siteType = classifySiteType(candidate);
-  applyFinalRecommendation(candidate);
+  candidate.siteType = classifySiteType(candidate, nowMs);
+  applyFinalRecommendation(candidate, nowMs);
   counts[candidate.siteType.type] = (counts[candidate.siteType.type] || 0) + 1;
   if (candidate.siteType.type === 'wiki' && candidate.wikiPrelaunch) {
     const classification = candidate.wikiPrelaunch.classification || 'weak';
@@ -45,7 +65,13 @@ for (const candidate of candidates) {
   if (seoProvider) seoProviderCounts[seoProvider] = (seoProviderCounts[seoProvider] || 0) + 1;
 }
 
-await fs.writeFile(candidatesPath, JSON.stringify({ ...payload, candidates }, null, 2) + '\n');
+for (const candidate of candidates) stripDerivedBlocks(candidate);
+await writeJsonCompact(candidatesPath, { ...payload, candidates });
+await writeJsonCompact(dashboardPath, buildDashboardPayload(candidates, {
+  scannedAt: payload.updatedAt || new Date(nowMs).toISOString(),
+  siteTypeCounts: counts,
+  recommendationCounts,
+}));
 
 const report = await readJson(reportPath, {});
 const serpApiUsage = await readJson(serpUsagePath, {
