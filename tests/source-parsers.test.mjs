@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   parseRemoteDocument,
+  parseGogJson,
+  GOG_MAX_AGE_DAYS,
   cleanSteamFeedTitle,
   cleanPressTitle,
   cleanShowHnTitle,
@@ -157,4 +159,66 @@ test('parses Armor Games anchors that embed markup in an attribute value', () =>
   assert.deepEqual(names, ['Ragdoll Achievement', 'Earth Taken 3']);
   assert.equal(parsed.entries[0].url, 'https://armorgames.com/play/13488/ragdoll-achievement');
   assert.equal(parsed.entries[0].date, '2012-06-29T17:20:59.000Z');
+});
+
+// ---------------------------------------------------------------------- GOG
+
+const GOG_NOW = Date.parse('2026-09-16T12:00:00Z');
+
+test('GOG keeps only releases inside the recency window', () => {
+  // The live feed really does contain three-year-old entries: `new-arrival`
+  // means "newly added to the GOG catalogue", not "newly released".
+  const json = JSON.stringify({
+    products: [
+      { title: 'HOPE 01', slug: 'hope_01', releaseDate: '2026.09.15' },
+      { title: 'Maiden Cops', slug: 'maiden_cops', releaseDate: '2024.09.23' },
+      { title: 'Gennady Demo', slug: 'gennady_demo', releaseDate: '2023.10.05' },
+    ],
+  });
+  const parsed = parseGogJson(json, GOG_NOW);
+  assert.equal(parsed.type, 'gog-listing');
+  assert.deepEqual(parsed.entries.map((entry) => entry.gameName), ['HOPE 01']);
+  assert.equal(parsed.entries[0].url, 'https://www.gog.com/en/game/hope_01');
+  assert.equal(parsed.entries[0].date, '2026-09-15T00:00:00.000Z');
+});
+
+test('GOG drops demos, soundtracks and placeholder titles', () => {
+  const recent = '2026.09.10';
+  const json = JSON.stringify({
+    products: [
+      { title: 'Gently Packed Demo', slug: 'gently_packed_demo', releaseDate: recent },
+      { title: 'Alien Breed 35th Anniversary Demo', slug: 'alien_breed_demo', releaseDate: recent },
+      { title: 'Morimens OST', slug: 'morimens_ost', releaseDate: recent },
+      { title: 'Calculator - Desktop Mate Widgets DLC', slug: 'calc_dlc', releaseDate: recent },
+      { title: 'TEST TEST TEST', slug: 'test_test_test', releaseDate: recent },
+      { title: 'Magical Blush', slug: 'magical_blush', releaseDate: recent },
+    ],
+  });
+  const names = parseGogJson(json, GOG_NOW).entries.map((entry) => entry.gameName);
+  assert.deepEqual(names, ['Magical Blush']);
+});
+
+test('GOG skips entries with no usable slug or date, and dedupes by URL', () => {
+  const json = JSON.stringify({
+    products: [
+      { title: 'No Slug', releaseDate: '2026.09.10' },
+      { title: 'No Date', slug: 'no_date' },
+      { title: 'Dup', slug: 'dup', releaseDate: '2026.09.10' },
+      { title: 'Dup Again', slug: 'dup', releaseDate: '2026.09.11' },
+    ],
+  });
+  assert.deepEqual(parseGogJson(json, GOG_NOW).entries.map((entry) => entry.gameName), ['Dup']);
+});
+
+test('GOG returns null on a body that is not a catalog response', () => {
+  assert.equal(parseGogJson('<html>nope</html>', GOG_NOW), null);
+  assert.equal(parseGogJson('{"products":"nope"}', GOG_NOW), null);
+});
+
+test('the GOG window boundary is inclusive and driven by the injected clock', () => {
+  const boundary = new Date(GOG_NOW - GOG_MAX_AGE_DAYS * 86400000).toISOString().slice(0, 10).replace(/-/g, '.');
+  const json = JSON.stringify({ products: [{ title: 'Edge', slug: 'edge', releaseDate: boundary }] });
+  assert.equal(parseGogJson(json, GOG_NOW).entries.length, 1);
+  // A day later the same entry falls outside the window.
+  assert.equal(parseGogJson(json, GOG_NOW + 86400000).entries.length, 0);
 });

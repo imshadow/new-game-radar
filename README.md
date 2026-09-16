@@ -65,6 +65,7 @@
   比 `popularcomingsoon` 更早——后者要求游戏已积累热度才会上榜）
 - Steam 热门即将推出（`popularcomingsoon`，比 Top Wishlists 更早）
 - Steam 官方 RSS：新发行、周销量榜
+- GOG 新上架（JSON 接口，按 45 天窗口收敛成真正的新发行）
 - Alpha Beta Gamer（专报刚开启测试的独立游戏）
 - IndieGamesPlus（独立游戏媒体，feed 即近期新作报道）
 - Hacker News Show HN 游戏帖
@@ -87,6 +88,7 @@
 | Steam 独立游戏热门新发行 | 同一份 `popularnew`，`tags=492` 滤掉 3A，留下独立游戏 |
 | Alpha Beta Gamer | 只报刚开启测试的独立游戏，天然是低竞争新词 |
 | IndieGamesPlus | 独立游戏媒体，报道通常早于商店收录 |
+| GOG 新上架 | 唯一一个不用抓 HTML 的 PC 游戏发行源；但要先按发行日收敛，见下 |
 | Hacker News Show HN | 开发者自发帖，通常比上架早数周 |
 | GitHub `topic:html5-game` | 作者自述可在浏览器运行，早于任何门户收录 |
 | Armor Games | 老牌浏览器游戏门户，补齐 online 渠道 |
@@ -130,6 +132,34 @@ IndieGamesPlus 复用 `press-feed`。复用是有意的——解析器已经过�
   实测 `filter=comingsoon` 配 `sort_by=Released_DESC` 会捞出 2077 / 2999 / 9000 年
   这种垃圾条目；去掉 `sort_by` 用默认排序，拿到的才是当天解锁的作品。
   已发售榜单（`popularnew`、`Released_DESC` 的独立游戏榜）不受影响。
+- `gog-listing`：GOG 的 `releaseStatuses=in:new-arrival` 是**"新上架"而不是"新发行"**。
+  实测返回的 48 条里最老的 `releaseDate` 是 `2023.10.05`，跨了三年——那是老游戏补上架，
+  不是新作；还混着 8 条 Demo 和一条叫 `TEST TEST TEST` 的占位数据。
+  所以过滤放在解析器里（`parseGogJson`）：只保留近 45 天的 `releaseDate`，
+  并丢掉 Demo / 原声 / DLC。实测 48 条筛出 23 条真正的新发行。
+  比较时把截止时间**取整到 UTC 零点**再比——GOG 给的是日期不是时刻，
+  否则"正好 45 天前"的那条会因为扫描发生在几点而时有时无。
+
+### 加源不能只看"能不能抓到"
+
+这一轮又探了 9 个候选，**只接入 1 个**。加源的真正门槛是"**是不是重复抓**"和
+"**这个信号对不对**"，不是"解析器读不读得懂"：
+
+| 候选 | 结论 | 证据 |
+|---|---|---|
+| GOG 新上架 | **接入** | 48 → 23 条干净新发行；与现有源仅 2/48 重叠 |
+| Steam 无过滤新发行 | 拒绝 | 50 条里 18 条带 `Demo`、5 条是 DLC/原声；与 `steam-latest-indie` 重叠 12 条。名字归一化**不会**剥掉 `Demo`，会直接污染候选池 |
+| Epic 免费赠送 | 拒绝 | 12 条全是**老游戏限免**（Ghostrunner 2、LISA、Castlevania 合集）。工具找的是"正在形成的新词"，这是反过来的 |
+| Kongregate | 拒绝 | 实测 `/en/games` 与 `/en/games?sort=newest` 返回**完全相同的 60 条**，`sort` 参数被忽略；内容是 Crush The Castle 2、Bloons Super Monkey 这类 Flash 时代老游戏 |
+| Armor Games | 已有 | 配置里就是 `armorgames-new`，同一个 URL。而且天真选择器 `a.game.feature-type-game[title]` 正好踩到现有解析器专门绕开的坑（`title` 属性里嵌了 HTML） |
+| Miniplay | 暂不接入 | 解析得出来（80 条），但首页混着 FIFA 2000 这种二十多年前的游戏，是编辑精选而不是新作 |
+| Agame `/games/new` | 拒绝 | **不是按新旧排序**：已知老游戏 `mahjong-connect` 在第 **1** 位、`kris-mahjong` 第 3 位、`treasures-of-the-mystic-sea` 第 6 位；131 条里 19% 是 mahjong / solitaire / poker 这类通用休闲词 |
+| FreeGames.com | 拒绝 | 名字质量太差：`Anti Spider Run`、`Baby Doll Factory`、`Tanghulu Master Candy ASMR`；还有 `Call Of Duty: Free Fire` 这种商标撞车，会白白吃掉验证额度 |
+| Gematsu | 拒绝 | 是**主机/3A 新闻** feed 不是游戏名列表。20 条里 9 条命中噪声模式（trailer / update / game pass / dlc / 延期），天真抽取会得到 `Barbie Pack`、`Game Pass`、`and more` 这种垃圾；内容也多是 Total War、Rayman、Monster Hunter 这类成熟大 IP |
+
+一条经验：**低质量源不是中性的，是有害的。** 每轮只跑 30 个 SEO 验证，
+候选池上限 3000——灌进 `Mahjong Link` 或 `Call Of Duty: Free Fire`，
+挤掉的是真正的新词名额。
 
 ### 加新源时要改哪里：`lib/source-registry.mjs`
 

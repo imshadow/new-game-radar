@@ -218,14 +218,14 @@ test('every policy set is consumed by at least one file', () => {
  */
 const REQUIRED = {
   FAST_ONLINE_HIGH_QUALITY: ['armorgames-new', 'github-game'],
-  FAST_WIKI_HIGH_QUALITY: ['steam-upcoming', 'press-new'],
+  FAST_WIKI_HIGH_QUALITY: ['steam-upcoming', 'press-new', 'gog-new'],
   TREND_ONLINE_STRATEGIC: ['armorgames-new', 'github-game'],
-  TREND_WIKI_STRATEGIC: ['steam-upcoming', 'press-new'],
-  SEO_QUEUE_STRATEGIC: ['armorgames-new', 'github-game', 'steam-upcoming', 'press-new', 'hn-showhn'],
+  TREND_WIKI_STRATEGIC: ['steam-upcoming', 'press-new', 'gog-new'],
+  SEO_QUEUE_STRATEGIC: ['armorgames-new', 'github-game', 'steam-upcoming', 'press-new', 'hn-showhn', 'gog-new'],
   SERPER_ONLINE_STRATEGIC: ['armorgames-new', 'github-game'],
-  SERPER_WIKI_STRATEGIC: ['steam-upcoming', 'press-new'],
+  SERPER_WIKI_STRATEGIC: ['steam-upcoming', 'press-new', 'gog-new'],
   FALLBACK_ONLINE_STRATEGIC: ['armorgames-new', 'github-html5-games'],
-  FALLBACK_WIKI_STRATEGIC: ['steam-upcoming-wishlist', 'alphabetagamer', 'steam-feed-newreleases', 'steam-feed-topsellers'],
+  FALLBACK_WIKI_STRATEGIC: ['steam-upcoming-wishlist', 'alphabetagamer', 'steam-feed-newreleases', 'steam-feed-topsellers', 'gog-new-arrivals'],
 };
 
 test('every newly added source kind reaches every policy set that needs it', () => {

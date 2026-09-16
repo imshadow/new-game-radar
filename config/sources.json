@@ -222,8 +222,8 @@
     "kind": "steam-upcoming",
     "fetchKind": "steam-listing",
     "enabled": true,
-    "baselineOnly": true,
-    "note": "comingsoon 比 popularcomingsoon 更早——后者要求游戏已积累热度才会上榜。tags=492 与 category1=998 把结果限定为独立游戏本体，滤掉DLC/原声/工具。不要加 sort_by=Released_DESC：未发售作品的发行日多是占位值（实测出现 2077/2999/9000 年），按它倒序会先捞到这些垃圾；用默认排序得到的是当天解锁的作品，实测与 steam-latest-indie 零重叠、48/50 条为本源独有。榜单会长期挂住未发售作品，故首轮只建基线"
+    "baselineOnly": false,
+    "note": "comingsoon 比 popularcomingsoon 更早——后者要求游戏已积累热度才会上榜。tags=492 与 category1=998 把结果限定为独立游戏本体，滤掉DLC/原声/工具。不要加 sort_by=Released_DESC：未发售作品的发行日多是占位值（实测出现 2077/2999/9000 年），按它倒序会先捞到这些垃圾；用默认排序得到的是当天解锁的作品，实测与 steam-latest-indie 零重叠、48/50 条为本源独有。首轮就全量收录（baselineOnly=false）：实测 50 条的发行日是 27 条今天 + 23 条明天，这是「即将解锁」而不是长期挂榜的存量，不存在需要挡掉的 backlog"
   },
   {
     "id": "steam-popular-new-indie",
@@ -244,5 +244,15 @@
     "enabled": true,
     "baselineOnly": false,
     "note": "独立游戏媒体，feed 即近期新作报道，首轮全量收录；press-feed 解析器会过滤 press kit／访谈／盘点类噪声"
+  },
+  {
+    "id": "gog-new-arrivals",
+    "name": "GOG 新上架游戏",
+    "url": "https://catalog.gog.com/v1/catalog?limit=48&releaseStatuses=in:new-arrival&order=desc:releaseDate&productType=in:game&page=1&countryCode=US&locale=en-US&currencyCode=USD",
+    "kind": "gog-new",
+    "fetchKind": "gog-listing",
+    "enabled": true,
+    "baselineOnly": false,
+    "note": "JSON 接口，不用抓 HTML，结构最稳。注意 new-arrival 是「新上架」不是「新发行」——实测 48 条里最老的 releaseDate 是 2023 年（老游戏补上架），还混着 8 条 Demo 和一条叫 TEST TEST TEST 的占位数据。所以过滤放在 gog-listing 解析器里：只保留近 45 天的 releaseDate 并丢掉 Demo/原声/DLC，实测 48 条筛出约 23 条真正的新发行"
   }
 ]
