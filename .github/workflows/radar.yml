@@ -83,7 +83,10 @@ jobs:
       SERPAPI_API_KEY_4: ${{ secrets.SERPAPI_API_KEY_4 }}
       SERPAPI_API_KEY_5: ${{ secrets.SERPAPI_API_KEY_5 }}
       SERPAPI_MONTHLY_LIMIT: 245
-      SERPAPI_DAILY_LIMIT: 245
+      # 日上限必须远小于月上限，否则一轮就把整月额度吃掉。
+      # 245 / 30 天 ≈ 8 → 每天最多 8 次（每个槽位各自计），额度能撑满一个月。
+      # 不要把它设成和 MONTHLY_LIMIT 一样大（上游就是这么配的，等于单轮烧光整月）。
+      SERPAPI_DAILY_LIMIT: 8
       SERPAPI_FILL_ENABLED: true
       SERPAPI_ONLINE_LIMIT: 999
       SERPAPI_WIKI_LIMIT: 999
