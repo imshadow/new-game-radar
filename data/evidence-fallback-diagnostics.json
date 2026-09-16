@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-09-16T10:32:41.445Z",
+  "generatedAt": "2026-09-16T14:57:44.361Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2555,
+  "pendingSeo": 2546,
   "channelCounts": {
-    "wiki": 285,
-    "pending": 273,
-    "online": 1997
+    "pending": 283,
+    "wiki": 274,
+    "online": 1989
   },
   "fastClassCounts": {
-    "wiki:pending": 285,
-    "pending:pending": 273,
-    "online:pending": 1997
+    "pending:pending": 283,
+    "wiki:pending": 274,
+    "online:pending": 1989
   },
   "strategicCounts": {
-    "wiki:0": 194,
-    "pending:0": 264,
-    "online:3": 6,
+    "pending:0": 274,
+    "wiki:1": 124,
+    "online:3": 5,
+    "online:1": 1788,
     "wiki:2": 1,
-    "online:1": 1844,
-    "online:2": 99,
-    "wiki:1": 90,
+    "online:2": 101,
+    "wiki:0": 149,
     "pending:1": 9,
-    "online:0": 48
+    "online:0": 95
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1575
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 1553
+      "count": 1535
     },
     {
       "id": "itch-new-feed",
-      "count": 1536
+      "count": 1511
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 1503
     },
     {
       "id": "trends-rising-7d",
-      "count": 197
+      "count": 196
     },
     {
       "id": "trends-rising-30d",
@@ -46,27 +46,27 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 125
+      "count": 127
     },
     {
       "id": "itch-popular",
-      "count": 125
+      "count": 127
     },
     {
       "id": "poki-new",
-      "count": 105
+      "count": 107
+    },
+    {
+      "id": "steam-upcoming",
+      "count": 101
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 98
     },
     {
-      "id": "steam-upcoming",
-      "count": 96
-    },
-    {
-      "id": "y8-new",
-      "count": 68
+      "id": "steam-popular-new",
+      "count": 79
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -81,44 +81,40 @@
       "count": 64
     },
     {
-      "id": "trends-rising-7d-indie-game",
-      "count": 60
+      "id": "y8-new",
+      "count": 62
     },
     {
-      "id": "gamepix-new",
+      "id": "trends-rising-7d-indie-game",
       "count": 59
     },
     {
-      "id": "steam-latest-indie",
-      "count": 53
-    },
-    {
-      "id": "steam-new",
-      "count": 53
+      "id": "gamepix-new",
+      "count": 57
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 50
+      "count": 56
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 49
+      "id": "steam-latest-indie",
+      "count": 52
     },
     {
-      "id": "steam-top-wishlist",
-      "count": 48
+      "id": "steam-new",
+      "count": 52
     },
     {
       "id": "github-html5-games",
-      "count": 47
+      "count": 51
     },
     {
       "id": "github-game",
-      "count": 47
+      "count": 51
     },
     {
-      "id": "steam-popular-new",
-      "count": 44
+      "id": "steam-upcoming-wishlist",
+      "count": 50
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -129,28 +125,32 @@
       "count": 43
     },
     {
-      "id": "press-new",
-      "count": 39
+      "id": "armorgames-new",
+      "count": 43
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 41
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 39
     },
     {
+      "id": "press-new",
+      "count": 36
+    },
+    {
       "id": "hn-showhn",
-      "count": 31
+      "count": 32
     },
     {
       "id": "alphabetagamer",
-      "count": 30
+      "count": 27
     },
     {
-      "id": "gog-new-arrivals",
-      "count": 23
-    },
-    {
-      "id": "gog-new",
-      "count": 23
+      "id": "steam-top-wishlist",
+      "count": 19
     },
     {
       "id": "itch-featured-feed",
@@ -162,15 +162,19 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 12
+      "count": 11
     },
     {
       "id": "newgrounds-new",
-      "count": 12
+      "count": 11
     },
     {
       "id": "indiegamesplus",
       "count": 9
+    },
+    {
+      "id": "steam-feed-topsellers",
+      "count": 7
     },
     {
       "id": "newgrounds-daily-top",
@@ -183,48 +187,7 @@
   ],
   "samples": [
     {
-      "name": "Old Digger",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 18,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 3,
-      "sourceCount": 7,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular",
-        "newgrounds-latest",
-        "newgrounds-new"
-      ]
-    },
-    {
       "name": "Inkarn8: First Pages",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 3,
-      "sourceCount": 6,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-featured-feed",
-        "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "About Time!",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -262,6 +225,26 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "About Time!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 3,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -383,14 +366,14 @@
       ]
     },
     {
-      "name": "GRAVITY: One Button Space Run",
+      "name": "Average and generic SPRUNKI SHIFTED mod",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 3,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -402,14 +385,14 @@
       ]
     },
     {
-      "name": "Average and generic SPRUNKI SHIFTED mod",
+      "name": "GRAVITY: One Button Space Run",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 3,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -439,6 +422,63 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Lockpicks-11",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "The Oasis Water Shop's Curious Customers (ワケあり客とオアシスの水屋)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 3,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "long-duck",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -518,6 +558,63 @@
       ]
     },
     {
+      "name": "SHAPE - Web Version",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Carnival of Shadows",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Urbanitas",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "my dear Linda",
       "channel": "online",
       "fastClass": "pending",
@@ -526,6 +623,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Kick The Piñata!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -556,14 +672,33 @@
       ]
     },
     {
-      "name": "SHAPE - Web Version",
+      "name": "Fracture",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "APOGEE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -594,25 +729,6 @@
       ]
     },
     {
-      "name": "ReplicART",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "SplitTrain",
       "channel": "online",
       "fastClass": "pending",
@@ -629,6 +745,25 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cycle of the First Dawn",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -670,14 +805,52 @@
       ]
     },
     {
-      "name": "Carnival of Shadows",
+      "name": "Knucklehead",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "FragMiner - DEMO",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "ReplicART",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -708,14 +881,14 @@
       ]
     },
     {
-      "name": "Knucklehead",
+      "name": "Think Up House",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -727,7 +900,26 @@
       ]
     },
     {
-      "name": "Urbanitas",
+      "name": "dead_center",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Babylumns",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -765,44 +957,6 @@
       ]
     },
     {
-      "name": "Nine Heavens Ascent",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "DreamCore House",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "MYTHOS LAST SUMMER",
       "channel": "online",
       "fastClass": "pending",
@@ -819,158 +973,6 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Kick The Piñata!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Running God",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Treeternal Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "DownShaft",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Nuclear-Stic Mines Retrash'd",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Quizino",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "OutRun · Arcade 3D",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Intergalactic Comet Rail Project",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-new-feed"
       ]
     },
     {
@@ -1012,7 +1014,7 @@
       ]
     },
     {
-      "name": "FragMiner - DEMO",
+      "name": "Chaotic Pets",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1031,14 +1033,14 @@
       ]
     },
     {
-      "name": "Think Up House",
+      "name": "Nine Heavens Ascent",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1050,7 +1052,64 @@
       ]
     },
     {
-      "name": "Minimis",
+      "name": "Treeternal Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Running God",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "DreamCore House",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Quizino",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1063,77 +1122,20 @@
       "sourceIds": [
         "itch-newest-web",
         "itch-new",
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Compromised Anatomy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
     },
     {
-      "name": "Basic Incremental Miner",
+      "name": "DownShaft",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "HorsePower Plant",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Cogwork Carnival",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
