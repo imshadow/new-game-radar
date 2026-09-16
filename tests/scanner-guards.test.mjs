@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { safeFetchText, parseRemoteDocument, deriveGameName, normalizeGameName } from '../lib/scanner.mjs';
+import { safeFetchText, assertPublicUrl, parseRemoteDocument, deriveGameName, normalizeGameName } from '../lib/scanner.mjs';
 
 /**
  * `api/scan.js` exposes `scanSource` over HTTP, so every URL it fetches is
@@ -50,6 +50,34 @@ test('a shared deadline is honoured across the redirect chain', async () => {
     () => safeFetchText('https://example.com/', 2, Date.now() - 1),
     /请求超时/,
   );
+});
+
+test('an IPv6 literal is judged on its address, not handed to the resolver', async () => {
+  // Regression, and a genuinely cross-platform one. `url.hostname` KEEPS the
+  // brackets, and `net.isIP('[::1]')` is 0, so the bracketed string skipped the
+  // literal fast path and went to `getaddrinfo`. Windows resolves it happily;
+  // glibc answers EAI_NONAME, so the lookup threw ENOTFOUND *before* the
+  // private-address loop below ever ran. The guard therefore passed on Windows
+  // and failed on Linux, and on Linux its IPv6 branch was unreachable.
+  await assert.rejects(() => assertPublicUrl('http://[::1]/'), /不允许访问内网或保留地址/);
+  await assert.rejects(() => assertPublicUrl('http://[fd00::1]/'), /不允许访问内网或保留地址/);
+  await assert.rejects(() => assertPublicUrl('http://[fe80::1]/'), /不允许访问内网或保留地址/);
+  // IPv4-mapped forms must be judged as the IPv4 address they reach. The URL
+  // parser rewrites these to hex (`[::ffff:7f00:1]`), which is why comparing
+  // against dotted prefixes never matched: `[::ffff:a9fe:a9fe]` is the cloud
+  // metadata endpoint and it used to be allowed straight through.
+  await assert.rejects(() => assertPublicUrl('http://[::ffff:127.0.0.1]/'), /不允许访问内网或保留地址/);
+  await assert.rejects(() => assertPublicUrl('http://[::ffff:169.254.169.254]/'), /不允许访问内网或保留地址/);
+  await assert.rejects(() => assertPublicUrl('http://[::ffff:192.168.1.1]/'), /不允许访问内网或保留地址/);
+});
+
+test('a public IPv6 literal is allowed through instead of looking unresolvable', async () => {
+  // The other half of the same defect: the fix must not block IPv6 wholesale.
+  // Literals resolve locally, so this makes no network call.
+  const url = await assertPublicUrl('http://[2606:4700:4700::1111]/');
+  assert.equal(url.hostname, '[2606:4700:4700::1111]');
+  // A public IPv4-mapped address must still be allowed.
+  await assertPublicUrl('http://[::ffff:8.8.8.8]/');
 });
 
 test('sitemap index parsing still resolves child sitemaps', () => {
