@@ -2,6 +2,15 @@ name: New Game Radar
 
 on:
   workflow_dispatch:
+    inputs:
+      serper_verify_limit:
+        description: "Serper 每轮验证上限。冒烟测试选 2（只消耗 2 次额度）；正式跑选 90"
+        type: choice
+        options:
+          - "90"
+          - "10"
+          - "2"
+        default: "90"
   schedule:
     - cron: "17,47 * * * *"
   push:
@@ -40,7 +49,9 @@ jobs:
 
       # Third-party Google Search provider: Serper.dev.
       SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
-      SERPER_VERIFY_LIMIT: 90
+      # 手动触发时可用 inputs 覆盖（冒烟测试选 2）。schedule / push 触发时
+      # inputs 为空，`|| 90` 回落到正式值。
+      SERPER_VERIFY_LIMIT: ${{ inputs.serper_verify_limit || 90 }}
       SERPER_ONLINE_LIMIT: 63
       SERPER_WIKI_LIMIT: 27
       SERPER_MIN_PRIORITY: 80
