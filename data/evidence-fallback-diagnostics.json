@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-09-16T18:55:13.242Z",
+  "generatedAt": "2026-09-16T22:08:59.761Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2464,
+  "pendingSeo": 2474,
   "channelCounts": {
-    "pending": 306,
-    "online": 1920,
-    "wiki": 238
+    "wiki": 243,
+    "pending": 323,
+    "online": 1908
   },
   "fastClassCounts": {
-    "pending:pending": 306,
-    "online:pending": 1920,
-    "wiki:pending": 238
+    "wiki:pending": 243,
+    "pending:pending": 323,
+    "online:pending": 1908
   },
   "strategicCounts": {
-    "pending:0": 297,
-    "online:1": 1707,
-    "online:2": 85,
+    "wiki:1": 96,
+    "pending:0": 314,
+    "online:2": 87,
+    "online:1": 1686,
     "pending:1": 9,
-    "wiki:0": 146,
-    "online:0": 128,
-    "wiki:1": 92
+    "wiki:0": 147,
+    "online:0": 135
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1565
+      "count": 1580
     },
     {
       "id": "itch-new-feed",
-      "count": 1545
+      "count": 1560
     },
     {
       "id": "itch-newest-web",
-      "count": 1511
+      "count": 1509
     },
     {
       "id": "trends-rising-7d",
-      "count": 196
+      "count": 197
     },
     {
       "id": "trends-rising-30d",
-      "count": 140
+      "count": 141
     },
     {
       "id": "itch-new-popular-web",
-      "count": 109
+      "count": 112
     },
     {
       "id": "itch-popular",
-      "count": 109
+      "count": 112
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -56,22 +56,26 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 95
-    },
-    {
-      "id": "poki-new",
-      "count": 83
+      "count": 97
     },
     {
       "id": "armorgames-new",
-      "count": 73
+      "count": 79
     },
     {
       "id": "trends-rising-30d-horror-game",
+      "count": 66
+    },
+    {
+      "id": "y8-new",
+      "count": 66
+    },
+    {
+      "id": "lagged-new",
       "count": 64
     },
     {
-      "id": "crazygames-new",
+      "id": "steam-popular-new",
       "count": 61
     },
     {
@@ -79,35 +83,31 @@
       "count": 59
     },
     {
-      "id": "steam-popular-new",
-      "count": 57
-    },
-    {
       "id": "github-html5-games",
-      "count": 54
+      "count": 55
     },
     {
       "id": "github-game",
-      "count": 54
+      "count": 55
+    },
+    {
+      "id": "gamepix-new",
+      "count": 55
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 52
-    },
-    {
-      "id": "lagged-new",
-      "count": 49
+      "count": 54
     },
     {
       "id": "trends-rising-7d-itch-io",
+      "count": 44
+    },
+    {
+      "id": "steam-upcoming-wishlist",
       "count": 43
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 43
-    },
-    {
-      "id": "steam-upcoming-wishlist",
       "count": 43
     },
     {
@@ -120,10 +120,6 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 39
-    },
-    {
-      "id": "y8-new",
       "count": 38
     },
     {
@@ -131,24 +127,28 @@
       "count": 36
     },
     {
-      "id": "hn-showhn",
-      "count": 32
+      "id": "steam-popular-new-indie",
+      "count": 33
     },
     {
-      "id": "steam-popular-new-indie",
-      "count": 29
+      "id": "hn-showhn",
+      "count": 32
     },
     {
       "id": "alphabetagamer",
       "count": 27
     },
     {
+      "id": "poki-new",
+      "count": 26
+    },
+    {
       "id": "steam-top-wishlist",
       "count": 15
     },
     {
-      "id": "gamepix-new",
-      "count": 11
+      "id": "crazygames-new",
+      "count": 13
     },
     {
       "id": "newgrounds-latest",
@@ -193,6 +193,25 @@
   ],
   "samples": [
     {
+      "name": "We come in Pieces",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Path of the idle cultivator",
       "channel": "online",
       "fastClass": "pending",
@@ -211,6 +230,44 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Bloodrush",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "A Thousand Cloys",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1077,63 +1134,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Something Strange",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "BREAKAWAY - Incremental Cycling",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Six is Devil",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
