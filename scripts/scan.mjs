@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { scanSource, normalizeGameName, calculateCandidateScore, candidateLevel } from '../lib/scanner.mjs';
+import { scanSource, normalizeGameName, candidateId, calculateCandidateScore, candidateLevel } from '../lib/scanner.mjs';
 import { scanSteamSource } from '../lib/steam-discovery.mjs';
 import { discoverRisingGameQueries } from '../lib/rising-discovery.mjs';
 import { verifyGameKeyword, cleanGameName, estimateNameRisk } from '../lib/seo-verifier.mjs';
@@ -109,7 +109,7 @@ function mergeCandidate(candidates,gameName,source,entry,now){
   if(!normalizedName||normalizedName.length<2)return false;
   let candidate=candidates.find(item=>item.normalizedName===normalizedName);
   if(!candidate){
-    candidate={id:`auto-${Buffer.from(normalizedName).toString('base64url').slice(0,24)}`,gameName:cleanedName,normalizedName,firstSeen:now,lastSeen:now,status:'new',sources:[],recommendation:'pending'};
+    candidate={id:candidateId(normalizedName),gameName:cleanedName,normalizedName,firstSeen:now,lastSeen:now,status:'new',sources:[],recommendation:'pending'};
     candidates.push(candidate);
   }
   const key=`${source.id}|${entry.url}`;

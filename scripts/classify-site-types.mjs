@@ -5,6 +5,7 @@ import { classifySiteType, SITE_TYPE_MODEL_VERSION } from '../lib/site-type.mjs'
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact } from '../lib/persistence.mjs';
+import { candidateId } from '../lib/scanner.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -12,7 +13,6 @@ const dashboardPath = path.join(root, 'data', 'dashboard.json');
 const reportPath = path.join(root, 'data', 'latest-report.json');
 const serpUsagePath = path.join(root, 'data', 'serpapi-usage.json');
 const serperUsagePath = path.join(root, 'data', 'serper-usage.json');
-const googleCseUsagePath = path.join(root, 'data', 'google-cse-usage.json');
 const apifyStatusPath = path.join(root, 'data', 'apify-account-status.json');
 const apifyUsagePath = path.join(root, 'data', 'apify-trends-usage.json');
 
@@ -48,6 +48,12 @@ const seoProviderCounts = {};
 const recommendationCounts = { independent: 0, 'test-now': 0, page: 0, watch: 0, reject: 0, pending: 0, error: 0 };
 
 for (const candidate of candidates) {
+  // Repair ids written by the old truncated-base64 scheme. Candidates are
+  // matched by `normalizedName`, not by id, so rewriting an id here cannot
+  // duplicate or split a record — it only fixes collisions that already exist
+  // in the committed file. This is idempotent: `candidateId` is a pure function
+  // of `normalizedName`, which never changes for a given candidate.
+  if (candidate.normalizedName) candidate.id = candidateId(candidate.normalizedName);
   candidate.siteType = classifySiteType(candidate, nowMs);
   applyFinalRecommendation(candidate, nowMs);
   counts[candidate.siteType.type] = (counts[candidate.siteType.type] || 0) + 1;
@@ -74,6 +80,11 @@ await writeJsonCompact(dashboardPath, buildDashboardPayload(candidates, {
 }));
 
 const report = await readJson(reportPath, {});
+// The report is written as `{...report, ...}`, so a field that is no longer
+// produced would otherwise be carried forward forever. These two belonged to
+// the removed Google CSE path; drop them so the file converges.
+delete report.googleCseConfiguredSlots;
+delete report.googleCseUsage;
 const serpApiUsage = await readJson(serpUsagePath, {
   enabled: Boolean(process.env.SERPAPI_API_KEY), monthUsed: 0, dayUsed: 0,
   monthlyLimit: Number(process.env.SERPAPI_MONTHLY_LIMIT || 220), dailyLimit: Number(process.env.SERPAPI_DAILY_LIMIT || 8),
@@ -89,25 +100,8 @@ const serperUsage = await readJson(serperUsagePath, {
 });
 const apifyAccountStatus = await readJson(apifyStatusPath, { configured: Boolean(process.env.APIFY_API_TOKEN), ok: false });
 const apifyTrendsUsage = await readJson(apifyUsagePath, { month: new Date().toISOString().slice(0, 7), actorCalls: 0, resultItems: 0, candidatesVerified: 0, errors: 0 });
-const configuredGoogleSlots = [
-  Boolean(process.env.GOOGLE_CSE_API_KEY && process.env.GOOGLE_CSE_CX),
-  Boolean(process.env.GOOGLE_CSE_API_KEY_2 && process.env.GOOGLE_CSE_CX_2),
-].filter(Boolean).length;
-const googleCseUsage = await readJson(googleCseUsagePath, {
-  day: new Date().toISOString().slice(0, 10), slots: {}, updatedAt: null,
-});
-let googleDayUsed = 0;
-let googleDailyLimit = 0;
-for (const slot of Object.values(googleCseUsage.slots || {})) {
-  googleDayUsed += Number(slot.dayUsed || 0);
-  googleDailyLimit += Number(slot.dailyLimit || 0);
-}
 
-const activeSeoProvider = process.env.SERPER_API_KEY
-  ? 'serper-google-search'
-  : configuredGoogleSlots
-    ? 'google-custom-search'
-    : 'duckduckgo-html';
+const activeSeoProvider = process.env.SERPER_API_KEY ? 'serper-google-search' : 'duckduckgo-html';
 const activeTrendProviders = Object.keys(trendProviderCounts);
 const activeTrendProvider = activeTrendProviders.length > 1
   ? activeTrendProviders.join('+')
@@ -126,16 +120,6 @@ await fs.writeFile(reportPath, JSON.stringify({
   seoProviderCounts,
   serperConfigured: Boolean(process.env.SERPER_API_KEY),
   serperUsage: { enabled: Boolean(process.env.SERPER_API_KEY), ...serperUsage },
-  googleCseConfiguredSlots: configuredGoogleSlots,
-  googleCseUsage: {
-    enabled: configuredGoogleSlots > 0,
-    configuredSlots: configuredGoogleSlots,
-    day: googleCseUsage.day,
-    totalDayUsed: googleDayUsed,
-    totalDailyLimit: googleDailyLimit || configuredGoogleSlots * Number(process.env.GOOGLE_CSE_DAILY_LIMIT || 90),
-    slots: googleCseUsage.slots || {},
-    updatedAt: googleCseUsage.updatedAt || null,
-  },
   braveSearchConfigured: false,
   braveSearchUsage: { enabled: false },
   siteTypeModelVersion: SITE_TYPE_MODEL_VERSION,

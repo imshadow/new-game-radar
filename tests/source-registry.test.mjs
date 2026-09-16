@@ -159,7 +159,6 @@ const CONSUMERS = {
     ONLINE: 'DIAGNOSE_ONLINE_STRATEGIC',
     WIKI: 'DIAGNOSE_WIKI_STRATEGIC',
   },
-  'scripts/verify-google-cse.mjs': { STRATEGIC: 'GOOGLE_CSE_STRATEGIC' },
 };
 
 function sourceFiles() {
