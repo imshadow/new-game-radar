@@ -56,7 +56,10 @@ jobs:
       SERPER_WIKI_LIMIT: 27
       SERPER_MIN_PRIORITY: 80
       SERPER_TOTAL_LIMIT: 2450
-      SERPER_DAILY_LIMIT: 2450
+      # 日上限必须远小于总上限，否则等于没有日上限：满速 90 × 6.5 轮 ≈ 585/天，
+      # 2450 只够跑 4 天，之后就是上游那 7 周的「job 全绿、verified 恒为 0」。
+      # 免费额度 2500 是一次性的，2450 / 30 天 ≈ 80 → 能铺满一个月。
+      SERPER_DAILY_LIMIT: 80
 
       # When Serper is unavailable, strong multi-platform evidence can route a
       # candidate to Trends provisionally. It can never create an independent
@@ -96,9 +99,14 @@ jobs:
       # more reliable than the previous three simultaneous browser jobs.
       SEARCHAPI_API_KEY: ${{ secrets.SEARCHAPI_API_KEY }}
       SEARCHAPI_TRENDS_ENABLED: true
-      SEARCHAPI_TRENDS_VERIFY_LIMIT: 95
-      SEARCHAPI_TRENDS_ONLINE_LIMIT: 67
-      SEARCHAPI_TRENDS_WIKI_LIMIT: 28
+      # 95 是一次性赠额（不是月额度），不要和 SEARCHAPI_TOTAL_LIMIT 设成同一个数：
+      # fill-searchapi-trends.mjs:34 的 effectiveLimit = min(verifyLimit, 剩余额度)，
+      # 两边都是 95 → 第一轮就发满 95 次，然后永久为 0。
+      # 8/轮 ≈ 12 轮反馈窗口，够在烧完之前发现系统性问题。
+      # online/wiki 按原 67:28 缩到 6:2，否则 online 会吃满整个队列、wiki 永远轮不到。
+      SEARCHAPI_TRENDS_VERIFY_LIMIT: 8
+      SEARCHAPI_TRENDS_ONLINE_LIMIT: 6
+      SEARCHAPI_TRENDS_WIKI_LIMIT: 2
       SEARCHAPI_TRENDS_CONCURRENCY: 1
       SEARCHAPI_TOTAL_LIMIT: 95
       SEARCHAPI_TIMEOUT_MS: 90000
