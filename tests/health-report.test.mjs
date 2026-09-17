@@ -6,6 +6,7 @@ function report(overrides = {}) {
   return {
     serperConfigured: true,
     seoErrors: 0,
+    seoErrorCandidates: 0,
     serpApiConfigured: true,
     searchApiConfigured: false,
     apifyTrendsUsage: { enabled: false },
@@ -307,13 +308,30 @@ test('没有拦截就不出这条规则', () => {
  * 候选数。这条规则最初把它当成池子里的存量，注解会让人以为池子里有 18 个坏词 ——
  * 正是本仓反复出现的「同一字段被误读」缺陷族。措辞必须说清是本轮。
  */
-test('seoErrors 的注解说清是「本轮」，不是全池存量', () => {
-  const findings = evaluateHealth(report({ seoErrors: 3 }));
-  const rule = findings.find((item) => /本轮 SEO 验证失败/.test(item.title));
-  assert.ok(rule);
-  assert.equal(rule.level, 'warning');
-  assert.match(rule.detail, /本轮/);
-  assert.match(rule.detail, /不是全池/);
+/**
+ * 「本轮失败了几次」和「池子里有多少 error 候选」是两个问题，必须读两个字段。
+ * 它们以前共用一个字段名 seoErrors：scan.mjs 写本轮值、verify-serper.mjs 写全池值，
+ * 报告按 {...report, ...} 写、后写者赢 ⇒ 注解拿全池数字说成「本轮」。
+ */
+test('本轮失败次数与全池 error 候选数是两条独立规则', () => {
+  const perRun = evaluateHealth(report({ seoErrors: 3, seoErrorCandidates: 0 }));
+  const runRule = perRun.find((item) => /本轮免费 SEO 路径有 3 次真实失败/.test(item.title));
+  assert.ok(runRule, 'expected the per-run rule, got: ' + titles(perRun).join(' | '));
+  assert.equal(runRule.level, 'warning');
+  assert.match(runRule.detail, /不含被拦截的/);
+  assert.equal(perRun.find((item) => /池子里有/.test(item.title)), undefined,
+    '池子里没有 error 候选时不该出全池那条');
+
+  const pooled = evaluateHealth(report({ seoErrors: 0, seoErrorCandidates: 15 }));
+  const poolRule = pooled.find((item) => /池子里有 15 个候选的 SEO 判定是 error/.test(item.title));
+  assert.ok(poolRule, 'expected the pool-wide rule, got: ' + titles(pooled).join(' | '));
+  assert.equal(poolRule.level, 'warning');
+  assert.match(poolRule.detail, /全池存量/);
+  assert.equal(pooled.find((item) => /本轮免费 SEO 路径/.test(item.title)), undefined,
+    '本轮没有失败时不该出本轮那条');
+
+  const quiet = evaluateHealth(report({ seoErrors: 0, seoErrorCandidates: 0 }));
+  assert.equal(quiet.filter((item) => /SEO 判定是 error|真实失败/.test(item.title)).length, 0);
 });
 
 /**

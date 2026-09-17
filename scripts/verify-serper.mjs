@@ -242,11 +242,17 @@ for (const candidate of API_KEY ? queue : []) {
   }
 }
 
-const seoErrors = candidates.filter((candidate) => candidate.seo?.classification === 'error').length;
+// 这是**全池**的 error 候选数，不是本轮的失败次数 —— 本轮失败次数由 scan.mjs
+// 写进 `seoErrors` / `seoFreePath.failed`。
+//
+// 它以前也叫 `seoErrors`，和 scan.mjs 的同名字段撞在一起：报告按 `{...report, ...}`
+// 写、后写者赢，所以最终留下的是本脚本的全池计数，而读它的健康注解以为那是本轮值。
+// 这是本仓反复出现的「同一字段多个写者」缺陷族的第 5 次，改名收口到两个明确的名字。
+const seoErrorCandidates = candidates.filter((candidate) => candidate.seo?.classification === 'error').length;
 const seoPassedCount = candidates.filter((candidate) => candidate.seo?.modelVersion === SEO_MODEL_VERSION && ['independent', 'page'].includes(candidate.seo?.classification)).length;
 const fastPassedCount = candidates.filter((candidate) => candidate.fast?.classification === 'pass').length;
 const fastWatchCount = candidates.filter((candidate) => candidate.fast?.classification === 'watch').length;
 const fastRejectedCount = candidates.filter((candidate) => ['weak', 'reject'].includes(candidate.fast?.classification)).length;
 await fs.writeFile(candidatesPath, JSON.stringify({ ...payload, candidates }, null, 2) + '\n');
-await fs.writeFile(reportPath, JSON.stringify({ ...report, seoProvider: API_KEY ? 'serper-google-search' : report.seoProvider, serperConfigured: Boolean(API_KEY), serperUsage: await usageSummary(), serperVerification: { rushMode: true, minPriority: MIN_PRIORITY, budgetLanes: { hot: '60%', recheck: '20%', explore: '20%' }, limit: VERIFY_LIMIT, runLimit, dailyRemaining, reverifyDays: reverifyDays(), onlineLimit: ONLINE_LIMIT, wikiLimit: WIKI_LIMIT, queueSize: queue.length, verified, verifiedByChannel, errors, quotaStopped, verifiedNames, ranAt: new Date().toISOString() }, seoVerified: Number(report.seoVerified || 0) + verified, seoErrors, seoPassedCount, fastPassedCount, fastWatchCount, fastRejectedCount }, null, 2) + '\n');
+await fs.writeFile(reportPath, JSON.stringify({ ...report, seoProvider: API_KEY ? 'serper-google-search' : report.seoProvider, serperConfigured: Boolean(API_KEY), serperUsage: await usageSummary(), serperVerification: { rushMode: true, minPriority: MIN_PRIORITY, budgetLanes: { hot: '60%', recheck: '20%', explore: '20%' }, limit: VERIFY_LIMIT, runLimit, dailyRemaining, reverifyDays: reverifyDays(), onlineLimit: ONLINE_LIMIT, wikiLimit: WIKI_LIMIT, queueSize: queue.length, verified, verifiedByChannel, errors, quotaStopped, verifiedNames, ranAt: new Date().toISOString() }, seoVerified: Number(report.seoVerified || 0) + verified, seoErrorCandidates, seoPassedCount, fastPassedCount, fastWatchCount, fastRejectedCount }, null, 2) + '\n');
 console.log(`Serper rush SEO complete: ${verified} verified (${verifiedByChannel.online} online, ${verifiedByChannel.wiki} wiki), ${errors} errors, quota stopped ${quotaStopped}.`);
