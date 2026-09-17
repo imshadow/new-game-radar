@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { verifyTrendDemand, getSerpApiUsage, TREND_PROFILE_VERSION } from '../lib/trend-verifier.mjs';
-import { buildBalancedTrendQueue, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { buildBalancedTrendQueue, trendValidationSummary, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
 import { applyFinalRecommendation, recommendationCounts, channelCounts, typeOf } from '../lib/opportunity-finalizer.mjs';
 import { classifySiteType } from '../lib/site-type.mjs';
 
@@ -64,7 +64,7 @@ for (const item of queue) {
 
 for (const candidate of candidates) applyFinalRecommendation(candidate);
 usage = await getSerpApiUsage();
-const trendValidatedCount = candidates.filter((candidate) => candidate.trend?.modelVersion === TREND_MODEL_VERSION && !['pending', 'error'].includes(candidate.trend?.classification)).length;
+const trendValidatedCount = trendValidationSummary(candidates).validatedCount;
 const risingCount = candidates.filter((candidate) => ['rising', 'breakout'].includes(candidate.trend?.classification)).length;
 const globalRisingCount = candidates.filter((candidate) => ['rising', 'breakout'].includes(candidate.trend?.globalClassification)).length;
 const allPending = buildBalancedTrendQueue(candidates, { online: 9999, wiki: 9999, flexible: 0 });

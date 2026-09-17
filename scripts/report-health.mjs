@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { evaluateHealth, summarizeHealth } from '../lib/health-report.mjs';
+import { isFreeTrendPathEnabled } from '../lib/trend-queue.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const reportPath = path.join(root, 'data', 'latest-report.json');
@@ -22,7 +23,10 @@ async function readJson(file, fallback) {
 
 const report = await readJson(reportPath, {});
 const findings = evaluateHealth(report, {
-  trendFreePathEnabled: Number(process.env.TRENDS_VERIFY_LIMIT || 0) > 0,
+  // Shared with the rest of the pipeline so "is the free path on?" has one
+  // answer: this used to default TRENDS_VERIFY_LIMIT to 0 while scan.mjs
+  // defaulted it to 3.
+  trendFreePathEnabled: isFreeTrendPathEnabled(),
 });
 const summary = summarizeHealth(findings);
 

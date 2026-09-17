@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildBalancedTrendQueue, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { activeTrendProviderLabel, buildBalancedTrendQueue, trendValidationSummary, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
 import { TREND_PROFILE_VERSION } from '../lib/trend-verifier.mjs';
 import { verifyApifyResidentialTrendDemand, isApifyResidentialTrendsConfigured } from '../lib/apify-residential-trends.mjs';
 import { applyFinalRecommendation, recommendationCounts, channelCounts } from '../lib/opportunity-finalizer.mjs';
@@ -34,15 +34,6 @@ async function saveUsage(usage) {
   const updated = { ...usage, monthlyCallLimit, updatedAt: new Date().toISOString() };
   await fs.writeFile(usagePath, JSON.stringify(updated, null, 2) + '\n');
   return updated;
-}
-
-function providerCounts(candidates) {
-  const counts = {};
-  for (const candidate of candidates) {
-    const provider = candidate.trend?.provider;
-    if (provider && !['pending', 'error'].includes(candidate.trend?.classification)) counts[provider] = (counts[provider] || 0) + 1;
-  }
-  return counts;
 }
 
 const payload = await readJson(candidatesPath, { candidates: [] });
@@ -122,15 +113,16 @@ usage = await saveUsage({
   errors: Number(usage.errors || 0) + errors,
 });
 
-const trendValidatedCount = candidates.filter((candidate) => candidate.trend?.modelVersion === TREND_MODEL_VERSION && !['pending', 'error'].includes(candidate.trend?.classification)).length;
+const trendSummary = trendValidationSummary(candidates);
+const trendValidatedCount = trendSummary.validatedCount;
+const trendEligibleCount = trendSummary.eligibleCount;
 const risingCount = candidates.filter((candidate) => ['rising', 'breakout'].includes(candidate.trend?.classification)).length;
 const globalRisingCount = candidates.filter((candidate) => ['rising', 'breakout'].includes(candidate.trend?.globalClassification)).length;
 const allPending = buildBalancedTrendQueue(candidates, { online: 9999, wiki: 9999, flexible: 0 });
 const pendingByChannel = { online: allPending.filter((item) => item.channel === 'online').length, wiki: allPending.filter((item) => item.channel === 'wiki').length };
 const pendingByTier = { strong: 0, secondary: 0, strategic: 0 };
 for (const item of allPending) pendingByTier[item.tier] += 1;
-const trendProviderCounts = providerCounts(candidates);
-const activeProviders = Object.keys(trendProviderCounts);
+const trendProviderCounts = trendSummary.providerCounts;
 
 await fs.writeFile(candidatesPath, JSON.stringify({ ...payload, candidates }, null, 2) + '\n');
 await fs.writeFile(reportPath, JSON.stringify({
@@ -138,9 +130,10 @@ await fs.writeFile(reportPath, JSON.stringify({
   trendsVerified: Number(report.trendsVerified || 0) + verified,
   trendErrors: Number(report.trendErrors || 0) + errors,
   trendValidatedCount,
+  trendEligibleCount,
   risingCount,
   globalRisingCount,
-  trendProvider: activeProviders.length > 1 ? activeProviders.join('+') : activeProviders[0] || report.trendProvider || null,
+  trendProvider: activeTrendProviderLabel(),
   trendProviderCounts,
   recommendationCounts: recommendationCounts(candidates),
   channelOpportunityCounts: channelCounts(candidates),

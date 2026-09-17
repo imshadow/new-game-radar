@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildBalancedTrendQueue, trendValidationSummary, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { activeTrendProviderLabel, buildBalancedTrendQueue, trendValidationSummary, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
 import { TREND_PROFILE_VERSION } from '../lib/trend-verifier.mjs';
 import { verifySearchApiTrendDemand, isSearchApiConfigured, getSearchApiUsage } from '../lib/searchapi-trends.mjs';
 import { applyFinalRecommendation, recommendationCounts, channelCounts } from '../lib/opportunity-finalizer.mjs';
@@ -102,7 +102,6 @@ const pendingByChannel = { online: allPending.filter((item) => item.channel === 
 const pendingByTier = { strong: 0, secondary: 0, strategic: 0 };
 for (const item of allPending) pendingByTier[item.tier] += 1;
 const trendProviderCounts = trendSummary.providerCounts;
-const activeProviders = Object.keys(trendProviderCounts);
 
 await fs.writeFile(candidatesPath, JSON.stringify({ ...payload, candidates }, null, 2) + '\n');
 await fs.writeFile(reportPath, JSON.stringify({
@@ -113,7 +112,7 @@ await fs.writeFile(reportPath, JSON.stringify({
   trendEligibleCount,
   risingCount,
   globalRisingCount,
-  trendProvider: activeProviders.length > 1 ? activeProviders.join('+') : activeProviders[0] || report.trendProvider || null,
+  trendProvider: activeTrendProviderLabel(),
   trendProviderCounts,
   recommendationCounts: recommendationCounts(candidates),
   channelOpportunityCounts: channelCounts(candidates),

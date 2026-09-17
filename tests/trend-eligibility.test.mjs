@@ -5,10 +5,24 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION, TREND_MODEL_VERSION } from '../lib/model-versions.mjs';
-import { hasCurrentSeo, isFastPassed, isTrendEligible, trendValidationSummary } from '../lib/trend-queue.mjs';
+import { activeTrendProviderLabel, enabledTrendProviders, hasCurrentSeo, isFastPassed, isFreeTrendPathEnabled, isTrendEligible, trendValidationSummary } from '../lib/trend-queue.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const classifySource = await fs.readFile(path.join(root, 'scripts', 'classify-site-types.mjs'), 'utf8');
+
+// Every script that writes the trend block of the report. They all have to agree,
+// because whichever one runs last is the one the report ends up showing.
+const TREND_REPORT_WRITERS = [
+  'scripts/classify-site-types.mjs',
+  'scripts/fill-searchapi-trends.mjs',
+  'scripts/fill-apify-trends.mjs',
+  'scripts/fill-serpapi-pool.mjs',
+  'scripts/fill-serpapi-quota.mjs',
+];
+const writerSources = new Map();
+for (const file of TREND_REPORT_WRITERS) {
+  writerSources.set(file, await fs.readFile(path.join(root, file), 'utf8'));
+}
 
 function candidate(overrides = {}) {
   return {
@@ -131,15 +145,69 @@ test('classify-site-types takes the trend counters from the shared summary, not 
   );
 });
 
-test('the reported trendProvider reflects configuration, not historical counts', () => {
+test('the reported trendProvider reflects what is enabled, not historical counts', () => {
   // The inherited corpus still carries `provider: 'serpapi'` from upstream, so
   // deriving the active provider from the counts advertised a live integration
-  // while serpApiConfigured was false.
-  assert.doesNotMatch(
-    classifySource,
-    /Object\.keys\(trendProviderCounts\)/,
-    'a historical count must not decide which provider is active',
+  // while serpApiConfigured was false. Four separate scripts did this; the guard
+  // covers all of them, because each one is a chance for the bug to come back.
+  for (const [file, source] of writerSources) {
+    assert.doesNotMatch(
+      source,
+      /Object\.keys\(trendProviderCounts\)/,
+      `${file}: a historical count must not decide which provider is active`,
+    );
+    assert.doesNotMatch(
+      source,
+      /trendProvider:\s*activeProviders/,
+      `${file}: a historical count must not decide which provider is active`,
+    );
+    if (/trendProvider\s*:/.test(source)) {
+      assert.match(source, /activeTrendProviderLabel\(\)/, `${file}: must use the shared label helper`);
+    }
+  }
+});
+
+test('no script keeps its own trend counter filter', () => {
+  // Three scripts each carried a private copy of this filter, with three
+  // different predicates. Anything that counts this population must call the
+  // shared summary instead.
+  for (const [file, source] of writerSources) {
+    assert.doesNotMatch(
+      source,
+      /function providerCounts\s*\(/,
+      `${file}: must not define its own provider counter`,
+    );
+    assert.doesNotMatch(
+      source,
+      /candidates\.filter\(\(candidate\)\s*=>\s*candidate\.trend\?\.modelVersion/,
+      `${file}: must not count validated trends with a local filter`,
+    );
+  }
+});
+
+test('enabledTrendProviders reports only the sources that are switched on', () => {
+  assert.deepEqual(enabledTrendProviders({ TRENDS_VERIFY_LIMIT: '0' }), []);
+  assert.deepEqual(enabledTrendProviders({ SERPAPI_API_KEY: 'k', TRENDS_VERIFY_LIMIT: '0' }), ['serpapi']);
+  assert.deepEqual(enabledTrendProviders({ SEARCHAPI_API_KEY: 'k', TRENDS_VERIFY_LIMIT: '0' }), ['searchapi']);
+  assert.deepEqual(enabledTrendProviders({ APIFY_API_TOKEN: 'k', TRENDS_VERIFY_LIMIT: '0' }), ['apify-data-xplorer']);
+  assert.deepEqual(
+    enabledTrendProviders({ SERPAPI_API_KEY: 'k', SEARCHAPI_API_KEY: 'k', TRENDS_VERIFY_LIMIT: '0' }),
+    ['serpapi', 'searchapi'],
   );
-  assert.match(classifySource, /const configuredTrendProviders = \[/);
-  assert.match(classifySource, /process\.env\.SEARCHAPI_API_KEY \? 'searchapi' : null/);
+});
+
+test('the free Trends path is gated on the limit, and defaults the same way scan.mjs does', () => {
+  assert.equal(isFreeTrendPathEnabled({ TRENDS_VERIFY_LIMIT: '0' }), false);
+  assert.equal(isFreeTrendPathEnabled({ TRENDS_VERIFY_LIMIT: '3' }), true);
+  // scan.mjs reads an unset TRENDS_VERIFY_LIMIT as 3, so the free path is on.
+  // report-health.mjs used to read the same variable as 0 — that disagreement is
+  // what this test locks down.
+  assert.equal(isFreeTrendPathEnabled({}), true);
+  assert.equal(isFreeTrendPathEnabled({ TRENDS_VERIFY_LIMIT: 'not-a-number' }), false);
+});
+
+test('activeTrendProviderLabel is null when nothing is enabled', () => {
+  assert.equal(activeTrendProviderLabel({ TRENDS_VERIFY_LIMIT: '0' }), null);
+  assert.equal(activeTrendProviderLabel({ SERPAPI_API_KEY: 'k', TRENDS_VERIFY_LIMIT: '0' }), 'serpapi');
+  assert.equal(activeTrendProviderLabel({}), 'google-trends-api');
 });

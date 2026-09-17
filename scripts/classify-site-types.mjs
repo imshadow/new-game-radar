@@ -6,7 +6,7 @@ import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact } from '../lib/persistence.mjs';
 import { candidateId } from '../lib/scanner.mjs';
-import { trendValidationSummary } from '../lib/trend-queue.mjs';
+import { activeTrendProviderLabel, trendValidationSummary } from '../lib/trend-queue.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -125,19 +125,14 @@ const apifyTrendsUsage = await readJson(apifyUsagePath, { month: new Date().toIS
 
 const activeSeoProvider = process.env.SERPER_API_KEY ? 'serper-google-search' : 'duckduckgo-html';
 /**
- * `trendProvider` names the provider that is *configured*, so it must come from
- * the environment rather than from `trendProviderCounts`. The inherited corpus
+ * `trendProvider` names the provider that is *enabled*, so it comes from the
+ * shared helper rather than from `trendProviderCounts`. The inherited corpus
  * still carries `provider: 'serpapi'` from upstream, so deriving this from the
  * counts advertised a live SerpApi integration while `serpApiConfigured` was
  * false — the report contradicted itself. `trendProviderCounts` still answers
  * "who produced the trends we have", which is a different question.
  */
-const configuredTrendProviders = [
-  process.env.SERPAPI_API_KEY ? 'serpapi' : null,
-  process.env.SEARCHAPI_API_KEY ? 'searchapi' : null,
-  process.env.APIFY_API_TOKEN ? 'apify-data-xplorer' : null,
-].filter(Boolean);
-const activeTrendProvider = configuredTrendProviders.length ? configuredTrendProviders.join('+') : null;
+const activeTrendProvider = activeTrendProviderLabel();
 
 await fs.writeFile(reportPath, JSON.stringify({
   ...report,
