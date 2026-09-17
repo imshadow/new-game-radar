@@ -1,16 +1,16 @@
 {
-  "scannedAt": "2026-09-17T15:18:25.460Z",
+  "scannedAt": "2026-09-17T15:54:00.426Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 49,
+  "totalAdded": 73,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 8
+      "added": 14
     },
     {
       "ok": true,
@@ -24,7 +24,7 @@
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 7
+      "added": 23
     },
     {
       "ok": true,
@@ -45,14 +45,14 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 0
+      "added": 2
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 0
+      "added": 2
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 0
+      "added": 1
     },
     {
       "ok": true,
@@ -87,14 +87,13 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 10
+      "added": 8
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "gamepix-new",
       "sourceName": "GamePix 新游戏",
-      "total": 60,
-      "added": 2
+      "error": "远程站点返回 403"
     },
     {
       "ok": true,
@@ -107,8 +106,8 @@
       "ok": true,
       "sourceId": "armorgames-new",
       "sourceName": "Armor Games 首页推荐",
-      "total": 47,
-      "added": 21
+      "total": 41,
+      "added": 17
     },
     {
       "ok": true,
@@ -129,7 +128,7 @@
       "sourceId": "steam-feed-topsellers",
       "sourceName": "Steam 周销量榜 RSS",
       "total": 10,
-      "added": 0
+      "added": 3
     },
     {
       "ok": true,
@@ -150,14 +149,14 @@
       "sourceId": "github-html5-games",
       "sourceName": "GitHub 新建 HTML5 游戏仓库",
       "total": 48,
-      "added": 0
+      "added": 1
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-indie",
       "sourceName": "Steam 即将推出的独立游戏",
       "total": 50,
-      "added": 0
+      "added": 1
     },
     {
       "ok": true,
@@ -182,11 +181,22 @@
     }
   ],
   "seoVerified": 1,
-  "seoErrors": 30,
+  "seoErrors": 15,
+  "seoBlocked": 5,
+  "seoFreePath": {
+    "queueSize": 20,
+    "attempted": 6,
+    "verified": 1,
+    "failed": 0,
+    "blocked": 5,
+    "abortedAfter": 5,
+    "skipped": false,
+    "blockedUntil": "2026-09-17T21:54:12.641Z"
+  },
   "fastModelVersion": 3,
-  "fastPassedCount": 216,
-  "fastWatchCount": 255,
-  "fastRejectedCount": 123,
+  "fastPassedCount": 87,
+  "fastWatchCount": 72,
+  "fastRejectedCount": 110,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
@@ -198,25 +208,25 @@
   "risingDiscoveryRan": false,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 442,
-  "trendEligibleCount": 182,
-  "trendPendingCount": 149,
-  "trendValidatedCount": 141,
-  "risingCount": 7,
+  "seoPassedCount": 207,
+  "trendEligibleCount": 81,
+  "trendPendingCount": 54,
+  "trendValidatedCount": 58,
+  "risingCount": 9,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
-    "page": 8,
-    "watch": 419,
-    "reject": 58,
-    "pending": 2491,
-    "error": 24
+    "page": 4,
+    "watch": 135,
+    "reject": 51,
+    "pending": 1371,
+    "error": 15
   },
   "trendProvider": "google-trends-api",
   "trendProviderCounts": {
-    "google-trends-api": 32,
-    "serpapi": 109
+    "google-trends-api": 26,
+    "serpapi": 32
   },
   "serpApiConfigured": false,
   "serpApiUsage": {
@@ -231,7 +241,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-17T15:18:24.541Z",
+    "checkedAt": "2026-09-17T15:53:59.031Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -249,15 +259,15 @@
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "duckduckgo+autocomplete": 68,
-    "evidence-fallback": 184,
-    "serper+autocomplete": 348
+    "duckduckgo+autocomplete": 30,
+    "evidence-fallback": 100,
+    "serper+autocomplete": 146
   },
   "seoClassificationCounts": {
-    "page": 175,
-    "independent": 36,
-    "watch": 93,
-    "reject": 44
+    "page": 76,
+    "independent": 15,
+    "watch": 19,
+    "reject": 36
   },
   "serperConfigured": true,
   "serperUsage": {
@@ -286,16 +296,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2185,
-    "wiki": 327,
-    "pending": 488
+    "online": 831,
+    "wiki": 412,
+    "pending": 333
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
-    "prepare": 3,
-    "watch": 5,
-    "weak": 319
+    "prepare": 17,
+    "watch": 32,
+    "weak": 363
   },
   "serperVerification": {
     "rushMode": true,
@@ -328,7 +338,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-17T15:20:55.823Z"
+    "ranAt": "2026-09-17T15:56:06.309Z"
   },
   "serperConfiguredSlots": 1,
   "serperPoolUsage": {
@@ -350,36 +360,37 @@
         "lastError": null
       }
     },
-    "updatedAt": "2026-09-17T15:20:55.823Z"
+    "updatedAt": "2026-09-17T15:56:06.308Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 2406,
-    "eligibleCount": 6,
-    "queueSize": 6,
-    "verified": 6,
+    "pendingCount": 1307,
+    "eligibleCount": 7,
+    "queueSize": 7,
+    "verified": 7,
     "channelVerified": {
       "online": 2,
-      "wiki": 4,
+      "wiki": 5,
       "pending": 0
     },
     "fastRecalculated": {
-      "pass": 6,
-      "watch": 0,
-      "weak": 0,
+      "pass": 5,
+      "watch": 1,
+      "weak": 1,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
       "wardogs",
       "geometry dash",
-      "dear passengers",
       "Endacopia",
       "halloween the",
-      "dimraeth"
+      "dimraeth",
+      "Emberward",
+      "The Bird of the North"
     ],
-    "ranAt": "2026-09-17T15:20:56.160Z"
+    "ranAt": "2026-09-17T15:56:06.640Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -401,10 +412,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-17T15:20:56.664Z"
+    "ranAt": "2026-09-17T15:56:07.236Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-17T15:20:56.707Z",
+    "checkedAt": "2026-09-17T15:56:07.291Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 0,
     "workingKeys": 0,
@@ -461,25 +472,25 @@
     "monthlyLimit": 0,
     "dailyLimit": 0,
     "accounts": {},
-    "updatedAt": "2026-09-17T15:20:56.789Z"
+    "updatedAt": "2026-09-17T15:56:07.401Z"
   },
   "serpApiQuotaFill": {
     "configuredSlots": 0
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 246,
+      "validated": 74,
       "rising": 1,
       "recommended": 0
     },
     "wiki": {
-      "validated": 38,
-      "rising": 3,
+      "validated": 18,
+      "rising": 6,
       "recommended": 0
     },
     "pending": {
-      "validated": 23,
-      "rising": 3,
+      "validated": 12,
+      "rising": 2,
       "recommended": 0
     }
   },
@@ -514,16 +525,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 48,
-      "wiki": 74
+      "online": 31,
+      "wiki": 70
     },
     "pendingByTier": {
-      "strong": 34,
-      "secondary": 36,
-      "strategic": 52
+      "strong": 21,
+      "secondary": 29,
+      "strategic": 51
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-17T15:20:57.063Z"
+    "ranAt": "2026-09-17T15:56:07.673Z"
   }
 }
