@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-09-17T00:30:49.589Z",
+  "generatedAt": "2026-09-17T01:59:07.643Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2411,
+  "pendingSeo": 2422,
   "channelCounts": {
-    "pending": 339,
-    "online": 1906,
-    "wiki": 166
+    "wiki": 225,
+    "pending": 356,
+    "online": 1841
   },
   "fastClassCounts": {
-    "pending:pending": 339,
-    "online:pending": 1906,
-    "wiki:pending": 166
+    "wiki:pending": 225,
+    "pending:pending": 356,
+    "online:pending": 1841
   },
   "strategicCounts": {
-    "pending:0": 330,
-    "online:2": 81,
-    "online:1": 1688,
+    "wiki:1": 73,
+    "pending:0": 347,
+    "online:2": 85,
+    "online:1": 1616,
     "pending:1": 9,
-    "wiki:0": 126,
-    "online:0": 137,
-    "wiki:1": 40
+    "wiki:0": 152,
+    "online:0": 140
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1574
+      "count": 1606
     },
     {
       "id": "itch-new-feed",
-      "count": 1554
+      "count": 1586
     },
     {
       "id": "itch-newest-web",
-      "count": 1487
+      "count": 1503
     },
     {
       "id": "trends-rising-7d",
@@ -40,26 +40,22 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 141
+      "count": 142
     },
     {
       "id": "itch-new-popular-web",
-      "count": 106
+      "count": 111
     },
     {
       "id": "itch-popular",
-      "count": 106
-    },
-    {
-      "id": "poki-new",
-      "count": 104
-    },
-    {
-      "id": "trends-rising-7d-horror-game",
-      "count": 98
+      "count": 111
     },
     {
       "id": "steam-upcoming",
+      "count": 100
+    },
+    {
+      "id": "trends-rising-7d-horror-game",
       "count": 98
     },
     {
@@ -75,67 +71,79 @@
       "count": 59
     },
     {
-      "id": "steam-upcoming-indie",
-      "count": 56
-    },
-    {
       "id": "github-html5-games",
-      "count": 56
+      "count": 59
     },
     {
       "id": "github-game",
-      "count": 56
+      "count": 59
     },
     {
-      "id": "gamepix-new",
-      "count": 54
+      "id": "steam-upcoming-indie",
+      "count": 57
     },
     {
-      "id": "y8-new",
-      "count": 48
+      "id": "lagged-new",
+      "count": 49
     },
     {
       "id": "trends-rising-7d-itch-io",
       "count": 44
     },
     {
+      "id": "steam-upcoming-wishlist",
+      "count": 43
+    },
+    {
       "id": "trends-rising-30d-indie-game",
       "count": 43
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 42
+      "id": "steam-popular-new",
+      "count": 40
+    },
+    {
+      "id": "poki-new",
+      "count": 40
     },
     {
       "id": "trends-rising-30d-itch-io",
+      "count": 39
+    },
+    {
+      "id": "crazygames-new",
+      "count": 39
+    },
+    {
+      "id": "press-new",
       "count": 38
     },
     {
-      "id": "steam-popular-new",
+      "id": "steam-latest-indie",
       "count": 36
+    },
+    {
+      "id": "steam-new",
+      "count": 36
+    },
+    {
+      "id": "y8-new",
+      "count": 34
     },
     {
       "id": "hn-showhn",
       "count": 29
     },
     {
-      "id": "press-new",
-      "count": 28
-    },
-    {
-      "id": "crazygames-new",
-      "count": 27
-    },
-    {
       "id": "alphabetagamer",
-      "count": 26
+      "count": 29
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 21
+      "count": 22
     },
     {
-      "id": "lagged-new",
+      "id": "steam-top-wishlist",
       "count": 15
     },
     {
@@ -147,12 +155,16 @@
       "count": 9
     },
     {
-      "id": "steam-latest-indie",
-      "count": 7
+      "id": "indiegamesplus",
+      "count": 9
     },
     {
-      "id": "steam-new",
-      "count": 7
+      "id": "newgrounds-daily-top",
+      "count": 5
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 5
     },
     {
       "id": "newgrounds-latest",
@@ -163,23 +175,68 @@
       "count": 5
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 4
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 4
-    },
-    {
-      "id": "indiegamesplus",
-      "count": 2
-    },
-    {
       "id": "steam-feed-topsellers",
       "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "Keep The Wheels Turning",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pyrebound",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Plug & Prosper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "SHAPE - Web Version",
       "channel": "online",
@@ -1056,63 +1113,6 @@
     },
     {
       "name": "Six is Devil",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Idle Wizard",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Dystopia: The Jester's Obsession",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Green Friends",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,

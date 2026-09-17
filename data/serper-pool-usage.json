@@ -1,11 +1,21 @@
 {
-  "enabled": false,
-  "configuredSlots": 0,
+  "enabled": true,
+  "configuredSlots": 1,
   "day": "2026-09-17",
-  "totalUsed": 0,
-  "dayUsed": 0,
-  "totalLimit": 0,
-  "dailyLimit": 0,
-  "accounts": {},
-  "updatedAt": "2026-09-17T01:54:53.062Z"
+  "totalUsed": 160,
+  "dayUsed": 80,
+  "totalLimit": 2450,
+  "dailyLimit": 80,
+  "accounts": {
+    "1": {
+      "envName": "SERPER_API_KEY",
+      "totalUsed": 160,
+      "dayUsed": 80,
+      "totalLimit": 2450,
+      "dailyLimit": 80,
+      "updatedAt": "2026-09-17T00:30:49.273Z",
+      "lastError": null
+    }
+  },
+  "updatedAt": "2026-09-17T01:59:07.434Z"
 }
