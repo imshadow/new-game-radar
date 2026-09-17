@@ -187,3 +187,78 @@ test('an empty or absent report degrades to findings instead of throwing', () =>
   assert.ok(findings.length > 0);
   assert.ok(titles(findings).some((title) => /Serper 未配置/.test(title)));
 });
+
+// ------------------------------------------------- the Serper budget question
+
+/**
+ * "Why is 80 requests a day not enough?" — because a SERP verdict expires, so
+ * the quota is not a per-new-game budget, it is a keep-everything-fresh budget.
+ * These tests pin the arithmetic that turns a silent structural dead end into a
+ * finding on the run page.
+ */
+test('re-verification eating the whole daily quota is an error, not a green run', () => {
+  const findings = evaluateHealth(report({
+    serperUsage: { totalUsed: 10, totalLimit: 2450, dayUsed: 10, dailyLimit: 80 },
+    // page 600/14 + watch 400/7 + reject 300/30 + independent 100/14 = 117/day
+    seoClassificationCounts: { page: 600, watch: 400, reject: 300, independent: 100 },
+  }));
+  const budget = findings.find((item) => /重验账单已吃掉全部 Serper 额度/.test(item.title));
+  assert.ok(budget, 'expected a budget finding, got: ' + titles(findings).join(' | '));
+  assert.equal(budget.level, 'error');
+  assert.match(budget.detail, /117/);
+  assert.match(budget.detail, /80/);
+  assert.match(budget.detail, /SERPER_API_KEY_2/);
+});
+
+/**
+ * The measured pool on 2026-09-17 — 348 serper-verified words — cost 116
+ * requests a day under the old global 3-day window, i.e. more than the entire
+ * quota, for re-verification alone. Under the tiered windows the same pool costs
+ * under 30, which is why the fix was a change of policy rather than more keys.
+ */
+test('the same pool that used to blow the budget now fits inside it', () => {
+  const measured = { page: 175, watch: 93, reject: 44, independent: 36 };
+  const findings = evaluateHealth(report({ seoClassificationCounts: measured }));
+  const budget = findings.find((item) => /重验账单/.test(item.title));
+  assert.equal(budget.level, 'notice');
+  assert.match(budget.detail, /30/);
+  assert.match(budget.detail, /348/);
+});
+
+test('a re-verification bill that only squeezes the budget is a warning', () => {
+  const findings = evaluateHealth(report({
+    serperUsage: { totalUsed: 10, totalLimit: 2450, dayUsed: 10, dailyLimit: 80 },
+    // page 400/14 + watch 250/7 = 64/day, i.e. 80% of the quota.
+    seoClassificationCounts: { page: 400, watch: 250 },
+  }));
+  const budget = findings.find((item) => /重验账单占掉 Serper 额度的/.test(item.title));
+  assert.ok(budget, 'expected a warning, got: ' + titles(findings).join(' | '));
+  assert.equal(budget.level, 'warning');
+  assert.match(budget.detail, /留给新词/);
+});
+
+test('a healthy re-verification bill is only a notice', () => {
+  const findings = evaluateHealth(report({ seoClassificationCounts: { page: 28, watch: 14 } }));
+  const budget = findings.find((item) => /重验账单/.test(item.title));
+  assert.ok(budget);
+  assert.equal(budget.level, 'notice');
+  assert.equal(summarizeHealth(findings).errors, 0);
+  assert.equal(summarizeHealth(findings).warnings, 0);
+});
+
+test('the budget check scales with the account pool instead of the single key', () => {
+  // 117 requests a day is unaffordable on one key and comfortable on four.
+  const counts = { page: 600, watch: 400, reject: 300, independent: 100 };
+  const single = evaluateHealth(report({ seoClassificationCounts: counts }));
+  const pooled = evaluateHealth(report({
+    seoClassificationCounts: counts,
+    serperUsage: { totalUsed: 10, totalLimit: 9800, dayUsed: 10, dailyLimit: 320 },
+  }));
+  assert.equal(single.find((item) => /重验账单/.test(item.title)).level, 'error');
+  assert.equal(pooled.find((item) => /重验账单/.test(item.title)).level, 'notice');
+});
+
+test('a report with no classification breakdown does not invent a budget finding', () => {
+  const findings = evaluateHealth(report());
+  assert.equal(findings.find((item) => /重验账单/.test(item.title)), undefined);
+});

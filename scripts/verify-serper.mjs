@@ -5,6 +5,7 @@ import { calculateSeoVerdict, cleanGameName, estimateNameRisk } from '../lib/seo
 import { calculateFastSignals } from '../lib/fast-signals.mjs';
 import { classifySiteType } from '../lib/site-type.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
+import { isProvisionalSeo, needsSeo as needsSeoFreshness, reverifyDays } from '../lib/seo-freshness.mjs';
 import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -90,12 +91,7 @@ function sourceCount(candidate) { return new Set((candidate.sources || []).map((
 function typeOf(candidate) { candidate.siteType = classifySiteType(candidate); return candidate.siteType.type; }
 
 function needsSeo(candidate) {
-  if (candidate.seo?.modelVersion !== SEO_MODEL_VERSION) return true;
-  if (candidate.seo?.provider === 'serper+autocomplete') {
-    const checked = Date.parse(candidate.seo.checkedAt || '');
-    return !Number.isFinite(checked) || Date.now() - checked > 3 * DAY;
-  }
-  return ['pending', 'error', 'watch'].includes(candidate.seo?.classification) || ['duckduckgo+autocomplete', 'brave+autocomplete'].includes(candidate.seo?.provider) || candidate.seo?.provider?.startsWith('google-cse-');
+  return needsSeoFreshness(candidate);
 }
 
 function isUseful(candidate) {
@@ -134,6 +130,11 @@ function priority(candidate) {
   }
   const age = Date.now() - Date.parse(candidate.firstSeen || 0);
   if (Number.isFinite(age) && age < 2 * DAY) score += 25;
+  // 临时验证（evidence-fallback）已经被下游当成 page 展示了，却没有真 SERP 结论。
+  // 让它们插到「全新未验词」前面：先把已经对外展示的东西改对，再谈新发现。
+  // 顺带一提，没有这个加成它们大多连 MIN_PRIORITY 都过不去（实测裸分 60-75），
+  // 也就是说以前这批词不但不会被重验，连排队资格都没有。
+  if (isProvisionalSeo(candidate.seo)) score += 30;
   return score;
 }
 
@@ -149,15 +150,19 @@ function queueLane(candidate) {
   return 'explore';
 }
 
-function balancedQueue(candidates) {
+function balancedQueue(candidates, limit = VERIFY_LIMIT) {
+  const budget = Math.max(0, Number(limit) || 0);
   const eligible = candidates
     .filter((candidate) => needsSeo(candidate) && isUseful(candidate))
     .filter((candidate) => priority(candidate) >= MIN_PRIORITY)
     .sort((a, b) => priority(b) - priority(a) || Date.parse(b.firstSeen || 0) - Date.parse(a.firstSeen || 0));
+  // 车道比例必须按「这轮真正能花的钱」算。以前固定用 VERIFY_LIMIT(90)，
+  // 而实际预算受 SERPER_DAILY_LIMIT(80) 限制 —— 于是每轮都会多选出 10 个候选，
+  // 走到第 81 个时撞上 QUOTA_GUARD 中断，白排 10 次队。
   const laneCaps = {
-    hot: Math.ceil(VERIFY_LIMIT * 0.60),
-    recheck: Math.ceil(VERIFY_LIMIT * 0.20),
-    explore: Math.max(0, VERIFY_LIMIT - Math.ceil(VERIFY_LIMIT * 0.60) - Math.ceil(VERIFY_LIMIT * 0.20)),
+    hot: Math.ceil(budget * 0.60),
+    recheck: Math.ceil(budget * 0.20),
+    explore: Math.max(0, budget - Math.ceil(budget * 0.60) - Math.ceil(budget * 0.20)),
   };
   const channelCaps = { online: ONLINE_LIMIT, wiki: WIKI_LIMIT };
   const channelUsed = { online: 0, wiki: 0 };
@@ -178,10 +183,10 @@ function balancedQueue(candidates) {
     }
   }
   for (const candidate of eligible) {
-    if (selected.length >= VERIFY_LIMIT) break;
+    if (selected.length >= budget) break;
     add(candidate);
   }
-  return selected.slice(0, VERIFY_LIMIT);
+  return selected.slice(0, budget);
 }
 
 function applyChannelSeoAdjustment(candidate, verdict) {
@@ -211,7 +216,10 @@ const payload = await readJson(candidatesPath, { candidates: [] });
 const candidates = Array.isArray(payload) ? payload : payload.candidates || [];
 for (const candidate of candidates) candidate.siteType = classifySiteType(candidate);
 const report = await readJson(reportPath, {});
-const queue = balancedQueue(candidates);
+const startUsage = await readUsage();
+const dailyRemaining = Math.max(0, DAILY_LIMIT - startUsage.dayUsed);
+const runLimit = Math.min(VERIFY_LIMIT, dailyRemaining);
+const queue = balancedQueue(candidates, runLimit);
 let verified = 0, errors = 0, quotaStopped = false;
 const verifiedNames = [], verifiedByChannel = { online: 0, wiki: 0, pending: 0 };
 if (!API_KEY) console.log('SERPER_API_KEY is not configured; skipping Serper SEO verification.');
@@ -240,5 +248,5 @@ const fastPassedCount = candidates.filter((candidate) => candidate.fast?.classif
 const fastWatchCount = candidates.filter((candidate) => candidate.fast?.classification === 'watch').length;
 const fastRejectedCount = candidates.filter((candidate) => ['weak', 'reject'].includes(candidate.fast?.classification)).length;
 await fs.writeFile(candidatesPath, JSON.stringify({ ...payload, candidates }, null, 2) + '\n');
-await fs.writeFile(reportPath, JSON.stringify({ ...report, seoProvider: API_KEY ? 'serper-google-search' : report.seoProvider, serperConfigured: Boolean(API_KEY), serperUsage: await usageSummary(), serperVerification: { rushMode: true, minPriority: MIN_PRIORITY, budgetLanes: { hot: '60%', recheck: '20%', explore: '20%' }, limit: VERIFY_LIMIT, onlineLimit: ONLINE_LIMIT, wikiLimit: WIKI_LIMIT, queueSize: queue.length, verified, verifiedByChannel, errors, quotaStopped, verifiedNames, ranAt: new Date().toISOString() }, seoVerified: Number(report.seoVerified || 0) + verified, seoErrors, seoPassedCount, fastPassedCount, fastWatchCount, fastRejectedCount }, null, 2) + '\n');
+await fs.writeFile(reportPath, JSON.stringify({ ...report, seoProvider: API_KEY ? 'serper-google-search' : report.seoProvider, serperConfigured: Boolean(API_KEY), serperUsage: await usageSummary(), serperVerification: { rushMode: true, minPriority: MIN_PRIORITY, budgetLanes: { hot: '60%', recheck: '20%', explore: '20%' }, limit: VERIFY_LIMIT, runLimit, dailyRemaining, reverifyDays: reverifyDays(), onlineLimit: ONLINE_LIMIT, wikiLimit: WIKI_LIMIT, queueSize: queue.length, verified, verifiedByChannel, errors, quotaStopped, verifiedNames, ranAt: new Date().toISOString() }, seoVerified: Number(report.seoVerified || 0) + verified, seoErrors, seoPassedCount, fastPassedCount, fastWatchCount, fastRejectedCount }, null, 2) + '\n');
 console.log(`Serper rush SEO complete: ${verified} verified (${verifiedByChannel.online} online, ${verifiedByChannel.wiki} wiki), ${errors} errors, quota stopped ${quotaStopped}.`);

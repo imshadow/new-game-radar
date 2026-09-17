@@ -7,6 +7,7 @@ import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact } from '../lib/persistence.mjs';
 import { candidateId } from '../lib/scanner.mjs';
 import { activeTrendProviderLabel, trendValidationSummary } from '../lib/trend-queue.mjs';
+import { SERPER_SLOT_DEFINITIONS, aggregateSerperUsage } from '../lib/serper-pool.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -45,6 +46,7 @@ const nowMs = Number.isFinite(scanNowMs) ? scanNowMs : Date.now();
 const counts = { online: 0, wiki: 0, pending: 0 };
 const wikiPrelaunchCounts = { priority: 0, prepare: 0, watch: 0, weak: 0 };
 const seoProviderCounts = {};
+const seoClassificationCounts = {};
 const recommendationCounts = { independent: 0, 'test-now': 0, page: 0, watch: 0, reject: 0, pending: 0, error: 0 };
 
 for (const candidate of candidates) {
@@ -67,6 +69,13 @@ for (const candidate of candidates) {
   recommendationCounts[candidate.recommendation || 'pending'] = (recommendationCounts[candidate.recommendation || 'pending'] || 0) + 1;
   const seoProvider = candidate.seo?.provider;
   if (seoProvider) seoProviderCounts[seoProvider] = (seoProviderCounts[seoProvider] || 0) + 1;
+  // Only real SERP verdicts count. A provisional fallback verdict carries the
+  // classification 'page' but was never checked, so counting it here would
+  // understate the re-verification bill the health check is about to compute.
+  if (seoProvider === 'serper+autocomplete') {
+    const classification = candidate.seo?.classification || '(none)';
+    seoClassificationCounts[classification] = (seoClassificationCounts[classification] || 0) + 1;
+  }
 }
 
 // All three trend numbers describe the same population, so derive them
@@ -111,15 +120,30 @@ const serpApiUsage = {
   monthlyLimit: Math.max(1, Number(process.env.SERPAPI_MONTHLY_LIMIT || 220)),
   dailyLimit: Math.max(1, Number(process.env.SERPAPI_DAILY_LIMIT || 8)),
 };
-const serperUsage = await readJson(serperUsagePath, {
-  totalUsed: 0,
-  day: new Date().toISOString().slice(0, 10),
-  dayUsed: 0,
-  totalLimit: Number(process.env.SERPER_TOTAL_LIMIT || 2400),
-  dailyLimit: Number(process.env.SERPER_DAILY_LIMIT || 100),
-  updatedAt: null,
-  lastError: null,
-});
+// Read the Serper usage as the *pool*, not as the primary account.
+//
+// scripts/verify-serper-pool.mjs writes `serperUsage` as an aggregate over every
+// configured account, with the limits scaled by the account count. This script
+// runs later in the cycle, so whatever it writes wins — and it used to read only
+// `data/serper-usage.json`, the first slot's file. With one key configured the
+// two agree, which is exactly why the bug was invisible: the day a second
+// SERPER_API_KEY_2 is added, the dashboard and the health check would report
+// 1/N of the real budget.
+const serperTotalLimit = Math.max(1, Number(process.env.SERPER_TOTAL_LIMIT || 2400));
+const serperDailyLimit = Math.max(1, Number(process.env.SERPER_DAILY_LIMIT || 100));
+const serperSlots = SERPER_SLOT_DEFINITIONS
+  .map(([id, envName]) => ({
+    id,
+    envName,
+    usagePath: id === '1' ? serperUsagePath : path.join(root, 'data', `serper-usage-${id}.json`),
+  }))
+  .filter((slot) => String(process.env[slot.envName] || '').trim());
+const serperUsage = serperSlots.length
+  ? aggregateSerperUsage(
+    await Promise.all(serperSlots.map(async (slot) => ({ ...slot, usage: await readJson(slot.usagePath, {}) }))),
+    { totalLimit: serperTotalLimit, dailyLimit: serperDailyLimit },
+  )
+  : { enabled: false, configuredSlots: 0, totalUsed: 0, dayUsed: 0, totalLimit: 0, dailyLimit: 0, accounts: {} };
 const apifyAccountStatus = await readJson(apifyStatusPath, { configured: Boolean(process.env.APIFY_API_TOKEN), ok: false });
 const apifyTrendsUsage = await readJson(apifyUsagePath, { month: new Date().toISOString().slice(0, 7), actorCalls: 0, resultItems: 0, candidatesVerified: 0, errors: 0 });
 
@@ -147,6 +171,7 @@ await fs.writeFile(reportPath, JSON.stringify({
   apifyTrendsUsage,
   seoProvider: activeSeoProvider,
   seoProviderCounts,
+  seoClassificationCounts,
   serperConfigured: Boolean(process.env.SERPER_API_KEY),
   serperUsage: { enabled: Boolean(process.env.SERPER_API_KEY), ...serperUsage },
   braveSearchConfigured: false,

@@ -83,6 +83,15 @@ jobs:
       # 2450 只够跑 4 天，之后就是上游那 7 周的「job 全绿、verified 恒为 0」。
       # 免费额度 2500 是一次性的，2450 / 30 天 ≈ 80 → 能铺满一个月。
       SERPER_DAILY_LIMIT: 80
+      # SEO 结论的保鲜期（lib/seo-freshness.mjs）。SERP 结论会过期，所以日额度
+      # 不是「今天有多少新游戏」的预算，而是「让每个已验词保持新鲜」的预算。
+      # 天花板 = 日额度 × 保鲜天数，旧的全局限定 3 天时只有 240 个词 —— 低于
+      # 积压量，意味着永远追不上，而且验得越成功欠的重验债越多。
+      # 分档后同样 348 个已验词的重验成本从 116 次/天降到 30 次/天。
+      SERPER_REVERIFY_DAYS_PAGE: 14
+      SERPER_REVERIFY_DAYS_WATCH: 7
+      SERPER_REVERIFY_DAYS_REJECT: 30
+      SERPER_REVERIFY_DAYS_DEFAULT: 3
 
       # When Serper is unavailable, strong multi-platform evidence can route a
       # candidate to Trends provisionally. It can never create an independent
