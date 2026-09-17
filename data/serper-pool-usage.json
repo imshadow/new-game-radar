@@ -1,11 +1,11 @@
 {
   "enabled": true,
-  "configuredSlots": 1,
+  "configuredSlots": 3,
   "day": "2026-09-17",
-  "totalUsed": 160,
-  "dayUsed": 80,
-  "totalLimit": 2450,
-  "dailyLimit": 80,
+  "totalUsed": 320,
+  "dayUsed": 240,
+  "totalLimit": 7350,
+  "dailyLimit": 240,
   "accounts": {
     "1": {
       "envName": "SERPER_API_KEY",
@@ -15,7 +15,25 @@
       "dailyLimit": 80,
       "updatedAt": "2026-09-17T00:30:49.273Z",
       "lastError": null
+    },
+    "2": {
+      "envName": "SERPER_API_KEY_2",
+      "totalUsed": 80,
+      "dayUsed": 80,
+      "totalLimit": 2450,
+      "dailyLimit": 80,
+      "updatedAt": "2026-09-17T17:17:42.759Z",
+      "lastError": null
+    },
+    "3": {
+      "envName": "SERPER_API_KEY_3",
+      "totalUsed": 80,
+      "dayUsed": 80,
+      "totalLimit": 2450,
+      "dailyLimit": 80,
+      "updatedAt": "2026-09-17T17:19:02.450Z",
+      "lastError": null
     }
   },
-  "updatedAt": "2026-09-17T15:56:06.308Z"
+  "updatedAt": "2026-09-17T17:19:02.521Z"
 }
