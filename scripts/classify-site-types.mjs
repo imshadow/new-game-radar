@@ -6,6 +6,7 @@ import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact } from '../lib/persistence.mjs';
 import { candidateId } from '../lib/scanner.mjs';
+import { trendValidationSummary } from '../lib/trend-queue.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -43,7 +44,6 @@ const nowMs = Number.isFinite(scanNowMs) ? scanNowMs : Date.now();
 
 const counts = { online: 0, wiki: 0, pending: 0 };
 const wikiPrelaunchCounts = { priority: 0, prepare: 0, watch: 0, weak: 0 };
-const trendProviderCounts = {};
 const seoProviderCounts = {};
 const recommendationCounts = { independent: 0, 'test-now': 0, page: 0, watch: 0, reject: 0, pending: 0, error: 0 };
 
@@ -64,12 +64,19 @@ for (const candidate of candidates) {
     const routingBoost = Math.min(20, Math.max(0, Math.round(Number(candidate.wikiPrelaunch.score || 0) / 5)));
     candidate.discoveryScore = Math.max(Number(candidate.discoveryScore || 0), routingBoost);
   }
-  const trendProvider = candidate.trend?.provider;
-  if (trendProvider) trendProviderCounts[trendProvider] = (trendProviderCounts[trendProvider] || 0) + 1;
   recommendationCounts[candidate.recommendation || 'pending'] = (recommendationCounts[candidate.recommendation || 'pending'] || 0) + 1;
   const seoProvider = candidate.seo?.provider;
   if (seoProvider) seoProviderCounts[seoProvider] = (seoProviderCounts[seoProvider] || 0) + 1;
 }
+
+// All three trend numbers describe the same population, so derive them
+// together. Counting `trendProviderCounts` here with a looser predicate than the
+// one `trendValidatedCount` uses is what produced `serpapi: 286` next to
+// `trendValidatedCount: 120` in the same report — an impossible pair, since the
+// provider breakdown has to be a subset of the validated count. This script runs
+// last, so its value is the one that survives; it has to be the correct one.
+const trendSummary = trendValidationSummary(candidates);
+const trendProviderCounts = trendSummary.providerCounts;
 
 for (const candidate of candidates) stripDerivedBlocks(candidate);
 await writeJsonCompact(candidatesPath, { ...payload, candidates });
@@ -117,15 +124,27 @@ const apifyAccountStatus = await readJson(apifyStatusPath, { configured: Boolean
 const apifyTrendsUsage = await readJson(apifyUsagePath, { month: new Date().toISOString().slice(0, 7), actorCalls: 0, resultItems: 0, candidatesVerified: 0, errors: 0 });
 
 const activeSeoProvider = process.env.SERPER_API_KEY ? 'serper-google-search' : 'duckduckgo-html';
-const activeTrendProviders = Object.keys(trendProviderCounts);
-const activeTrendProvider = activeTrendProviders.length > 1
-  ? activeTrendProviders.join('+')
-  : activeTrendProviders[0] || (process.env.SERPAPI_API_KEY ? 'serpapi' : process.env.APIFY_API_TOKEN ? 'apify-data-xplorer' : null);
+/**
+ * `trendProvider` names the provider that is *configured*, so it must come from
+ * the environment rather than from `trendProviderCounts`. The inherited corpus
+ * still carries `provider: 'serpapi'` from upstream, so deriving this from the
+ * counts advertised a live SerpApi integration while `serpApiConfigured` was
+ * false — the report contradicted itself. `trendProviderCounts` still answers
+ * "who produced the trends we have", which is a different question.
+ */
+const configuredTrendProviders = [
+  process.env.SERPAPI_API_KEY ? 'serpapi' : null,
+  process.env.SEARCHAPI_API_KEY ? 'searchapi' : null,
+  process.env.APIFY_API_TOKEN ? 'apify-data-xplorer' : null,
+].filter(Boolean);
+const activeTrendProvider = configuredTrendProviders.length ? configuredTrendProviders.join('+') : null;
 
 await fs.writeFile(reportPath, JSON.stringify({
   ...report,
   trendProvider: activeTrendProvider,
   trendProviderCounts,
+  trendEligibleCount: trendSummary.eligibleCount,
+  trendValidatedCount: trendSummary.validatedCount,
   serpApiConfigured: Boolean(process.env.SERPAPI_API_KEY),
   serpApiUsage: { enabled: Boolean(process.env.SERPAPI_API_KEY), ...serpApiUsage },
   apifyConfigured: Boolean(process.env.APIFY_API_TOKEN),

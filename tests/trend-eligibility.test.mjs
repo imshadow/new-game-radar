@@ -1,8 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION, TREND_MODEL_VERSION } from '../lib/model-versions.mjs';
 import { hasCurrentSeo, isFastPassed, isTrendEligible, trendValidationSummary } from '../lib/trend-queue.mjs';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const classifySource = await fs.readFile(path.join(root, 'scripts', 'classify-site-types.mjs'), 'utf8');
 
 function candidate(overrides = {}) {
   return {
@@ -97,4 +103,43 @@ test('provider counts never exceed the validated count', () => {
 test('trendValidationSummary tolerates an empty or missing candidate list', () => {
   assert.deepEqual(trendValidationSummary(), { eligibleCount: 0, validatedCount: 0, providerCounts: {} });
   assert.deepEqual(trendValidationSummary([]), { eligibleCount: 0, validatedCount: 0, providerCounts: {} });
+});
+
+/**
+ * `classify-site-types.mjs` runs *after* the trend fillers, so whatever it
+ * writes is what the report ends up with. It used to keep its own provider
+ * counter — no eligibility filter, no modelVersion check — which is how
+ * `serpapi: 286` ended up beside `trendValidatedCount: 120`. Consolidating only
+ * the fillers left this second writer in place.
+ */
+test('classify-site-types takes the trend counters from the shared summary, not its own filter', () => {
+  assert.match(
+    classifySource,
+    /trendValidationSummary\s*\}\s*from\s*'\.\.\/lib\/trend-queue\.mjs'/,
+    'classify must import the shared trend summary',
+  );
+  assert.match(classifySource, /trendValidationSummary\(candidates\)/);
+  assert.doesNotMatch(
+    classifySource,
+    /trendProviderCounts\[trendProvider\]/,
+    'classify must not count providers with a local, looser filter',
+  );
+  assert.doesNotMatch(
+    classifySource,
+    /const trendProviderCounts = \{\}/,
+    'classify must not build its own provider map',
+  );
+});
+
+test('the reported trendProvider reflects configuration, not historical counts', () => {
+  // The inherited corpus still carries `provider: 'serpapi'` from upstream, so
+  // deriving the active provider from the counts advertised a live integration
+  // while serpApiConfigured was false.
+  assert.doesNotMatch(
+    classifySource,
+    /Object\.keys\(trendProviderCounts\)/,
+    'a historical count must not decide which provider is active',
+  );
+  assert.match(classifySource, /const configuredTrendProviders = \[/);
+  assert.match(classifySource, /process\.env\.SEARCHAPI_API_KEY \? 'searchapi' : null/);
 });
