@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="发现正在形成的游戏搜索机会，并区分“30%测试局”和“证据完整的正式独立站”。" />
   <meta name="theme-color" content="#080b12" />
-  <!-- Where the dashboard reads scan results from. Point this at your own fork
-       (e.g. https://raw.githubusercontent.com/<you>/new-game-radar/main) or at
-       a same-origin /data directory. -->
-  <meta name="radar-data-base" content="https://raw.githubusercontent.com/imshadow/new-game-radar/main/data" />
+  <!-- 数据一律读同源 /data：Vercel 部署自带仓库根目录的 data/，而 GitHub Actions
+       每次运行都会把新数据提交进 data/ 并触发一次重新部署，所以同源就是最新数据。
+       不要在这里指回 raw.githubusercontent.com —— 该域名在国内被墙，浏览器会先卡在
+       那个跨域请求上再回退，页面看起来像是加载不出来。留空即使用同源（app.js 的
+       RAW_BASE 缺省值就是 `${location.origin}/data`）。 -->
   <title>New Game Radar · 游戏SEO测试局雷达</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
