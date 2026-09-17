@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-09-17T05:23:33.162Z",
+  "generatedAt": "2026-09-17T08:29:06.363Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2419,
+  "pendingSeo": 2415,
   "channelCounts": {
-    "pending": 376,
-    "online": 1849,
-    "wiki": 194
+    "pending": 385,
+    "wiki": 197,
+    "online": 1833
   },
   "fastClassCounts": {
-    "pending:pending": 376,
-    "online:pending": 1849,
-    "wiki:pending": 194
+    "pending:pending": 385,
+    "wiki:pending": 197,
+    "online:pending": 1833
   },
   "strategicCounts": {
-    "pending:0": 366,
-    "online:1": 1619,
-    "wiki:1": 50,
-    "online:2": 88,
+    "pending:0": 375,
+    "wiki:1": 67,
+    "online:2": 92,
+    "online:1": 1598,
     "pending:1": 10,
-    "wiki:0": 144,
-    "online:0": 142
+    "wiki:0": 130,
+    "online:0": 143
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1625
+      "count": 1650
     },
     {
       "id": "itch-new-feed",
-      "count": 1605
+      "count": 1630
     },
     {
       "id": "itch-newest-web",
-      "count": 1510
+      "count": 1526
     },
     {
       "id": "trends-rising-7d",
-      "count": 205
+      "count": 204
     },
     {
       "id": "trends-rising-30d",
-      "count": 144
+      "count": 143
     },
     {
       "id": "itch-new-popular-web",
-      "count": 110
+      "count": 115
     },
     {
       "id": "itch-popular",
-      "count": 110
+      "count": 115
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -56,7 +56,7 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 100
+      "count": 101
     },
     {
       "id": "armorgames-new",
@@ -67,16 +67,12 @@
       "count": 68
     },
     {
-      "id": "poki-new",
-      "count": 68
-    },
-    {
       "id": "github-html5-games",
-      "count": 60
+      "count": 61
     },
     {
       "id": "github-game",
-      "count": 60
+      "count": 61
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -84,15 +80,11 @@
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 58
-    },
-    {
-      "id": "y8-new",
-      "count": 54
+      "count": 59
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 46
+      "count": 45
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -103,20 +95,36 @@
       "count": 42
     },
     {
-      "id": "steam-popular-new",
+      "id": "crazygames-new",
       "count": 42
     },
     {
-      "id": "trends-rising-30d-itch-io",
+      "id": "steam-popular-new",
+      "count": 41
+    },
+    {
+      "id": "y8-new",
       "count": 39
+    },
+    {
+      "id": "trends-rising-30d-itch-io",
+      "count": 38
+    },
+    {
+      "id": "poki-new",
+      "count": 38
     },
     {
       "id": "press-new",
       "count": 31
     },
     {
-      "id": "gamepix-new",
-      "count": 30
+      "id": "steam-latest-indie",
+      "count": 29
+    },
+    {
+      "id": "steam-new",
+      "count": 29
     },
     {
       "id": "hn-showhn",
@@ -131,18 +139,6 @@
       "count": 24
     },
     {
-      "id": "steam-top-wishlist",
-      "count": 14
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 11
-    },
-    {
-      "id": "steam-new",
-      "count": 11
-    },
-    {
       "id": "itch-featured-feed",
       "count": 10
     },
@@ -151,28 +147,32 @@
       "count": 10
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 9
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 9
-    },
-    {
       "id": "newgrounds-latest",
-      "count": 7
+      "count": 9
     },
     {
       "id": "newgrounds-new",
-      "count": 7
+      "count": 9
     },
     {
-      "id": "crazygames-new",
-      "count": 7
+      "id": "newgrounds-daily-top",
+      "count": 8
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 8
+    },
+    {
+      "id": "gamepix-new",
+      "count": 4
     },
     {
       "id": "indiegamesplus",
       "count": 2
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
     },
     {
       "id": "steam-feed-topsellers",
@@ -181,12 +181,47 @@
   ],
   "samples": [
     {
-      "name": "Senescence Protocol",
+      "name": "Candy Flow Factory",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 16,
+      "discoveryScore": 12,
       "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
+    {
+      "name": "Gridbound",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Amber Eyes",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
       "strategicCount": 2,
@@ -195,8 +230,46 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed",
-        "newgrounds-daily-top",
-        "newgrounds-top"
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Luv Parade",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Outblight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1044,82 +1117,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "First Laser Light",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Revive My Wounds",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Something Strange",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "BREAKAWAY - Incremental Cycling",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
