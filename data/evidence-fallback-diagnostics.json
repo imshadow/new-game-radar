@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-09-17T08:29:06.363Z",
+  "generatedAt": "2026-09-17T08:45:41.619Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2415,
+  "pendingSeo": 2413,
   "channelCounts": {
-    "pending": 385,
-    "wiki": 197,
-    "online": 1833
+    "pending": 388,
+    "online": 1830,
+    "wiki": 195
   },
   "fastClassCounts": {
-    "pending:pending": 385,
-    "wiki:pending": 197,
-    "online:pending": 1833
+    "pending:pending": 388,
+    "online:pending": 1830,
+    "wiki:pending": 195
   },
   "strategicCounts": {
-    "pending:0": 375,
-    "wiki:1": 67,
+    "pending:0": 378,
     "online:2": 92,
-    "online:1": 1598,
+    "online:1": 1595,
     "pending:1": 10,
-    "wiki:0": 130,
-    "online:0": 143
+    "wiki:0": 145,
+    "online:0": 143,
+    "wiki:1": 50
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1650
+      "count": 1657
     },
     {
       "id": "itch-new-feed",
-      "count": 1630
+      "count": 1637
     },
     {
       "id": "itch-newest-web",
-      "count": 1526
+      "count": 1530
     },
     {
       "id": "trends-rising-7d",
@@ -56,7 +56,7 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 101
+      "count": 100
     },
     {
       "id": "armorgames-new",
@@ -65,6 +65,10 @@
     {
       "id": "trends-rising-30d-horror-game",
       "count": 68
+    },
+    {
+      "id": "poki-new",
+      "count": 64
     },
     {
       "id": "github-html5-games",
@@ -80,7 +84,7 @@
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 59
+      "count": 58
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -91,40 +95,24 @@
       "count": 43
     },
     {
+      "id": "steam-popular-new",
+      "count": 43
+    },
+    {
       "id": "steam-upcoming-wishlist",
       "count": 42
-    },
-    {
-      "id": "crazygames-new",
-      "count": 42
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 41
-    },
-    {
-      "id": "y8-new",
-      "count": 39
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 38
     },
     {
-      "id": "poki-new",
-      "count": 38
+      "id": "y8-new",
+      "count": 34
     },
     {
       "id": "press-new",
       "count": 31
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 29
-    },
-    {
-      "id": "steam-new",
-      "count": 29
     },
     {
       "id": "hn-showhn",
@@ -136,7 +124,15 @@
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 24
+      "count": 25
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 14
+    },
+    {
+      "id": "gamepix-new",
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -147,12 +143,12 @@
       "count": 10
     },
     {
-      "id": "newgrounds-latest",
-      "count": 9
+      "id": "steam-latest-indie",
+      "count": 10
     },
     {
-      "id": "newgrounds-new",
-      "count": 9
+      "id": "steam-new",
+      "count": 10
     },
     {
       "id": "newgrounds-daily-top",
@@ -163,8 +159,16 @@
       "count": 8
     },
     {
-      "id": "gamepix-new",
-      "count": 4
+      "id": "newgrounds-latest",
+      "count": 7
+    },
+    {
+      "id": "newgrounds-new",
+      "count": 7
+    },
+    {
+      "id": "crazygames-new",
+      "count": 7
     },
     {
       "id": "indiegamesplus",
@@ -181,18 +185,18 @@
   ],
   "samples": [
     {
-      "name": "Candy Flow Factory",
+      "name": "GORILGO FPS Online Shooter",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 12,
       "platforms": 2,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 2,
       "sourceIds": [
-        "y8-new",
+        "gamepix-new",
         "lagged-new"
       ]
     },
