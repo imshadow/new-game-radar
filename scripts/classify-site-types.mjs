@@ -85,10 +85,25 @@ const report = await readJson(reportPath, {});
 // the removed Google CSE path; drop them so the file converges.
 delete report.googleCseConfiguredSlots;
 delete report.googleCseUsage;
-const serpApiUsage = await readJson(serpUsagePath, {
-  enabled: Boolean(process.env.SERPAPI_API_KEY), monthUsed: 0, dayUsed: 0,
-  monthlyLimit: Number(process.env.SERPAPI_MONTHLY_LIMIT || 220), dailyLimit: Number(process.env.SERPAPI_DAILY_LIMIT || 8),
-});
+/**
+ * `data/serpapi-usage.json` persists whatever limits were in effect the last
+ * time it was written, so lowering `SERPAPI_DAILY_LIMIT` in the workflow left
+ * the report advertising the old number while the runtime guard correctly
+ * enforced the new one (`lib/trend-verifier.mjs` reads the env and overrides the
+ * file). A working fix therefore looked like a no-op to anyone reading the
+ * report — which is the whole failure mode the health annotations exist to
+ * catch, so the report must not contradict the guard.
+ *
+ * Derive the limits from the environment on the read path too, exactly as the
+ * fallback below already did. Spread the file first so a stale limit can never
+ * win over the environment.
+ */
+const serpApiUsageFile = await readJson(serpUsagePath, { monthUsed: 0, dayUsed: 0, updatedAt: null });
+const serpApiUsage = {
+  ...serpApiUsageFile,
+  monthlyLimit: Math.max(1, Number(process.env.SERPAPI_MONTHLY_LIMIT || 220)),
+  dailyLimit: Math.max(1, Number(process.env.SERPAPI_DAILY_LIMIT || 8)),
+};
 const serperUsage = await readJson(serperUsagePath, {
   totalUsed: 0,
   day: new Date().toISOString().slice(0, 10),
