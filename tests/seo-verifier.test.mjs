@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseDuckResults, calculateSeoVerdict, cleanGameName } from '../lib/seo-verifier.mjs';
+import { parseDuckResults, calculateSeoVerdict, cleanGameName, duckBlockReason } from '../lib/seo-verifier.mjs';
 
 test('parses DuckDuckGo result blocks',()=>{
   const html=`<div class="result results_links"><h2><a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.itch.io%2Fnight-room">Night Room by Dev - itch.io</a></h2><a class="result__snippet">Play Night Room, a browser horror game.</a></div></body>`;
@@ -61,4 +61,48 @@ test('downgrades ambiguous generic name even when game results are strong',()=>{
   const verdict=calculateSeoVerdict({gameName:'Up Hero',exactResults:exact,gameResults:exact,suggestions:['up hero game','up hero bike price'],discoveryScore:12});
   assert.notEqual(verdict.classification,'independent');
   assert.ok(verdict.nameRisk>=13);
+});
+
+// ---------------------------------------------- free path: block detection
+
+/**
+ * DuckDuckGo's HTML endpoint is an undocumented scrape target. A challenge page
+ * and a genuinely empty result set both parse to zero results, but they mean
+ * opposite things. Collapsing them would let a block silently demote real
+ * candidates to reject/watch.
+ */
+test('a DuckDuckGo challenge page is detected instead of parsed as a verdict', () => {
+  const blocked = '<html><body><form id="challenge-form"><h1>Anomaly detected</h1></body></html>';
+  assert.match(duckBlockReason(blocked), /anomaly/i);
+  assert.match(duckBlockReason('<div class="captcha">Please verify</div>'), /captcha/i);
+  assert.match(duckBlockReason('<h1>Too Many Requests</h1>'), /too many requests/i);
+  assert.match(duckBlockReason('<p>We detected unusual traffic from your network</p>'), /unusual traffic/i);
+  assert.equal(duckBlockReason(''), '响应为空');
+  assert.equal(duckBlockReason('   '), '响应为空');
+});
+
+test('a real results page is not mistaken for a block', () => {
+  const page = '<div class="result results_links"><a class="result__a" href="https://example.com/">Some Game</a></div>';
+  assert.equal(duckBlockReason(page), null);
+});
+
+test('a legitimately empty result set is not treated as a block', () => {
+  // No results is a normal outcome for a brand-new name; only challenge markers
+  // may abort the verification.
+  const empty = '<html><body><div class="no-results">No results found for that query</div></body></html>';
+  assert.equal(duckBlockReason(empty), null);
+  assert.deepEqual(parseDuckResults(empty), []);
+});
+
+/**
+ * Empty search results must never yield an actionable verdict. This is what
+ * makes a block fail safe rather than fail open: the scoring caps out far below
+ * the page threshold, so the worst case is a false negative that Serper will
+ * later correct — never a false positive that costs money.
+ */
+test('empty search results cannot produce a page or independent verdict', () => {
+  for (const discoveryScore of [0, 5, 10, 20, 50]) {
+    const verdict = calculateSeoVerdict({ gameName: 'Unreleased Sample Game', exactResults: [], gameResults: [], suggestions: [], discoveryScore });
+    assert.ok(!['page', 'independent'].includes(verdict.classification), `discoveryScore ${discoveryScore} produced ${verdict.classification}`);
+  }
 });

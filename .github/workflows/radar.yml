@@ -19,6 +19,14 @@ on:
           - "3"
           - "0"
         default: "10"
+      free_seo_verify_limit:
+        description: "免费 SEO 每轮上限（DuckDuckGo/Brave，0 关掉）。被限流就调小或选 0"
+        type: choice
+        options:
+          - "20"
+          - "50"
+          - "0"
+        default: "20"
   schedule:
     - cron: "17,47 * * * *"
   push:
@@ -50,14 +58,24 @@ jobs:
       SEO_LANGUAGE: en-US
 
       # Direct/free Google verification paths.
-      # SEO still runs through Serper (SEO_VERIFY_LIMIT stays 0), but the keyless
-      # Google Trends path is ON: it costs nothing, and it is the only route to
-      # `keywordFreshness`, which is what `independent` requires. scan.mjs clamps
-      # it to 10/run no matter what is set here, as a guard against Google
-      # rate-limiting the unofficial endpoint. Set 0 to switch it back off.
-      SEO_VERIFY_LIMIT: 0
-      SEO_EXPAND_LIMIT: 0
+      # SEO 的权威结论仍然走 Serper（Google 索引）。下面这条是**免费的补充路径**：
+      # 没配 BRAVE_SEARCH_API_KEY 时 lib/seo-verifier.mjs 自动走 DuckDuckGo HTML
+      # （零 key、零额度），配了就优先用 Brave（免费档 $5/月赠金 ≈ 1,000 次，
+      # 用完自动降级回 DuckDuckGo，不会卡住）。
+      #
+      # 它只补空缺，不覆盖 Serper 的结论：scan.mjs 的 needsSeoCheck 会跳过
+      # provider 为 serper+autocomplete 且模型版本当前的候选。免费结论自己按
+      # 7 天保鲜（FREE_VERIFY_MAX_AGE）。被 DuckDuckGo 拦截时会抛错记成 error
+      # （lib/seo-verifier.mjs 的 duckBlockReason），不会静默变成假结论。
+      SEO_VERIFY_LIMIT: ${{ inputs.free_seo_verify_limit || 20 }}
+      # Brave 免费档是 $5/月赠金、$5/1k 请求 → 约 1,000 次/月。按 30 天摊平。
+      # 没配 key 时这两个值不起作用。
+      BRAVE_SEARCH_MONTHLY_LIMIT: 900
+      BRAVE_SEARCH_DAILY_LIMIT: 30
+      # keyless Google Trends 路径也是开的：它不花钱，而且是 keywordFreshness
+      # 的唯一来源，而 independent 需要它。scan.mjs 硬夹 10/轮防限流。
       TRENDS_VERIFY_LIMIT: ${{ inputs.trends_verify_limit || 10 }}
+      SEO_EXPAND_LIMIT: 0
       # Minimum gap between requests on the free path (lib/trend-verifier.mjs).
       TRENDS_FREE_DELAY_MS: 1200
       YOUTUBE_VERIFY_LIMIT: 0

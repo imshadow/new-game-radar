@@ -23,7 +23,9 @@ const TREND_LIMIT=Math.max(0,Math.min(10,Number(process.env.TRENDS_VERIFY_LIMIT 
 const YOUTUBE_LIMIT=Math.max(0,Math.min(10,Number(process.env.YOUTUBE_VERIFY_LIMIT||3)));
 const YOUTUBE_API_KEY=process.env.YOUTUBE_API_KEY||'';
 const TARGET_MARKET=process.env.TARGET_MARKET||'US_GLOBAL';
-const VERIFY_MAX_AGE=3*86400000;
+// VERIFY_MAX_AGE 曾是「SEO 结论 3 天后过期」的全局规则，现在分档在
+// lib/seo-freshness.mjs（page 14 天 / watch 7 天 / reject 30 天），
+// 免费路径的保鲜期是下面的 FREE_VERIFY_MAX_AGE。删掉以免被误当成现行规则。
 const TREND_MAX_AGE=86400000;
 const TREND_ERROR_RETRY=3600000;
 const TREND_BATCH_INTERVAL=30*60000;
@@ -136,12 +138,29 @@ function mergeCandidate(candidates,gameName,source,entry,now){
   return true;
 }
 
+// 免费 SEO 路径（DuckDuckGo / Brave）只负责「补空缺」，绝不覆盖 Serper 的权威结论。
+//
+// 旧实现只看「多久没验过」，不看是谁验的 —— 于是打开 SEO_VERIFY_LIMIT 之后，
+// 免费抓取会把这些词重来一遍：既冲掉已经花钱拿到的结论，又把每天那点免费额度
+// 全花在已验词上，真正积压的两千多个词一个都轮不到。
+// Serper 自己的重验节奏由 lib/seo-freshness.mjs 的分档保鲜期负责，不在这里重复。
+const FREE_VERIFY_MAX_AGE=7*86400000;
+
 function needsSeoCheck(candidate){
-  if(!hasCurrentSeo(candidate))return true;
-  const checked=Date.parse(candidate.seo?.checkedAt||'');
+  const seo=candidate.seo;
+  // 1) 权威结论：模型版本还是当前的，就完全交给 verify-serper.mjs。
+  if(seo?.provider==='serper+autocomplete'&&seo?.modelVersion===SEO_MODEL_VERSION)return false;
+  const checked=Date.parse(seo?.checkedAt||'');
   if(!Number.isFinite(checked))return true;
-  if(candidate.seo?.status==='error')return Date.now()-checked>12*3600000;
-  return Date.now()-checked>VERIFY_MAX_AGE;
+  if(seo?.status==='error')return Date.now()-checked>12*3600000;
+  // 2) 免费路径自己的结论按 7 天保鲜：抓的是 HTML / 第三方索引，本来就更粗，
+  //    不值得像 Serper 那样频繁重来。
+  const freeProvider=seo?.provider==='duckduckgo+autocomplete'
+    ||seo?.provider==='brave+autocomplete'
+    ||Boolean(seo?.provider?.startsWith('google-cse-'));
+  if(freeProvider)return Date.now()-checked>FREE_VERIFY_MAX_AGE;
+  // 3) 没有结论、pending、临时验证（evidence-fallback）一律要验。
+  return true;
 }
 
 function shouldAutoVerify(candidate){
