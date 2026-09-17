@@ -262,3 +262,82 @@ test('a report with no classification breakdown does not invent a budget finding
   const findings = evaluateHealth(report());
   assert.equal(findings.find((item) => /重验账单/.test(item.title)), undefined);
 });
+
+// ------------------------------------------------- 免费 SEO 路径的拦截
+
+/**
+ * 实测（2026-09-17，run #16）：GitHub Actions 上 19 次免费路径尝试有 18 次被
+ * DuckDuckGo 拦，只有 1 次拿到结论。这条规则存在的理由是「免费路径的失败不要钱」
+ * 这个错觉 —— 它不花钱，但代价是真实的：一批候选被打上失败标记、每轮白等
+ * 850ms×N，下一轮换一批再来。所以它必须像花钱的路径一样被报出来。
+ */
+test('被拦截占多数时是 error，并指出已熔断', () => {
+  const findings = evaluateHealth(report({
+    seoBlocked: 18,
+    seoFreePath: { queueSize: 20, attempted: 19, verified: 1, failed: 0, blocked: 18, abortedAfter: 5 },
+  }));
+  const rule = findings.find((item) => /免费 SEO 路径本轮被拦截/.test(item.title));
+  assert.ok(rule, 'expected a block finding, got: ' + titles(findings).join(' | '));
+  assert.equal(rule.level, 'error');
+  assert.match(rule.detail, /熔断/);
+  assert.match(rule.detail, /free_seo_verify_limit/, '要给出不用推代码的回退方式');
+});
+
+test('零星拦截只是 warning，并说明还没触发熔断', () => {
+  const findings = evaluateHealth(report({
+    seoBlocked: 1,
+    seoFreePath: { queueSize: 20, attempted: 20, verified: 19, failed: 0, blocked: 1, abortedAfter: 0 },
+  }));
+  const rule = findings.find((item) => /免费 SEO 路径本轮被拦截/.test(item.title));
+  assert.ok(rule);
+  assert.equal(rule.level, 'warning');
+  assert.match(rule.detail, /还没触发熔断/);
+});
+
+test('没有拦截就不出这条规则', () => {
+  const findings = evaluateHealth(report({
+    seoBlocked: 0,
+    seoFreePath: { queueSize: 20, attempted: 20, verified: 20, failed: 0, blocked: 0, abortedAfter: 0 },
+  }));
+  assert.equal(findings.find((item) => /免费 SEO 路径本轮被拦截/.test(item.title)), undefined);
+});
+
+/**
+ * seoErrors 是**本轮**的失败次数（scan.mjs 每轮重算后写入），不是全池 error
+ * 候选数。这条规则最初把它当成池子里的存量，注解会让人以为池子里有 18 个坏词 ——
+ * 正是本仓反复出现的「同一字段被误读」缺陷族。措辞必须说清是本轮。
+ */
+test('seoErrors 的注解说清是「本轮」，不是全池存量', () => {
+  const findings = evaluateHealth(report({ seoErrors: 3 }));
+  const rule = findings.find((item) => /本轮 SEO 验证失败/.test(item.title));
+  assert.ok(rule);
+  assert.equal(rule.level, 'warning');
+  assert.match(rule.detail, /本轮/);
+  assert.match(rule.detail, /不是全池/);
+});
+
+/**
+ * 退避期间 attempted 会是 0。如果没有这条 notice，「0 次尝试」和「静默空转」
+ * 在报告里长得一模一样 —— 而这个仓库最贵的一次教训就是「静默空转看起来像正常」。
+ */
+test('退避期间给 notice，而不是让它看起来像静默空转', () => {
+  const findings = evaluateHealth(report({
+    seoBlocked: 0,
+    seoFreePath: {
+      queueSize: 0, attempted: 0, verified: 0, failed: 0, blocked: 0,
+      abortedAfter: 0, skipped: true, blockedUntil: '2026-09-18T00:00:00.000Z',
+    },
+  }));
+  const rule = findings.find((item) => /免费 SEO 路径正在退避/.test(item.title));
+  assert.ok(rule, 'expected a backoff notice, got: ' + titles(findings).join(' | '));
+  assert.equal(rule.level, 'notice');
+  assert.match(rule.detail, /2026-09-18T00:00:00\.000Z/);
+  assert.match(rule.detail, /自动解除/);
+});
+
+test('没在退避就不出退避 notice', () => {
+  const findings = evaluateHealth(report({
+    seoFreePath: { queueSize: 20, attempted: 20, verified: 20, failed: 0, blocked: 0, abortedAfter: 0, skipped: false },
+  }));
+  assert.equal(findings.find((item) => /免费 SEO 路径正在退避/.test(item.title)), undefined);
+});

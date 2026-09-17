@@ -19,6 +19,17 @@ const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
 const dashboardPath=path.join(root,'data','dashboard.json');
 const VERIFY_LIMIT=Math.max(0,Math.min(50,Number(process.env.SEO_VERIFY_LIMIT ?? 30)));
+// 免费路径（DuckDuckGo HTML）连续被拦截多少次就熔断本轮。
+// 2026-09-17 实测：run #16 试了 19 个，18 个被拦（95%），只有 1 个成功。
+// 不熔断的话每轮都会把 20 个新候选刷成失败、白等 850ms×20，而且下一轮换一批
+// 再来一遍 —— 代价是负的（污染候选 + 浪费运行时），收益接近 0。
+const FREE_SEO_ABORT_AFTER=Math.max(1,Number(process.env.FREE_SEO_ABORT_AFTER ?? 5));
+// 熔断只管本轮。但被拦是「目标在拦我们」，下一轮换个批次撞墙一样被拦 ——
+// 而且撞的都是队列最前面那几个高优先级候选（撞完还要等 12 小时冷却）。
+// 所以被拦占多数时整体退避一段时间，状态存在 data/state.json（唯一写者是本文件）。
+const FREE_SEO_BLOCK_COOLDOWN=Math.max(0,Number(process.env.FREE_SEO_BLOCK_COOLDOWN ?? 6*3600000));
+// 样本太小（比如只试了 2 个）不构成「目标在拦我们」的证据，不退避。
+const FREE_SEO_BLOCK_MIN_ATTEMPTS=Math.max(1,Number(process.env.FREE_SEO_BLOCK_MIN_ATTEMPTS ?? 3));
 const TREND_LIMIT=Math.max(0,Math.min(10,Number(process.env.TRENDS_VERIFY_LIMIT ?? 3)));
 const YOUTUBE_LIMIT=Math.max(0,Math.min(10,Number(process.env.YOUTUBE_VERIFY_LIMIT||3)));
 const YOUTUBE_API_KEY=process.env.YOUTUBE_API_KEY||'';
@@ -277,19 +288,45 @@ if(!Number.isFinite(lastRising)||Date.now()-lastRising>=RISING_DISCOVERY_INTERVA
 
 candidates=dedupeCandidates(candidates);
 for(const candidate of candidates)updateDiscovery(candidate);
-const verifyQueue=candidates.filter(candidate=>needsSeoCheck(candidate)&&shouldAutoVerify(candidate)).sort((a,b)=>verifyPriority(b)-verifyPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,VERIFY_LIMIT);
-let seoVerified=0,seoErrors=0;
+// 上一轮被拦占多数就整体退避，不再拿高优先级候选去撞墙。
+const freePathBlockedUntil=Date.parse(radarState.seoFreePathBlockedUntil||'');
+const freePathSkipped=Number.isFinite(freePathBlockedUntil)&&Date.now()<freePathBlockedUntil;
+if(freePathSkipped)console.error(`免费 SEO 路径退避中（到 ${new Date(freePathBlockedUntil).toISOString()}），本轮跳过，不消耗候选。`);
+const verifyQueue=freePathSkipped?[]:candidates.filter(candidate=>needsSeoCheck(candidate)&&shouldAutoVerify(candidate)).sort((a,b)=>verifyPriority(b)-verifyPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,VERIFY_LIMIT);
+let seoVerified=0,seoErrors=0,seoBlocked=0,consecutiveBlocks=0,seoAbortedAfter=0;
 for(const candidate of verifyQueue){
   try{
     console.log(`SEO verify: ${candidate.gameName}`);
     candidate.seo={modelVersion:SEO_MODEL_VERSION,...await verifyGameKeyword(candidate.gameName,candidate.discoveryScore||0)};
     seoVerified+=1;
+    consecutiveBlocks=0;
   }catch(error){
-    candidate.seo={modelVersion:SEO_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`自动验证失败：${error.message}`]};
-    seoErrors+=1;
+    // 被拦截 ≠ 验证失败。拦截是「我们没拿到结论」，失败是「结论是不合格」。
+    // 两者混成一个 classification:'error' 会把候选推进用户可见的 error 桶里，
+    // 制造一批假的失败结论；所以拦截只写 classification:'pending' 并打 blocked 标记。
+    // status:'error' 保留，好让 needsSeoCheck 的 12 小时冷却继续挡住重试。
+    const blocked=error.code==='SEO_BLOCKED';
+    const seo={modelVersion:SEO_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:blocked?'pending':'error',score:0,reasons:[`自动验证失败：${error.message}`]};
+    if(blocked){seo.blocked=true;seoBlocked+=1;consecutiveBlocks+=1}else{seoErrors+=1;consecutiveBlocks=0}
+    candidate.seo=seo;
     console.error(`SEO verify failed: ${candidate.gameName}: ${error.message}`);
+    if(blocked&&consecutiveBlocks>=FREE_SEO_ABORT_AFTER){
+      seoAbortedAfter=consecutiveBlocks;
+      console.error(`免费 SEO 路径连续 ${consecutiveBlocks} 次被拦截，本轮熔断：剩余 ${verifyQueue.length-verifyQueue.indexOf(candidate)-1} 个候选不再尝试。`);
+      break;
+    }
   }
   await sleep(850);
+}
+
+// 本轮的拦截率决定下一轮还试不试。
+const seoAttempted=seoVerified+seoErrors+seoBlocked;
+if(seoAttempted>=FREE_SEO_BLOCK_MIN_ATTEMPTS&&seoBlocked/seoAttempted>=0.5){
+  radarState.seoFreePathBlockedUntil=new Date(Date.now()+FREE_SEO_BLOCK_COOLDOWN).toISOString();
+  console.error(`免费 SEO 路径本轮被拦 ${seoBlocked}/${seoAttempted}，退避到 ${radarState.seoFreePathBlockedUntil}。`);
+}else if(seoVerified>0&&seoBlocked===0){
+  // 恢复正常就立刻解除退避，别把 6 小时当成固定惩罚。
+  delete radarState.seoFreePathBlockedUntil;
 }
 
 for(const candidate of candidates){
@@ -366,5 +403,5 @@ for(const candidate of candidates)stripDerivedBlocks(candidate);
 await writeJsonCompact(statePath,radarState);
 await writeJsonCompact(candidatesPath,{updatedAt:now,candidates});
 await writeJsonCompact(dashboardPath,buildDashboardPayload(candidates,{scannedAt:now}));
-await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,targetMarket:TARGET_MARKET,primaryMarket:'US',referenceMarket:'WORLDWIDE',totalAdded,sources:logs,seoVerified,seoErrors,fastModelVersion:FAST_MODEL_VERSION,fastPassedCount,fastWatchCount,fastRejectedCount,youtubeEnabled:Boolean(YOUTUBE_API_KEY),youtubeConfigured:Boolean(YOUTUBE_API_KEY),youtubeVerified,youtubeErrors,trendsVerified,trendErrors,trendBatchRan,trendQueueSize,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,seoPassedCount,trendEligibleCount,trendPendingCount,trendValidatedCount,risingCount,globalRisingCount,recommendationCounts},null,2)+'\n');
+await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,targetMarket:TARGET_MARKET,primaryMarket:'US',referenceMarket:'WORLDWIDE',totalAdded,sources:logs,seoVerified,seoErrors,seoBlocked,seoFreePath:{queueSize:verifyQueue.length,attempted:seoAttempted,verified:seoVerified,failed:seoErrors,blocked:seoBlocked,abortedAfter:seoAbortedAfter,skipped:freePathSkipped,blockedUntil:radarState.seoFreePathBlockedUntil||null},fastModelVersion:FAST_MODEL_VERSION,fastPassedCount,fastWatchCount,fastRejectedCount,youtubeEnabled:Boolean(YOUTUBE_API_KEY),youtubeConfigured:Boolean(YOUTUBE_API_KEY),youtubeVerified,youtubeErrors,trendsVerified,trendErrors,trendBatchRan,trendQueueSize,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,seoPassedCount,trendEligibleCount,trendPendingCount,trendValidatedCount,risingCount,globalRisingCount,recommendationCounts},null,2)+'\n');
 console.log(`Scan complete. Market ${TARGET_MARKET}; YouTube ${YOUTUBE_API_KEY?'enabled':'disabled'}; ${totalAdded} names added; ${seoVerified} SEO checks; ${fastPassedCount} fast-pass; ${trendsVerified} Trends checks; ${trendPendingCount} trend candidates pending.`);

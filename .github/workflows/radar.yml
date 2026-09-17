@@ -65,9 +65,19 @@ jobs:
       #
       # 它只补空缺，不覆盖 Serper 的结论：scan.mjs 的 needsSeoCheck 会跳过
       # provider 为 serper+autocomplete 且模型版本当前的候选。免费结论自己按
-      # 7 天保鲜（FREE_VERIFY_MAX_AGE）。被 DuckDuckGo 拦截时会抛错记成 error
-      # （lib/seo-verifier.mjs 的 duckBlockReason），不会静默变成假结论。
+      # 7 天保鲜（FREE_VERIFY_MAX_AGE）。
+      # 被 DuckDuckGo 拦截时 lib/seo-verifier.mjs 的 duckBlockReason 会抛
+      # code='SEO_BLOCKED' 的错误；scan.mjs 把它记成 classification:'pending'
+      # + blocked 标记（不是 error —— 拦截是「没拿到结论」，不是「结论不合格」），
+      # 并且连续命中 FREE_SEO_ABORT_AFTER 次就熔断本轮。绝不允许静默变成假结论。
       SEO_VERIFY_LIMIT: ${{ inputs.free_seo_verify_limit || 20 }}
+      # 连续被拦截多少次就熔断本轮（scripts/scan.mjs）。2026-09-17 实测 run #16：
+      # 19 次尝试 18 次被拦（95%）。不熔断就是每轮白刷 20 个候选成失败 + 白等 850ms×20。
+      FREE_SEO_ABORT_AFTER: 5
+      # 被拦占多数时整体退避多久（毫秒）。退避期间队列为空、一个候选都不消耗，
+      # 状态存 data/state.json；一旦有一轮不再被拦就自动解除。
+      # 想更激进地试探就调小，想彻底别试就调大或直接把 SEO_VERIFY_LIMIT 设 0。
+      FREE_SEO_BLOCK_COOLDOWN: 21600000
       # Brave 免费档是 $5/月赠金、$5/1k 请求 → 约 1,000 次/月。按 30 天摊平。
       # 没配 key 时这两个值不起作用。
       BRAVE_SEARCH_MONTHLY_LIMIT: 900
@@ -169,8 +179,13 @@ jobs:
       APIFY_TRENDS_WIKI_LIMIT: 0
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      # v4 打的是 Node 20，runner 已经在 2025-09 起把它强制升到 Node 24 并每次运行
+      # 打一条 deprecation 注解。v5 是官方为 Node 24 发布的版本，行为与 v4 一致
+      # （只要求 runner ≥ v2.327.1，ubuntu-latest 早就满足）。
+      # 不直接跳 v7：v6 改了凭据持久化方式、setup-node v5 起会按 packageManager
+      # 字段自动开缓存 —— 本仓库最后一步是 `git push`，不值得为省一个版本号去赌。
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 

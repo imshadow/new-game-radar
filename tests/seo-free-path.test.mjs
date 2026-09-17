@@ -83,7 +83,17 @@ test('DuckDuckGo 返回拦截页时抛错，不产出结论', async () => {
     throw new Error(`unexpected request in test: ${target}`);
   };
   try {
-    await assert.rejects(() => verifyGameKeyword('Gamma Sample Game', 5), /拦截/);
+    await assert.rejects(
+      () => verifyGameKeyword('Gamma Sample Game', 5),
+      (error) => {
+        assert.match(error.message, /拦截/);
+        // 上层（scan.mjs）靠这个 code 区分「我们被拦了」和「这个词验证失败」。
+        // 两者混在一起，拦截就会写成 classification:'error'，把一批好候选
+        // 推进用户可见的失败桶里。
+        assert.equal(error.code, 'SEO_BLOCKED', '拦截错误必须带 SEO_BLOCKED 标记');
+        return true;
+      },
+    );
   } finally {
     globalThis.fetch = original;
     await fs.rm(usagePath, { force: true });
@@ -115,4 +125,47 @@ test('免费路径的开关是调度输入，不用改代码就能关掉', async
     'SEO_VERIFY_LIMIT 必须由调度输入驱动');
   assert.ok(/BRAVE_SEARCH_MONTHLY_LIMIT: \d+/.test(workflow), 'Brave 月额度要显式声明');
   assert.ok(/BRAVE_SEARCH_DAILY_LIMIT: \d+/.test(workflow), 'Brave 日额度要显式声明');
+  assert.match(workflow, /FREE_SEO_ABORT_AFTER: \d+/, '熔断阈值要在 workflow 里显式声明');
+});
+
+// ------------------------------------------------- 拦截处理与熔断
+
+/**
+ * 实测（2026-09-17，run #16）：GitHub Actions 上 19 次尝试有 18 次被
+ * DuckDuckGo 拦，只有 1 次拿到结论。免费路径不花钱，但失败并不免费 ——
+ * 每轮会把一批候选刷成失败、白等 850ms×N，下一轮再换一批重来。
+ * 所以拦截必须（a）不产出假结论（b）连续命中就熔断。
+ */
+test('被拦截写的是 pending + blocked 标记，不是假失败结论', () => {
+  assert.match(scanSource, /classification:blocked\?'pending':'error'/,
+    '拦截不能写成 classification:error');
+  assert.match(scanSource, /if\(blocked\)\{seo\.blocked=true/, '拦截要留 blocked 标记，便于排查');
+  assert.match(scanSource, /status:'error'[^}]*classification:blocked/,
+    '仍要保留 status:error，否则 12 小时冷却失效、下一轮立刻重试同一批');
+  assert.match(scanSource, /error\.code==='SEO_BLOCKED'/, '要靠 code 而不是文案判断是否被拦');
+});
+
+test('免费路径连续被拦会熔断本轮，而不是刷满整个队列', () => {
+  assert.match(scanSource, /const FREE_SEO_ABORT_AFTER=Math\.max\(1,Number\(process\.env\.FREE_SEO_ABORT_AFTER \?\? 5\)\)/,
+    '熔断阈值要有代码内默认值，不能只靠环境变量兜底');
+  assert.match(scanSource, /if\(blocked&&consecutiveBlocks>=FREE_SEO_ABORT_AFTER\)/, '只有连续拦截才累加计数');
+  assert.match(scanSource, /seoAbortedAfter=consecutiveBlocks;[\s\S]{0,400}?break;/,
+    '熔断必须真的跳出循环，否则等于没熔断');
+  assert.match(scanSource, /consecutiveBlocks=0;/, '一次成功就要把连续计数清零');
+});
+
+test('本轮免费路径的结果会进报告，供健康检查出注解', () => {
+  assert.match(scanSource, /seoFreePath:\{/, '报告要带 seoFreePath，否则健康检查看不到拦截率');
+  assert.match(scanSource, /seoBlocked,/, 'seoBlocked 要单独报，不能混进 seoErrors');
+});
+
+test('被拦占多数时整体退避，不再每轮拿高优先级候选撞墙', () => {
+  assert.match(scanSource, /radarState\.seoFreePathBlockedUntil/, '退避状态要持久化在 state.json');
+  assert.match(scanSource, /const freePathSkipped=Number\.isFinite\(freePathBlockedUntil\)&&Date\.now\(\)<freePathBlockedUntil/,
+    '要能判断退避是否还在生效');
+  assert.match(scanSource, /freePathSkipped\?\[\]:candidates\.filter/, '退避期间队列必须为空，不能只是少试几个');
+  assert.match(scanSource, /seoBlocked\/seoAttempted>=0\.5/, '阈值要按拦截占比算，不能按绝对次数');
+  assert.match(scanSource, /seoAttempted>=FREE_SEO_BLOCK_MIN_ATTEMPTS/, '样本太小不构成「目标在拦我们」的证据');
+  assert.match(scanSource, /delete radarState\.seoFreePathBlockedUntil/, '恢复正常要立刻解除退避');
+  assert.match(scanSource, /skipped:freePathSkipped,blockedUntil:/, '退避状态要进报告，否则看不到「为什么本轮 0 次尝试」');
 });
