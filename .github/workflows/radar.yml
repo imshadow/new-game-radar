@@ -49,6 +49,14 @@ jobs:
 
       # Third-party Google Search provider: Serper.dev.
       SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+      # Optional extra accounts. Each key is a separate Serper account with its
+      # own 2500-query one-time allowance, pooled by scripts/verify-serper-pool.mjs.
+      # Unconfigured slots are skipped. Adding accounts is the only way to raise
+      # throughput, because the free allowance never resets.
+      SERPER_API_KEY_2: ${{ secrets.SERPER_API_KEY_2 }}
+      SERPER_API_KEY_3: ${{ secrets.SERPER_API_KEY_3 }}
+      SERPER_API_KEY_4: ${{ secrets.SERPER_API_KEY_4 }}
+      SERPER_API_KEY_5: ${{ secrets.SERPER_API_KEY_5 }}
       # 手动触发时可用 inputs 覆盖（冒烟测试选 2）。schedule / push 触发时
       # inputs 为空，`|| 90` 回落到正式值。
       SERPER_VERIFY_LIMIT: ${{ inputs.serper_verify_limit || 90 }}
@@ -144,8 +152,8 @@ jobs:
       - name: Classify online and wiki channels before verification
         run: npm run classify
 
-      - name: Verify fresh SEO candidates with Serper
-        run: node scripts/verify-serper.mjs
+      - name: Verify fresh SEO candidates with the Serper account pool
+        run: node scripts/verify-serper-pool.mjs
 
       - name: Diagnose pending evidence candidates
         run: node scripts/diagnose-evidence-fallback.mjs
@@ -173,6 +181,15 @@ jobs:
 
       - name: Finalize online and wiki opportunity counts
         run: npm run classify
+
+      # Upstream ran a green job for seven weeks while verifying nothing, because
+      # quota exhaustion and a missing key only wrote a log line. This turns the
+      # same conditions into annotations on the run page and a job summary, so a
+      # dead chain cannot hide behind a green check. It never fails the job: the
+      # scan still records discoveries and the commit step must still run.
+      - name: Report radar health as annotations
+        if: always()
+        run: node scripts/report-health.mjs
 
       - name: Commit updated result data
         run: |

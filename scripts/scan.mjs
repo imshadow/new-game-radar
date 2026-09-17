@@ -9,6 +9,7 @@ import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
 import { calculateFastSignals, verifyYoutubeSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { SEO_MODEL_VERSION, TREND_MODEL_VERSION } from '../lib/model-versions.mjs';
+import { hasCurrentSeo, isTrendEligible } from '../lib/trend-queue.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact, applyRetention } from '../lib/persistence.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -32,7 +33,6 @@ const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
 function sourceKinds(candidate){return new Set((candidate.sources||[]).map(source=>source.kind))}
-function hasCurrentSeo(candidate){return candidate.seo?.modelVersion===SEO_MODEL_VERSION}
 
 function updateDiscovery(candidate){
   const kinds=sourceKinds(candidate);
@@ -171,16 +171,6 @@ function verifyPriority(candidate){
   if(kinds.has('itch-new'))score+=4;
   if((candidate.sources||[]).length>=2)score+=10;
   return score;
-}
-
-function isFastPassed(candidate){return hasCurrentSeo(candidate)&&candidate.fast?.modelVersion===FAST_MODEL_VERSION&&candidate.fast?.classification==='pass'}
-function isTrendEligible(candidate){
-  if(!hasCurrentSeo(candidate))return false;
-  if(!['independent','page'].includes(candidate.seo?.classification))return false;
-  if(Number(candidate.seo?.score||0)<42)return false;
-  if(Number(candidate.seo?.nameRisk??30)>14)return false;
-  if(candidate.seo?.entityConflict)return false;
-  return isFastPassed(candidate);
 }
 
 function needsTrendCheck(candidate){
