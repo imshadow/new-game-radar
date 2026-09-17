@@ -115,6 +115,33 @@ test('the free Google Trends path counts as a trend provider when it is switched
   assert.equal(on.filter((item) => /没有任何趋势数据来源/.test(item.title)).length, 0);
 });
 
+test('a free path that is on but verifies nothing is an error, not a green run', () => {
+  // Turning on the keyless path is an experiment against an endpoint Google does
+  // not publish. If it is on and every request failed, that has to be visible —
+  // otherwise the job goes green and the switch looks like it worked.
+  const failed = evaluateHealth(
+    report({ serpApiConfigured: false, trendsVerified: 0, trendErrors: 3 }),
+    { trendFreePathEnabled: true },
+  );
+  const rule = failed.find((item) => /免费趋势路径开了但一个都没验成功/.test(item.title));
+  assert.ok(rule, 'expected the free-path failure to be reported');
+  assert.equal(rule.level, 'error');
+
+  // Partial success is progress, not failure.
+  const partial = evaluateHealth(
+    report({ serpApiConfigured: false, trendsVerified: 2, trendErrors: 3 }),
+    { trendFreePathEnabled: true },
+  );
+  assert.equal(partial.filter((item) => /免费趋势路径开了但一个都没验成功/.test(item.title)).length, 0);
+
+  // Nothing to report when there were no failures at all.
+  const quiet = evaluateHealth(
+    report({ serpApiConfigured: false, trendsVerified: 0, trendErrors: 0 }),
+    { trendFreePathEnabled: true },
+  );
+  assert.equal(quiet.filter((item) => /免费趋势路径开了但一个都没验成功/.test(item.title)).length, 0);
+});
+
 test('an enabled but unconfigured provider is surfaced instead of skipped silently', () => {
   const findings = evaluateHealth(report({
     searchApiTrendsVerification: { enabled: true, configured: false, requests: 0 },

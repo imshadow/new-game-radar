@@ -11,6 +11,14 @@ on:
           - "10"
           - "2"
         default: "90"
+      trends_verify_limit:
+        description: "免费 Google Trends 每轮上限（scan.mjs 硬夹 10）。限流或要关掉选 0"
+        type: choice
+        options:
+          - "10"
+          - "3"
+          - "0"
+        default: "10"
   schedule:
     - cron: "17,47 * * * *"
   push:
@@ -41,10 +49,17 @@ jobs:
       SEO_REGION: US
       SEO_LANGUAGE: en-US
 
-      # Disable direct/free Google verification paths.
+      # Direct/free Google verification paths.
+      # SEO still runs through Serper (SEO_VERIFY_LIMIT stays 0), but the keyless
+      # Google Trends path is ON: it costs nothing, and it is the only route to
+      # `keywordFreshness`, which is what `independent` requires. scan.mjs clamps
+      # it to 10/run no matter what is set here, as a guard against Google
+      # rate-limiting the unofficial endpoint. Set 0 to switch it back off.
       SEO_VERIFY_LIMIT: 0
       SEO_EXPAND_LIMIT: 0
-      TRENDS_VERIFY_LIMIT: 0
+      TRENDS_VERIFY_LIMIT: ${{ inputs.trends_verify_limit || 10 }}
+      # Minimum gap between requests on the free path (lib/trend-verifier.mjs).
+      TRENDS_FREE_DELAY_MS: 1200
       YOUTUBE_VERIFY_LIMIT: 0
 
       # Third-party Google Search provider: Serper.dev.
