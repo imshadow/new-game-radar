@@ -1,30 +1,30 @@
 {
-  "scannedAt": "2026-09-18T03:57:49.431Z",
+  "scannedAt": "2026-09-18T04:44:42.628Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 161,
+  "totalAdded": 70,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 35
+      "added": 9
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 3
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 35
+      "added": 14
     },
     {
       "ok": true,
@@ -52,14 +52,14 @@
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 4
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "newgrounds-daily-top",
       "sourceName": "Newgrounds Daily Top Five",
       "total": 5,
-      "added": 0
+      "added": 5
     },
     {
       "ok": true,
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 33
+      "added": 17
     },
     {
       "ok": false,
@@ -106,15 +106,15 @@
       "ok": true,
       "sourceId": "armorgames-new",
       "sourceName": "Armor Games 首页推荐",
-      "total": 46,
-      "added": 25
+      "total": 44,
+      "added": 21
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-wishlist",
       "sourceName": "Steam 热门即将推出",
       "total": 50,
-      "added": 3
+      "added": 1
     },
     {
       "ok": true,
@@ -142,28 +142,28 @@
       "sourceId": "hn-showhn",
       "sourceName": "Hacker News Show HN 游戏",
       "total": 31,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "github-html5-games",
       "sourceName": "GitHub 新建 HTML5 游戏仓库",
       "total": 48,
-      "added": 3
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-indie",
       "sourceName": "Steam 即将推出的独立游戏",
       "total": 50,
-      "added": 3
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "steam-popular-new-indie",
       "sourceName": "Steam 独立游戏热门新发行",
       "total": 31,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
@@ -178,67 +178,25 @@
       "sourceName": "GOG 新上架游戏",
       "total": 23,
       "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-itch-io",
-      "sourceName": "Trends上涨 7天 · itch io",
-      "total": 8,
-      "added": 3
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-itch-io",
-      "sourceName": "Trends上涨 30天 · itch io",
-      "total": 20,
-      "added": 3
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-indie-game",
-      "sourceName": "Trends上涨 7天 · indie game",
-      "total": 7,
-      "added": 1
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-indie-game",
-      "sourceName": "Trends上涨 30天 · indie game",
-      "total": 18,
-      "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-horror-game",
-      "sourceName": "Trends上涨 7天 · horror game",
-      "total": 13,
-      "added": 5
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-horror-game",
-      "sourceName": "Trends上涨 30天 · horror game",
-      "total": 20,
-      "added": 0
     }
   ],
-  "seoVerified": 0,
+  "seoVerified": 1,
   "seoErrors": 0,
-  "seoBlocked": 0,
+  "seoBlocked": 5,
   "seoFreePath": {
-    "queueSize": 0,
-    "attempted": 0,
-    "verified": 0,
+    "queueSize": 20,
+    "attempted": 6,
+    "verified": 1,
     "failed": 0,
-    "blocked": 0,
-    "abortedAfter": 0,
-    "skipped": true,
-    "blockedUntil": "2026-09-18T04:11:04.145Z"
+    "blocked": 5,
+    "abortedAfter": 5,
+    "skipped": false,
+    "blockedUntil": "2026-09-18T10:44:55.664Z"
   },
   "fastModelVersion": 3,
-  "fastPassedCount": 106,
-  "fastWatchCount": 102,
-  "fastRejectedCount": 336,
+  "fastPassedCount": 107,
+  "fastWatchCount": 101,
+  "fastRejectedCount": 339,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
@@ -247,28 +205,28 @@
   "trendErrors": 0,
   "trendBatchRan": true,
   "trendQueueSize": 10,
-  "risingDiscoveryRan": true,
+  "risingDiscoveryRan": false,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 236,
+  "seoPassedCount": 238,
   "trendEligibleCount": 79,
-  "trendPendingCount": 31,
-  "trendValidatedCount": 56,
-  "risingCount": 15,
+  "trendPendingCount": 21,
+  "trendValidatedCount": 62,
+  "risingCount": 16,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 2,
-    "watch": 191,
-    "reject": 247,
-    "pending": 1515,
-    "error": 15
+    "watch": 189,
+    "reject": 250,
+    "pending": 1545,
+    "error": 9
   },
   "trendProvider": "google-trends-api",
   "trendProviderCounts": {
-    "google-trends-api": 48,
-    "serpapi": 8
+    "google-trends-api": 58,
+    "serpapi": 4
   },
   "serpApiConfigured": false,
   "serpApiUsage": {
@@ -283,7 +241,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-18T03:57:47.985Z",
+    "checkedAt": "2026-09-18T04:44:41.056Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -302,8 +260,8 @@
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
     "serper+autocomplete": 518,
-    "duckduckgo+autocomplete": 26,
-    "evidence-fallback": 2
+    "duckduckgo+autocomplete": 27,
+    "evidence-fallback": 3
   },
   "seoClassificationCounts": {
     "page": 186,
@@ -356,9 +314,9 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 1096,
+    "online": 1116,
     "wiki": 448,
-    "pending": 426
+    "pending": 431
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
@@ -414,9 +372,9 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-18T04:00:24.042Z"
+    "ranAt": "2026-09-18T04:46:58.487Z"
   },
-  "seoErrorCandidates": 15,
+  "seoErrorCandidates": 9,
   "serperConfiguredSlots": 3,
   "serperPoolUsage": {
     "enabled": true,
@@ -455,32 +413,31 @@
         "lastError": null
       }
     },
-    "updatedAt": "2026-09-18T04:00:24.042Z"
+    "updatedAt": "2026-09-18T04:46:58.486Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 1426,
-    "eligibleCount": 2,
-    "queueSize": 2,
-    "verified": 2,
+    "pendingCount": 1448,
+    "eligibleCount": 1,
+    "queueSize": 1,
+    "verified": 1,
     "channelVerified": {
       "online": 0,
-      "wiki": 2,
+      "wiki": 1,
       "pending": 0
     },
     "fastRecalculated": {
       "pass": 0,
       "watch": 0,
-      "weak": 2,
+      "weak": 1,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "Ollie Ninja Slash",
-      "Card Shelter Defence"
+      "iRacing® Studios NASCAR 26"
     ],
-    "ranAt": "2026-09-18T04:00:24.426Z"
+    "ranAt": "2026-09-18T04:46:58.877Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -502,10 +459,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-18T04:00:25.089Z"
+    "ranAt": "2026-09-18T04:46:59.545Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-18T04:00:25.148Z",
+    "checkedAt": "2026-09-18T04:46:59.599Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 0,
     "workingKeys": 0,
@@ -562,15 +519,15 @@
     "monthlyLimit": 0,
     "dailyLimit": 0,
     "accounts": {},
-    "updatedAt": "2026-09-18T04:00:25.263Z"
+    "updatedAt": "2026-09-18T04:46:59.710Z"
   },
   "serpApiQuotaFill": {
     "configuredSlots": 0
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 88,
-      "rising": 4,
+      "validated": 94,
+      "rising": 5,
       "recommended": 0
     },
     "wiki": {
@@ -615,16 +572,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 62,
-      "wiki": 63
+      "online": 55,
+      "wiki": 64
     },
     "pendingByTier": {
-      "strong": 32,
+      "strong": 25,
       "secondary": 48,
-      "strategic": 45
+      "strategic": 46
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-18T04:00:25.603Z"
+    "ranAt": "2026-09-18T04:47:00.080Z"
   }
 }
