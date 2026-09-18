@@ -1,1 +1,388 @@
-:root{color-scheme:dark;--bg:#080b12;--panel:#101621;--panel2:#151d2b;--line:#263146;--text:#f4f7ff;--muted:#8d9ab1;--purple:#8b7cff;--green:#3bd6b4;--yellow:#f4c768;--red:#ff718b}*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 75% -10%,#382b7748,transparent 34%),radial-gradient(circle at -10% 20%,#123c5040,transparent 28%),var(--bg)}button,input,select{font:inherit}.page{width:min(1540px,calc(100% - 40px));margin:auto;padding:42px 0 28px}.hero{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px}.eyebrow{margin:0 0 7px;color:var(--green);font-size:11px;font-weight:800;letter-spacing:.14em}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #3bd6b418;margin-right:8px}h1{font-size:clamp(34px,5vw,58px);line-height:1.03;letter-spacing:-.045em;margin:0}.subtitle,.section-title p{color:var(--muted);margin:10px 0 0;font-size:15px}.update-box{min-width:275px;padding:17px 19px;border:1px solid var(--line);border-radius:16px;background:#101621cc;display:grid;gap:3px}.update-box span,.update-box small{color:var(--muted)}.update-box strong{font-size:16px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stats article{border:1px solid var(--line);border-radius:18px;padding:20px;background:linear-gradient(145deg,#111824,#0d131d)}.stats article.accent{background:linear-gradient(145deg,#173d39,#101d21);border-color:#24695f}.stats span,.stats small{display:block;color:var(--muted)}.stats strong{display:block;font-size:38px;letter-spacing:-.04em;margin:8px 0 3px}.source-health,.results{margin-top:38px}.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:15px}.section-title.compact{align-items:center}.section-title h2{font-size:25px;margin:0;letter-spacing:-.025em}.source-chips{display:flex;flex-wrap:wrap;gap:8px}.source-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:#101621;color:#c6d0e1}.source-chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green)}.source-chip.error::before{background:var(--red)}.source-chip b{font-weight:700}.source-chip small{color:var(--muted)}.filters{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.filters input,.filters select,.button{height:40px;border:1px solid var(--line);border-radius:10px;background:#101725;color:var(--text);padding:0 12px}.filters input{width:220px}.button{cursor:pointer}.button:hover{border-color:#6f64cf;background:#171d31}.table-card{border:1px solid var(--line);border-radius:18px;background:#0f1520;overflow:hidden}.table-scroll{overflow:auto}table{width:100%;border-collapse:collapse;min-width:1280px}th,td{text-align:left;padding:14px 16px;border-bottom:1px solid #202a3c;vertical-align:middle}th{color:#73819a;font-size:10px;text-transform:uppercase;letter-spacing:.1em;background:#111824;position:sticky;top:0}tbody tr:hover{background:#ffffff05}.score{width:48px;height:43px;border-radius:12px;display:grid;place-items:center;font-size:15px;font-weight:850;border:1px solid}.score.independent{color:#b9fff0;background:#23bfa21a;border-color:#2fc9ac66}.score.test-now{color:#fff0bd;background:#f4c76818;border-color:#f4c76877}.score.page{color:#ded8ff;background:#8374ff18;border-color:#8374ff66}.score.watch{color:#ffe3a5;background:#f4c76812;border-color:#f4c76855}.score.reject,.score.error{color:#ffc3ce;background:#ff718b12;border-color:#ff718b55}.score.pending{color:#abb7cc;background:#8d9ab112;border-color:#8d9ab144}.game-title{display:block;font-size:15px}.game-url{display:block;max-width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#71809b;font-size:11px;text-decoration:none;margin-top:4px}.game-url:hover{color:#b8c3d8}.game-meta{display:block;margin-top:4px;color:#64738c;font-size:10px}.recommendation{display:inline-flex;padding:6px 9px;border-radius:9px;border:1px solid;font-size:11px;font-weight:750;white-space:nowrap}.recommendation.independent{color:#aef5e5;background:#1d9d8618;border-color:#2fc9ac55}.recommendation.test-now{color:#ffe9a3;background:#f4c76816;border-color:#f4c76866}.recommendation.page{color:#d8d2ff;background:#7d70e91a;border-color:#8374ff55}.recommendation.watch{color:#ffe3a5;background:#f4c76812;border-color:#f4c76844}.recommendation.reject,.recommendation.error{color:#ffc0cd;background:#ff718b12;border-color:#ff718b44}.recommendation.pending{color:#aab5c8;background:#8d9ab112;border-color:#8d9ab133}.judgement{display:grid;gap:3px;min-width:230px;max-width:330px}.judgement span{color:#d7deea;font-size:11px}.judgement small{color:#6f7e97;font-size:10px}.chips{display:flex;flex-wrap:wrap;gap:5px;max-width:260px}.chip{padding:4px 7px;border-radius:7px;background:#182234;color:#b9c4d7;font-size:10px;border:1px solid #293650}.actions{display:flex;flex-wrap:wrap;gap:6px;min-width:230px}.action{display:inline-flex;align-items:center;height:31px;padding:0 9px;border-radius:8px;border:1px solid #33405a;color:#d9e0ed;text-decoration:none;background:#141c2a;font-size:11px;cursor:pointer}.action:hover{border-color:var(--purple);color:#fff}.muted{color:var(--muted)}.empty{padding:60px 20px;text-align:center;color:var(--muted);display:grid;gap:7px}.empty strong{color:var(--text);font-size:18px}footer{text-align:center;color:#637087;padding-top:32px}.toast{position:fixed;right:20px;bottom:20px;padding:12px 15px;border-radius:10px;background:#182234;border:1px solid var(--line);opacity:0;transform:translateY(12px);pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:none}@media(max-width:900px){.stats{grid-template-columns:1fr 1fr}.hero,.section-title{align-items:flex-start;flex-direction:column}.update-box{width:100%}.filters{justify-content:flex-start;width:100%}.filters input{flex:1;min-width:220px}}@media(max-width:540px){.page{width:min(100% - 24px,1540px);padding-top:24px}.stats{grid-template-columns:1fr}.filters>*{width:100%!important}.source-health,.results{margin-top:28px}}
+/* New Game Radar · 站点样式
+ *
+ * 改这个文件之前先读两条硬约束：
+ *
+ * 1) 任何视口宽度下都不许出现横向滚动条。
+ *    做法是 table-layout:fixed + 百分比列宽 —— 列宽只由表头决定，跟单元格里的
+ *    内容多长无关。所以长 URL、长来源名、长理由都不会把表格撑宽。
+ *    配套要求是「单元格内部的块必须允许收缩」：下面所有 min-width 都是 0。
+ *    历史教训：原来 .judgement 和 .actions 各带 min-width:230px，四个 judgement
+ *    列加起来就是 920px，再叠上 table{min-width:1280px}，窗口一窄必然横向滚动。
+ *    ⚠️ 不要给 th/td 加 px 宽度 —— 固定布局下表宽取 max(100%, 各列宽之和)，
+ *    混用 px 和 % 一旦超过 100% 就直接撑破容器。
+ *
+ * 2) 8 列的宽度预算总和必须正好 100%（见 :root 的 --col-*）。
+ *    窄屏隐藏次要列时**不用**改这些变量 —— 固定布局会把空出来的宽度按比例
+ *    分给还看得见的列。隐藏哪几列见文件末尾的媒体查询。
+ *
+ * 配色沿用原来的深色盘，没有改。
+ */
+
+:root {
+  color-scheme: dark;
+  --bg: #080b12;
+  --panel: #101621;
+  --panel2: #151d2b;
+  --line: #263146;
+  --text: #f4f7ff;
+  --muted: #8d9ab1;
+  --purple: #8b7cff;
+  --green: #3bd6b4;
+  --yellow: #f4c768;
+  --red: #ff718b;
+
+  /* 列宽预算（总和 100%）：1综合分 2游戏名 3建站类型 4美国搜索意图
+     5分类快速热度 6分类Trends 7发现来源 8操作 */
+  --col-score: 4%;
+  --col-name: 16%;
+  --col-type: 14%;
+  --col-seo: 14%;
+  --col-fast: 13%;
+  --col-trend: 13%;
+  --col-source: 13%;
+  --col-actions: 13%;
+}
+
+* { box-sizing: border-box }
+html { background: var(--bg) }
+
+body {
+  margin: 0;
+  color: var(--text);
+  font: 13px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 75% -10%, #382b7748, transparent 34%),
+              radial-gradient(circle at -10% 20%, #123c5040, transparent 28%),
+              var(--bg);
+}
+
+button, input, select { font: inherit }
+
+/* 容器占满整页宽度，不再有 max-width —— 数据表越宽越好读。
+   左右只留一点内边距，避免内容贴到屏幕边缘。
+
+   ⚠️ 选择器必须是 `main.page`，不能只写 `.page`。
+   「page」这个类名在本仓有两个含义：
+     ① `<main class="page">` —— 页面容器；
+     ② `app.js` 给「稳定需求·仅适合站内页」这个 recommendation 级别起的类名，
+        渲染成 `<span class="score page">` 和 `<span class="recommendation page">`。
+   只写 `.page` 的话容器的 width / padding / margin 会漏到这些徽章上。原来的
+   样式表就是踩了这个坑：`.page{margin:auto}` 意外把分数徽章居中了（所以看起来
+   「本来就是居中的」），而 `.page{padding:42px 0 28px}` 把 page 级别的徽章
+   撑成了 70px 高、内容盒压成 0。本仓最大的缺陷族就是「同一个名字两个含义」，
+   这是它在 CSS 里的又一次出现 —— 加选择器时先想清楚匹配范围。 */
+main.page {
+  width: 100%;
+  margin: 0;
+  padding: 18px clamp(10px, 1.4vw, 22px) 16px;
+}
+
+/* flex-wrap 是关键：窄屏时「最近自动扫描」那块自己换行下去，
+   而不是把 hero 撑得比视口还宽。 */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 16px;
+}
+
+.eyebrow { margin: 0 0 5px; color: var(--green); font-size: 10px; font-weight: 800; letter-spacing: .14em }
+
+.live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 4px #3bd6b418;
+  margin-right: 7px;
+}
+
+h1 { font-size: clamp(22px, 2.1vw, 34px); line-height: 1.08; letter-spacing: -.035em; margin: 0 }
+
+.subtitle, .section-title p { color: var(--muted); margin: 7px 0 0; font-size: 12.5px }
+
+/* 超宽屏上别把段落拉成一整行，读起来太累 */
+.subtitle, .section-title p { max-width: 1080px }
+
+.update-box {
+  min-width: 0;
+  max-width: 100%;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #101621cc;
+  display: grid;
+  gap: 2px;
+}
+
+.update-box span, .update-box small { color: var(--muted); font-size: 11px }
+.update-box strong { font-size: 14px }
+
+/* minmax(0,1fr) 而不是 1fr —— 1fr 的最小值是 auto，内容一宽就会顶破网格 */
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px }
+
+.stats article {
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 12px 14px;
+  background: linear-gradient(145deg, #111824, #0d131d);
+}
+
+.stats article.accent { background: linear-gradient(145deg, #173d39, #101d21); border-color: #24695f }
+.stats span, .stats small { display: block; color: var(--muted); font-size: 11px }
+.stats strong { display: block; font-size: 25px; letter-spacing: -.035em; margin: 4px 0 1px }
+
+.source-health, .results { margin-top: 20px }
+
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px 18px;
+  margin-bottom: 10px;
+}
+
+.section-title.compact { align-items: center }
+.section-title h2 { font-size: 18px; margin: 0; letter-spacing: -.02em }
+
+.source-chips { display: flex; flex-wrap: wrap; gap: 6px }
+
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #101621;
+  color: #c6d0e1;
+  font-size: 11px;
+}
+
+.source-chip::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--green) }
+.source-chip.error::before { background: var(--red) }
+.source-chip b { font-weight: 700; overflow-wrap: anywhere }
+.source-chip small { color: var(--muted); overflow-wrap: anywhere }
+
+.filters { display: flex; flex-wrap: wrap; gap: 7px; justify-content: flex-end }
+
+/* min-width:0 是必需的：<select> 的最小宽度等于它最宽的那个 <option>，
+   不禁掉的话窄屏会被「可立即行动（测试局+正式站）」这种长选项顶出横向滚动条。 */
+.filters > * { min-width: 0; max-width: 100% }
+
+.filters input, .filters select, .button {
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #101725;
+  color: var(--text);
+  padding: 0 9px;
+  font-size: 12px;
+}
+
+.filters input { width: 190px; flex: 1 1 190px }
+.button { cursor: pointer; flex: none }
+.button:hover { border-color: #6f64cf; background: #171d31 }
+
+.table-card { border: 1px solid var(--line); border-radius: 13px; background: #0f1520; overflow: hidden }
+
+/* 兜底而已：table 结构上已经不可能超过 100%（见文件头约束 1），
+   真出现意外时宁可给个滚动条，也不要把数据裁掉看不见。 */
+.table-scroll { overflow-x: auto }
+
+/* ⚠️ 不要再加 min-width —— 那是原来横向滚动条的来源。
+   固定布局 + 百分比列宽保证表格宽度永远等于容器宽度。 */
+table { width: 100%; table-layout: fixed; border-collapse: collapse }
+
+th, td { text-align: left; padding: 7px 9px; border-bottom: 1px solid #202a3c; vertical-align: middle }
+
+th {
+  color: #73819a;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  background: #111824;
+  position: sticky;
+  top: 0;
+}
+
+tbody tr:hover { background: #ffffff05 }
+
+/* 列宽只写在表头上：table-layout:fixed 取第一行的宽度作为列宽 */
+th:nth-child(1) { width: var(--col-score) }
+th:nth-child(2) { width: var(--col-name) }
+th:nth-child(3) { width: var(--col-type) }
+th:nth-child(4) { width: var(--col-seo) }
+th:nth-child(5) { width: var(--col-fast) }
+th:nth-child(6) { width: var(--col-trend) }
+th:nth-child(7) { width: var(--col-source) }
+th:nth-child(8) { width: var(--col-actions) }
+
+/* 综合分这一列居中。
+   徽章有 max-width:46px，所以列宽一旦超过 46px 它就不再长 —— 不居中的话
+   会贴左边、右边空出一块（1920px 下右边空 10.4px，2560px 下空 30px+）。
+   margin-inline:auto 配 max-width 是标准的居中写法：width:100% 被 max-width
+   夹住之后，剩下的空间会被左右 auto 边距平分。表头跟着一起居中才对得齐。 */
+th:first-child, td:first-child { text-align: center }
+
+/* 综合分格：width:100% + max-width 让它随列宽收缩，窄屏也不会顶出去 */
+.score {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 46px;
+  margin-inline: auto;
+  height: 26px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 850;
+  border: 1px solid;
+}
+
+.score.independent { color: #b9fff0; background: #23bfa21a; border-color: #2fc9ac66 }
+.score.test-now { color: #fff0bd; background: #f4c76818; border-color: #f4c76877 }
+.score.page { color: #ded8ff; background: #8374ff18; border-color: #8374ff66 }
+.score.watch { color: #ffe3a5; background: #f4c76812; border-color: #f4c76855 }
+.score.reject, .score.error { color: #ffc3ce; background: #ff718b12; border-color: #ff718b55 }
+.score.pending { color: #abb7cc; background: #8d9ab112; border-color: #8d9ab144 }
+
+.game-title { display: block; font-size: 13px; overflow-wrap: anywhere }
+
+.game-url {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #71809b;
+  font-size: 10px;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.game-url:hover { color: #b8c3d8 }
+.game-meta { display: block; margin-top: 3px; color: #64738c; font-size: 9.5px; overflow-wrap: anywhere }
+
+.recommendation {
+  display: inline-flex;
+  max-width: 100%;
+  padding: 3px 6px;
+  border-radius: 7px;
+  border: 1px solid;
+  font-size: 10px;
+  font-weight: 750;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recommendation.independent { color: #aef5e5; background: #1d9d8618; border-color: #2fc9ac55 }
+.recommendation.test-now { color: #ffe9a3; background: #f4c76816; border-color: #f4c76866 }
+.recommendation.page { color: #d8d2ff; background: #7d70e91a; border-color: #8374ff55 }
+.recommendation.watch { color: #ffe3a5; background: #f4c76812; border-color: #f4c76844 }
+.recommendation.reject, .recommendation.error { color: #ffc0cd; background: #ff718b12; border-color: #ff718b44 }
+.recommendation.pending { color: #aab5c8; background: #8d9ab112; border-color: #8d9ab133 }
+
+/* min-width:0 —— 原来是 230px，四列叠加就是横向滚动条的元凶之一 */
+.judgement { display: grid; gap: 2px; min-width: 0 }
+.judgement span { color: #d7deea; font-size: 11px; overflow-wrap: anywhere }
+.judgement small { color: #6f7e97; font-size: 9.5px; overflow-wrap: anywhere }
+
+.chips { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0 }
+
+.chip {
+  max-width: 100%;
+  padding: 2px 5px;
+  border-radius: 6px;
+  background: #182234;
+  color: #b9c4d7;
+  font-size: 9.5px;
+  border: 1px solid #293650;
+  overflow-wrap: anywhere;
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0 }
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+  height: 23px;
+  padding: 0 7px;
+  border-radius: 7px;
+  border: 1px solid #33405a;
+  color: #d9e0ed;
+  text-decoration: none;
+  background: #141c2a;
+  font-size: 10.5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action:hover { border-color: var(--purple); color: #fff }
+
+.muted { color: var(--muted) }
+
+.empty { padding: 34px 16px; text-align: center; color: var(--muted); display: grid; gap: 6px }
+.empty strong { color: var(--text); font-size: 15px }
+
+footer { text-align: center; color: #637087; padding-top: 20px; font-size: 11px }
+
+.toast {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  max-width: calc(100vw - 28px);
+  padding: 9px 12px;
+  border-radius: 9px;
+  background: #182234;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: .2s;
+}
+
+.toast.show { opacity: 1; transform: none }
+
+/* 窄屏放不下 8 列时**隐藏次要列**，而不是让它横向滚。
+   列序号：1综合分 2游戏名 3建站类型 4美国搜索意图 5分类快速热度 6分类Trends 7发现来源 8操作
+   隐藏后剩下的列会自动按比例吃掉空出来的宽度，不用改 :root 里的 --col-*。 */
+
+@media (max-width: 1200px) {
+  .table-card th:nth-child(7), .table-card td:nth-child(7) { display: none }   /* 发现来源 */
+}
+
+@media (max-width: 980px) {
+  .table-card th:nth-child(5), .table-card td:nth-child(5) { display: none }   /* 分类快速热度 */
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+  .hero, .section-title { align-items: flex-start }
+  .filters { justify-content: flex-start }
+}
+
+@media (max-width: 760px) {
+  .table-card th:nth-child(4), .table-card td:nth-child(4) { display: none }   /* 美国搜索意图 */
+}
+
+@media (max-width: 520px) {
+  .table-card th:nth-child(6), .table-card td:nth-child(6) { display: none }   /* 分类Trends */
+  .stats { grid-template-columns: 1fr }
+  .filters > * { flex: 1 1 100% }
+  .filters input { width: 100% }
+  /* 手机宽度下综合分列只剩 ~20px 内容宽：字号不收，两位数字会溢出徽章；
+     表头「综合分」也会被拆成三行。除了收字号，还要把这一列的预算调大一点
+     （固定布局下各列实际宽度 = 各自预算 ÷ 可见列预算之和，所以 4% → 6% 大约
+     能把这一列从 33px 撑到 48px）。 */
+  :root { --col-score: 6% }
+  th, td { padding: 6px }
+  th { font-size: 8.5px; letter-spacing: 0 }
+  .score { height: 22px; border-radius: 6px; font-size: 10.5px }
+}
