@@ -353,7 +353,17 @@ const lastTrendBatch=Date.parse(radarState.lastTrendBatch||'');
 const trendBatchDue=urgentModelUpgrade||!Number.isFinite(lastTrendBatch)||Date.now()-lastTrendBatch>=TREND_BATCH_INTERVAL;
 if(trendBatchDue){
   trendBatchRan=true;
-  const limit=risingDiscoveryRan?Math.min(2,TREND_LIMIT):TREND_LIMIT;
+  // 这里曾经是 `risingDiscoveryRan?Math.min(2,TREND_LIMIT):TREND_LIMIT`：同轮跑过
+  // rising discovery 就把趋势批次压到 2 个。没人写注释解释为什么，而能想到的两个理由
+  // 都不成立 ——
+  //   1. 怕超时：实测最近 8 轮耗时 1.1~5.4 分钟，job 上限 45 分钟；趋势循环每个
+  //      sleep(8000)，跑满 10 个也只有 80 秒。
+  //   2. 趋势源不够用：`TREND_MAX_AGE` 只有 1 天，89 条合格候选每天都要重查 = 89 次/天
+  //      的需求，而压到 2 时那两轮只有 12 次/天（最近 4 轮里有 2 轮如此）。
+  // 压它没有收益，只有欠账，所以取消。留一条观察点：如果免费源被同一轮两次调用打到
+  // 限流，`trendsVerified` 会掉而 `trendErrors` 会涨 —— 下一轮 rising-discovery 跑过的
+  // 运行里看这两个数就能验证。
+  const limit=TREND_LIMIT;
   const trendQueue=candidates.filter(needsTrendCheck).sort((a,b)=>trendPriority(b)-trendPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,limit);
   trendQueueSize=trendQueue.length;
   for(const candidate of trendQueue){
