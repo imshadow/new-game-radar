@@ -12,13 +12,14 @@ on:
           - "2"
         default: "90"
       trends_verify_limit:
-        description: "免费 Google Trends 每轮上限（scan.mjs 硬夹 10）。限流或要关掉选 0"
+        description: "免费 Google Trends 每轮上限（scan.mjs 硬夹 30）。限流或要关掉选 0"
         type: choice
         options:
+          - "20"
           - "10"
           - "3"
           - "0"
-        default: "10"
+        default: "20"
       free_seo_verify_limit:
         description: "免费 SEO 每轮上限（DuckDuckGo/Brave，0 关掉）。被限流就调小或选 0"
         type: choice
@@ -83,8 +84,10 @@ jobs:
       BRAVE_SEARCH_MONTHLY_LIMIT: 900
       BRAVE_SEARCH_DAILY_LIMIT: 30
       # keyless Google Trends 路径也是开的：它不花钱，而且是 keywordFreshness
-      # 的唯一来源，而 independent 需要它。scan.mjs 硬夹 10/轮防限流。
-      TRENDS_VERIFY_LIMIT: ${{ inputs.trends_verify_limit || 10 }}
+      # 的唯一来源，而 independent 需要它。scan.mjs 硬夹 30/轮防限流。
+      # 默认 20：分档保鲜后稳态需求 51.1 次/天，而 10 × 约 5 轮 = 50 次/天刚好
+      # 卡在需求线上，积压清不掉；20 给到约 100 次/天。
+      TRENDS_VERIFY_LIMIT: ${{ inputs.trends_verify_limit || 20 }}
       SEO_EXPAND_LIMIT: 0
       # Minimum gap between requests on the free path (lib/trend-verifier.mjs).
       TRENDS_FREE_DELAY_MS: 1200

@@ -5,10 +5,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION, TREND_MODEL_VERSION } from '../lib/model-versions.mjs';
-import { activeTrendProviderLabel, enabledTrendProviders, hasCurrentSeo, isFastPassed, isFreeTrendPathEnabled, isTrendEligible, trendValidationSummary } from '../lib/trend-queue.mjs';
+import { activeTrendProviderLabel, enabledTrendProviders, hasCurrentSeo, isFastPassed, isFreeTrendPathEnabled, isNameOnlySourced, isTrendEligible, trendValidationSummary } from '../lib/trend-queue.mjs';
+import { POLICY_SETS } from '../lib/source-registry.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const classifySource = await fs.readFile(path.join(root, 'scripts', 'classify-site-types.mjs'), 'utf8');
+const scanSource = await fs.readFile(path.join(root, 'scripts', 'scan.mjs'), 'utf8');
+const registrySource = await fs.readFile(path.join(root, 'lib', 'source-registry.mjs'), 'utf8');
+const trendQueueSource = await fs.readFile(path.join(root, 'lib', 'trend-queue.mjs'), 'utf8');
 
 // Every script that writes the trend block of the report. They all have to agree,
 // because whichever one runs last is the one the report ends up showing.
@@ -210,4 +214,95 @@ test('activeTrendProviderLabel is null when nothing is enabled', () => {
   assert.equal(activeTrendProviderLabel({ TRENDS_VERIFY_LIMIT: '0' }), null);
   assert.equal(activeTrendProviderLabel({ SERPAPI_API_KEY: 'k', TRENDS_VERIFY_LIMIT: '0' }), 'serpapi');
   assert.equal(activeTrendProviderLabel({}), 'google-trends-api');
+});
+
+/**
+ * 「只由一个只提供名字的源带来的候选，不许花额度」。
+ *
+ * 这条规则本来就存在，只是写在别处：`lib/source-registry.mjs` 早就把
+ * `trends-rising-7d` / `trends-rising-30d` 标成 `evidence: false`（单独出现不足以
+ * 断言 channel）。而真正在跑的判定是 `scripts/scan.mjs` 的 `shouldAutoVerify`，
+ * 它把这两个 kind 列成**花额度的理由**，还在 `verifyPriority` 里给它们 +35 / +25
+ * —— 全函数最大的两笔加分。一个规则两套定义，执行的那套更粗糙。
+ *
+ * 实测 2026-09-18（池子 1893）：只由这两个 kind 带来的候选 137 个，其中 133 个排在
+ * SEO 队列里（107 个一次都没验过），抢的是真游戏名字同一份 240 次/天的 Serper 额度。
+ */
+test('isNameOnlySourced only fires when every source is a name-only source', () => {
+  const withSources = (...kinds) => candidate({
+    sources: kinds.map((kind) => ({ kind, sourceId: kind, url: `https://example.com/${kind}` })),
+  });
+  assert.equal(isNameOnlySourced(withSources('trends-rising-7d')), true);
+  assert.equal(isNameOnlySourced(withSources('trends-rising-7d', 'trends-rising-30d')), true);
+
+  // 只要还有任何一个真游戏目录带了它，就照常验证。这是这个 gate 能安全上线的原因：
+  // 两个当前产出 `page` 的词都不是 name-only（`dear passengers` 有
+  // steam-top-wishlist + steam-upcoming，`Endacopia` 有 steam-popular-new + itch-new）。
+  assert.equal(isNameOnlySourced(withSources('trends-rising-7d', 'steam-top-wishlist')), false);
+  assert.equal(isNameOnlySourced(withSources('trends-rising-30d', 'steam-popular-new')), false);
+
+  // 没有来源 ≠ name-only。那是「还没采到」，不是「采到了但没意义」。
+  assert.equal(isNameOnlySourced(candidate()), false);
+  assert.equal(isNameOnlySourced({ sources: [] }), false);
+
+  // `hn-showhn` 故意不在集合里：Show HN 可以真的是一个游戏发布，而它多带来 29 条
+  // 队列项、对产出零代价 —— 那是另一个判断题，不属于这个缺陷。
+  assert.equal(isNameOnlySourced(withSources('hn-showhn')), false);
+  // `evidence: false` 也不是正确的边界：它包含 itch-featured（真信号，值 +16）。
+  assert.equal(isNameOnlySourced(withSources('itch-featured')), false);
+});
+
+test('isTrendEligible refuses a name-only candidate that otherwise qualifies', () => {
+  assert.equal(isTrendEligible(candidate()), true);
+  const nameOnly = candidate({ sources: [{ kind: 'trends-rising-7d', sourceId: 'trends-rising-7d' }] });
+  assert.equal(isTrendEligible(nameOnly), false);
+  // 同样的候选，只要多一个真目录来源就恢复合格。
+  const rescued = candidate({
+    sources: [
+      { kind: 'trends-rising-7d', sourceId: 'trends-rising-7d' },
+      { kind: 'steam-upcoming', sourceId: 'steam-upcoming' },
+    ],
+  });
+  assert.equal(isTrendEligible(rescued), true);
+});
+
+test('the name-only set is declared once, in the registry', () => {
+  assert.deepEqual([...POLICY_SETS.NAME_ONLY_KINDS].sort(), ['trends-rising-30d', 'trends-rising-7d']);
+  assert.match(registrySource, /NAME_ONLY_KINDS:\s*\[/, 'registry must declare the set');
+  assert.match(
+    trendQueueSource,
+    /const NAME_ONLY_KINDS = POLICY_SETS\.NAME_ONLY_KINDS;/,
+    'the consumer must read the registry set, not re-list the two kinds',
+  );
+  assert.doesNotMatch(
+    trendQueueSource,
+    /const NAME_ONLY_KINDS = \[/,
+    'a second array literal here would be a second definition',
+  );
+});
+
+test('both quota queues consume the one name-only definition', () => {
+  // 取函数体而不是全文匹配，避免注释里的示例把断言喂饱。
+  const bodyOf = (source, header) => {
+    const start = source.indexOf(header);
+    assert.notEqual(start, -1, `找不到 ${header}`);
+    return source.slice(start, source.indexOf('\n}', start));
+  };
+
+  // 趋势额度：由 isTrendEligible 消费，五个 trendEligibleCount 写者全部从它派生。
+  // 行为断言在上面两个用例里；这里锁住它没有被挪回 scan.mjs。
+  assert.match(
+    bodyOf(trendQueueSource, 'export function isTrendEligible(candidate)'),
+    /if \(isNameOnlySourced\(candidate\)\) return false;/,
+    'the trend quota gate must live in isTrendEligible',
+  );
+
+  // SEO 额度：scan.mjs 的 shouldAutoVerify。它必须调用共享判定，而不是自己再写一遍
+  // 「kinds 里有没有 trends-rising」—— 那正是这个 bug 的来源。
+  assert.match(scanSource, /isNameOnlySourced/, 'scan.mjs must import the shared predicate');
+  assert.match(
+    bodyOf(scanSource, 'function shouldAutoVerify(candidate)'),
+    /if\(isNameOnlySourced\(candidate\)\)return false;/,
+    'the SEO queue must apply the gate before its own kind bonuses',
+  );
 });

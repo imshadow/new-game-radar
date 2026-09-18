@@ -25,8 +25,11 @@ test('drops Steam feed entries that are not game announcements', () => {
 });
 
 test('parses the newreleases feed, taking the name from the title because the link is a news page', () => {
+  // pubDate 用新鲜的：这个用例测的是「名字从标题取」和「更新公告被丢掉」，
+  // 不该顺带依赖一个够老到会被年龄过滤（STEAM_MAX_AGE_DAYS=180）的日期。
+  // 那个 feed 的真实日期确实又老又是促销公告 —— 见 tests/steam-discovery-freshness.test.mjs。
   const xml = `<?xml version="1.0"?><rss><channel>
-    <item><title>Now Available on Steam - SCUM</title><link>https://store.steampowered.com/news/246601/</link><pubDate>Tue, 17 Jun 2025 07:55:24 -0700</pubDate></item>
+    <item><title>Now Available on Steam - SCUM</title><link>https://store.steampowered.com/news/246601/</link><pubDate>Mon, 14 Sep 2026 17:00:00 -0700</pubDate></item>
     <item><title>Team Fortress 2 Update Released</title><link>https://store.steampowered.com/news/276347/</link><pubDate>Thu, 16 Jul 2026 13:22:00 -0700</pubDate></item>
   </channel></rss>`;
   const parsed = parseRemoteDocument(xml, 'https://store.steampowered.com/feeds/newreleases.xml', 'steam-feed');

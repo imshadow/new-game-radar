@@ -9,7 +9,7 @@ import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
 import { calculateFastSignals, verifyYoutubeSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { SEO_MODEL_VERSION, TREND_MODEL_VERSION } from '../lib/model-versions.mjs';
-import { hasCurrentSeo, isTrendEligible } from '../lib/trend-queue.mjs';
+import { hasCurrentSeo, isTrendEligible, isTrendRecheckDue, isNameOnlySourced } from '../lib/trend-queue.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact, applyRetention } from '../lib/persistence.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -30,15 +30,24 @@ const FREE_SEO_ABORT_AFTER=Math.max(1,Number(process.env.FREE_SEO_ABORT_AFTER ??
 const FREE_SEO_BLOCK_COOLDOWN=Math.max(0,Number(process.env.FREE_SEO_BLOCK_COOLDOWN ?? 6*3600000));
 // 样本太小（比如只试了 2 个）不构成「目标在拦我们」的证据，不退避。
 const FREE_SEO_BLOCK_MIN_ATTEMPTS=Math.max(1,Number(process.env.FREE_SEO_BLOCK_MIN_ATTEMPTS ?? 3));
-const TREND_LIMIT=Math.max(0,Math.min(10,Number(process.env.TRENDS_VERIFY_LIMIT ?? 3)));
+// 上限曾经硬编码成 Math.min(10,...)，而 workflow 传进来的默认值也是 10 ——
+// 于是 dispatch 输入 `trends_verify_limit` 只能调小、调不大，是个转不动的旋钮。
+// 实测（2026-09-18）：合格池 79 个词，分档后的稳态需求 51.1 次/天，而 10 × 约 5 轮
+// = 50 次/天，刚好卡在需求线上 ⇒ `trendPendingCount` 一直清不掉。放到 30 让旋钮真
+// 能转，默认值在 .github/workflows/radar.yml 里给 20。
+const TREND_LIMIT=Math.max(0,Math.min(30,Number(process.env.TRENDS_VERIFY_LIMIT ?? 3)));
 const YOUTUBE_LIMIT=Math.max(0,Math.min(10,Number(process.env.YOUTUBE_VERIFY_LIMIT||3)));
 const YOUTUBE_API_KEY=process.env.YOUTUBE_API_KEY||'';
 const TARGET_MARKET=process.env.TARGET_MARKET||'US_GLOBAL';
 // VERIFY_MAX_AGE 曾是「SEO 结论 3 天后过期」的全局规则，现在分档在
 // lib/seo-freshness.mjs（page 14 天 / watch 7 天 / reject 30 天），
 // 免费路径的保鲜期是下面的 FREE_VERIFY_MAX_AGE。删掉以免被误当成现行规则。
-const TREND_MAX_AGE=86400000;
-const TREND_ERROR_RETRY=3600000;
+//
+// 趋势结论的保鲜期现在只有一处定义：lib/trend-queue.mjs 的
+// `trendReverifyDays` / `trendReverifyWindowMs` / `isTrendRecheckDue`。
+// 这里原本是 `TREND_MAX_AGE=1 天` + `TREND_ERROR_RETRY=1 小时` 两个常量，
+// 而 lib/trend-queue.mjs 里另有一套分档（rising 12 小时、strong 3 天、weak/none 7 天）
+// 且没有任何 live 调用方 —— 声明了一套、跑的是另一套。收口后由环境变量调参。
 const TREND_BATCH_INTERVAL=30*60000;
 const RISING_DISCOVERY_INTERVAL=3*3600000;
 const YOUTUBE_MAX_AGE=6*3600000;
@@ -175,6 +184,17 @@ function needsSeoCheck(candidate){
 }
 
 function shouldAutoVerify(candidate){
+  // 只由一个「只提供名字」的源带来的候选，不花 Serper 额度。
+  //
+  // 这条是上面那个列表自己招来的：`trends-rising-7d` / `trends-rising-30d` 被列成
+  // 「值得自动验证」的理由，而它们其实只是 Google Trends 的相关上升查询。实测
+  // 2026-09-18（池子 1893）：只由这两个 kind 带来的候选有 137 个，其中 133 个排在
+  // SEO 队列里、107 个一次都没验过 —— 占了一条 5.8 天深的队列的 12%，抢的是真游戏
+  // 名字同一份 240 次/天的额度。
+  //
+  // 判据本身在 lib/trend-queue.mjs 里定义一次（`isNameOnlySourced`），趋势侧由
+  // `isTrendEligible` 消费同一个函数。这里不再写第二份。
+  if(isNameOnlySourced(candidate))return false;
   const kinds=sourceKinds(candidate);
   const risk=estimateNameRisk(candidate.gameName);
   return kinds.has('trends-rising-7d')||kinds.has('trends-rising-30d')||kinds.has('steam-popular-new')||
@@ -205,11 +225,9 @@ function verifyPriority(candidate){
 
 function needsTrendCheck(candidate){
   if(!isTrendEligible(candidate))return false;
-  if(candidate.trend?.modelVersion!==TREND_MODEL_VERSION)return true;
-  const checked=Date.parse(candidate.trend?.checkedAt||'');
-  if(!Number.isFinite(checked))return true;
-  if(candidate.trend?.status==='error')return Date.now()-checked>TREND_ERROR_RETRY;
-  return Date.now()-checked>TREND_MAX_AGE;
+  // 分档保鲜（rising/breakout 12 小时、strong/moderate 3 天、weak/none 7 天、
+  // pending 立刻、error 1 小时）只在 lib/trend-queue.mjs 里定义一次。
+  return isTrendRecheckDue(candidate.trend);
 }
 
 function trendPriority(candidate){
@@ -358,8 +376,9 @@ if(trendBatchDue){
   // 都不成立 ——
   //   1. 怕超时：实测最近 8 轮耗时 1.1~5.4 分钟，job 上限 45 分钟；趋势循环每个
   //      sleep(8000)，跑满 10 个也只有 80 秒。
-  //   2. 趋势源不够用：`TREND_MAX_AGE` 只有 1 天，89 条合格候选每天都要重查 = 89 次/天
-  //      的需求，而压到 2 时那两轮只有 12 次/天（最近 4 轮里有 2 轮如此）。
+  //   2. 趋势源不够用：合格候选每天都要重查（当时是扁平 1 天保鲜，实测需求
+  //      79 次/天），而压到 2 时那两轮只有 12 次/天（最近 4 轮里有 2 轮如此）。
+  //      保鲜改成分档之后需求降到 51.1 次/天，但仍贴着供给线。
   // 压它没有收益，只有欠账，所以取消。留一条观察点：如果免费源被同一轮两次调用打到
   // 限流，`trendsVerified` 会掉而 `trendErrors` 会涨 —— 下一轮 rising-discovery 跑过的
   // 运行里看这两个数就能验证。
