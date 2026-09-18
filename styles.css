@@ -168,7 +168,19 @@ h1 { font-size: clamp(22px, 2.1vw, 34px); line-height: 1.08; letter-spacing: -.0
 .source-chip b { font-weight: 700; overflow-wrap: anywhere }
 .source-chip small { color: var(--muted); overflow-wrap: anywhere }
 
-.filters { display: flex; flex-wrap: wrap; gap: 7px; justify-content: flex-end }
+/* 筛选栏：搜索框留在左边，其余控件（建站类型／推荐状态／时间／导出）贴右端。
+ *
+ * ⚠️ `flex-grow: 1` 不能去掉。`.section-title` 是 space-between 的两栏布局，
+ *    标题那块实测有 1053px 宽，窗口只要不到 ~1780px，筛选栏就会被挤到第二行。
+ *    换行后它是那一行唯一的元素，如果不让它长满，整块宽度就等于内容宽（708px），
+ *    于是「靠右」根本无从谈起 —— 会贴着左边缘、右边空出大半屏。
+ *    历史上就是这个样子：1440px 下它停在 x=20~729，右边 676px 全空。
+ *    加 `flex-grow: 1` 之后：单行时它吃掉标题旁边的余量，换行时它占满整行。
+ *
+ *    顺带一提：一旦搜索框有了 `margin-right: auto`（见下），它就会把自由空间
+ *    全部吸走，`justify-content` 就再也不会生效了 —— 所以下面的
+ *    `justify-content: flex-end` 只在窄屏换行后的第二行及以后起作用。 */
+.filters { display: flex; flex-wrap: wrap; gap: 7px; justify-content: flex-end; flex-grow: 1 }
 
 /* min-width:0 是必需的：<select> 的最小宽度等于它最宽的那个 <option>，
    不禁掉的话窄屏会被「可立即行动（测试局+正式站）」这种长选项顶出横向滚动条。 */
@@ -184,7 +196,12 @@ h1 { font-size: clamp(22px, 2.1vw, 34px); line-height: 1.08; letter-spacing: -.0
   font-size: 12px;
 }
 
-.filters input { width: 190px; flex: 1 1 190px }
+/* `margin-right: auto` 是「搜索框留在左边、其余全推到右端」的实现方式：
+   只有它能吃掉剩余空间。之前写的是 `flex: 1 1 190px`（让搜索框自己长胖），
+   那样确实也能把后面的控件顶到右边，但搜索框会跟着变成几百像素宽 ——
+   用户要的是搜索框保持原样、其余靠右，所以改成「不让它长 + 用外边距顶」。
+   `flex: 0 1 190px` 保留收缩能力，窄屏时它还是会缩，不会顶破容器。 */
+.filters input { width: 190px; flex: 0 1 190px; margin-right: auto }
 .button { cursor: pointer; flex: none }
 .button:hover { border-color: #6f64cf; background: #171d31 }
 
@@ -370,6 +387,10 @@ footer { text-align: center; color: #637087; padding-top: 20px; font-size: 11px 
 
 @media (max-width: 760px) {
   .table-card th:nth-child(4), .table-card td:nth-child(4) { display: none }   /* 美国搜索意图 */
+  /* 筛选栏从这一档开始会折成两行（实测：761px 仍是单行，640px 已经是两行）。
+     两行时「搜索框左、其余右」会把第一行拉出一大块空档，不如老实左对齐换行 ——
+     所以这里把搜索框改回「自己长胖吃掉余量」的老写法，整条规则退回改动前的行为。 */
+  .filters input { flex: 1 1 190px; margin-right: 0 }
 }
 
 @media (max-width: 520px) {
