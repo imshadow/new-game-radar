@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="发现正在形成的游戏搜索机会，并区分“30%测试局”和“证据完整的正式独立站”。" />
   <meta name="theme-color" content="#080b12" />
+  <!-- 图标三个都出：SVG 给支持的浏览器（任意尺寸都清晰），ICO 兜底老浏览器，
+       apple-touch-icon 给 iOS 主屏 —— iOS 不认 SVG 图标。
+       PNG/ICO 是从 radar-logo.svg 解析生成的，所以不可能跟 logo 画得不一样；
+       改 logo 只要改那一个 SVG，再重跑一次生成脚本。 -->
+  <link rel="icon" type="image/svg+xml" href="/radar-logo.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <!-- 数据一律读同源 /data：Vercel 部署自带仓库根目录的 data/，而 GitHub Actions
        每次运行都会把新数据提交进 data/ 并触发一次重新部署，所以同源就是最新数据。
        不要在这里指回 raw.githubusercontent.com —— 该域名在国内被墙，浏览器会先卡在
