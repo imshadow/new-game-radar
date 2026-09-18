@@ -1,57 +1,62 @@
 {
-  "generatedAt": "2026-09-18T19:35:27.479Z",
-  "totalCandidates": 2429,
-  "pendingSeo": 1850,
+  "generatedAt": "2026-09-18T21:52:22.573Z",
+  "totalCandidates": 2498,
+  "pendingSeo": 1916,
   "channelCounts": {
-    "pending": 496,
-    "wiki": 307,
-    "online": 1047
+    "pending": 525,
+    "wiki": 309,
+    "online": 1082
   },
   "fastClassCounts": {
-    "pending:pending": 496,
-    "wiki:pending": 307,
-    "online:pending": 1047
+    "pending:pending": 525,
+    "wiki:pending": 309,
+    "online:pending": 1082
   },
   "strategicCounts": {
-    "pending:0": 486,
-    "wiki:1": 63,
-    "online:2": 11,
-    "wiki:0": 244,
-    "online:1": 866,
-    "online:0": 170,
+    "pending:0": 515,
+    "wiki:2": 1,
+    "wiki:1": 61,
+    "online:2": 12,
+    "wiki:0": 247,
+    "online:1": 896,
+    "online:0": 174,
     "pending:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 816
+      "count": 868
     },
     {
       "id": "itch-new-feed",
-      "count": 699
+      "count": 736
     },
     {
       "id": "itch-newest-web",
-      "count": 483
+      "count": 508
     },
     {
       "id": "y8-new",
-      "count": 164
+      "count": 168
     },
     {
       "id": "steam-upcoming",
-      "count": 119
+      "count": 120
     },
     {
       "id": "trends-rising-7d",
-      "count": 113
+      "count": 114
     },
     {
       "id": "github-html5-games",
-      "count": 85
+      "count": 89
     },
     {
       "id": "github-game",
+      "count": 89
+    },
+    {
+      "id": "trends-rising-30d",
       "count": 85
     },
     {
@@ -59,12 +64,8 @@
       "count": 84
     },
     {
-      "id": "trends-rising-30d",
-      "count": 82
-    },
-    {
       "id": "steam-new",
-      "count": 81
+      "count": 79
     },
     {
       "id": "steam-upcoming-indie",
@@ -76,23 +77,23 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 64
+      "count": 65
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 53
+      "count": 55
     },
     {
       "id": "steam-latest-indie",
-      "count": 52
+      "count": 50
     },
     {
       "id": "itch-new-popular-web",
-      "count": 48
+      "count": 49
     },
     {
       "id": "itch-popular",
-      "count": 48
+      "count": 49
     },
     {
       "id": "lagged-new",
@@ -108,15 +109,15 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 37
+      "count": 38
     },
     {
       "id": "newgrounds-latest",
-      "count": 36
+      "count": 38
     },
     {
       "id": "newgrounds-new",
-      "count": 36
+      "count": 38
     },
     {
       "id": "crazygames-new",
@@ -140,14 +141,14 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 25
-    },
-    {
-      "id": "trends-rising-7d-indie-game",
-      "count": 25
+      "count": 26
     },
     {
       "id": "trends-rising-30d-indie-game",
+      "count": 26
+    },
+    {
+      "id": "trends-rising-7d-indie-game",
       "count": 25
     },
     {
@@ -160,7 +161,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 11
+      "count": 13
     },
     {
       "id": "newgrounds-daily-top",
@@ -184,7 +185,7 @@
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 4
+      "count": 5
     },
     {
       "id": "steam-feed-topsellers",
@@ -326,6 +327,25 @@
       ]
     },
     {
+      "name": "The Forgotten Island (Safe For Work Edition)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 13,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "WIRD Opening Theme",
       "channel": "online",
       "fastClass": "pending",
@@ -380,11 +400,187 @@
       ]
     },
     {
+      "name": "Draco and the Seven Scales",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 9,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-upcoming-wishlist",
+        "itch-new-feed",
+        "itch-new",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
       "name": "TokyoNOW! 山手線挑戰｜你能猜出下一站嗎？",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 13,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Swarmkeeper: 2026",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Flips: A Coin Guessing Roguelike",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "ZeroFighter",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Orb Orbit",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "anime land",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "GoldenCoinClicker",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Skxll Island",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Red Battle: Undying",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "TwinStep",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
@@ -466,23 +662,6 @@
     },
     {
       "name": "Ant World",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Entre cores",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -631,6 +810,23 @@
       "sourceIds": [
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Luggage Wars",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-new-feed",
+        "itch-new",
+        "itch-newest-web"
       ]
     },
     {
@@ -863,193 +1059,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mareas Doradas",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Great Manager Career 2026",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Death Drone",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Burger Tower",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Run Baggie !",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "zombie evasion",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "นักสืบทรงเครื่อง (Ghost Detective)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cave adventure",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mochi Multiplayer Tower Defense",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Aviso a Dolores",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Multiplication Games for Kids",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
