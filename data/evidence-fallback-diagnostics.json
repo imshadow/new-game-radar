@@ -1,66 +1,66 @@
 {
-  "generatedAt": "2026-09-19T09:30:32.456Z",
-  "totalCandidates": 2718,
-  "pendingSeo": 1932,
+  "generatedAt": "2026-09-19T13:25:01.314Z",
+  "totalCandidates": 2810,
+  "pendingSeo": 2023,
   "channelCounts": {
-    "pending": 577,
-    "online": 1057,
-    "wiki": 298
+    "pending": 607,
+    "wiki": 300,
+    "online": 1116
   },
   "fastClassCounts": {
-    "pending:pending": 577,
-    "online:pending": 1057,
-    "wiki:pending": 298
+    "pending:pending": 607,
+    "wiki:pending": 300,
+    "online:pending": 1116
   },
   "strategicCounts": {
-    "pending:0": 567,
-    "online:2": 5,
-    "wiki:1": 65,
+    "pending:0": 597,
+    "wiki:1": 67,
+    "online:2": 4,
     "wiki:0": 233,
-    "online:1": 873,
-    "online:0": 179,
+    "online:1": 930,
+    "online:0": 182,
     "pending:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 868
+      "count": 920
     },
     {
       "id": "itch-new-feed",
-      "count": 693
+      "count": 727
     },
     {
       "id": "itch-newest-web",
-      "count": 467
+      "count": 500
     },
     {
       "id": "y8-new",
-      "count": 191
+      "count": 199
     },
     {
       "id": "trends-rising-7d",
-      "count": 119
+      "count": 127
     },
     {
       "id": "steam-upcoming",
-      "count": 103
+      "count": 104
     },
     {
       "id": "github-html5-games",
-      "count": 94
+      "count": 97
     },
     {
       "id": "github-game",
-      "count": 94
+      "count": 97
     },
     {
       "id": "trends-rising-30d",
-      "count": 90
+      "count": 94
     },
     {
       "id": "steam-new",
-      "count": 88
+      "count": 90
     },
     {
       "id": "armorgames-new",
@@ -68,31 +68,35 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 69
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 59
+      "count": 70
     },
     {
       "id": "steam-latest-indie",
-      "count": 59
+      "count": 61
+    },
+    {
+      "id": "steam-upcoming-indie",
+      "count": 60
     },
     {
       "id": "newgrounds-latest",
-      "count": 50
+      "count": 58
     },
     {
       "id": "newgrounds-new",
-      "count": 50
+      "count": 58
     },
     {
       "id": "lagged-new",
-      "count": 48
+      "count": 55
     },
     {
       "id": "poki-new",
       "count": 47
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 45
     },
     {
       "id": "itch-new-popular-web",
@@ -107,10 +111,6 @@
       "count": 44
     },
     {
-      "id": "trends-rising-30d-horror-game",
-      "count": 43
-    },
-    {
       "id": "press-new",
       "count": 42
     },
@@ -123,28 +123,28 @@
       "count": 32
     },
     {
+      "id": "trends-rising-7d-itch-io",
+      "count": 31
+    },
+    {
       "id": "hn-showhn",
-      "count": 30
+      "count": 31
+    },
+    {
+      "id": "trends-rising-7d-indie-game",
+      "count": 29
     },
     {
       "id": "steam-feed-newreleases",
       "count": 29
     },
     {
-      "id": "trends-rising-7d-itch-io",
+      "id": "trends-rising-30d-itch-io",
       "count": 28
     },
     {
-      "id": "trends-rising-30d-itch-io",
-      "count": 27
-    },
-    {
       "id": "trends-rising-30d-indie-game",
-      "count": 25
-    },
-    {
-      "id": "trends-rising-7d-indie-game",
-      "count": 25
+      "count": 26
     },
     {
       "id": "crazygames-new",
@@ -159,14 +159,6 @@
       "count": 20
     },
     {
-      "id": "itch-featured-feed",
-      "count": 11
-    },
-    {
-      "id": "itch-featured",
-      "count": 11
-    },
-    {
       "id": "newgrounds-daily-top",
       "count": 11
     },
@@ -176,6 +168,14 @@
     },
     {
       "id": "indiegamesplus",
+      "count": 10
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 10
+    },
+    {
+      "id": "itch-featured",
       "count": 10
     },
     {
@@ -192,25 +192,6 @@
     }
   ],
   "samples": [
-    {
-      "name": "Rock Declutterer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 18,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
     {
       "name": "A Crossed Path (PROLOGUE)",
       "channel": "online",
@@ -293,6 +274,210 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Honeycraft",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "BUILD A GUN",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mage Dungeon",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Five Nights at Bipolar Planet",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Sometimes|Nowhere",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Seekquence",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mythical March Arena",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Clanky! Clicker",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pip's Leap",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "015 RPS CARDS",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Two Detectives: The Sealed Gallery",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "014 DUNGEON DICE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -847,192 +1032,6 @@
     },
     {
       "name": "Jolen",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Flips: A Coin Guessing Roguelike",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ZeroFighter",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "GoldenCoinClicker",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Red Battle: Undying",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "TwinStep",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Parabellum",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Linguist of the Deep",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "AcableQuiz",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dating Killmulator",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Tank Battle Arena",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "WeoGuessr",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
