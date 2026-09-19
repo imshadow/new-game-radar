@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-09-19T21:46:39.632Z",
+  "generatedAt": "2026-09-19T23:35:18.393Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2210,
+  "pendingSeo": 2206,
   "channelCounts": {
-    "pending": 654,
-    "wiki": 302,
-    "online": 1254
+    "pending": 671,
+    "wiki": 260,
+    "online": 1275
   },
   "fastClassCounts": {
-    "pending:pending": 654,
-    "wiki:pending": 302,
-    "online:pending": 1254
+    "pending:pending": 671,
+    "wiki:pending": 260,
+    "online:pending": 1275
   },
   "strategicCounts": {
-    "pending:0": 644,
-    "wiki:1": 76,
+    "pending:0": 661,
+    "wiki:1": 60,
+    "wiki:0": 200,
     "online:2": 5,
-    "wiki:0": 226,
-    "online:1": 1064,
-    "online:0": 185,
+    "online:1": 1083,
+    "online:0": 187,
     "pending:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1068
+      "count": 1110
     },
     {
       "id": "itch-new-feed",
-      "count": 831
+      "count": 863
     },
     {
       "id": "itch-newest-web",
-      "count": 604
+      "count": 629
     },
     {
       "id": "y8-new",
-      "count": 219
+      "count": 218
     },
     {
       "id": "trends-rising-7d",
@@ -44,23 +44,19 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 106
+      "count": 102
     },
     {
       "id": "github-html5-games",
-      "count": 100
+      "count": 102
     },
     {
       "id": "github-game",
-      "count": 100
+      "count": 102
     },
     {
       "id": "trends-rising-30d",
       "count": 95
-    },
-    {
-      "id": "steam-new",
-      "count": 92
     },
     {
       "id": "armorgames-new",
@@ -71,32 +67,36 @@
       "count": 72
     },
     {
-      "id": "steam-latest-indie",
-      "count": 69
-    },
-    {
       "id": "newgrounds-latest",
-      "count": 67
+      "count": 60
     },
     {
       "id": "newgrounds-new",
-      "count": 67
+      "count": 60
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 61
+      "count": 58
     },
     {
       "id": "lagged-new",
       "count": 55
     },
     {
+      "id": "steam-new",
+      "count": 54
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 53
+    },
+    {
       "id": "itch-new-popular-web",
-      "count": 48
+      "count": 50
     },
     {
       "id": "itch-popular",
-      "count": 48
+      "count": 50
     },
     {
       "id": "poki-new",
@@ -147,16 +147,12 @@
       "count": 23
     },
     {
-      "id": "steam-feed-newreleases",
-      "count": 23
-    },
-    {
       "id": "gog-new-arrivals",
-      "count": 18
+      "count": 15
     },
     {
       "id": "gog-new",
-      "count": 18
+      "count": 15
     },
     {
       "id": "newgrounds-daily-top",
@@ -188,6 +184,10 @@
     },
     {
       "id": "steam-feed-topsellers",
+      "count": 1
+    },
+    {
+      "id": "steam-feed-newreleases",
       "count": 1
     }
   ],
@@ -301,6 +301,159 @@
       ]
     },
     {
+      "name": "Customer Service PL",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Rocket Boost",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Neuro-Nibblers",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Point of No Return",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "DOMIQ",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Steal The Egg",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Floppy Bird",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Birdseed Smugling Simulator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "GeemuBattle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "Firefly Catch",
       "channel": "online",
       "fastClass": "pending",
@@ -349,6 +502,22 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Dating Killmulator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -641,22 +810,6 @@
       ]
     },
     {
-      "name": "Dating Killmulator",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Shut Em Up",
       "channel": "online",
       "fastClass": "pending",
@@ -886,159 +1039,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dowser",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "It's Not Easy Being a Cat",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Baball",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Runaway Cart",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Backup 94",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mussels breathe in sea water",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Friend's door",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "An ode to dry eyes",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 7,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Fleeting Ideas",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
