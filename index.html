@@ -36,6 +36,17 @@
       <article class="accent"><span>在线上涨观察</span><strong id="onlineCount">0</strong><small>上涨词中仍需排除老词与占位站</small></article>
       <article><span>Wiki上涨观察</span><strong id="wikiCount">0</strong><small>已有专站时不再算新词机会</small></article>
     </section>
+    <!-- Serper 额度条。数字全部来自 latest-report.json 的 serperUsage —— 工作流每轮
+         都会写，前端只是把它渲染出来，**不发起任何请求、不消耗任何额度**。
+         ⚠️ 这是「我们自己的记账」，不是 Serper 报的余额：Serper 没有额度查询端点，
+         每账号 2450 总量 / 80 每天都是 lib/serper-pool.mjs 里的设定值。在 Serper
+         后台手动用掉的额度这里不会知道，所以显示的剩余会偏高。 -->
+    <section class="quota-bar" id="quotaBar" aria-label="API 额度">
+      <span class="quota-key">Serper 额度</span>
+      <strong id="serperQuotaLeft">正在读取…</strong>
+      <span class="quota-note" id="serperQuotaNote"></span>
+      <span class="quota-track" aria-hidden="true"><i id="serperQuotaFill"></i></span>
+    </section>
     <section class="source-health">
       <div class="section-title compact"><div><p class="eyebrow">AUTOMATION STATUS</p><h2>自动任务状态</h2></div><button id="refreshBtn" class="button">刷新结果</button></div>
       <div id="sourceChips" class="source-chips"><span class="muted">正在读取扫描报告…</span></div>
@@ -60,6 +71,6 @@
     <footer>New Game Radar · 测试局负责抢速度，正式独立站负责确认确定性；真实流量结果决定下一步是否加码。</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
-  <script type="module" src="/app.js?v=13"></script>
+  <script type="module" src="/app.js?v=14"></script>
 </body>
 </html>

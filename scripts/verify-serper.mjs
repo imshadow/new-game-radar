@@ -7,6 +7,7 @@ import { classifySiteType } from '../lib/site-type.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
 import { isProvisionalSeo, needsSeo as needsSeoFreshness, reverifyDays } from '../lib/seo-freshness.mjs';
 import { POLICY_SETS } from '../lib/source-registry.mjs';
+import { readSerperLimits } from '../lib/serper-pool.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -17,8 +18,13 @@ const TIMEOUT_MS = Math.max(5000, Number(process.env.SERPER_TIMEOUT_MS || 15000)
 const VERIFY_LIMIT = Math.max(0, Math.min(1200, Number(process.env.SERPER_VERIFY_LIMIT || 100)));
 const ONLINE_LIMIT = Math.max(0, Number(process.env.SERPER_ONLINE_LIMIT || Math.round(VERIFY_LIMIT * 0.7)));
 const WIKI_LIMIT = Math.max(0, Number(process.env.SERPER_WIKI_LIMIT || Math.round(VERIFY_LIMIT * 0.3)));
-const TOTAL_LIMIT = Math.max(1, Number(process.env.SERPER_TOTAL_LIMIT || 2400));
-const DAILY_LIMIT = Math.max(1, Number(process.env.SERPER_DAILY_LIMIT || TOTAL_LIMIT));
+// 默认值只有一处定义（lib/serper-pool.mjs）。
+// 这里原来写死 2400，而且日额度默认「等于总额度」—— 等于没有日闸门。
+// 池子路径（verify-serper-pool.mjs）会给子进程注入 SERPER_TOTAL/DAILY_LIMIT，
+// 所以线上一直看不出问题；但单独跑这个脚本时，日闸门会从 80 变成 2400。
+// 两个数字不一致的后果不只是难看：totalLimit/dailyLimit 会被写进
+// data/serper-usage.json，而额度页和健康检查都读它。
+const { totalLimit: TOTAL_LIMIT, dailyLimit: DAILY_LIMIT } = readSerperLimits();
 const COUNTRY = String(process.env.SEO_REGION || 'US').toLowerCase();
 const LANGUAGE = String(process.env.SEO_LANGUAGE || 'en-US').split('-')[0].toLowerCase();
 const DAY = 86400000;

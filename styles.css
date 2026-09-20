@@ -134,6 +134,38 @@ h1 { font-size: clamp(22px, 2.1vw, 34px); line-height: 1.08; letter-spacing: -.0
 .stats span, .stats small { display: block; color: var(--muted); font-size: 11px }
 .stats strong { display: block; font-size: 25px; letter-spacing: -.035em; margin: 4px 0 1px }
 
+/* Serper 额度条。放在统计卡片下面，因为它讲的是「成本」而不是「结果」。
+   ⚠️ 别给它加 min-width —— 窄屏时这一行要能自己折行；进度条用 flex-basis:100%
+   单独占一行，所以它既不跟文字抢宽度，也不会顶出横向滚动条。 */
+.quota-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px 10px;
+  margin-top: 10px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0f1520;
+}
+
+.quota-bar > * { min-width: 0 }
+
+.quota-key { color: var(--muted); font-size: 11px }
+.quota-bar strong { font-size: 15px; letter-spacing: -.02em }
+.quota-note { color: var(--muted); font-size: 11px; overflow-wrap: anywhere }
+
+.quota-track { flex: 1 1 100%; height: 3px; border-radius: 2px; background: #1b2434; overflow: hidden }
+.quota-track i { display: block; height: 100%; width: 0; background: var(--green); transition: width .25s }
+
+/* 黄色 = 还能用但要当心（今日用尽 / 总量不足 20%）；红色 = 真没了 */
+.quota-bar.low strong, .quota-bar.today-full strong { color: var(--yellow) }
+.quota-bar.low .quota-track i, .quota-bar.today-full .quota-track i { background: var(--yellow) }
+.quota-bar.dead strong { color: var(--red) }
+.quota-bar.dead .quota-track i { background: var(--red) }
+.quota-bar.off strong { color: var(--muted) }
+.quota-bar.off .quota-track i { background: #3a465c }
+
 .source-health, .results { margin-top: 20px }
 
 .section-title {

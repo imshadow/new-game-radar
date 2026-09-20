@@ -7,7 +7,7 @@ import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
 import { stripDerivedBlocks, buildDashboardPayload, writeJsonCompact } from '../lib/persistence.mjs';
 import { candidateId } from '../lib/scanner.mjs';
 import { activeTrendProviderLabel, trendValidationSummary } from '../lib/trend-queue.mjs';
-import { SERPER_SLOT_DEFINITIONS, aggregateSerperUsage } from '../lib/serper-pool.mjs';
+import { SERPER_SLOT_DEFINITIONS, aggregateSerperUsage, readSerperLimits } from '../lib/serper-pool.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -129,8 +129,10 @@ const serpApiUsage = {
 // two agree, which is exactly why the bug was invisible: the day a second
 // SERPER_API_KEY_2 is added, the dashboard and the health check would report
 // 1/N of the real budget.
-const serperTotalLimit = Math.max(1, Number(process.env.SERPER_TOTAL_LIMIT || 2400));
-const serperDailyLimit = Math.max(1, Number(process.env.SERPER_DAILY_LIMIT || 100));
+// 默认值只有一处定义（lib/serper-pool.mjs）。这里原来写的是 2400/100，
+// 和 verify-serper-pool.mjs 的 2450/80 不一致 —— 两个脚本写的是同一个
+// `serperUsage` 字段，谁后跑谁说了算，所以两边报出来的额度可能是两个数。
+const { totalLimit: serperTotalLimit, dailyLimit: serperDailyLimit } = readSerperLimits();
 const serperSlots = SERPER_SLOT_DEFINITIONS
   .map(([id, envName]) => ({
     id,

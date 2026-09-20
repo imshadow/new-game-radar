@@ -8,6 +8,7 @@ import {
   currentUtcDay,
   mergeSerperVerification,
   normalizeSerperUsage,
+  readSerperLimits,
 } from '../lib/serper-pool.mjs';
 
 // Serper has no pool in upstream: there is exactly one SERPER_API_KEY, so
@@ -26,8 +27,9 @@ const primaryUsagePath = path.join(dataDir, 'serper-usage.json');
 const poolUsagePath = path.join(dataDir, 'serper-pool-usage.json');
 const reportOnly = process.argv.includes('--report-only');
 
-const totalLimit = Math.max(1, Number(process.env.SERPER_TOTAL_LIMIT || 2450));
-const dailyLimit = Math.max(1, Number(process.env.SERPER_DAILY_LIMIT || 80));
+// 默认值只有一处定义（lib/serper-pool.mjs），这里不要再写死数字 ——
+// 以前这个文件和 classify-site-types.mjs 各写一套，且值不一样。
+const { totalLimit, dailyLimit } = readSerperLimits();
 const verifyLimit = Math.max(0, Math.min(1200, Number(process.env.SERPER_VERIFY_LIMIT || 90)));
 const onlineLimit = Math.max(0, Number(process.env.SERPER_ONLINE_LIMIT || Math.round(verifyLimit * 0.7)));
 const wikiLimit = Math.max(0, Number(process.env.SERPER_WIKI_LIMIT || Math.round(verifyLimit * 0.3)));

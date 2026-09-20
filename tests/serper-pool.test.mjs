@@ -146,3 +146,60 @@ test('the pool passes each account its own key instead of reusing the first', ()
   assert.match(script, /SERPER_API_KEY: slot\.key/);
   assert.doesNotMatch(script, /SERPER_API_KEY: slots\[0\]/);
 });
+
+function sourceFiles(...dirs) {
+  return dirs.flatMap((dir) => fs
+    .readdirSync(path.join(root, dir), { recursive: true })
+    .map((entry) => path.join(root, dir, String(entry)))
+    .filter((file) => file.endsWith('.mjs') && fs.statSync(file).isFile()));
+}
+
+test('the Serper limit defaults live in exactly one place', () => {
+  // lib/serper-pool.mjs 的注释声称这个测试会扫描「第二份定义」。它以前并不扫 ——
+  // 所以 scripts/verify-serper.mjs 里的 2400 一直活着，而它和 lib 里的 2450
+  // 写的是同一批字段（totalLimit / dailyLimit 会进 data/serper-usage.json 和报告，
+  // 额度展示和健康检查都读它）。注释里的那句承诺现在由这个测试兑现。
+  const files = sourceFiles('scripts', 'lib');
+  const rels = files.map((file) => path.relative(root, file).replaceAll('\\', '/'));
+
+  // 防「假绿」：先证明扫描范围确实覆盖了这几个已知文件，否则这个守卫等于没跑。
+  for (const required of [
+    'lib/serper-pool.mjs',
+    'scripts/verify-serper.mjs',
+    'scripts/verify-serper-pool.mjs',
+    'scripts/classify-site-types.mjs',
+  ]) {
+    assert.ok(rels.includes(required), `${required} 没被扫到 —— 扫描范围不对，守卫会假绿`);
+  }
+
+  for (const file of files) {
+    const rel = path.relative(root, file).replaceAll('\\', '/');
+    const src = fs.readFileSync(file, 'utf8');
+    // env 名后面直接跟数字，就是又抄了一份默认值：
+    //   process.env.SERPER_TOTAL_LIMIT || 2400
+    //   process.env.SERPER_DAILY_LIMIT ?? 80
+    // 要拿额度请用 lib/serper-pool.mjs 的 readSerperLimits()。
+    assert.doesNotMatch(
+      src,
+      /SERPER_(?:TOTAL|DAILY)_LIMIT\s*(?:\|\||\?\?)\s*\d/,
+      `${rel} 又写了一份 Serper 额度默认值，请改用 lib/serper-pool.mjs 的 readSerperLimits()`,
+    );
+    if (rel !== 'lib/serper-pool.mjs') {
+      assert.doesNotMatch(
+        src,
+        /SERPER_LIMIT_DEFAULTS/,
+        `${rel} 引用了 SERPER_LIMIT_DEFAULTS —— 默认值只应留在 lib/serper-pool.mjs 里`,
+      );
+    }
+  }
+});
+
+test('every Serper limit consumer goes through readSerperLimits', () => {
+  // 上一个测试挡的是「抄一份新的默认值」，这个挡的是「绕开 readSerperLimits 自己读 env」。
+  // 后者更隐蔽：数字可能是对的，但日闸门/总额度的算法（Math.max(1, …)、随账号数
+  // 放大）就又分叉了。
+  for (const rel of ['scripts/verify-serper.mjs', 'scripts/verify-serper-pool.mjs', 'scripts/classify-site-types.mjs']) {
+    const src = fs.readFileSync(path.join(root, rel), 'utf8');
+    assert.match(src, /readSerperLimits/, `${rel} 没有用 readSerperLimits()`);
+  }
+});
