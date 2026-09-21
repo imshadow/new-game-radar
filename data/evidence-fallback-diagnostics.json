@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-21T07:11:31.234Z",
+  "generatedAt": "2026-09-21T14:07:44.557Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1733,
+  "pendingSeo": 1732,
   "channelCounts": {
-    "pending": 524,
-    "online": 1095,
-    "wiki": 114
+    "pending": 510,
+    "wiki": 135,
+    "online": 1087
   },
   "fastClassCounts": {
-    "pending:pending": 524,
-    "online:pending": 1095,
-    "wiki:pending": 114
+    "pending:pending": 510,
+    "wiki:pending": 135,
+    "online:pending": 1087
   },
   "strategicCounts": {
-    "pending:0": 514,
-    "online:1": 892,
+    "pending:0": 500,
+    "wiki:1": 23,
+    "wiki:0": 112,
+    "online:1": 882,
     "online:2": 5,
-    "wiki:0": 97,
-    "online:0": 198,
-    "pending:1": 10,
-    "wiki:1": 17
+    "online:0": 200,
+    "pending:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 776
+      "count": 725
     },
     {
       "id": "itch-new-feed",
@@ -32,23 +32,23 @@
     },
     {
       "id": "itch-newest-web",
-      "count": 462
+      "count": 427
     },
     {
       "id": "y8-new",
-      "count": 239
+      "count": 245
     },
     {
       "id": "trends-rising-7d",
-      "count": 147
+      "count": 151
     },
     {
       "id": "github-html5-games",
-      "count": 113
+      "count": 115
     },
     {
       "id": "github-game",
-      "count": 113
+      "count": 115
     },
     {
       "id": "trends-rising-30d",
@@ -56,11 +56,11 @@
     },
     {
       "id": "armorgames-new",
-      "count": 84
+      "count": 85
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 79
+      "count": 80
     },
     {
       "id": "newgrounds-latest",
@@ -72,43 +72,47 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 53
+      "count": 60
     },
     {
       "id": "itch-popular",
-      "count": 53
+      "count": 60
+    },
+    {
+      "id": "steam-upcoming",
+      "count": 58
     },
     {
       "id": "lagged-new",
-      "count": 50
+      "count": 53
     },
     {
       "id": "trends-rising-30d-horror-game",
       "count": 48
     },
     {
-      "id": "steam-upcoming",
-      "count": 43
-    },
-    {
-      "id": "press-new",
-      "count": 40
+      "id": "steam-upcoming-indie",
+      "count": 42
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 39
+      "count": 41
+    },
+    {
+      "id": "press-new",
+      "count": 41
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 35
     },
     {
-      "id": "trends-rising-30d-indie-game",
+      "id": "trends-rising-7d-itch-io",
       "count": 33
     },
     {
-      "id": "trends-rising-7d-itch-io",
-      "count": 32
+      "id": "trends-rising-30d-indie-game",
+      "count": 33
     },
     {
       "id": "hn-showhn",
@@ -119,32 +123,32 @@
       "count": 30
     },
     {
-      "id": "steam-upcoming-indie",
-      "count": 28
-    },
-    {
       "id": "steam-latest-indie",
-      "count": 17
+      "count": 23
     },
     {
       "id": "steam-new",
-      "count": 17
+      "count": 23
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 15
+      "count": 18
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 14
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 14
+      "id": "poki-new",
+      "count": 18
     },
     {
       "id": "steam-top-wishlist",
       "count": 14
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 13
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 13
     },
     {
       "id": "crazygames-new",
@@ -152,7 +156,7 @@
     },
     {
       "id": "indiegamesplus",
-      "count": 10
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -161,10 +165,6 @@
     {
       "id": "itch-featured",
       "count": 10
-    },
-    {
-      "id": "poki-new",
-      "count": 8
     }
   ],
   "samples": [
@@ -259,6 +259,40 @@
       ]
     },
     {
+      "name": "Flight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 14,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "armorgames-new",
+        "poki-new"
+      ]
+    },
+    {
+      "name": "The Treasure of CrissCross Cove",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 14,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-feed",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Fool's Gold",
       "channel": "online",
       "fastClass": "pending",
@@ -273,6 +307,243 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hue Stack",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Neon TD",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "eszett simulator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "banana orbit",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "No Direction Home",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Shin Sui",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "SSAWA 2000: CENTRALA",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Goobert Defense",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "RED PROTOCOL // LAST LIGHT",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Axie Pawa!!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Mess: Swarm Tower Defense",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Tiny Front",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Deceptive Guide",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Dating Killmulator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -667,22 +938,6 @@
       ]
     },
     {
-      "name": "Dating Killmulator",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "GOLD RUSH 1898",
       "channel": "online",
       "fastClass": "pending",
@@ -765,258 +1020,6 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Linguist of the Deep",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cave adventure",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "MazeBots",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Fish Sort",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 1,
-      "sourceIds": [
-        "y8-new"
-      ]
-    },
-    {
-      "name": "This Ain´t Spanish Gold",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lucky Leap Maneki",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Yar!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Oh no, aliens tied a bomb to my back and now i need to jump on them to explode them so they die: Escape 3D blast",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "InkClaim",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Ball Shocker",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tristana & The Tenacious Targets of Terror!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Frogball",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "W1",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "The Accident Involving Mr. Wizard's Apprentice",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Asha",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-new-feed",
-        "itch-new",
-        "itch-newest-web"
       ]
     }
   ]
