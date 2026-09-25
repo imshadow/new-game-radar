@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-09-25T07:49:35.192Z",
+  "generatedAt": "2026-09-25T13:01:22.388Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1090,
+  "pendingSeo": 1091,
   "channelCounts": {
-    "pending": 433,
-    "wiki": 127,
-    "online": 530
+    "pending": 451,
+    "wiki": 123,
+    "online": 517
   },
   "fastClassCounts": {
-    "pending:pending": 433,
-    "wiki:pending": 127,
-    "online:pending": 530
+    "pending:pending": 451,
+    "wiki:pending": 123,
+    "online:pending": 517
   },
   "strategicCounts": {
-    "pending:0": 424,
-    "wiki:1": 20,
+    "pending:0": 442,
+    "wiki:1": 11,
+    "wiki:0": 112,
     "online:2": 2,
-    "wiki:0": 107,
-    "online:1": 289,
+    "online:1": 276,
     "online:0": 239,
     "pending:1": 9
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 385
+      "count": 399
     },
     {
       "id": "itch-new-feed",
-      "count": 384
+      "count": 398
     },
     {
       "id": "itch-newest-web",
-      "count": 198
+      "count": 200
     },
     {
       "id": "trends-rising-7d",
-      "count": 182
+      "count": 187
     },
     {
       "id": "github-html5-games",
@@ -48,47 +48,47 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 122
+      "count": 125
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 95
+      "count": 99
     },
     {
       "id": "armorgames-new",
       "count": 85
     },
     {
+      "id": "steam-upcoming",
+      "count": 84
+    },
+    {
       "id": "itch-new-popular-web",
-      "count": 80
+      "count": 72
     },
     {
       "id": "itch-popular",
-      "count": 80
-    },
-    {
-      "id": "steam-upcoming",
-      "count": 70
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 52
+      "count": 72
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 50
+      "count": 64
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 53
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 48
+      "count": 49
+    },
+    {
+      "id": "trends-rising-30d-indie-game",
+      "count": 42
     },
     {
       "id": "trends-rising-7d-itch-io",
       "count": 42
-    },
-    {
-      "id": "trends-rising-30d-indie-game",
-      "count": 40
     },
     {
       "id": "press-new",
@@ -108,15 +108,15 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 21
+      "count": 22
     },
     {
       "id": "steam-latest-indie",
-      "count": 20
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 20
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -125,14 +125,6 @@
     {
       "id": "itch-featured",
       "count": 9
-    },
-    {
-      "id": "newgrounds-latest",
-      "count": 8
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 8
     },
     {
       "id": "newgrounds-daily-top",
@@ -145,6 +137,14 @@
     {
       "id": "indiegamesplus",
       "count": 3
+    },
+    {
+      "id": "newgrounds-latest",
+      "count": 1
+    },
+    {
+      "id": "newgrounds-new",
+      "count": 1
     },
     {
       "id": "y8-new",
@@ -186,6 +186,125 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Owl Be There 4 You",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Let's Get Cooking!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Tirania",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Incredibox - Sprunki: The Aftermath.",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "COURT NIGHTS — 코트의 밤",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "O Longo Século XIX",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Brawlamachi",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
@@ -730,6 +849,40 @@
       ]
     },
     {
+      "name": "Vaultbreakers",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Great One's Feast",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "TD-808",
       "channel": "online",
       "fastClass": "pending",
@@ -840,159 +993,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 3,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Duel snake",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "GunnyPig",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Falltasy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Depths of Elora",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Muller Village",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Pogo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tic Tac Toe",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mask-a-Raid",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mantle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [

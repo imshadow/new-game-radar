@@ -1,30 +1,30 @@
 {
-  "scannedAt": "2026-09-25T07:45:04.160Z",
+  "scannedAt": "2026-09-25T12:59:12.535Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 204,
+  "totalAdded": 235,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 34
+      "added": 35
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 3
+      "added": 2
     },
     {
       "ok": true,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 34
+      "added": 36
     },
     {
       "ok": true,
@@ -45,49 +45,49 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 5
+      "added": 2
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 20
+      "added": 24
     },
     {
       "ok": true,
       "sourceId": "newgrounds-daily-top",
       "sourceName": "Newgrounds Daily Top Five",
       "total": 5,
-      "added": 5
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 7
+      "added": 12
     },
     {
       "ok": true,
       "sourceId": "crazygames-new",
       "sourceName": "CrazyGames 新游戏",
       "total": 70,
-      "added": 3
+      "added": 1
     },
     {
       "ok": true,
       "sourceId": "poki-new",
       "sourceName": "Poki 新游戏",
-      "total": 141,
-      "added": 1
+      "total": 157,
+      "added": 16
     },
     {
       "ok": true,
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 34
+      "added": 38
     },
     {
       "ok": false,
@@ -100,21 +100,21 @@
       "sourceId": "lagged-new",
       "sourceName": "Lagged 新游戏",
       "total": 82,
-      "added": 0
+      "added": 2
     },
     {
       "ok": true,
       "sourceId": "armorgames-new",
       "sourceName": "Armor Games 首页推荐",
-      "total": 44,
-      "added": 21
+      "total": 39,
+      "added": 15
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-wishlist",
       "sourceName": "Steam 热门即将推出",
       "total": 50,
-      "added": 1
+      "added": 2
     },
     {
       "ok": true,
@@ -128,42 +128,41 @@
       "sourceId": "steam-feed-topsellers",
       "sourceName": "Steam 周销量榜 RSS",
       "total": 10,
-      "added": 2
+      "added": 5
     },
     {
       "ok": true,
       "sourceId": "alphabetagamer",
       "sourceName": "Alpha Beta Gamer",
       "total": 30,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "hn-showhn",
       "sourceName": "Hacker News Show HN 游戏",
-      "total": 29,
-      "added": 1
+      "total": 28,
+      "added": 0
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "github-html5-games",
       "sourceName": "GitHub 新建 HTML5 游戏仓库",
-      "total": 46,
-      "added": 7
+      "error": "远程站点返回 403"
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-indie",
       "sourceName": "Steam 即将推出的独立游戏",
       "total": 50,
-      "added": 12
+      "added": 16
     },
     {
       "ok": true,
       "sourceId": "steam-popular-new-indie",
       "sourceName": "Steam 独立游戏热门新发行",
-      "total": 32,
-      "added": 0
+      "total": 33,
+      "added": 1
     },
     {
       "ok": true,
@@ -183,88 +182,91 @@
       "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "total": 6,
-      "added": 4
+      "total": 8,
+      "added": 5
     },
     {
       "ok": true,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
-      "total": 19,
-      "added": 9
+      "total": 18,
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "trends-rising-7d-indie-game",
       "sourceName": "Trends上涨 7天 · indie game",
-      "total": 0,
-      "added": 0
+      "total": 1,
+      "added": 1
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-indie-game",
       "sourceName": "Trends上涨 30天 · indie game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 4,
+      "added": 3
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 16,
+      "added": 11
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-horror-game",
       "sourceName": "Trends上涨 30天 · horror game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 23,
+      "added": 8
     }
   ],
-  "seoVerified": 1,
+  "seoVerified": 0,
   "seoErrors": 0,
-  "seoBlocked": 5,
+  "seoBlocked": 0,
   "seoFreePath": {
-    "queueSize": 20,
-    "attempted": 6,
-    "verified": 1,
+    "queueSize": 0,
+    "attempted": 0,
+    "verified": 0,
     "failed": 0,
-    "blocked": 5,
-    "abortedAfter": 5,
-    "skipped": false,
+    "blocked": 0,
+    "abortedAfter": 0,
+    "skipped": true,
     "blockedUntil": "2026-09-25T13:45:40.002Z"
   },
   "fastModelVersion": 3,
-  "fastPassedCount": 92,
-  "fastWatchCount": 190,
+  "fastPassedCount": 93,
+  "fastWatchCount": 188,
   "fastRejectedCount": 1628,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 16,
+  "trendsVerified": 5,
   "trendErrors": 4,
   "trendBatchRan": true,
-  "trendQueueSize": 20,
+  "trendQueueSize": 9,
   "risingDiscoveryRan": true,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
   "seoPassedCount": 437,
-  "trendEligibleCount": 45,
-  "trendPendingCount": 5,
-  "trendValidatedCount": 43,
+  "trendEligibleCount": 46,
+  "trendPendingCount": 4,
+  "trendValidatedCount": 45,
   "risingCount": 20,
   "globalRisingCount": 1,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 3,
-    "watch": 380,
-    "reject": 1279,
-    "pending": 1329,
+    "watch": 383,
+    "reject": 1280,
+    "pending": 1325,
     "error": 9
   },
   "trendProvider": "google-trends-api",
   "trendProviderCounts": {
-    "google-trends-api": 43
+    "google-trends-api": 45
   },
   "serpApiConfigured": false,
   "serpApiUsage": {
@@ -279,7 +281,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-25T07:45:02.515Z",
+    "checkedAt": "2026-09-25T12:59:11.302Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -297,15 +299,15 @@
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "serper+autocomplete": 1881,
+    "serper+autocomplete": 1879,
     "duckduckgo+autocomplete": 29,
-    "evidence-fallback": 1
+    "evidence-fallback": 11
   },
   "seoClassificationCounts": {
-    "page": 367,
+    "page": 366,
     "independent": 50,
     "watch": 208,
-    "reject": 1256
+    "reject": 1255
   },
   "serperConfigured": true,
   "serperUsage": {
@@ -352,16 +354,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 1879,
-    "wiki": 659,
-    "pending": 462
+    "online": 1865,
+    "wiki": 655,
+    "pending": 480
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
     "prepare": 1,
-    "watch": 10,
-    "weak": 648
+    "watch": 9,
+    "weak": 645
   },
   "serperVerification": {
     "rushMode": true,
@@ -410,7 +412,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-25T07:49:34.981Z"
+    "ranAt": "2026-09-25T13:01:22.216Z"
   },
   "seoErrorCandidates": 9,
   "serperConfiguredSlots": 3,
@@ -451,31 +453,40 @@
         "lastError": null
       }
     },
-    "updatedAt": "2026-09-25T07:49:34.980Z"
+    "updatedAt": "2026-09-25T13:01:22.216Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 1090,
-    "eligibleCount": 1,
-    "queueSize": 1,
-    "verified": 1,
+    "pendingCount": 1091,
+    "eligibleCount": 10,
+    "queueSize": 10,
+    "verified": 10,
     "channelVerified": {
       "online": 0,
-      "wiki": 1,
+      "wiki": 10,
       "pending": 0
     },
     "fastRecalculated": {
       "pass": 0,
-      "watch": 1,
-      "weak": 0,
+      "watch": 5,
+      "weak": 5,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "高考移民：常安转校生 A Transfer Student from Chang'an"
+      "Immortal Chess",
+      "Sandwich +1",
+      "Cozy Farm: Tidy Up!",
+      "Puzzle Arcade Pals",
+      "The Crooked Hand",
+      "Kibo to Yume",
+      "Tower of Pestilence",
+      "Brick and Banner: College Football Dynasty",
+      "The Baggage Room",
+      "Ratcore: The Rat-Former"
     ],
-    "ranAt": "2026-09-25T07:49:35.535Z"
+    "ranAt": "2026-09-25T13:01:22.654Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -497,10 +508,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-25T07:49:36.597Z"
+    "ranAt": "2026-09-25T13:01:23.288Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-25T07:49:36.668Z",
+    "checkedAt": "2026-09-25T13:01:23.365Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 0,
     "workingKeys": 0,
@@ -557,19 +568,19 @@
     "monthlyLimit": 0,
     "dailyLimit": 0,
     "accounts": {},
-    "updatedAt": "2026-09-25T07:49:36.787Z"
+    "updatedAt": "2026-09-25T13:01:23.457Z"
   },
   "serpApiQuotaFill": {
     "configuredSlots": 0
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 126,
+      "validated": 127,
       "rising": 9,
       "recommended": 0
     },
     "wiki": {
-      "validated": 25,
+      "validated": 26,
       "rising": 8,
       "recommended": 0
     },
@@ -611,15 +622,15 @@
     },
     "pendingByChannel": {
       "online": 153,
-      "wiki": 100
+      "wiki": 105
     },
     "pendingByTier": {
-      "strong": 11,
-      "secondary": 136,
-      "strategic": 106
+      "strong": 10,
+      "secondary": 139,
+      "strategic": 109
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-25T07:49:37.383Z"
+    "ranAt": "2026-09-25T13:01:23.813Z"
   }
 }
