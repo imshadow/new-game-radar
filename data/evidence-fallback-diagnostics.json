@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-30T06:02:35.009Z",
+  "generatedAt": "2026-09-30T12:33:43.335Z",
   "totalCandidates": 3000,
-  "pendingSeo": 378,
+  "pendingSeo": 397,
   "channelCounts": {
-    "pending": 291,
-    "wiki": 17,
-    "online": 70
+    "pending": 292,
+    "wiki": 43,
+    "online": 62
   },
   "fastClassCounts": {
-    "pending:pending": 291,
-    "wiki:pending": 17,
-    "online:pending": 70
+    "pending:pending": 292,
+    "wiki:pending": 43,
+    "online:pending": 62
   },
   "strategicCounts": {
-    "pending:0": 290,
-    "wiki:1": 1,
+    "pending:0": 291,
+    "wiki:1": 2,
+    "wiki:0": 41,
+    "online:1": 61,
     "pending:1": 1,
-    "wiki:0": 16,
-    "online:1": 69,
     "online:0": 1
   },
   "topSources": [
@@ -27,27 +27,27 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 139
+      "count": 140
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 128
     },
     {
-      "id": "itch-new-feed",
-      "count": 71
+      "id": "trends-rising-30d-horror-game",
+      "count": 65
     },
     {
       "id": "itch-new",
-      "count": 71
+      "count": 63
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 63
     },
     {
       "id": "itch-newest-web",
-      "count": 68
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 65
+      "count": 60
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -59,34 +59,42 @@
     },
     {
       "id": "hn-showhn",
-      "count": 45
+      "count": 46
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 42
     },
     {
-      "id": "trends-rising-30d-itch-io",
-      "count": 37
-    },
-    {
       "id": "steam-upcoming",
-      "count": 17
+      "count": 42
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 12
+      "id": "trends-rising-30d-itch-io",
+      "count": 38
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 6
+      "count": 28
+    },
+    {
+      "id": "steam-upcoming-wishlist",
+      "count": 15
     },
     {
       "id": "steam-latest-indie",
-      "count": 1
+      "count": 2
     },
     {
       "id": "steam-new",
+      "count": 2
+    },
+    {
+      "id": "indiegamesplus",
+      "count": 1
+    },
+    {
+      "id": "press-new",
       "count": 1
     },
     {
@@ -103,6 +111,23 @@
     }
   ],
   "samples": [
+    {
+      "name": "200만원만 지르고 게임으로 쌀먹하는 방법",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 23,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "Fish Sort",
       "channel": "online",
@@ -926,23 +951,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "SPACE: THE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
