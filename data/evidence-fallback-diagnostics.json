@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-10-04T12:20:04.602Z",
+  "generatedAt": "2026-10-04T17:04:06.727Z",
   "totalCandidates": 3000,
-  "pendingSeo": 291,
+  "pendingSeo": 320,
   "channelCounts": {
-    "pending": 280,
+    "pending": 278,
     "wiki": 4,
-    "online": 7
+    "online": 38
   },
   "fastClassCounts": {
-    "pending:pending": 280,
+    "pending:pending": 278,
     "wiki:pending": 4,
-    "online:pending": 7
+    "online:pending": 38
   },
   "strategicCounts": {
-    "pending:0": 278,
+    "pending:0": 275,
     "wiki:1": 1,
-    "pending:1": 2,
-    "wiki:0": 3,
-    "online:0": 1,
-    "online:1": 6
+    "online:1": 17,
+    "online:0": 21,
+    "pending:1": 3,
+    "wiki:0": 3
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 212
+      "count": 210
     },
     {
       "id": "trends-rising-30d",
-      "count": 141
+      "count": 140
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 119
+      "count": 118
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -51,23 +51,35 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 38
+      "count": 37
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 35
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 10
+      "count": 34
     },
     {
       "id": "itch-new",
-      "count": 10
+      "count": 17
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 17
+    },
+    {
+      "id": "armorgames-new",
+      "count": 15
     },
     {
       "id": "itch-newest-web",
-      "count": 6
+      "count": 13
+    },
+    {
+      "id": "github-html5-games",
+      "count": 5
+    },
+    {
+      "id": "github-game",
+      "count": 5
     },
     {
       "id": "steam-upcoming",
@@ -78,12 +90,20 @@
       "count": 4
     },
     {
+      "id": "newgrounds-daily-top",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 4
+    },
+    {
       "id": "itch-featured-feed",
-      "count": 2
+      "count": 3
     },
     {
       "id": "itch-featured",
-      "count": 2
+      "count": 3
     },
     {
       "id": "steam-upcoming-indie",
@@ -99,6 +119,159 @@
     }
   ],
   "samples": [
+    {
+      "name": "Truck on legs",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cat 😾 and Mouse 🐁",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Claim the Gods",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Change: The weapon",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Shogi 3D - ASG67",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Survive the Swarm",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "A-Ponte-me",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Koalitionsbruch",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Let's go!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "200만원만 지르고 게임으로 쌀먹하는 방법",
       "channel": "online",
@@ -168,37 +341,67 @@
       ]
     },
     {
-      "name": "GOLD RUSH 1898",
+      "name": "the villain's villain",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 8,
+      "discoveryScore": 7,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 12,
+      "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "newgrounds-daily-top",
+        "newgrounds-top"
       ]
     },
     {
-      "name": "The Last Line",
+      "name": "Bleed for Me from IWTV2",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 8,
+      "discoveryScore": 7,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 4,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "newgrounds-daily-top",
+        "newgrounds-top"
+      ]
+    },
+    {
+      "name": "Ruby in \"Fuzz Spirit\"",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "newgrounds-daily-top",
+        "newgrounds-top"
+      ]
+    },
+    {
+      "name": "Deadlock The Cartoon Vol 1",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "newgrounds-daily-top",
+        "newgrounds-top"
       ]
     },
     {
@@ -253,6 +456,102 @@
       ]
     },
     {
+      "name": "Spaghetti Celesti: Devour the Heavens",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Newspeak 1984",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Fieldrunners",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Joinstick",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Accretion",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "The Jade Crypt",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
       "name": "DeadLock OS",
       "channel": "online",
       "fastClass": "pending",
@@ -265,6 +564,231 @@
       "sourceCount": 1,
       "sourceIds": [
         "hn-showhn"
+      ]
+    },
+    {
+      "name": "Sneak Thief Prime Catch",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Epic Battle Fantasy 5",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Kingdom Rush",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Learn to Fly 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Strike Force Heroes 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 14,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Rogue Soul 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Exit Path",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Diggy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Mighty Knight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "The Last Stand 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Crush the Castle 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "The Enchanted Cave 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Don't Escape 3",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Sonny 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Epic Battle Fantasy 4",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
       ]
     }
   ]
