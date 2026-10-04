@@ -1,16 +1,16 @@
 {
-  "scannedAt": "2026-10-03T21:45:26.533Z",
+  "scannedAt": "2026-10-04T00:03:52.262Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 166,
+  "totalAdded": 110,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 36
+      "added": 33
     },
     {
       "ok": true,
@@ -24,7 +24,7 @@
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 36
+      "added": 33
     },
     {
       "ok": true,
@@ -38,14 +38,14 @@
       "sourceId": "steam-top-wishlist",
       "sourceName": "Steam Top Wishlists",
       "total": 49,
-      "added": 0
+      "added": 1
     },
     {
       "ok": true,
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 1
+      "added": 2
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 9
+      "added": 3
     },
     {
       "ok": true,
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 33
+      "added": 12
     },
     {
       "ok": false,
@@ -106,8 +106,8 @@
       "ok": true,
       "sourceId": "armorgames-new",
       "sourceName": "Armor Games 首页推荐",
-      "total": 44,
-      "added": 21
+      "total": 47,
+      "added": 19
     },
     {
       "ok": true,
@@ -145,10 +145,11 @@
       "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "github-html5-games",
       "sourceName": "GitHub 新建 HTML5 游戏仓库",
-      "error": "远程站点返回 500"
+      "total": 48,
+      "added": 6
     },
     {
       "ok": true,
@@ -162,7 +163,7 @@
       "sourceId": "steam-popular-new-indie",
       "sourceName": "Steam 独立游戏热门新发行",
       "total": 24,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
@@ -175,83 +176,41 @@
       "ok": true,
       "sourceId": "gog-new-arrivals",
       "sourceName": "GOG 新上架游戏",
-      "total": 21,
+      "total": 20,
       "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-itch-io",
-      "sourceName": "Trends上涨 7天 · itch io",
-      "total": 16,
-      "added": 6
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-itch-io",
-      "sourceName": "Trends上涨 30天 · itch io",
-      "total": 18,
-      "added": 8
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-indie-game",
-      "sourceName": "Trends上涨 7天 · indie game",
-      "total": 2,
-      "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-indie-game",
-      "sourceName": "Trends上涨 30天 · indie game",
-      "total": 2,
-      "added": 1
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-horror-game",
-      "sourceName": "Trends上涨 7天 · horror game",
-      "total": 18,
-      "added": 5
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-horror-game",
-      "sourceName": "Trends上涨 30天 · horror game",
-      "total": 21,
-      "added": 8
     }
   ],
-  "seoVerified": 1,
+  "seoVerified": 98,
   "seoErrors": 0,
-  "seoBlocked": 5,
+  "seoBlocked": 0,
   "seoFreePath": {
-    "queueSize": 20,
-    "attempted": 6,
-    "verified": 1,
+    "queueSize": 0,
+    "attempted": 0,
+    "verified": 0,
     "failed": 0,
-    "blocked": 5,
-    "abortedAfter": 5,
-    "skipped": false,
+    "blocked": 0,
+    "abortedAfter": 0,
+    "skipped": true,
     "blockedUntil": "2026-10-04T03:46:38.096Z"
   },
   "fastModelVersion": 3,
-  "fastPassedCount": 97,
-  "fastWatchCount": 240,
-  "fastRejectedCount": 2285,
+  "fastPassedCount": 103,
+  "fastWatchCount": 241,
+  "fastRejectedCount": 2360,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 0,
-  "trendErrors": 0,
+  "trendsVerified": 2,
+  "trendErrors": 2,
   "trendBatchRan": true,
-  "trendQueueSize": 0,
-  "risingDiscoveryRan": true,
+  "trendQueueSize": 4,
+  "risingDiscoveryRan": false,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 517,
-  "trendEligibleCount": 59,
-  "trendPendingCount": 0,
+  "seoPassedCount": 524,
+  "trendEligibleCount": 63,
+  "trendPendingCount": 2,
   "trendValidatedCount": 59,
   "risingCount": 22,
   "globalRisingCount": 1,
@@ -259,9 +218,9 @@
     "independent": 0,
     "test-now": 0,
     "page": 2,
-    "watch": 464,
-    "reject": 1864,
-    "pending": 661,
+    "watch": 475,
+    "reject": 1936,
+    "pending": 578,
     "error": 9
   },
   "trendProvider": "google-trends-api",
@@ -281,7 +240,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-03T21:45:25.128Z",
+    "checkedAt": "2026-10-04T00:03:50.573Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -299,47 +258,47 @@
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "serper+autocomplete": 2594,
+    "serper+autocomplete": 2676,
     "duckduckgo+autocomplete": 28
   },
   "seoClassificationCounts": {
-    "independent": 63,
-    "page": 432,
-    "watch": 258,
-    "reject": 1841
+    "independent": 65,
+    "page": 437,
+    "watch": 261,
+    "reject": 1913
   },
   "serperConfigured": true,
   "serperUsage": {
     "enabled": true,
     "configuredSlots": 3,
-    "day": "2026-10-03",
-    "totalUsed": 4160,
-    "dayUsed": 240,
+    "day": "2026-10-04",
+    "totalUsed": 4258,
+    "dayUsed": 98,
     "totalLimit": 7350,
     "dailyLimit": 240,
     "accounts": {
       "1": {
         "envName": "SERPER_API_KEY",
-        "totalUsed": 1440,
-        "dayUsed": 80,
+        "totalUsed": 1509,
+        "dayUsed": 69,
         "totalLimit": 2450,
         "dailyLimit": 80,
-        "updatedAt": "2026-10-03T00:47:45.923Z",
+        "updatedAt": "2026-10-04T00:06:00.077Z",
         "lastError": null
       },
       "2": {
         "envName": "SERPER_API_KEY_2",
-        "totalUsed": 1360,
-        "dayUsed": 80,
+        "totalUsed": 1389,
+        "dayUsed": 29,
         "totalLimit": 2450,
         "dailyLimit": 80,
-        "updatedAt": "2026-10-03T00:49:04.109Z",
+        "updatedAt": "2026-10-04T00:06:35.652Z",
         "lastError": null
       },
       "3": {
         "envName": "SERPER_API_KEY_3",
         "totalUsed": 1360,
-        "dayUsed": 80,
+        "dayUsed": 0,
         "totalLimit": 2450,
         "dailyLimit": 80,
         "updatedAt": "2026-10-03T10:40:29.763Z",
@@ -353,16 +312,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 1833,
-    "wiki": 856,
-    "pending": 311
+    "online": 1834,
+    "wiki": 854,
+    "pending": 312
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
     "prepare": 3,
-    "watch": 10,
-    "weak": 843
+    "watch": 11,
+    "weak": 840
   },
   "serperVerification": {
     "rushMode": true,
@@ -375,22 +334,121 @@
     "limit": 90,
     "onlineLimit": 63,
     "wikiLimit": 27,
-    "queueSize": 0,
-    "verified": 0,
+    "queueSize": 98,
+    "verified": 98,
     "verifiedByChannel": {
-      "online": 0,
-      "wiki": 0,
+      "online": 92,
+      "wiki": 6,
       "pending": 0
     },
     "errors": 0,
     "quotaStopped": false,
-    "verifiedNames": [],
+    "verifiedNames": [
+      "Toxic Air",
+      "Wet Keys",
+      "DeadRounds - ZOMBIES",
+      "Sammy y Luna",
+      "Lunar Defense",
+      "Meat Retreat",
+      "Beat Cop",
+      "PAINT-MONSTERS DEFENSE PIXEL (PMDP)",
+      "General Gift",
+      "It's raining...fish?",
+      "Blue Sheep 岩羊",
+      "NEON VOID",
+      "Investigational Offices",
+      "Dream Gaming Room",
+      "Market Noir",
+      "Don't Touch Me",
+      "Simple Platformer",
+      "El exilio de los dioses",
+      "Project Ashfall",
+      "One More Pebble",
+      "Moto V2",
+      "Coin Bounty",
+      "Broken Memories",
+      "Apex Market",
+      "WITCH TD — Witch Tower Defense",
+      "Alibi: Noir Deduction",
+      "O R B I T",
+      "Pocket Runes",
+      "Toxic-Symbiote",
+      "DARWAZA KHOL DAYA",
+      "Run Run Run",
+      "Nous germons",
+      "Multiplayer Tic Tac Toe",
+      "ELEMENT BREAKER2",
+      "Umbrella Emergency",
+      "CHEESE COLLECTOR",
+      "Rolly Vortex Ball: The Infinity",
+      "Night Rounds: End of Watch",
+      "Grimma: The Princess Curse — Demo",
+      "Ann: The Last Sugarcane Forsaken",
+      "Dodge the Creeps: JRPG Edition",
+      "Aetherdeep - Idle RPG (Public Beta)",
+      "WISPCATCHER",
+      "Inducktrination",
+      "Ammo Eater",
+      "BomberDigger",
+      "Infiltrazione",
+      "DETERRENCE",
+      "LUMESPROUT",
+      "Simba",
+      "Nameless Tower: 33 Floors",
+      "Mancala",
+      "Heartbeats - Anniversary Edition",
+      "Hybrid Gene",
+      "ComfyCrawler",
+      "MOO.F.O. '85",
+      "Risky",
+      "PrototypeNSC",
+      "Return To Home",
+      "Out of Line",
+      "Punk Spit 77",
+      "The Candy Man",
+      "Tower of Babel",
+      "Barbarian---1987---Update",
+      "The Shattered Road",
+      "Abattoir 13",
+      "Super Nathan's Adventure",
+      "OverBlocked",
+      "PIG IRON – Kickstarter Demo",
+      "HealPlz!_Demo0419",
+      "Mystery Doors",
+      "Eternal Eclipse",
+      "i just made some bullshit",
+      "Critter Quest",
+      "Anything Goes",
+      "Project:Limbo",
+      "Face Invaders",
+      "Fins & Fortune - Free Browser Demo",
+      "Kingdom Defender",
+      "Links Manager - Golf Manager - Demo",
+      "Gearz",
+      "RETURN",
+      "Mdv Demo Arcade",
+      "Suit",
+      "Rumble Arena",
+      "Tank World Rogue Expedition",
+      "SpaceMMO - Free space exploration MMO in your browser",
+      "zellenzahlen",
+      "Pip",
+      "Dive adventure v0.4A",
+      "The Tall Tall Tower of The Wizard Wizzlewick - cozy game about a wizard's tall tower",
+      "Political Idle — Alpha",
+      "Drifting to a New Home - Free Browser Demo",
+      "Hold The Line 1971",
+      "HorizonDrift",
+      "AlexMine",
+      "3DTunnelRush",
+      "Typhupixel"
+    ],
     "accounts": {
       "1": {
         "envName": "SERPER_API_KEY",
         "ok": true,
         "error": null,
-        "verified": 0,
+        "verified": 69,
         "errors": 0,
         "quotaStopped": false
       },
@@ -398,7 +456,7 @@
         "envName": "SERPER_API_KEY_2",
         "ok": true,
         "error": null,
-        "verified": 0,
+        "verified": 29,
         "errors": 0,
         "quotaStopped": false
       },
@@ -411,53 +469,53 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-10-03T21:46:40.747Z"
+    "ranAt": "2026-10-04T00:06:36.259Z"
   },
   "seoErrorCandidates": 9,
   "serperConfiguredSlots": 3,
   "serperPoolUsage": {
     "enabled": true,
     "configuredSlots": 3,
-    "day": "2026-10-03",
-    "totalUsed": 4160,
-    "dayUsed": 240,
+    "day": "2026-10-04",
+    "totalUsed": 4258,
+    "dayUsed": 98,
     "totalLimit": 7350,
     "dailyLimit": 240,
     "accounts": {
       "1": {
         "envName": "SERPER_API_KEY",
-        "totalUsed": 1440,
-        "dayUsed": 80,
+        "totalUsed": 1509,
+        "dayUsed": 69,
         "totalLimit": 2450,
         "dailyLimit": 80,
-        "updatedAt": "2026-10-03T00:47:45.923Z",
+        "updatedAt": "2026-10-04T00:06:00.077Z",
         "lastError": null
       },
       "2": {
         "envName": "SERPER_API_KEY_2",
-        "totalUsed": 1360,
-        "dayUsed": 80,
+        "totalUsed": 1389,
+        "dayUsed": 29,
         "totalLimit": 2450,
         "dailyLimit": 80,
-        "updatedAt": "2026-10-03T00:49:04.109Z",
+        "updatedAt": "2026-10-04T00:06:35.652Z",
         "lastError": null
       },
       "3": {
         "envName": "SERPER_API_KEY_3",
         "totalUsed": 1360,
-        "dayUsed": 80,
+        "dayUsed": 0,
         "totalLimit": 2450,
         "dailyLimit": 80,
         "updatedAt": "2026-10-03T10:40:29.763Z",
         "lastError": null
       }
     },
-    "updatedAt": "2026-10-03T21:46:40.746Z"
+    "updatedAt": "2026-10-04T00:06:36.258Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 378,
+    "pendingCount": 296,
     "eligibleCount": 0,
     "queueSize": 0,
     "verified": 0,
@@ -474,7 +532,7 @@
       "pending": 0
     },
     "verifiedNames": [],
-    "ranAt": "2026-10-03T21:46:41.304Z"
+    "ranAt": "2026-10-04T00:06:36.847Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -496,10 +554,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-03T21:46:42.378Z"
+    "ranAt": "2026-10-04T00:06:38.036Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-03T21:46:42.484Z",
+    "checkedAt": "2026-10-04T00:06:38.110Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 0,
     "workingKeys": 0,
@@ -551,12 +609,12 @@
     "configuredSlots": 0,
     "month": "2026-10",
     "monthUsed": 0,
-    "day": "2026-10-03",
+    "day": "2026-10-04",
     "dayUsed": 0,
     "monthlyLimit": 0,
     "dailyLimit": 0,
     "accounts": {},
-    "updatedAt": "2026-10-03T21:46:42.581Z"
+    "updatedAt": "2026-10-04T00:06:38.232Z"
   },
   "serpApiQuotaFill": {
     "configuredSlots": 0
@@ -609,16 +667,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 179,
+      "online": 188,
       "wiki": 113
     },
     "pendingByTier": {
-      "strong": 8,
-      "secondary": 154,
+      "strong": 14,
+      "secondary": 157,
       "strategic": 130
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-03T21:46:43.178Z"
+    "ranAt": "2026-10-04T00:06:38.933Z"
   }
 }
