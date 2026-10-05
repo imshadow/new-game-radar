@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-10-05T09:04:35.590Z",
+  "generatedAt": "2026-10-05T18:28:22.345Z",
   "totalCandidates": 3000,
-  "pendingSeo": 285,
+  "pendingSeo": 322,
   "channelCounts": {
-    "pending": 274,
-    "wiki": 4,
-    "online": 7
+    "pending": 272,
+    "wiki": 14,
+    "online": 36
   },
   "fastClassCounts": {
-    "pending:pending": 274,
-    "wiki:pending": 4,
-    "online:pending": 7
+    "pending:pending": 272,
+    "wiki:pending": 14,
+    "online:pending": 36
   },
   "strategicCounts": {
-    "pending:0": 271,
+    "pending:0": 270,
     "wiki:1": 1,
-    "pending:1": 3,
-    "wiki:0": 3,
-    "online:1": 5,
-    "online:0": 2
+    "wiki:0": 13,
+    "online:1": 15,
+    "online:0": 21,
+    "pending:1": 2
   },
   "topSources": [
     {
@@ -27,11 +27,11 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 136
+      "count": 135
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 119
+      "count": 121
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -39,7 +39,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 59
+      "count": 58
     },
     {
       "id": "hn-showhn",
@@ -47,11 +47,11 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 40
+      "count": 39
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 33
+      "count": 32
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -59,19 +59,35 @@
     },
     {
       "id": "itch-new",
-      "count": 9
+      "count": 19
     },
     {
       "id": "itch-new-feed",
-      "count": 9
+      "count": 19
     },
     {
       "id": "itch-newest-web",
-      "count": 5
+      "count": 15
     },
     {
       "id": "steam-upcoming",
-      "count": 4
+      "count": 14
+    },
+    {
+      "id": "armorgames-new",
+      "count": 14
+    },
+    {
+      "id": "steam-upcoming-indie",
+      "count": 11
+    },
+    {
+      "id": "github-html5-games",
+      "count": 6
+    },
+    {
+      "id": "github-game",
+      "count": 6
     },
     {
       "id": "steam-upcoming-wishlist",
@@ -79,15 +95,11 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 3
+      "count": 2
     },
     {
       "id": "itch-featured",
-      "count": 3
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 1
+      "count": 2
     },
     {
       "id": "steam-latest-indie",
@@ -96,13 +108,179 @@
     {
       "id": "steam-new",
       "count": 1
-    },
-    {
-      "id": "armorgames-new",
-      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "Gemspire: Block Puzzle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "100 m com barreiras",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "LaberintoConFinn",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Trainspotting",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Breakwater",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "A Suitable Match!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Grimoire of Blanks - Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Last Turn",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Heart Shooter",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "SlimePire Survival",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "千ノ国メタバース｜城下町100区画案内",
       "channel": "online",
@@ -240,19 +418,99 @@
       ]
     },
     {
-      "name": "Spaghetti Celesti: Devour the Heavens",
-      "channel": "pending",
+      "name": "BlockBlaster",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 4,
-      "strategicCount": 1,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
       "sourceCount": 2,
       "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Squad X",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Playble Ads",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Beat Survivors",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Outrun",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Playable Ad Mob Rush",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
       ]
     },
     {
@@ -271,14 +529,209 @@
       ]
     },
     {
-      "name": "Age of War 2",
+      "name": "Earth Taken 3",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 7,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 22,
+      "nameRisk": 6,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "The Last Stand - Union City",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Mighty Knight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Crush the Castle 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Epic Battle Fantasy 4",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "The Enchanted Cave 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Sydney Shark",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "StrikeForce Kitty 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Sierra 7",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Epic Boss Fighter",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Witch Hunt",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Age of War",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 20,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Super Crazy Guitar Maniac Deluxe 4",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Learn to Fly 3",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
       "strategicCount": 0,
       "sourceCount": 1,
       "sourceIds": [
