@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-10-05T02:02:02.010Z",
+  "generatedAt": "2026-10-05T09:04:35.590Z",
   "totalCandidates": 3000,
   "pendingSeo": 285,
   "channelCounts": {
-    "pending": 276,
+    "pending": 274,
     "wiki": 4,
-    "online": 5
+    "online": 7
   },
   "fastClassCounts": {
-    "pending:pending": 276,
+    "pending:pending": 274,
     "wiki:pending": 4,
-    "online:pending": 5
+    "online:pending": 7
   },
   "strategicCounts": {
-    "pending:0": 273,
+    "pending:0": 271,
     "wiki:1": 1,
     "pending:1": 3,
     "wiki:0": 3,
-    "online:0": 1,
-    "online:1": 4
+    "online:1": 5,
+    "online:0": 2
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 209
+      "count": 207
     },
     {
       "id": "trends-rising-30d",
-      "count": 137
+      "count": 136
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -51,19 +51,23 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 35
+      "count": 33
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 31
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 8
+      "count": 30
     },
     {
       "id": "itch-new",
-      "count": 8
+      "count": 9
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 9
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 5
     },
     {
       "id": "steam-upcoming",
@@ -71,10 +75,6 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 4
-    },
-    {
-      "id": "itch-newest-web",
       "count": 4
     },
     {
@@ -96,9 +96,30 @@
     {
       "id": "steam-new",
       "count": 1
+    },
+    {
+      "id": "armorgames-new",
+      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "千ノ国メタバース｜城下町100区画案内",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 23,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "200만원만 지르고 게임으로 쌀먹하는 방법",
       "channel": "online",
@@ -187,22 +208,6 @@
       ]
     },
     {
-      "name": "Rulehouse",
-      "channel": "pending",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
       "name": "Petal Crash 2",
       "channel": "pending",
       "fastClass": "pending",
@@ -235,6 +240,22 @@
       ]
     },
     {
+      "name": "Spaghetti Celesti: Devour the Heavens",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
       "name": "DeadLock OS",
       "channel": "online",
       "fastClass": "pending",
@@ -247,6 +268,21 @@
       "sourceCount": 1,
       "sourceIds": [
         "hn-showhn"
+      ]
+    },
+    {
+      "name": "Age of War 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 22,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
       ]
     }
   ]
