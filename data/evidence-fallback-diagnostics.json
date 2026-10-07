@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-10-07T09:20:16.540Z",
+  "generatedAt": "2026-10-07T16:31:24.635Z",
   "totalCandidates": 3000,
-  "pendingSeo": 273,
+  "pendingSeo": 309,
   "channelCounts": {
-    "pending": 262,
-    "wiki": 5,
-    "online": 6
+    "pending": 259,
+    "wiki": 20,
+    "online": 30
   },
   "fastClassCounts": {
-    "pending:pending": 262,
-    "wiki:pending": 5,
-    "online:pending": 6
+    "pending:pending": 259,
+    "wiki:pending": 20,
+    "online:pending": 30
   },
   "strategicCounts": {
-    "pending:0": 259,
+    "pending:0": 256,
     "wiki:1": 2,
-    "wiki:0": 3,
-    "online:0": 2,
-    "online:1": 4,
+    "wiki:0": 18,
+    "online:1": 14,
+    "online:0": 16,
     "pending:1": 3
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 197
+      "count": 192
     },
     {
       "id": "trends-rising-30d",
@@ -31,11 +31,11 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 119
+      "count": 116
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 71
+      "count": 73
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -43,7 +43,7 @@
     },
     {
       "id": "hn-showhn",
-      "count": 48
+      "count": 49
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -51,31 +51,47 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 23
+      "count": 21
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 22
-    },
-    {
-      "id": "itch-new",
-      "count": 7
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 7
+      "count": 20
     },
     {
       "id": "steam-upcoming",
-      "count": 4
+      "count": 18
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 4
+      "id": "itch-new",
+      "count": 17
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 17
     },
     {
       "id": "itch-newest-web",
-      "count": 4
+      "count": 14
+    },
+    {
+      "id": "steam-upcoming-indie",
+      "count": 12
+    },
+    {
+      "id": "github-html5-games",
+      "count": 9
+    },
+    {
+      "id": "github-game",
+      "count": 9
+    },
+    {
+      "id": "steam-upcoming-wishlist",
+      "count": 7
+    },
+    {
+      "id": "armorgames-new",
+      "count": 6
     },
     {
       "id": "itch-featured-feed",
@@ -86,15 +102,19 @@
       "count": 3
     },
     {
-      "id": "steam-upcoming-indie",
-      "count": 1
-    },
-    {
       "id": "steam-latest-indie",
       "count": 1
     },
     {
       "id": "steam-new",
+      "count": 1
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 1
+    },
+    {
+      "id": "press-new",
       "count": 1
     },
     {
@@ -104,13 +124,179 @@
     {
       "id": "steam-popular-new",
       "count": 1
-    },
-    {
-      "id": "armorgames-new",
-      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "Alien Randomiser",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Can’t Lose Hero",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "the sopranos sim",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "2D shooter Tutorial",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mycelotomy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Evil Wolf (story game)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Coffeebreak Voodoo Doll",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Nexhold",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Coffeebreak Iridology: Eye Reader",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Coffeebreak Reiki Healing Session",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "千ノ国メタバース｜城下町100区画案内",
       "channel": "online",
@@ -231,22 +417,6 @@
       ]
     },
     {
-      "name": "Spaghetti Celesti: Devour the Heavens",
-      "channel": "pending",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
       "name": "Petal Crash 2",
       "channel": "pending",
       "fastClass": "pending",
@@ -263,6 +433,86 @@
       ]
     },
     {
+      "name": "Spaghetti Celesti: Devour the Heavens",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Hraniteli",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Myumdl Games",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Specimen Hunter",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Wobble Wheels",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
       "name": "DeadLock OS",
       "channel": "online",
       "fastClass": "pending",
@@ -275,6 +525,161 @@
       "sourceCount": 1,
       "sourceIds": [
         "hn-showhn"
+      ]
+    },
+    {
+      "name": "Chroma Wars",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Papa's Freezeria",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Yellow",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Age of War",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 20,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Music Catch 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 14,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Pop Pop Popper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Emberhold",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Survive Or Die",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "688 Attack Hub",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 14,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Shmup Cup",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
       ]
     },
     {
