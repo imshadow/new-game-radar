@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-10-08T01:22:18.589Z",
+  "generatedAt": "2026-10-08T08:02:31.438Z",
   "totalCandidates": 3000,
-  "pendingSeo": 259,
+  "pendingSeo": 266,
   "channelCounts": {
-    "pending": 247,
+    "pending": 254,
     "wiki": 5,
     "online": 7
   },
   "fastClassCounts": {
-    "pending:pending": 247,
+    "pending:pending": 254,
     "wiki:pending": 5,
     "online:pending": 7
   },
   "strategicCounts": {
-    "pending:0": 244,
+    "pending:0": 250,
     "wiki:1": 2,
     "wiki:0": 3,
     "online:0": 3,
     "online:1": 4,
-    "pending:1": 3
+    "pending:1": 4
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 181
+      "count": 176
     },
     {
       "id": "trends-rising-30d",
-      "count": 127
+      "count": 124
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 111
+      "count": 110
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -39,31 +39,31 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 59
+      "count": 58
     },
     {
       "id": "hn-showhn",
-      "count": 49
+      "count": 47
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 42
     },
     {
-      "id": "trends-rising-7d-indie-game",
-      "count": 15
-    },
-    {
-      "id": "trends-rising-30d-indie-game",
-      "count": 14
-    },
-    {
       "id": "itch-new",
-      "count": 6
+      "count": 18
     },
     {
       "id": "itch-new-feed",
-      "count": 6
+      "count": 18
+    },
+    {
+      "id": "trends-rising-7d-indie-game",
+      "count": 12
+    },
+    {
+      "id": "trends-rising-30d-indie-game",
+      "count": 11
     },
     {
       "id": "steam-upcoming",
@@ -74,15 +74,15 @@
       "count": 4
     },
     {
-      "id": "itch-newest-web",
+      "id": "itch-featured-feed",
       "count": 4
     },
     {
-      "id": "itch-featured-feed",
-      "count": 3
+      "id": "itch-featured",
+      "count": 4
     },
     {
-      "id": "itch-featured",
+      "id": "itch-newest-web",
       "count": 3
     },
     {
@@ -107,6 +107,14 @@
     },
     {
       "id": "steam-popular-new",
+      "count": 1
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 1
+    },
+    {
+      "id": "itch-popular",
       "count": 1
     }
   ],
@@ -163,20 +171,19 @@
       ]
     },
     {
-      "name": "Mask-a-Raid",
+      "name": "Alien Crab in the Extamaze",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 8,
+      "discoveryScore": 6,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 11,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -212,6 +219,22 @@
       "sourceIds": [
         "steam-feed-topsellers",
         "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Bru & Boegie: Episode 2 - Get da SUGAR!",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 3,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
