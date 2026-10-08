@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-08T08:02:31.438Z",
+  "generatedAt": "2026-10-08T15:37:20.794Z",
   "totalCandidates": 3000,
-  "pendingSeo": 266,
+  "pendingSeo": 293,
   "channelCounts": {
-    "pending": 254,
-    "wiki": 5,
-    "online": 7
+    "pending": 250,
+    "wiki": 16,
+    "online": 27
   },
   "fastClassCounts": {
-    "pending:pending": 254,
-    "wiki:pending": 5,
-    "online:pending": 7
+    "pending:pending": 250,
+    "wiki:pending": 16,
+    "online:pending": 27
   },
   "strategicCounts": {
-    "pending:0": 250,
+    "pending:0": 246,
     "wiki:1": 2,
-    "wiki:0": 3,
-    "online:0": 3,
-    "online:1": 4,
+    "wiki:0": 14,
+    "online:1": 18,
+    "online:0": 9,
     "pending:1": 4
   },
   "topSources": [
@@ -51,11 +51,15 @@
     },
     {
       "id": "itch-new",
-      "count": 18
+      "count": 20
     },
     {
       "id": "itch-new-feed",
-      "count": 18
+      "count": 20
+    },
+    {
+      "id": "steam-upcoming",
+      "count": 15
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -66,12 +70,32 @@
       "count": 11
     },
     {
-      "id": "steam-upcoming",
-      "count": 4
+      "id": "steam-upcoming-indie",
+      "count": 10
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 9
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 9
+    },
+    {
+      "id": "itch-popular",
+      "count": 9
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 4
+      "count": 6
+    },
+    {
+      "id": "github-html5-games",
+      "count": 6
+    },
+    {
+      "id": "github-game",
+      "count": 6
     },
     {
       "id": "itch-featured-feed",
@@ -82,16 +106,8 @@
       "count": 4
     },
     {
-      "id": "itch-newest-web",
-      "count": 3
-    },
-    {
       "id": "armorgames-new",
       "count": 2
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 1
     },
     {
       "id": "steam-latest-indie",
@@ -108,17 +124,128 @@
     {
       "id": "steam-popular-new",
       "count": 1
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 1
-    },
-    {
-      "id": "itch-popular",
-      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "PokoPuyo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cheese Clicker",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Blood Wolf",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Linefall",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Xenarchy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Gorilla Survivors",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Chakra Survive",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "千ノ国メタバース｜城下町100区画案内",
       "channel": "online",
@@ -154,20 +281,131 @@
       ]
     },
     {
-      "name": "Depths of Elora",
+      "name": "The Margot Collapse",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 8,
+      "discoveryScore": 6,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Recipe Frenzy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Escape the Ejection",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "hako and mewo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Below the Necropolis",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Kobayakawa-san Is a Soulslike: BIG",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 3,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "One More Flip",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "increTower Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -286,6 +524,54 @@
       ]
     },
     {
+      "name": "Flappening",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Little Office",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Life Game",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
       "name": "DeadLock OS",
       "channel": "online",
       "fastClass": "pending",
@@ -298,6 +584,54 @@
       "sourceCount": 1,
       "sourceIds": [
         "hn-showhn"
+      ]
+    },
+    {
+      "name": "Esports Odds Bet Analyzer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "BirdFlappy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Shenxian Fight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
       ]
     },
     {
