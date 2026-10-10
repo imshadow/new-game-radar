@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-10-10T02:50:47.717Z",
+  "generatedAt": "2026-10-10T09:06:14.694Z",
   "totalCandidates": 3000,
-  "pendingSeo": 245,
+  "pendingSeo": 257,
   "channelCounts": {
-    "pending": 235,
-    "wiki": 5,
-    "online": 5
+    "pending": 232,
+    "wiki": 6,
+    "online": 19
   },
   "fastClassCounts": {
-    "pending:pending": 235,
-    "wiki:pending": 5,
-    "online:pending": 5
+    "pending:pending": 232,
+    "wiki:pending": 6,
+    "online:pending": 19
   },
   "strategicCounts": {
-    "pending:0": 232,
-    "wiki:0": 5,
-    "online:0": 3,
-    "online:1": 2,
+    "pending:0": 229,
+    "wiki:0": 6,
+    "online:0": 10,
+    "online:1": 9,
     "pending:1": 3
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 168
+      "count": 166
     },
     {
       "id": "trends-rising-30d",
-      "count": 120
+      "count": 118
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 108
+      "count": 106
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 75
+      "count": 74
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -46,10 +46,30 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 43
+      "count": 42
+    },
+    {
+      "id": "itch-new",
+      "count": 8
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 8
+    },
+    {
+      "id": "github-html5-games",
+      "count": 7
+    },
+    {
+      "id": "github-game",
+      "count": 7
     },
     {
       "id": "trends-rising-30d-indie-game",
+      "count": 6
+    },
+    {
+      "id": "itch-newest-web",
       "count": 6
     },
     {
@@ -57,15 +77,15 @@
       "count": 5
     },
     {
-      "id": "itch-new",
-      "count": 4
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 4
-    },
-    {
       "id": "steam-upcoming",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 3
+    },
+    {
+      "id": "newgrounds-top",
       "count": 3
     },
     {
@@ -77,15 +97,15 @@
       "count": 3
     },
     {
+      "id": "steam-upcoming-wishlist",
+      "count": 2
+    },
+    {
       "id": "steam-upcoming-indie",
       "count": 2
     },
     {
       "id": "press-new",
-      "count": 2
-    },
-    {
-      "id": "itch-newest-web",
       "count": 2
     },
     {
@@ -97,15 +117,79 @@
       "count": 1
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 1
-    },
-    {
       "id": "indiegamesplus",
       "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "The Uninvited Player",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "MGD Prototype",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Abyssal Salvage",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Paintball",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "千ノ国メタバース｜城下町100区画案内",
       "channel": "online",
@@ -138,6 +222,54 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "A NuMates Halloween",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "newgrounds-daily-top",
+        "newgrounds-top"
+      ]
+    },
+    {
+      "name": "Block & Awe",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "newgrounds-daily-top",
+        "newgrounds-top"
+      ]
+    },
+    {
+      "name": "THE SCARIEST CARTOON EVER MADE!!!!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "newgrounds-daily-top",
+        "newgrounds-top"
       ]
     },
     {
@@ -189,6 +321,70 @@
       ]
     },
     {
+      "name": "Drift Duel",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Empires",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Tankbattle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Gullak Tycoon Mega",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
       "name": "DeadLock OS",
       "channel": "online",
       "fastClass": "pending",
@@ -201,6 +397,54 @@
       "sourceCount": 1,
       "sourceIds": [
         "hn-showhn"
+      ]
+    },
+    {
+      "name": "Sabikali Patiler",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Escape From Pallet Town Web",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Msu Science Day 2026",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
       ]
     },
     {
