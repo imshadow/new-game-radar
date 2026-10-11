@@ -1,36 +1,38 @@
 {
-  "generatedAt": "2026-10-11T19:33:35.253Z",
+  "generatedAt": "2026-10-11T23:10:55.307Z",
   "totalCandidates": 3000,
-  "pendingSeo": 283,
+  "pendingSeo": 301,
   "channelCounts": {
     "pending": 220,
-    "wiki": 4,
-    "online": 59
+    "online": 74,
+    "wiki": 7
   },
   "fastClassCounts": {
     "pending:pending": 220,
-    "wiki:pending": 4,
-    "online:pending": 59
+    "online:pending": 74,
+    "wiki:pending": 7
   },
   "strategicCounts": {
     "pending:0": 218,
-    "wiki:0": 4,
-    "online:1": 38,
-    "online:0": 21,
+    "online:2": 2,
+    "wiki:0": 6,
+    "online:1": 48,
+    "online:0": 24,
+    "wiki:1": 1,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 156
+      "count": 155
     },
     {
       "id": "trends-rising-30d",
-      "count": 116
+      "count": 117
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 98
+      "count": 96
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -38,7 +40,19 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 57
+      "count": 58
+    },
+    {
+      "id": "itch-new",
+      "count": 51
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 51
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 49
     },
     {
       "id": "hn-showhn",
@@ -46,34 +60,18 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 43
-    },
-    {
-      "id": "itch-new",
-      "count": 34
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 34
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 32
+      "count": 44
     },
     {
       "id": "github-html5-games",
-      "count": 17
+      "count": 20
     },
     {
       "id": "github-game",
-      "count": 17
+      "count": 20
     },
     {
-      "id": "itch-new-popular-web",
-      "count": 6
-    },
-    {
-      "id": "itch-popular",
+      "id": "steam-upcoming",
       "count": 6
     },
     {
@@ -81,16 +79,12 @@
       "count": 5
     },
     {
+      "id": "steam-upcoming-indie",
+      "count": 5
+    },
+    {
       "id": "trends-rising-7d-indie-game",
       "count": 4
-    },
-    {
-      "id": "steam-upcoming",
-      "count": 4
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 3
     },
     {
       "id": "armorgames-new",
@@ -105,11 +99,308 @@
       "count": 2
     },
     {
+      "id": "newgrounds-latest",
+      "count": 1
+    },
+    {
+      "id": "newgrounds-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
+    },
+    {
       "id": "steam-upcoming-wishlist",
+      "count": 1
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 1
+    },
+    {
+      "id": "steam-popular-new",
       "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "Halloween Party",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 14,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "newgrounds-latest",
+        "newgrounds-new"
+      ]
+    },
+    {
+      "name": "Dumplings: Who Will You Get?",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
+    {
+      "name": "Winter is Coming",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "SteinWatch",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Midnight Leftovers",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "incredible 660: incident",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mopping Up",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Borderhaven",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mecha Brawl",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "One Copy Only",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "A Walk in the Clouds",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 11,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Quand la bise fut venue",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cozy Red Panda",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Balloon Orchard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Lost Limbs",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "doors",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "Block Bloom",
       "channel": "online",
@@ -306,23 +597,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Halloween Party",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -536,6 +810,57 @@
       ]
     },
     {
+      "name": "The Coast is Clear: Tidy up the Beach!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "FALSE POSITIVE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Salt & Bones / Sal & Osso",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "Blind the Walls",
       "channel": "online",
       "fastClass": "pending",
@@ -652,294 +977,6 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ATTACK AXIS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 8,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "hako and mewo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Can You Escape?",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Recipe Frenzy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "DungeonSweeper",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Box3D - Godot",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Indiepocalypse #81",
-      "channel": "pending",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
-      "name": "Petal Crash 2",
-      "channel": "pending",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
-      "name": "ScorchedOpus",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Game Wizard Duel",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Sweet Conveyor",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Orbit Dash",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Maimai Restaurant Huiyan",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Gto Poker",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Game Judo Duel",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Game Fencing Duel",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Classics Emergence",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Grisaille",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
       ]
     }
   ]
