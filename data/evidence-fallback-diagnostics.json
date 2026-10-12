@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-12T09:48:13.886Z",
+  "generatedAt": "2026-10-12T19:22:49.624Z",
   "totalCandidates": 3000,
-  "pendingSeo": 228,
+  "pendingSeo": 242,
   "channelCounts": {
-    "pending": 222,
-    "wiki": 1,
+    "pending": 218,
+    "wiki": 19,
     "online": 5
   },
   "fastClassCounts": {
-    "pending:pending": 222,
-    "wiki:pending": 1,
+    "pending:pending": 218,
+    "wiki:pending": 19,
     "online:pending": 5
   },
   "strategicCounts": {
-    "pending:0": 220,
-    "wiki:0": 1,
+    "pending:0": 216,
+    "wiki:0": 19,
     "online:0": 3,
     "online:1": 2,
     "pending:1": 2
@@ -42,11 +42,19 @@
     },
     {
       "id": "hn-showhn",
-      "count": 49
+      "count": 46
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 44
+    },
+    {
+      "id": "steam-upcoming",
+      "count": 18
+    },
+    {
+      "id": "steam-upcoming-indie",
+      "count": 14
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -54,6 +62,10 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
+      "count": 4
+    },
+    {
+      "id": "steam-upcoming-wishlist",
       "count": 4
     },
     {
@@ -81,11 +93,11 @@
       "count": 2
     },
     {
-      "id": "steam-upcoming-wishlist",
+      "id": "indiegamesplus",
       "count": 1
     },
     {
-      "id": "steam-upcoming",
+      "id": "press-new",
       "count": 1
     }
   ],
@@ -172,21 +184,6 @@
       ]
     },
     {
-      "name": "Age of War 2",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 22,
-      "strategicCount": 0,
-      "sourceCount": 1,
-      "sourceIds": [
-        "armorgames-new"
-      ]
-    },
-    {
       "name": "Age of War",
       "channel": "online",
       "fastClass": "pending",
@@ -195,6 +192,21 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 20,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Age of War 2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 22,
       "strategicCount": 0,
       "sourceCount": 1,
       "sourceIds": [
