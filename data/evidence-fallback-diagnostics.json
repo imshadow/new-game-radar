@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-13T01:42:30.553Z",
+  "generatedAt": "2026-10-13T08:29:57.754Z",
   "totalCandidates": 3000,
-  "pendingSeo": 219,
+  "pendingSeo": 223,
   "channelCounts": {
-    "pending": 213,
+    "pending": 217,
     "wiki": 1,
     "online": 5
   },
   "fastClassCounts": {
-    "pending:pending": 213,
+    "pending:pending": 217,
     "wiki:pending": 1,
     "online:pending": 5
   },
@@ -17,12 +17,12 @@
     "wiki:0": 1,
     "online:0": 3,
     "online:1": 2,
-    "pending:1": 2
+    "pending:1": 6
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 151
+      "count": 150
     },
     {
       "id": "trends-rising-30d",
@@ -30,11 +30,11 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 93
+      "count": 92
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 73
+      "count": 72
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -46,7 +46,15 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 44
+      "count": 45
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 6
+    },
+    {
+      "id": "itch-featured",
+      "count": 6
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -70,14 +78,6 @@
     },
     {
       "id": "armorgames-new",
-      "count": 2
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 2
-    },
-    {
-      "id": "itch-featured",
       "count": 2
     },
     {
@@ -141,6 +141,38 @@
       ]
     },
     {
+      "name": "Tiny Brutalism",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Cartomancy Anthology",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
       "name": "Indiepocalypse #81",
       "channel": "pending",
       "fastClass": "pending",
@@ -149,6 +181,38 @@
       "platforms": 0,
       "browserPlayable": false,
       "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Future? No Thanks!",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Bru & Boegie: Episode 2 - Get da SUGAR!",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 5,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 3,
       "strategicCount": 1,
       "sourceCount": 2,
       "sourceIds": [
@@ -172,21 +236,6 @@
       ]
     },
     {
-      "name": "Age of War",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 20,
-      "strategicCount": 0,
-      "sourceCount": 1,
-      "sourceIds": [
-        "armorgames-new"
-      ]
-    },
-    {
       "name": "Age of War 2",
       "channel": "online",
       "fastClass": "pending",
@@ -195,6 +244,21 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 22,
+      "strategicCount": 0,
+      "sourceCount": 1,
+      "sourceIds": [
+        "armorgames-new"
+      ]
+    },
+    {
+      "name": "Age of War",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 20,
       "strategicCount": 0,
       "sourceCount": 1,
       "sourceIds": [
