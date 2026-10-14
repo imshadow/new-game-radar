@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-14T05:26:01.877Z",
+  "generatedAt": "2026-10-14T10:40:44.267Z",
   "totalCandidates": 3000,
-  "pendingSeo": 224,
+  "pendingSeo": 237,
   "channelCounts": {
-    "pending": 219,
+    "pending": 232,
     "online": 5
   },
   "fastClassCounts": {
-    "pending:pending": 219,
+    "pending:pending": 232,
     "online:pending": 5
   },
   "strategicCounts": {
-    "pending:0": 214,
+    "pending:0": 226,
     "online:0": 3,
     "online:1": 2,
-    "pending:1": 5
+    "pending:1": 6
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 154
+      "count": 156
     },
     {
       "id": "trends-rising-30d",
@@ -27,7 +27,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 94
+      "count": 96
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -46,12 +46,20 @@
       "count": 45
     },
     {
+      "id": "itch-new",
+      "count": 14
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 14
+    },
+    {
       "id": "itch-featured-feed",
-      "count": 5
+      "count": 6
     },
     {
       "id": "itch-featured",
-      "count": 5
+      "count": 6
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -59,14 +67,6 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 4
-    },
-    {
-      "id": "itch-new",
-      "count": 4
-    },
-    {
-      "id": "itch-new-feed",
       "count": 4
     },
     {
@@ -186,6 +186,22 @@
       "platforms": 0,
       "browserPlayable": false,
       "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Bru & Boegie: Episode 2 - Get da SUGAR!",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 5,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 3,
       "strategicCount": 1,
       "sourceCount": 2,
       "sourceIds": [
