@@ -1,25 +1,28 @@
 {
-  "generatedAt": "2026-10-14T10:40:44.267Z",
+  "generatedAt": "2026-10-14T15:31:55.041Z",
   "totalCandidates": 3000,
-  "pendingSeo": 237,
+  "pendingSeo": 236,
   "channelCounts": {
-    "pending": 232,
-    "online": 5
+    "pending": 231,
+    "online": 4,
+    "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 232,
-    "online:pending": 5
+    "pending:pending": 231,
+    "online:pending": 4,
+    "wiki:pending": 1
   },
   "strategicCounts": {
     "pending:0": 226,
     "online:0": 3,
-    "online:1": 2,
-    "pending:1": 6
+    "online:1": 1,
+    "pending:1": 5,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 156
+      "count": 154
     },
     {
       "id": "trends-rising-30d",
@@ -31,35 +34,35 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 75
+      "count": 76
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 59
+      "count": 57
     },
     {
       "id": "hn-showhn",
-      "count": 46
+      "count": 47
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 45
+      "count": 44
     },
     {
       "id": "itch-new",
-      "count": 14
+      "count": 13
     },
     {
       "id": "itch-new-feed",
-      "count": 14
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
-      "count": 6
+      "count": 5
     },
     {
       "id": "itch-featured",
-      "count": 6
+      "count": 5
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -70,34 +73,25 @@
       "count": 4
     },
     {
-      "id": "itch-newest-web",
+      "id": "armorgames-new",
       "count": 2
     },
     {
-      "id": "armorgames-new",
-      "count": 2
+      "id": "itch-newest-web",
+      "count": 1
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 1
+    },
+    {
+      "id": "steam-new",
+      "count": 1
     }
   ],
   "samples": [
     {
       "name": "千ノ国メタバース｜城下町100区画案内",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 23,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "200만원만 지르고 게임으로 쌀먹하는 방법",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -194,19 +188,19 @@
       ]
     },
     {
-      "name": "Bru & Boegie: Episode 2 - Get da SUGAR!",
-      "channel": "pending",
+      "name": "Super Frog Ninja",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 5,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 3,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 2,
       "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
