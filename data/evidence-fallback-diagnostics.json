@@ -1,40 +1,37 @@
 {
-  "generatedAt": "2026-10-14T22:37:44.294Z",
+  "generatedAt": "2026-10-15T00:54:25.753Z",
   "totalCandidates": 3000,
-  "pendingSeo": 286,
+  "pendingSeo": 223,
   "channelCounts": {
-    "pending": 229,
-    "wiki": 8,
-    "online": 49
+    "pending": 219,
+    "online": 4
   },
   "fastClassCounts": {
-    "pending:pending": 229,
-    "wiki:pending": 8,
-    "online:pending": 49
+    "pending:pending": 219,
+    "online:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 223,
-    "wiki:0": 8,
-    "online:1": 37,
-    "online:0": 12,
-    "pending:1": 6
+    "pending:0": 214,
+    "online:0": 3,
+    "online:1": 1,
+    "pending:1": 5
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 152
+      "count": 153
     },
     {
       "id": "trends-rising-30d",
-      "count": 119
+      "count": 120
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 95
+      "count": 96
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 76
+      "count": 77
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -49,48 +46,12 @@
       "count": 41
     },
     {
-      "id": "itch-new",
-      "count": 34
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 34
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 23
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 14
-    },
-    {
-      "id": "itch-popular",
-      "count": 14
-    },
-    {
-      "id": "github-html5-games",
-      "count": 9
-    },
-    {
-      "id": "github-game",
-      "count": 9
-    },
-    {
-      "id": "steam-upcoming",
-      "count": 7
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 6
-    },
-    {
       "id": "itch-featured-feed",
-      "count": 6
+      "count": 5
     },
     {
       "id": "itch-featured",
-      "count": 6
+      "count": 5
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -101,380 +62,23 @@
       "count": 4
     },
     {
+      "id": "itch-new",
+      "count": 2
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 2
+    },
+    {
       "id": "armorgames-new",
       "count": 2
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 1
-    },
-    {
-      "id": "indiegamesplus",
-      "count": 1
-    },
-    {
-      "id": "press-new",
+      "id": "itch-newest-web",
       "count": 1
     }
   ],
   "samples": [
-    {
-      "name": "07FIREWORKSIMULATOR",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Pee Pee Dog",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Final Duel",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Survive the Void",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Ink & Ivy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Kranitel Chashi",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Detective: Smiler Murder",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tour de cubes",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Congestion Charge",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "LA VIDA ADULTA",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Pressure Point",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lost in Words",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "PickleLearn",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Asteroid Escape",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Bad Luck Benny",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Constellation Snake",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Coffeebreak Emu",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Coffeebreak Fashionsketch",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Coffeebreak Flirtcoach",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dusk Foundry",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Chaos",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
     {
       "name": "千ノ国メタバース｜城下町100区画案内",
       "channel": "online",
@@ -490,247 +94,6 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Updraft: Part 107 Airspace in 3D + Drone Sim (Free Demo)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Fake News Detective (In Space)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Erwin Smith Run",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Mawster",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Idle Dreadnought",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "CNC Clicker",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Hardpoint Idle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Gravewell",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "MasterCopter Card Shop",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Shipping Co.",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Hatched",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Missile Stream",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Physician Simulator",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Plaguebound",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Gyra - Top Fighting",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 6,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
@@ -814,70 +177,6 @@
       ]
     },
     {
-      "name": "Future? No Thanks!",
-      "channel": "pending",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
-      "name": "WorkStudy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Super Clawd",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Car Game Junaid 2026",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 14,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
       "name": "DeadLock OS",
       "channel": "online",
       "fastClass": "pending",
@@ -893,51 +192,33 @@
       ]
     },
     {
-      "name": "CatchThatTrain",
+      "name": "Age of War",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 7,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 20,
       "strategicCount": 0,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "sourceIds": [
-        "github-html5-games",
-        "github-game"
+        "armorgames-new"
       ]
     },
     {
-      "name": "Delta Force Wiki",
+      "name": "Age of War 2",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 7,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 22,
       "strategicCount": 0,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Fronterra Site",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
+        "armorgames-new"
       ]
     }
   ]
