@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-10-15T15:44:49.454Z",
+  "generatedAt": "2026-10-15T19:23:43.864Z",
   "totalCandidates": 3000,
-  "pendingSeo": 257,
+  "pendingSeo": 297,
   "channelCounts": {
-    "pending": 214,
-    "wiki": 19,
-    "online": 24
+    "pending": 218,
+    "wiki": 36,
+    "online": 43
   },
   "fastClassCounts": {
-    "pending:pending": 214,
-    "wiki:pending": 19,
-    "online:pending": 24
+    "pending:pending": 218,
+    "wiki:pending": 36,
+    "online:pending": 43
   },
   "strategicCounts": {
-    "pending:0": 209,
-    "wiki:0": 19,
-    "online:1": 13,
-    "online:0": 11,
-    "pending:1": 5
+    "pending:0": 212,
+    "wiki:0": 36,
+    "online:1": 28,
+    "pending:1": 6,
+    "online:0": 15
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 147
+      "count": 148
     },
     {
       "id": "trends-rising-30d",
-      "count": 116
+      "count": 120
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -34,7 +34,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 75
+      "count": 78
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -50,51 +50,51 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 19
+      "count": 36
     },
     {
       "id": "itch-new",
-      "count": 14
+      "count": 29
     },
     {
       "id": "itch-new-feed",
-      "count": 14
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 13
+      "count": 29
     },
     {
       "id": "itch-newest-web",
+      "count": 28
+    },
+    {
+      "id": "steam-upcoming-indie",
+      "count": 25
+    },
+    {
+      "id": "steam-upcoming-wishlist",
       "count": 13
     },
     {
       "id": "github-html5-games",
-      "count": 7
+      "count": 11
     },
     {
       "id": "github-game",
-      "count": 7
-    },
-    {
-      "id": "steam-upcoming-wishlist",
-      "count": 6
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
-      "count": 5
+      "count": 6
     },
     {
       "id": "itch-featured",
-      "count": 5
+      "count": 6
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 4
+      "count": 5
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 4
+      "count": 5
     },
     {
       "id": "armorgames-new",
@@ -102,6 +102,210 @@
     }
   ],
   "samples": [
+    {
+      "name": "Ruby & Buddy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Phishing Project",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Souls of Broundall: Warbands",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Exegesis",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "On the Way Home",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Miner",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "King Tacos Space Adventure",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Automaton Vessels Demo Version",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Rescue Incoming",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Truco Argento by licherrera",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Turning Arrows",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Souls of Broundall: Expeditions",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "Find the Bubble Man",
       "channel": "online",
@@ -196,6 +400,57 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 8,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Scrawled Book",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Legend of Rachadinha: Tears of the Direitos Trabalhistas",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 8,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "rpg sketch 36",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -321,6 +576,22 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Situation Normal",
+      "channel": "pending",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -483,6 +754,70 @@
       ]
     },
     {
+      "name": "Blackjack Web",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Orbe3D",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Hive Strike",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Jet Arena",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
       "name": "Reincarnation The Final Happy Hour",
       "channel": "online",
       "fastClass": "pending",
@@ -514,22 +849,6 @@
       ]
     },
     {
-      "name": "Orbe Runner 3D",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
       "name": "Carreau",
       "channel": "online",
       "fastClass": "pending",
@@ -538,6 +857,22 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Orbe Runner 3D",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 7,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 0,
       "sourceCount": 2,
       "sourceIds": [
