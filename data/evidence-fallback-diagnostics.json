@@ -1,41 +1,49 @@
 {
-  "generatedAt": "2026-10-17T12:58:47.063Z",
+  "generatedAt": "2026-10-17T16:24:20.181Z",
   "totalCandidates": 3000,
-  "pendingSeo": 364,
+  "pendingSeo": 382,
   "channelCounts": {
-    "wiki": 42,
-    "pending": 221,
-    "online": 101
+    "pending": 220,
+    "wiki": 41,
+    "online": 121
   },
   "fastClassCounts": {
-    "wiki:pending": 42,
-    "pending:pending": 221,
-    "online:pending": 101
+    "pending:pending": 220,
+    "wiki:pending": 41,
+    "online:pending": 121
   },
   "strategicCounts": {
-    "wiki:1": 2,
-    "pending:0": 219,
+    "pending:0": 218,
     "wiki:0": 40,
-    "online:1": 48,
-    "online:0": 53,
-    "pending:1": 2
+    "online:1": 61,
+    "online:0": 60,
+    "pending:1": 2,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 148
+      "count": 147
     },
     {
       "id": "trends-rising-30d",
-      "count": 125
+      "count": 123
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 93
+      "count": 92
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 82
+      "count": 80
+    },
+    {
+      "id": "github-html5-games",
+      "count": 56
+    },
+    {
+      "id": "github-game",
+      "count": 56
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -46,12 +54,16 @@
       "count": 49
     },
     {
-      "id": "github-html5-games",
-      "count": 49
+      "id": "itch-newest-web",
+      "count": 45
     },
     {
-      "id": "github-game",
-      "count": 49
+      "id": "itch-new",
+      "count": 45
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 45
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -59,18 +71,6 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 37
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 36
-    },
-    {
-      "id": "itch-new",
-      "count": 36
-    },
-    {
-      "id": "itch-new-feed",
       "count": 36
     },
     {
@@ -78,16 +78,16 @@
       "count": 24
     },
     {
-      "id": "steam-upcoming-wishlist",
+      "id": "itch-new-popular-web",
       "count": 13
     },
     {
-      "id": "itch-new-popular-web",
-      "count": 9
+      "id": "itch-popular",
+      "count": 13
     },
     {
-      "id": "itch-popular",
-      "count": 9
+      "id": "steam-upcoming-wishlist",
+      "count": 12
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -118,10 +118,6 @@
       "count": 3
     },
     {
-      "id": "steam-popular-new",
-      "count": 2
-    },
-    {
       "id": "itch-featured-feed",
       "count": 2
     },
@@ -132,9 +128,115 @@
     {
       "id": "indiegamesplus",
       "count": 1
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "Ronin of Ember Vale",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Battle Survival",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mahjong Legend: Solitaire",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Tidelight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Geometry Frog",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hollow - Pumpkin Carve Sim",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "The Backrooms: Escape the Levels",
       "channel": "online",
@@ -527,6 +629,57 @@
       ]
     },
     {
+      "name": "Incredibox - Sprunki Phase 3 2bit's take SB3",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 2,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pooping Paws",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "BoransTech Space Police Escape",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "Keyrealms - Monster Odyssey",
       "channel": "online",
       "fastClass": "pending",
@@ -748,103 +901,7 @@
       ]
     },
     {
-      "name": "RAVERHEADS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "newgrounds-daily-top",
-        "newgrounds-top"
-      ]
-    },
-    {
-      "name": "violet goes to hell",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "newgrounds-daily-top",
-        "newgrounds-top"
-      ]
-    },
-    {
-      "name": "Foreboding Feeling",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 2,
-      "sourceIds": [
-        "newgrounds-daily-top",
-        "newgrounds-top"
-      ]
-    },
-    {
-      "name": "Tidy Up the Town",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "NBA 2K27 Hall of Fame Pass: Season 2",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 1,
-      "sourceIds": [
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "RunnerGame",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Yesim Mahjong",
+      "name": "English Word Match",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -860,87 +917,7 @@
       ]
     },
     {
-      "name": "Arm Glory",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Breach Door Cqb",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Slink IO",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Debuff",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Veilfall",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "The Great Rostam",
+      "name": "Iron Front 44",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -956,7 +933,39 @@
       ]
     },
     {
-      "name": "RailRunner",
+      "name": "Porcelain Requiem",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Dayeri",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "RunnerGame",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
