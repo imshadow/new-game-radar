@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-17T04:25:37.697Z",
+  "generatedAt": "2026-10-17T08:49:22.737Z",
   "totalCandidates": 3000,
-  "pendingSeo": 317,
+  "pendingSeo": 342,
   "channelCounts": {
-    "pending": 220,
-    "wiki": 46,
-    "online": 51
+    "pending": 221,
+    "wiki": 40,
+    "online": 81
   },
   "fastClassCounts": {
-    "pending:pending": 220,
-    "wiki:pending": 46,
-    "online:pending": 51
+    "pending:pending": 221,
+    "wiki:pending": 40,
+    "online:pending": 81
   },
   "strategicCounts": {
-    "pending:0": 218,
-    "wiki:0": 46,
-    "online:0": 40,
-    "online:1": 11,
+    "pending:0": 219,
+    "wiki:0": 40,
+    "online:1": 34,
+    "online:0": 47,
     "pending:1": 2
   },
   "topSources": [
@@ -42,47 +42,51 @@
     },
     {
       "id": "hn-showhn",
-      "count": 48
+      "count": 49
+    },
+    {
+      "id": "github-html5-games",
+      "count": 43
+    },
+    {
+      "id": "github-game",
+      "count": 43
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 40
     },
     {
-      "id": "github-html5-games",
-      "count": 36
-    },
-    {
-      "id": "github-game",
-      "count": 36
-    },
-    {
       "id": "steam-upcoming",
-      "count": 34
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 22
-    },
-    {
-      "id": "steam-upcoming-wishlist",
-      "count": 12
+      "count": 36
     },
     {
       "id": "itch-newest-web",
-      "count": 8
+      "count": 25
     },
     {
       "id": "itch-new",
-      "count": 8
+      "count": 25
     },
     {
       "id": "itch-new-feed",
-      "count": 8
+      "count": 25
     },
     {
-      "id": "steam-top-wishlist",
-      "count": 8
+      "id": "steam-upcoming-indie",
+      "count": 23
+    },
+    {
+      "id": "steam-upcoming-wishlist",
+      "count": 13
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 6
+    },
+    {
+      "id": "itch-popular",
+      "count": 6
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -126,6 +130,278 @@
     }
   ],
   "samples": [
+    {
+      "name": "Blood Under The Clocktower",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "My Very Special Toothpick",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Slap-O-calypse",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Critter Care",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mochi Cat: Milkshake Tower",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mochi Cat: Power Lift",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mochi Cat: Nom Nom Snack Time",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mochi Cat: Belly Bounce",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "DER SCHATTEN VON LILITH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Angry Okojo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Why Won't It Close?",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "GARWINDEL - Endgame",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "A Family Reunion: Morph Engine",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Meta-Grid: Master DevLog",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Blattformer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Shark Tick Tactics - シャチク・タクティクス",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 8,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "Pop and Drop",
       "channel": "online",
@@ -311,6 +587,71 @@
       ]
     },
     {
+      "name": "Ghost Month: Motel 49 (Tháng Cô Hồn)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 2,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Retromine (NEW UPDATE OUT NOW)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Legend of Idle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Imperium Host",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 2,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Eternal Mist",
       "channel": "pending",
       "fastClass": "pending",
@@ -343,14 +684,46 @@
       ]
     },
     {
-      "name": "Game Playroom",
+      "name": "Debuff",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 9,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 9,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Veilfall",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "The Great Rostam",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 0,
       "sourceCount": 2,
       "sourceIds": [
@@ -367,6 +740,22 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 0,
+      "sourceCount": 2,
+      "sourceIds": [
+        "github-html5-games",
+        "github-game"
+      ]
+    },
+    {
+      "name": "Game Playroom",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 9,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
       "strategicCount": 0,
       "sourceCount": 2,
       "sourceIds": [
@@ -559,371 +948,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Still Smoldering",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "The Last Light",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Strike Twice",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Red Alert Remake",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 9,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "DeadLock OS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 8,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 1,
-      "sourceIds": [
-        "hn-showhn"
-      ]
-    },
-    {
-      "name": "Oinkbuns",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Neon Chaos Dodge",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Neon City Strike",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Antarctic Cats",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Ashworth Station",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Shmup Cup",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Hatch",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Altiplume",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Tempora",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Rockcowboyzombie",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Trigger Knight",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 1,
-      "sourceIds": [
-        "armorgames-new"
-      ]
-    },
-    {
-      "name": "Heart Attack",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 8,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Whack A Mole",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Sudoku",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Age of War 2",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 22,
-      "strategicCount": 0,
-      "sourceCount": 1,
-      "sourceIds": [
-        "armorgames-new"
-      ]
-    },
-    {
-      "name": "Project Prism",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "FlappyWings",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 0,
-      "sourceCount": 2,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game"
-      ]
-    },
-    {
-      "name": "Joinstick",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 7,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 0,
       "sourceCount": 2,
       "sourceIds": [
