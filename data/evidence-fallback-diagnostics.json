@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-10-18T06:40:44.904Z",
+  "generatedAt": "2026-10-18T11:44:14.995Z",
   "totalCandidates": 3000,
-  "pendingSeo": 487,
+  "pendingSeo": 497,
   "channelCounts": {
-    "pending": 219,
-    "online": 222,
-    "wiki": 46
+    "pending": 222,
+    "wiki": 48,
+    "online": 227
   },
   "fastClassCounts": {
-    "pending:pending": 219,
-    "online:pending": 222,
-    "wiki:pending": 46
+    "pending:pending": 222,
+    "wiki:pending": 48,
+    "online:pending": 227
   },
   "strategicCounts": {
-    "pending:0": 218,
-    "online:1": 137,
-    "online:2": 1,
-    "wiki:0": 44,
-    "online:0": 84,
-    "wiki:1": 2,
+    "pending:0": 221,
+    "wiki:0": 45,
+    "online:1": 136,
+    "online:0": 91,
+    "wiki:1": 3,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "trends-rising-7d",
-      "count": 147
+      "count": 150
     },
     {
       "id": "itch-newest-web",
-      "count": 130
+      "count": 129
     },
     {
       "id": "itch-new",
-      "count": 130
+      "count": 129
     },
     {
       "id": "itch-new-feed",
-      "count": 130
+      "count": 129
     },
     {
       "id": "trends-rising-30d",
@@ -44,15 +43,15 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 89
+      "count": 92
     },
     {
       "id": "github-html5-games",
-      "count": 81
+      "count": 87
     },
     {
       "id": "github-game",
-      "count": 81
+      "count": 87
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -64,7 +63,7 @@
     },
     {
       "id": "hn-showhn",
-      "count": 49
+      "count": 50
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -72,11 +71,11 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 37
+      "count": 38
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 24
+      "count": 25
     },
     {
       "id": "steam-upcoming-wishlist",
@@ -107,27 +106,19 @@
       "count": 5
     },
     {
+      "id": "steam-popular-new",
+      "count": 3
+    },
+    {
       "id": "armorgames-new",
       "count": 3
     },
     {
-      "id": "steam-popular-new",
+      "id": "steam-popular-new-indie",
       "count": 2
     },
     {
-      "id": "crazygames-new",
-      "count": 1
-    },
-    {
-      "id": "y8-new",
-      "count": 1
-    },
-    {
       "id": "indiegamesplus",
-      "count": 1
-    },
-    {
-      "id": "steam-popular-new-indie",
       "count": 1
     },
     {
@@ -140,41 +131,6 @@
     }
   ],
   "samples": [
-    {
-      "name": "Break The Noob Completely!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 2,
-      "sourceIds": [
-        "crazygames-new",
-        "y8-new"
-      ]
-    },
-    {
-      "name": "FPS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "github-html5-games",
-        "github-game"
-      ]
-    },
     {
       "name": "冷香環帶壽司店｜Cold Aroma Ring Sushi",
       "channel": "online",
@@ -976,6 +932,40 @@
     },
     {
       "name": "Hordefall: Rift Wardens",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ember Vault",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Goblin's Brew",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
