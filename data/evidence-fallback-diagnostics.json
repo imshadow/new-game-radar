@@ -1,61 +1,62 @@
 {
-  "generatedAt": "2026-10-18T18:05:07.678Z",
+  "generatedAt": "2026-10-18T20:39:44.072Z",
   "totalCandidates": 3000,
-  "pendingSeo": 543,
+  "pendingSeo": 561,
   "channelCounts": {
-    "pending": 219,
-    "wiki": 53,
-    "online": 271
+    "pending": 240,
+    "online": 267,
+    "wiki": 54
   },
   "fastClassCounts": {
-    "pending:pending": 219,
-    "wiki:pending": 53,
-    "online:pending": 271
+    "pending:pending": 240,
+    "online:pending": 267,
+    "wiki:pending": 54
   },
   "strategicCounts": {
-    "pending:0": 218,
-    "wiki:0": 47,
-    "online:1": 172,
-    "online:0": 99,
+    "pending:0": 239,
+    "online:2": 1,
+    "wiki:0": 48,
+    "online:1": 164,
+    "online:0": 102,
     "wiki:1": 6,
     "pending:1": 1
   },
   "topSources": [
     {
-      "id": "trends-rising-7d",
-      "count": 146
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 140
-    },
-    {
       "id": "itch-new",
-      "count": 140
+      "count": 171
     },
     {
       "id": "itch-new-feed",
-      "count": 140
+      "count": 171
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 148
+    },
+    {
+      "id": "trends-rising-7d",
+      "count": 145
     },
     {
       "id": "trends-rising-30d",
-      "count": 120
+      "count": 119
     },
     {
       "id": "github-html5-games",
-      "count": 95
+      "count": 98
     },
     {
       "id": "github-game",
-      "count": 95
+      "count": 98
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 88
+      "count": 87
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 77
+      "count": 76
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -63,31 +64,31 @@
     },
     {
       "id": "hn-showhn",
-      "count": 51
+      "count": 50
+    },
+    {
+      "id": "steam-upcoming",
+      "count": 41
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 40
     },
     {
-      "id": "steam-upcoming",
-      "count": 40
-    },
-    {
       "id": "steam-upcoming-indie",
-      "count": 26
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 25
-    },
-    {
-      "id": "itch-popular",
-      "count": 25
+      "count": 27
     },
     {
       "id": "steam-upcoming-wishlist",
       "count": 14
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 11
+    },
+    {
+      "id": "itch-popular",
+      "count": 11
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -144,10 +145,148 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Feline Skyline",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Infinite Jerry",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Beam Racer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Carbineball",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Kawaii Crystal Flame",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Electrogenesis",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Regular Bros",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Reduce, Reuse, Rocket",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -838,142 +977,6 @@
     },
     {
       "name": "record",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "TinyWar 小小戰爭",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "This Game Can Save a Life",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "garbage_collected",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Word Duel",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "michi-pen",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Climbing Game Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dark Hunt: Dragon Valley",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "HalloweenMarmelade",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
