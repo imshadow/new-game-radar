@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-10-19T17:30:14.800Z",
+  "generatedAt": "2026-10-19T21:46:08.049Z",
   "totalCandidates": 3000,
-  "pendingSeo": 639,
+  "pendingSeo": 654,
   "channelCounts": {
-    "pending": 230,
-    "wiki": 78,
-    "online": 331
+    "pending": 231,
+    "online": 345,
+    "wiki": 78
   },
   "fastClassCounts": {
-    "pending:pending": 230,
-    "wiki:pending": 78,
-    "online:pending": 331
+    "pending:pending": 231,
+    "online:pending": 345,
+    "wiki:pending": 78
   },
   "strategicCounts": {
-    "pending:0": 229,
-    "wiki:1": 11,
-    "wiki:0": 67,
-    "online:0": 81,
-    "online:1": 250,
+    "pending:0": 230,
+    "online:2": 2,
+    "wiki:1": 6,
+    "wiki:0": 72,
+    "online:0": 90,
+    "online:1": 253,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 242
+      "count": 250
     },
     {
       "id": "itch-new",
-      "count": 242
+      "count": 250
     },
     {
       "id": "itch-new-feed",
-      "count": 242
+      "count": 250
     },
     {
       "id": "trends-rising-7d",
@@ -39,23 +40,23 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 123
+      "count": 122
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 88
     },
     {
-      "id": "trends-rising-30d-horror-game",
-      "count": 77
-    },
-    {
       "id": "github-html5-games",
-      "count": 77
+      "count": 86
     },
     {
       "id": "github-game",
-      "count": 77
+      "count": 86
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 76
     },
     {
       "id": "steam-upcoming",
@@ -63,47 +64,31 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 55
+      "count": 54
     },
     {
       "id": "hn-showhn",
-      "count": 52
-    },
-    {
-      "id": "steam-upcoming-indie",
-      "count": 45
+      "count": 53
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 43
     },
     {
+      "id": "steam-upcoming-indie",
+      "count": 43
+    },
+    {
       "id": "steam-upcoming-wishlist",
-      "count": 22
+      "count": 24
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 14
+      "count": 15
     },
     {
       "id": "press-new",
       "count": 8
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 8
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 8
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 6
-    },
-    {
-      "id": "steam-new",
-      "count": 6
     },
     {
       "id": "alphabetagamer",
@@ -122,12 +107,44 @@
       "count": 5
     },
     {
+      "id": "newgrounds-daily-top",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 4
+    },
+    {
       "id": "armorgames-new",
       "count": 3
     },
     {
       "id": "indiegamesplus",
       "count": 2
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 1
+    },
+    {
+      "id": "itch-popular",
+      "count": 1
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 1
+    },
+    {
+      "id": "steam-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
     },
     {
       "id": "itch-featured-feed",
@@ -139,6 +156,194 @@
     }
   ],
   "samples": [
+    {
+      "name": "Fight Club Simulator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
+    {
+      "name": "Pack Ripper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Yesterday, Probably",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Disaster Recovery",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Balkan Hunter 2002",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "A Little Louder",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cold Rebuild",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Little Bug, Big Computer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cozy Train",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Junkyard Drifter",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Switchboard Operator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
     {
       "name": "GO AWAY",
       "channel": "online",
@@ -794,193 +999,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cosmic Causeways",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Primal Strain",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Loominary Demo - Platformer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "BB1YBB Menu (TurboWarp)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Chromaflow",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dark Keep",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Garden Sudoku",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ORBIT RUSH: Expedition Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Ultimate Excalibur",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Space Advanture",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Gear Loot Battler - DEMO",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
