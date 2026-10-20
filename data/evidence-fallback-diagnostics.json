@@ -1,38 +1,37 @@
 {
-  "generatedAt": "2026-10-19T21:46:08.049Z",
+  "generatedAt": "2026-10-20T00:41:55.037Z",
   "totalCandidates": 3000,
-  "pendingSeo": 654,
+  "pendingSeo": 678,
   "channelCounts": {
     "pending": 231,
-    "online": 345,
-    "wiki": 78
+    "wiki": 87,
+    "online": 360
   },
   "fastClassCounts": {
     "pending:pending": 231,
-    "online:pending": 345,
-    "wiki:pending": 78
+    "wiki:pending": 87,
+    "online:pending": 360
   },
   "strategicCounts": {
     "pending:0": 230,
-    "online:2": 2,
-    "wiki:1": 6,
-    "wiki:0": 72,
-    "online:0": 90,
-    "online:1": 253,
+    "wiki:1": 9,
+    "wiki:0": 78,
+    "online:0": 91,
+    "online:1": 269,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 250
+      "count": 264
     },
     {
       "id": "itch-new",
-      "count": 250
+      "count": 264
     },
     {
       "id": "itch-new-feed",
-      "count": 250
+      "count": 264
     },
     {
       "id": "trends-rising-7d",
@@ -48,11 +47,11 @@
     },
     {
       "id": "github-html5-games",
-      "count": 86
+      "count": 87
     },
     {
       "id": "github-game",
-      "count": 86
+      "count": 87
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -60,7 +59,7 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 65
+      "count": 70
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -71,16 +70,16 @@
       "count": 53
     },
     {
+      "id": "steam-upcoming-indie",
+      "count": 48
+    },
+    {
       "id": "trends-rising-30d-itch-io",
       "count": 43
     },
     {
-      "id": "steam-upcoming-indie",
-      "count": 43
-    },
-    {
       "id": "steam-upcoming-wishlist",
-      "count": 24
+      "count": 25
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -88,22 +87,22 @@
     },
     {
       "id": "press-new",
-      "count": 8
+      "count": 11
     },
     {
       "id": "alphabetagamer",
+      "count": 9
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 6
+    },
+    {
+      "id": "steam-popular-new-indie",
       "count": 6
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 5
-    },
-    {
-      "id": "steam-popular-new-indie",
-      "count": 5
-    },
-    {
-      "id": "steam-popular-new",
       "count": 5
     },
     {
@@ -115,6 +114,14 @@
       "count": 4
     },
     {
+      "id": "steam-latest-indie",
+      "count": 3
+    },
+    {
+      "id": "steam-new",
+      "count": 3
+    },
+    {
       "id": "armorgames-new",
       "count": 3
     },
@@ -123,72 +130,208 @@
       "count": 2
     },
     {
-      "id": "itch-new-popular-web",
-      "count": 1
-    },
-    {
-      "id": "itch-popular",
-      "count": 1
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 1
-    },
-    {
-      "id": "steam-new",
-      "count": 1
-    },
-    {
-      "id": "y8-new",
-      "count": 1
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
-    },
-    {
       "id": "itch-featured-feed",
       "count": 1
     },
     {
       "id": "itch-featured",
       "count": 1
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 1
+    },
+    {
+      "id": "itch-popular",
+      "count": 1
     }
   ],
   "samples": [
     {
-      "name": "Fight Club Simulator",
+      "name": "Spider-man swinging",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 2,
-      "sourceIds": [
-        "y8-new",
-        "lagged-new"
-      ]
-    },
-    {
-      "name": "Pack Ripper",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
       "sourceIds": [
         "itch-newest-web",
         "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Manymancer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "BOLTHOLE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Footgolf!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Clone Button",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The ai sloprooms",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "SeanShawnShaun",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Beatparry",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Take Stock Halloween Stockacular!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 8,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pizza Sim",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ashes of Beau",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
@@ -846,159 +989,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Smoothie Pals: GCSE Ratio Café",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Halcyon Skies",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Code Kid Adventure in God's world",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Ironveil Express",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "TriadFlux",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sana Dragon Sandbox",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "accurate sprunki projection",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Worldfall",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Loominary Demo - Fluid Physics Cascade",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
