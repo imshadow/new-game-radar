@@ -1,62 +1,63 @@
 {
-  "generatedAt": "2026-10-21T20:10:39.453Z",
+  "generatedAt": "2026-10-21T23:19:15.743Z",
   "totalCandidates": 3000,
-  "pendingSeo": 876,
+  "pendingSeo": 879,
   "channelCounts": {
-    "pending": 247,
-    "wiki": 113,
-    "online": 516
+    "pending": 246,
+    "wiki": 118,
+    "online": 515
   },
   "fastClassCounts": {
-    "pending:pending": 247,
-    "wiki:pending": 113,
-    "online:pending": 516
+    "pending:pending": 246,
+    "wiki:pending": 118,
+    "online:pending": 515
   },
   "strategicCounts": {
-    "pending:0": 243,
-    "wiki:1": 9,
+    "pending:0": 242,
+    "wiki:2": 1,
+    "wiki:1": 8,
     "online:2": 6,
-    "wiki:0": 104,
+    "wiki:0": 109,
     "online:0": 64,
-    "online:1": 446,
+    "online:1": 445,
     "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 452
+      "count": 451
     },
     {
       "id": "itch-new",
-      "count": 452
+      "count": 451
     },
     {
       "id": "itch-new-feed",
-      "count": 452
+      "count": 451
     },
     {
       "id": "trends-rising-7d",
-      "count": 170
+      "count": 171
     },
     {
       "id": "trends-rising-30d",
-      "count": 119
+      "count": 116
     },
     {
       "id": "steam-upcoming",
-      "count": 101
+      "count": 106
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 89
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 72
+      "count": 88
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 71
+      "count": 73
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 69
     },
     {
       "id": "github-html5-games",
@@ -80,11 +81,15 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 35
+      "count": 38
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 28
+      "count": 30
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 7
     },
     {
       "id": "press-new",
@@ -107,18 +112,6 @@
       "count": 6
     },
     {
-      "id": "steam-popular-new",
-      "count": 5
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 4
-    },
-    {
-      "id": "steam-new",
-      "count": 4
-    },
-    {
       "id": "itch-featured-feed",
       "count": 4
     },
@@ -127,12 +120,20 @@
       "count": 4
     },
     {
+      "id": "steam-latest-indie",
+      "count": 3
+    },
+    {
+      "id": "steam-new",
+      "count": 3
+    },
+    {
       "id": "steam-feed-topsellers",
       "count": 3
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 1
+      "count": 2
     },
     {
       "id": "indiegamesplus",
@@ -252,6 +253,27 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "GemCraft - Legacy Collection",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -970,23 +992,6 @@
     },
     {
       "name": "FishSwimmer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "SIDELONG",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,

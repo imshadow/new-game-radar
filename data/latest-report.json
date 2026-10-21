@@ -1,37 +1,33 @@
 {
-  "scannedAt": "2026-10-21T20:07:47.570Z",
+  "scannedAt": "2026-10-21T23:16:29.766Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 181,
+  "totalAdded": 113,
   "sources": [
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
-      "total": 36,
-      "added": 35
+      "error": "远程站点返回 522"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
-      "total": 36,
-      "added": 3
+      "error": "fetch failed"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
-      "total": 36,
-      "added": 36
+      "error": "远程站点返回 522"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "itch-featured-feed",
       "sourceName": "itch.io Featured Feed",
-      "total": 10,
-      "added": 2
+      "error": "fetch failed"
     },
     {
       "ok": true,
@@ -45,14 +41,14 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 5
+      "added": 1
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 12
+      "added": 6
     },
     {
       "ok": true,
@@ -66,7 +62,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 6
+      "added": 4
     },
     {
       "ok": true,
@@ -87,7 +83,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 34
+      "added": 40
     },
     {
       "ok": false,
@@ -106,8 +102,8 @@
       "ok": true,
       "sourceId": "armorgames-new",
       "sourceName": "Armor Games 首页推荐",
-      "total": 49,
-      "added": 22
+      "total": 45,
+      "added": 20
     },
     {
       "ok": true,
@@ -149,21 +145,21 @@
       "sourceId": "github-html5-games",
       "sourceName": "GitHub 新建 HTML5 游戏仓库",
       "total": 47,
-      "added": 11
+      "added": 8
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-indie",
       "sourceName": "Steam 即将推出的独立游戏",
       "total": 50,
-      "added": 8
+      "added": 5
     },
     {
       "ok": true,
       "sourceId": "steam-popular-new-indie",
       "sourceName": "Steam 独立游戏热门新发行",
-      "total": 35,
-      "added": 4
+      "total": 34,
+      "added": 2
     },
     {
       "ok": true,
@@ -177,37 +173,42 @@
       "sourceId": "gog-new-arrivals",
       "sourceName": "GOG 新上架游戏",
       "total": 29,
-      "added": 1
+      "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 11,
+      "added": 6
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 17,
+      "added": 9
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-7d-indie-game",
       "sourceName": "Trends上涨 7天 · indie game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 19,
+      "added": 6
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-indie-game",
       "sourceName": "Trends上涨 30天 · indie game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 1,
+      "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 10,
+      "added": 4
     },
     {
       "ok": false,
@@ -218,50 +219,50 @@
   ],
   "seoVerified": 0,
   "seoErrors": 0,
-  "seoBlocked": 0,
+  "seoBlocked": 5,
   "seoFreePath": {
-    "queueSize": 0,
-    "attempted": 0,
+    "queueSize": 20,
+    "attempted": 5,
     "verified": 0,
     "failed": 0,
-    "blocked": 0,
-    "abortedAfter": 0,
-    "skipped": true,
-    "blockedUntil": "2026-10-21T22:07:32.253Z"
+    "blocked": 5,
+    "abortedAfter": 5,
+    "skipped": false,
+    "blockedUntil": "2026-10-22T05:17:41.726Z"
   },
   "fastModelVersion": 3,
-  "fastPassedCount": 142,
-  "fastWatchCount": 379,
-  "fastRejectedCount": 1603,
+  "fastPassedCount": 146,
+  "fastWatchCount": 381,
+  "fastRejectedCount": 1594,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 9,
-  "trendErrors": 4,
+  "trendsVerified": 7,
+  "trendErrors": 1,
   "trendBatchRan": true,
-  "trendQueueSize": 13,
+  "trendQueueSize": 8,
   "risingDiscoveryRan": true,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 675,
-  "trendEligibleCount": 97,
-  "trendPendingCount": 4,
-  "trendValidatedCount": 97,
-  "risingCount": 28,
+  "seoPassedCount": 677,
+  "trendEligibleCount": 101,
+  "trendPendingCount": 1,
+  "trendValidatedCount": 101,
+  "risingCount": 29,
   "globalRisingCount": 1,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
-    "page": 4,
-    "watch": 699,
-    "reject": 1181,
-    "pending": 1114,
+    "page": 3,
+    "watch": 701,
+    "reject": 1177,
+    "pending": 1117,
     "error": 2
   },
   "trendProvider": "google-trends-api",
   "trendProviderCounts": {
-    "google-trends-api": 97
+    "google-trends-api": 101
   },
   "serpApiConfigured": false,
   "serpApiUsage": {
@@ -276,7 +277,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-21T20:07:45.843Z",
+    "checkedAt": "2026-10-21T23:16:28.241Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -294,15 +295,15 @@
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "evidence-fallback": 66,
-    "serper+autocomplete": 2033,
+    "evidence-fallback": 68,
+    "serper+autocomplete": 2028,
     "duckduckgo+autocomplete": 29
   },
   "seoClassificationCounts": {
     "independent": 83,
     "page": 511,
     "watch": 276,
-    "reject": 1163
+    "reject": 1158
   },
   "serperConfigured": true,
   "serperUsage": {
@@ -349,16 +350,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 1886,
-    "wiki": 849,
-    "pending": 265
+    "online": 1880,
+    "wiki": 856,
+    "pending": 264
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
     "prepare": 7,
     "watch": 17,
-    "weak": 825
+    "weak": 832
   },
   "serperVerification": {
     "rushMode": true,
@@ -407,7 +408,7 @@
         "quotaStopped": true
       }
     },
-    "ranAt": "2026-10-21T20:10:39.206Z"
+    "ranAt": "2026-10-21T23:19:15.517Z"
   },
   "seoErrorCandidates": 2,
   "serperConfiguredSlots": 3,
@@ -448,12 +449,12 @@
         "lastError": null
       }
     },
-    "updatedAt": "2026-10-21T20:10:39.205Z"
+    "updatedAt": "2026-10-21T23:19:15.516Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 876,
+    "pendingCount": 879,
     "eligibleCount": 4,
     "queueSize": 4,
     "verified": 4,
@@ -464,18 +465,18 @@
     },
     "fastRecalculated": {
       "pass": 0,
-      "watch": 4,
-      "weak": 0,
+      "watch": 2,
+      "weak": 2,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "Lighthouse of Madness",
-      "Ashnar's Lair",
-      "Puppet Mall: Chapter 1: Lost Friend",
-      "Halloween On Goober Street"
+      "GemCraft - Legacy Collection",
+      "Wartide",
+      "A Sister's Journey",
+      "SAKIMORI"
     ],
-    "ranAt": "2026-10-21T20:10:39.842Z"
+    "ranAt": "2026-10-21T23:19:16.146Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -497,10 +498,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-21T20:10:41.000Z"
+    "ranAt": "2026-10-21T23:19:17.180Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-21T20:10:41.079Z",
+    "checkedAt": "2026-10-21T23:19:17.241Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 0,
     "workingKeys": 0,
@@ -557,7 +558,7 @@
     "monthlyLimit": 0,
     "dailyLimit": 0,
     "accounts": {},
-    "updatedAt": "2026-10-21T20:10:41.210Z"
+    "updatedAt": "2026-10-21T23:19:17.342Z"
   },
   "serpApiQuotaFill": {
     "configuredSlots": 0
@@ -570,7 +571,7 @@
     },
     "wiki": {
       "validated": 28,
-      "rising": 10,
+      "rising": 11,
       "recommended": 0
     },
     "pending": {
@@ -610,16 +611,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 276,
-      "wiki": 153
+      "online": 270,
+      "wiki": 155
     },
     "pendingByTier": {
-      "strong": 15,
-      "secondary": 269,
+      "strong": 12,
+      "secondary": 268,
       "strategic": 145
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-21T20:10:41.873Z"
+    "ranAt": "2026-10-21T23:19:17.977Z"
   }
 }
