@@ -1,63 +1,62 @@
 {
-  "generatedAt": "2026-10-23T09:38:28.745Z",
+  "generatedAt": "2026-10-23T14:28:17.073Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1024,
+  "pendingSeo": 1041,
   "channelCounts": {
-    "pending": 252,
-    "wiki": 135,
-    "online": 637
+    "pending": 258,
+    "wiki": 137,
+    "online": 646
   },
   "fastClassCounts": {
-    "pending:pending": 252,
-    "wiki:pending": 135,
-    "online:pending": 637
+    "pending:pending": 258,
+    "wiki:pending": 137,
+    "online:pending": 646
   },
   "strategicCounts": {
-    "pending:0": 250,
-    "wiki:1": 9,
-    "wiki:2": 1,
-    "wiki:0": 125,
+    "pending:0": 256,
+    "wiki:1": 6,
+    "wiki:0": 131,
     "online:2": 9,
-    "online:0": 47,
-    "online:1": 581,
+    "online:0": 44,
+    "online:1": 593,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 591
+      "count": 603
     },
     {
       "id": "itch-new-feed",
-      "count": 591
+      "count": 603
     },
     {
       "id": "itch-newest-web",
-      "count": 590
+      "count": 602
     },
     {
       "id": "trends-rising-7d",
-      "count": 179
+      "count": 182
     },
     {
       "id": "steam-upcoming",
-      "count": 127
+      "count": 128
     },
     {
       "id": "trends-rising-30d",
-      "count": 119
+      "count": 121
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 91
+      "count": 93
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 86
+      "count": 87
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 70
+      "count": 71
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -65,27 +64,27 @@
     },
     {
       "id": "hn-showhn",
-      "count": 50
-    },
-    {
-      "id": "steam-upcoming-wishlist",
-      "count": 46
-    },
-    {
-      "id": "github-html5-games",
-      "count": 46
-    },
-    {
-      "id": "github-game",
-      "count": 46
+      "count": 52
     },
     {
       "id": "trends-rising-30d-itch-io",
+      "count": 46
+    },
+    {
+      "id": "steam-upcoming-wishlist",
       "count": 45
     },
     {
+      "id": "github-html5-games",
+      "count": 43
+    },
+    {
+      "id": "github-game",
+      "count": 43
+    },
+    {
       "id": "trends-rising-7d-indie-game",
-      "count": 36
+      "count": 37
     },
     {
       "id": "itch-new-popular-web",
@@ -94,14 +93,6 @@
     {
       "id": "itch-popular",
       "count": 9
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 8
-    },
-    {
-      "id": "steam-new",
-      "count": 8
     },
     {
       "id": "press-new",
@@ -116,8 +107,12 @@
       "count": 6
     },
     {
-      "id": "steam-popular-new",
-      "count": 3
+      "id": "steam-latest-indie",
+      "count": 5
+    },
+    {
+      "id": "steam-new",
+      "count": 5
     },
     {
       "id": "itch-featured-feed",
@@ -128,7 +123,7 @@
       "count": 2
     },
     {
-      "id": "steam-popular-new-indie",
+      "id": "steam-popular-new",
       "count": 1
     },
     {
@@ -309,27 +304,6 @@
       ]
     },
     {
-      "name": "Moadra",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 7,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-upcoming-indie",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
       "name": "Piłeczki",
       "channel": "online",
       "fastClass": "pending",
@@ -352,6 +326,159 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Dash Lane",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "42 év – Az elveszett fénykép",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 3,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ageforge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "아마테라스의 여명 (202501747 이지훈)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 23,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Style Parade: Match & Merge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Frog Knight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pantry chaos",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Wobbleverse: The Blob Adventure",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Halloween Collection",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -865,142 +992,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cube Crack",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Oops, I Made a Zoo!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "MASNEX",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "DEAD LIGHT",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Yang Wang",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "NIGHTFALL",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lanternmere Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "DungeonGame",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
