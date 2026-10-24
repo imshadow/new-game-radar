@@ -1,38 +1,37 @@
 {
-  "generatedAt": "2026-10-24T16:59:35.780Z",
+  "generatedAt": "2026-10-24T19:29:14.606Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1168,
+  "pendingSeo": 1173,
   "channelCounts": {
-    "pending": 261,
-    "wiki": 136,
-    "online": 771
+    "wiki": 137,
+    "pending": 259,
+    "online": 777
   },
   "fastClassCounts": {
-    "pending:pending": 261,
-    "wiki:pending": 136,
-    "online:pending": 771
+    "wiki:pending": 137,
+    "pending:pending": 259,
+    "online:pending": 777
   },
   "strategicCounts": {
-    "pending:0": 260,
-    "wiki:1": 2,
+    "wiki:1": 3,
+    "pending:0": 259,
     "wiki:0": 134,
     "online:2": 9,
-    "online:1": 714,
-    "online:0": 48,
-    "pending:1": 1
+    "online:1": 723,
+    "online:0": 45
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 724
+      "count": 733
     },
     {
       "id": "itch-new-feed",
-      "count": 724
+      "count": 733
     },
     {
       "id": "itch-newest-web",
-      "count": 722
+      "count": 731
     },
     {
       "id": "trends-rising-7d",
@@ -40,7 +39,7 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 128
+      "count": 129
     },
     {
       "id": "trends-rising-30d",
@@ -52,7 +51,7 @@
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 85
+      "count": 84
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -64,23 +63,23 @@
     },
     {
       "id": "hn-showhn",
-      "count": 51
+      "count": 49
     },
     {
-      "id": "github-html5-games",
-      "count": 47
-    },
-    {
-      "id": "github-game",
-      "count": 47
+      "id": "steam-upcoming-wishlist",
+      "count": 46
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 46
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 44
+      "id": "github-html5-games",
+      "count": 45
+    },
+    {
+      "id": "github-game",
+      "count": 45
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -107,23 +106,19 @@
       "count": 6
     },
     {
-      "id": "steam-latest-indie",
+      "id": "steam-popular-new",
       "count": 2
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 1
     },
     {
       "id": "steam-new",
-      "count": 2
+      "count": 1
     },
     {
       "id": "lagged-new",
-      "count": 1
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 1
-    },
-    {
-      "id": "itch-featured",
       "count": 1
     },
     {
@@ -360,6 +355,142 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pausa de Guerra",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mountain Pass Keep",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "After the Harvest: 3D Horror",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Brownie Lady: Sweet Rush",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Lookout",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "rayaX",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pokémon kil",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Crystal Miner",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -849,142 +980,6 @@
     },
     {
       "name": "Paris Crisis",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Smash Pantheon",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "DURAK",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "GALAXMITE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "[Game John] Konkan Trails",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Motorcycle Company Tycoon",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "[SUSHI] TẤM: The New Story",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "hain kim",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "[ÀƠi] Dead-livery",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
