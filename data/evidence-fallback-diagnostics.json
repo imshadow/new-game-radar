@@ -1,56 +1,57 @@
 {
-  "generatedAt": "2026-10-26T01:10:26.073Z",
+  "generatedAt": "2026-10-26T06:11:30.122Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1307,
+  "pendingSeo": 1332,
   "channelCounts": {
-    "pending": 258,
-    "wiki": 131,
-    "online": 918
+    "pending": 265,
+    "wiki": 137,
+    "online": 930
   },
   "fastClassCounts": {
-    "pending:pending": 258,
-    "wiki:pending": 131,
-    "online:pending": 918
+    "pending:pending": 265,
+    "wiki:pending": 137,
+    "online:pending": 930
   },
   "strategicCounts": {
-    "pending:0": 258,
-    "wiki:0": 131,
+    "pending:0": 265,
+    "wiki:1": 5,
+    "wiki:0": 132,
     "online:2": 10,
-    "online:0": 64,
-    "online:1": 844
+    "online:1": 858,
+    "online:0": 62
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 855
-    },
-    {
-      "id": "itch-new-feed",
-      "count": 854
+      "count": 869
     },
     {
       "id": "itch-newest-web",
-      "count": 853
+      "count": 867
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 867
     },
     {
       "id": "trends-rising-7d",
-      "count": 189
+      "count": 195
     },
     {
       "id": "steam-upcoming",
-      "count": 126
+      "count": 133
     },
     {
       "id": "trends-rising-30d",
-      "count": 119
+      "count": 118
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 94
+      "count": 97
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 81
+      "count": 86
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -58,31 +59,31 @@
     },
     {
       "id": "github-html5-games",
-      "count": 64
+      "count": 62
     },
     {
       "id": "github-game",
-      "count": 64
+      "count": 62
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 53
+      "count": 55
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 48
+      "count": 50
     },
     {
       "id": "hn-showhn",
-      "count": 47
-    },
-    {
-      "id": "trends-rising-30d-itch-io",
-      "count": 45
+      "count": 48
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 45
+      "count": 46
+    },
+    {
+      "id": "trends-rising-30d-itch-io",
+      "count": 44
     },
     {
       "id": "itch-new-popular-web",
@@ -97,12 +98,24 @@
       "count": 6
     },
     {
-      "id": "press-new",
+      "id": "steam-latest-indie",
       "count": 5
     },
     {
-      "id": "alphabetagamer",
+      "id": "steam-new",
+      "count": 5
+    },
+    {
+      "id": "press-new",
       "count": 4
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 3
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 1
     },
     {
       "id": "lagged-new",
@@ -134,25 +147,6 @@
       ]
     },
     {
-      "name": "Living Scraps",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Kirby ~ Soft & Wet",
       "channel": "online",
       "fastClass": "pending",
@@ -173,6 +167,25 @@
     },
     {
       "name": "Tamaweb: Virtual Pet",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Living Scraps",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -304,6 +317,25 @@
       ]
     },
     {
+      "name": "Last Light",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 14,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
       "name": "Night Shift",
       "channel": "online",
       "fastClass": "pending",
@@ -363,6 +395,193 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Solar System Defender",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "百鬼の夜を超えろ C20.2 テスト版",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Reign: Settlement",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "397ミニゲーム #6 激！おばけ屋敷キャンディシューター",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 18,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Mansion: Three Keys",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hue Flood",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "PETUALANGAN ENERGI SI ENO",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Echoes of Shanhai — Web Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Moonwhisk",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "CubeQuest",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hexodus",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -627,23 +846,6 @@
       ]
     },
     {
-      "name": "Last Light",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
       "name": "Scrapper's JUNK JAM",
       "channel": "online",
       "fastClass": "pending",
@@ -788,193 +990,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Il principe e il povero",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Il fu Mattia Pascal",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Il club dei suicidi",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "BEAN // MAN",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Out of spell slots :(",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tales From The Fifth",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mascot Race",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "hello swampy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Kitchen brawl",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Laddoo Catch",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Save the Hive!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
