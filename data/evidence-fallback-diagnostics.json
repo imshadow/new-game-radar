@@ -1,25 +1,24 @@
 {
-  "generatedAt": "2026-10-26T12:56:37.747Z",
+  "generatedAt": "2026-10-26T19:18:01.399Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1359,
+  "pendingSeo": 1405,
   "channelCounts": {
     "pending": 265,
-    "wiki": 153,
-    "online": 941
+    "wiki": 198,
+    "online": 942
   },
   "fastClassCounts": {
     "pending:pending": 265,
-    "wiki:pending": 153,
-    "online:pending": 941
+    "wiki:pending": 198,
+    "online:pending": 942
   },
   "strategicCounts": {
     "pending:0": 265,
-    "wiki:1": 10,
-    "wiki:0": 142,
-    "wiki:2": 1,
-    "online:2": 10,
-    "online:1": 866,
-    "online:0": 65
+    "wiki:1": 23,
+    "wiki:0": 175,
+    "online:2": 9,
+    "online:1": 867,
+    "online:0": 66
   },
   "topSources": [
     {
@@ -40,15 +39,15 @@
     },
     {
       "id": "steam-upcoming",
-      "count": 148
-    },
-    {
-      "id": "trends-rising-30d",
-      "count": 116
+      "count": 190
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 100
+      "count": 139
+    },
+    {
+      "id": "trends-rising-30d",
+      "count": 117
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -56,15 +55,15 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 69
+      "count": 70
     },
     {
       "id": "github-html5-games",
-      "count": 65
+      "count": 66
     },
     {
       "id": "github-game",
-      "count": 65
+      "count": 66
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -72,11 +71,11 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 52
+      "count": 54
     },
     {
       "id": "hn-showhn",
-      "count": 50
+      "count": 49
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -88,11 +87,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 11
+      "count": 21
     },
     {
       "id": "steam-new",
-      "count": 11
+      "count": 21
     },
     {
       "id": "itch-new-popular-web",
@@ -108,50 +107,30 @@
     },
     {
       "id": "press-new",
-      "count": 4
+      "count": 6
     },
     {
       "id": "alphabetagamer",
-      "count": 3
+      "count": 4
     },
     {
       "id": "steam-popular-new",
+      "count": 3
+    },
+    {
+      "id": "indiegamesplus",
       "count": 2
     },
     {
       "id": "lagged-new",
-      "count": 2
-    },
-    {
-      "id": "steam-popular-new-indie",
       "count": 1
     },
     {
-      "id": "y8-new",
-      "count": 1
-    },
-    {
-      "id": "indiegamesplus",
+      "id": "poki-new",
       "count": 1
     }
   ],
   "samples": [
-    {
-      "name": "Velin World Halloween Carnival",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 2,
-      "sourceIds": [
-        "y8-new",
-        "lagged-new"
-      ]
-    },
     {
       "name": "Abattlacus",
       "channel": "online",
@@ -320,24 +299,6 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "REKA",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-popular-new",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new-indie"
       ]
     },
     {
@@ -768,23 +729,6 @@
       ]
     },
     {
-      "name": "Creature Arena Autobattler",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
       "name": "Pocket Bastion",
       "channel": "online",
       "fastClass": "pending",
@@ -997,6 +941,57 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mortis",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Little Fears",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Turandot",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
