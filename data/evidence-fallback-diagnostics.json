@@ -1,69 +1,70 @@
 {
-  "generatedAt": "2026-10-26T06:11:30.122Z",
+  "generatedAt": "2026-10-26T12:56:37.747Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1332,
+  "pendingSeo": 1359,
   "channelCounts": {
     "pending": 265,
-    "wiki": 137,
-    "online": 930
+    "wiki": 153,
+    "online": 941
   },
   "fastClassCounts": {
     "pending:pending": 265,
-    "wiki:pending": 137,
-    "online:pending": 930
+    "wiki:pending": 153,
+    "online:pending": 941
   },
   "strategicCounts": {
     "pending:0": 265,
-    "wiki:1": 5,
-    "wiki:0": 132,
+    "wiki:1": 10,
+    "wiki:0": 142,
+    "wiki:2": 1,
     "online:2": 10,
-    "online:1": 858,
-    "online:0": 62
+    "online:1": 866,
+    "online:0": 65
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 869
+      "count": 876
     },
     {
       "id": "itch-newest-web",
-      "count": 867
+      "count": 874
     },
     {
       "id": "itch-new-feed",
-      "count": 867
+      "count": 874
     },
     {
       "id": "trends-rising-7d",
-      "count": 195
+      "count": 193
     },
     {
       "id": "steam-upcoming",
-      "count": 133
+      "count": 148
     },
     {
       "id": "trends-rising-30d",
-      "count": 118
-    },
-    {
-      "id": "trends-rising-7d-horror-game",
-      "count": 97
+      "count": 116
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 86
+      "count": 100
+    },
+    {
+      "id": "trends-rising-7d-horror-game",
+      "count": 95
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 70
+      "count": 69
     },
     {
       "id": "github-html5-games",
-      "count": 62
+      "count": 65
     },
     {
       "id": "github-game",
-      "count": 62
+      "count": 65
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -71,11 +72,11 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 50
+      "count": 52
     },
     {
       "id": "hn-showhn",
-      "count": 48
+      "count": 50
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -83,27 +84,27 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 44
+      "count": 43
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 11
+    },
+    {
+      "id": "steam-new",
+      "count": 11
     },
     {
       "id": "itch-new-popular-web",
-      "count": 10
+      "count": 9
     },
     {
       "id": "itch-popular",
-      "count": 10
+      "count": 9
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 6
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 5
-    },
-    {
-      "id": "steam-new",
-      "count": 5
     },
     {
       "id": "press-new",
@@ -115,10 +116,18 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 1
+      "count": 2
     },
     {
       "id": "lagged-new",
+      "count": 2
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
       "count": 1
     },
     {
@@ -127,6 +136,22 @@
     }
   ],
   "samples": [
+    {
+      "name": "Velin World Halloween Carnival",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
     {
       "name": "Abattlacus",
       "channel": "online",
@@ -167,25 +192,6 @@
     },
     {
       "name": "Tamaweb: Virtual Pet",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Living Scraps",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -317,6 +323,24 @@
       ]
     },
     {
+      "name": "REKA",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-popular-new",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
       "name": "Last Light",
       "channel": "online",
       "fastClass": "pending",
@@ -404,7 +428,24 @@
       ]
     },
     {
-      "name": "Solar System Defender",
+      "name": "Grab Your Torches!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "DO NOT EXORCISE",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -421,14 +462,116 @@
       ]
     },
     {
-      "name": "百鬼の夜を超えろ C20.2 テスト版",
+      "name": "One More Stack",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 9,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Climbpick Early Prototype",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "GREY//OUT",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Werewolf: Clockwork Detective",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Life Gacha: Japan 1945–2100",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hollow Hall",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Solar System Defender",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -847,142 +990,6 @@
     },
     {
       "name": "Scrapper's JUNK JAM",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mortis",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Little Fears",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Turandot",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "L'incantesimo delle rune",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "L'Horla",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "La macchina del tempo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "La dama di picche",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Il servitore di due padroni",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
