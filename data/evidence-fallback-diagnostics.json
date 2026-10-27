@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-10-27T19:40:54.222Z",
+  "generatedAt": "2026-10-27T23:14:43.811Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1504,
+  "pendingSeo": 1494,
   "channelCounts": {
-    "wiki": 254,
-    "pending": 274,
-    "online": 976
+    "pending": 275,
+    "wiki": 229,
+    "online": 990
   },
   "fastClassCounts": {
-    "wiki:pending": 254,
-    "pending:pending": 274,
-    "online:pending": 976
+    "pending:pending": 275,
+    "wiki:pending": 229,
+    "online:pending": 990
   },
   "strategicCounts": {
+    "pending:0": 274,
+    "wiki:1": 19,
     "wiki:2": 2,
-    "pending:0": 273,
-    "wiki:1": 43,
-    "wiki:0": 209,
+    "wiki:0": 208,
     "online:2": 11,
-    "online:1": 904,
+    "online:1": 918,
     "online:0": 61,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 913
+      "count": 927
     },
     {
       "id": "itch-newest-web",
-      "count": 911
+      "count": 925
     },
     {
       "id": "itch-new-feed",
-      "count": 911
+      "count": 925
     },
     {
       "id": "steam-upcoming",
-      "count": 243
+      "count": 217
     },
     {
       "id": "trends-rising-7d",
-      "count": 197
+      "count": 199
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 191
+      "count": 165
     },
     {
       "id": "trends-rising-30d",
-      "count": 121
+      "count": 120
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -57,7 +57,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 74
+      "count": 73
     },
     {
       "id": "github-html5-games",
@@ -73,11 +73,11 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 54
+      "count": 55
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 51
+      "count": 52
     },
     {
       "id": "hn-showhn",
@@ -88,16 +88,16 @@
       "count": 44
     },
     {
+      "id": "steam-popular-new",
+      "count": 12
+    },
+    {
       "id": "steam-latest-indie",
-      "count": 37
+      "count": 12
     },
     {
       "id": "steam-new",
-      "count": 37
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 11
+      "count": 12
     },
     {
       "id": "itch-new-popular-web",
@@ -186,14 +186,14 @@
       ]
     },
     {
-      "name": "Abattlacus",
+      "name": "Tamaweb: Virtual Pet",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -205,14 +205,14 @@
       ]
     },
     {
-      "name": "Tamaweb: Virtual Pet",
+      "name": "Abattlacus",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -356,26 +356,6 @@
       ]
     },
     {
-      "name": "Anywhere RPG",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-popular-new",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
       "name": "Vampy's Big Day",
       "channel": "wiki",
       "fastClass": "pending",
@@ -393,6 +373,26 @@
         "steam-popular-new",
         "steam-latest-indie",
         "steam-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Night Plane",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
         "steam-popular-new-indie"
       ]
     },
@@ -489,6 +489,159 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Paper Skies",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Six Walls",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Adventures of nerry bumbs",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mr Pepper's Pro Skater",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Slideways: Block Escape",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pax Libera",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Midnight Candles",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Level Zero",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mythic Drop",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -807,234 +960,71 @@
       ]
     },
     {
-      "name": "Selkie's Salvage&Co.",
-      "channel": "wiki",
+      "name": "Destin Ovale",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
-      "name": "Culdcept BEGINS",
-      "channel": "wiki",
+      "name": "MonsterDalmut",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
-      "name": "You Are Empty: Absolute Edition",
-      "channel": "wiki",
+      "name": "Squash the Creeps - Tutorial Godot",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Jigsaw Puzzles Complete",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Anomaly Center",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Monster Hatcher",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "MEGA TAG PANIC",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Off Course",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Pixel Nightshift: The Vesta Protocol",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
       "nameRisk": 4,
       "strategicCount": 1,
-      "sourceCount": 4,
+      "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
-      "name": "Get Outta My Gut",
-      "channel": "wiki",
+      "name": "High Fence Ranch",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Undermoon",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Mia's Journey",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 4,
+      "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Gnomes Vs Knights",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     }
   ]
