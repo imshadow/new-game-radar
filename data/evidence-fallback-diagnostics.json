@@ -1,25 +1,26 @@
 {
-  "generatedAt": "2026-10-27T07:50:22.308Z",
+  "generatedAt": "2026-10-27T14:29:21.023Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1426,
+  "pendingSeo": 1471,
   "channelCounts": {
     "pending": 274,
-    "wiki": 191,
-    "online": 961
+    "wiki": 237,
+    "online": 960
   },
   "fastClassCounts": {
     "pending:pending": 274,
-    "wiki:pending": 191,
-    "online:pending": 961
+    "wiki:pending": 237,
+    "online:pending": 960
   },
   "strategicCounts": {
-    "pending:0": 272,
-    "wiki:1": 9,
-    "wiki:0": 182,
-    "online:2": 12,
+    "pending:0": 273,
+    "wiki:2": 1,
+    "wiki:1": 38,
+    "wiki:0": 198,
+    "online:2": 11,
     "online:1": 887,
     "online:0": 62,
-    "pending:1": 2
+    "pending:1": 1
   },
   "topSources": [
     {
@@ -35,20 +36,20 @@
       "count": 894
     },
     {
-      "id": "trends-rising-7d",
-      "count": 197
+      "id": "steam-upcoming",
+      "count": 225
     },
     {
-      "id": "steam-upcoming",
-      "count": 184
+      "id": "trends-rising-7d",
+      "count": 198
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 131
+      "count": 172
     },
     {
       "id": "trends-rising-30d",
-      "count": 120
+      "count": 121
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -67,16 +68,16 @@
       "count": 62
     },
     {
+      "id": "steam-upcoming-wishlist",
+      "count": 54
+    },
+    {
       "id": "trends-rising-7d-itch-io",
       "count": 54
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 53
-    },
-    {
       "id": "trends-rising-7d-indie-game",
-      "count": 50
+      "count": 51
     },
     {
       "id": "hn-showhn",
@@ -84,23 +85,27 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 43
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 9
-    },
-    {
-      "id": "itch-popular",
-      "count": 9
+      "count": 44
     },
     {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 31
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 31
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 11
+    },
+    {
+      "id": "itch-popular",
+      "count": 11
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 10
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -111,15 +116,15 @@
       "count": 5
     },
     {
-      "id": "lagged-new",
-      "count": 4
-    },
-    {
-      "id": "steam-popular-new",
+      "id": "itch-featured-feed",
       "count": 3
     },
     {
-      "id": "y8-new",
+      "id": "itch-featured",
+      "count": 3
+    },
+    {
+      "id": "steam-feed-topsellers",
       "count": 3
     },
     {
@@ -127,16 +132,24 @@
       "count": 3
     },
     {
-      "id": "itch-featured-feed",
+      "id": "steam-popular-new-indie",
       "count": 2
     },
     {
-      "id": "itch-featured",
+      "id": "gog-new-arrivals",
+      "count": 2
+    },
+    {
+      "id": "gog-new",
       "count": 2
     },
     {
       "id": "indiegamesplus",
       "count": 2
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
     },
     {
       "id": "poki-new",
@@ -145,51 +158,39 @@
   ],
   "samples": [
     {
-      "name": "Spooky Halloween Makeover",
+      "name": "Dungeonbound (In Development)",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 2,
-      "sourceIds": [
-        "y8-new",
-        "lagged-new"
-      ]
-    },
-    {
-      "name": "Peppa Pig's: Halloween Party",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 2,
-      "sourceCount": 2,
-      "sourceIds": [
-        "y8-new",
-        "lagged-new"
-      ]
-    },
-    {
-      "name": "Verity Block Survival",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
+      "discoveryScore": 17,
+      "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
       "strategicCount": 2,
-      "sourceCount": 2,
+      "sourceCount": 4,
       "sourceIds": [
-        "y8-new",
-        "lagged-new"
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "NOSFER-A-TOOTH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -201,6 +202,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Tamaweb: Virtual Pet",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -228,25 +248,6 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tamaweb: Virtual Pet",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
@@ -360,6 +361,26 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Night Plane",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -858,156 +879,164 @@
       ]
     },
     {
-      "name": "GREY//OUT",
-      "channel": "online",
+      "name": "Divine Frequency",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Werewolf: Clockwork Detective",
-      "channel": "online",
+      "name": "Magical Girl ER",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
-      "name": "Life Gacha: Japan 1945–2100",
-      "channel": "online",
+      "name": "Rogue Links",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 7,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Solar System Defender",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "Reign: Settlement",
-      "channel": "online",
+      "name": "Iskabon",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "397ミニゲーム #6 激！おばけ屋敷キャンディシューター",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 18,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "The Mansion: Three Keys",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "Hue Flood",
-      "channel": "online",
+      "name": "Arctic Roll",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "PETUALANGAN ENERGI SI ENO",
-      "channel": "online",
+      "name": "Deep Frost",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Pucked Up",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Dungeon Cleared!",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Primal One",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     }
   ]
