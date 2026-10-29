@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-10-29T13:45:40.649Z",
+  "generatedAt": "2026-10-29T19:16:39.613Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1548,
+  "pendingSeo": 1535,
   "channelCounts": {
-    "wiki": 273,
-    "pending": 295,
-    "online": 980
+    "wiki": 293,
+    "pending": 294,
+    "online": 948
   },
   "fastClassCounts": {
-    "wiki:pending": 273,
-    "pending:pending": 295,
-    "online:pending": 980
+    "wiki:pending": 293,
+    "pending:pending": 294,
+    "online:pending": 948
   },
   "strategicCounts": {
-    "wiki:1": 33,
-    "wiki:2": 2,
-    "pending:0": 294,
-    "wiki:0": 238,
-    "online:2": 15,
+    "wiki:1": 35,
+    "pending:0": 293,
+    "wiki:2": 1,
+    "wiki:0": 257,
+    "online:1": 884,
+    "online:2": 16,
     "online:0": 48,
-    "online:1": 917,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 930
+      "count": 897
     },
     {
       "id": "itch-newest-web",
-      "count": 928
+      "count": 895
     },
     {
       "id": "itch-new-feed",
-      "count": 928
+      "count": 895
     },
     {
       "id": "steam-upcoming",
-      "count": 261
+      "count": 281
     },
     {
       "id": "trends-rising-7d",
-      "count": 218
+      "count": 221
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 197
+      "count": 211
     },
     {
       "id": "trends-rising-30d",
@@ -56,24 +56,20 @@
       "count": 101
     },
     {
+      "id": "steam-upcoming-wishlist",
+      "count": 74
+    },
+    {
       "id": "trends-rising-30d-horror-game",
       "count": 73
     },
     {
-      "id": "steam-upcoming-wishlist",
-      "count": 67
-    },
-    {
       "id": "trends-rising-7d-indie-game",
-      "count": 63
+      "count": 66
     },
     {
       "id": "trends-rising-7d-itch-io",
       "count": 59
-    },
-    {
-      "id": "hn-showhn",
-      "count": 51
     },
     {
       "id": "github-html5-games",
@@ -88,12 +84,16 @@
       "count": 47
     },
     {
+      "id": "hn-showhn",
+      "count": 47
+    },
+    {
       "id": "steam-latest-indie",
-      "count": 28
+      "count": 27
     },
     {
       "id": "steam-new",
-      "count": 28
+      "count": 27
     },
     {
       "id": "itch-new-popular-web",
@@ -105,19 +105,19 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 10
-    },
-    {
-      "id": "press-new",
-      "count": 7
+      "count": 11
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 6
     },
     {
-      "id": "alphabetagamer",
+      "id": "press-new",
       "count": 6
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 5
     },
     {
       "id": "itch-featured-feed",
@@ -132,19 +132,35 @@
       "count": 3
     },
     {
-      "id": "steam-popular-new-indie",
+      "id": "poki-new",
       "count": 2
+    },
+    {
+      "id": "gog-new-arrivals",
+      "count": 2
+    },
+    {
+      "id": "gog-new",
+      "count": 2
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 1
     },
     {
       "id": "steam-top-wishlist",
       "count": 1
     },
     {
-      "id": "lagged-new",
+      "id": "newgrounds-latest",
       "count": 1
     },
     {
-      "id": "poki-new",
+      "id": "newgrounds-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     },
     {
@@ -154,6 +170,24 @@
   ],
   "samples": [
     {
+      "name": "Digger",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 14,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "poki-new"
+      ]
+    },
+    {
       "name": "The Lands",
       "channel": "online",
       "fastClass": "pending",
@@ -162,25 +196,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Goliath Necro",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -242,6 +257,25 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Goliath Necro",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -436,7 +470,7 @@
       ]
     },
     {
-      "name": "Quarantine Lab Sort",
+      "name": "Finals Week ✍🏻",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -445,34 +479,33 @@
       "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 2,
-      "sourceCount": 6,
+      "sourceCount": 7,
       "sourceIds": [
-        "steam-upcoming-indie",
+        "steam-upcoming-wishlist",
         "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
         "steam-latest-indie",
         "steam-new",
-        "steam-popular-new",
         "steam-popular-new-indie"
       ]
     },
     {
-      "name": "Monster Hatcher",
-      "channel": "wiki",
+      "name": "Rat Game",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
+      "discoveryScore": 19,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 4,
       "sourceIds": [
-        "steam-upcoming-indie",
+        "steam-upcoming-wishlist",
         "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
+        "newgrounds-latest",
+        "newgrounds-new"
       ]
     },
     {
@@ -568,6 +601,193 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "StreetXCars",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Survive The 5:00 PM Hallways Sprint",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 8,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pumpkin Boom",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Turbo Tempo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Benny Kecks Beckerrei",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Diorama Drama",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "EVERMORE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Haunting",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ghost's Revenge - ZX Spectrum",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hithoot Catch Color Reflex",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Grandma's little helper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -716,228 +936,24 @@
       ]
     },
     {
-      "name": "Hero Wars GameJam 2026",
-      "channel": "online",
+      "name": "Tom the Postgirl",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "mail man 3d prototype",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Heavy Hands II",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Stick War: Age Of Kings",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 15,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "LateBrake",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Fingers: Tribe Again",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ABC typing cube",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sunstone",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tito Tambaleo: Una fría entre cuatro",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lectores De Medianoche",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "penalty cup",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "sculpted ponderings",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Earth Heal: Animal Friends",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Everlast: Undying Tale",
+      "name": "Usagi Shima: Bunny Island",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -954,7 +970,24 @@
       ]
     },
     {
-      "name": "Zombie Assault: Resurgence",
+      "name": "Hunting Simulator 3",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 12,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Veterans: Napoleonic Wars",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -971,49 +1004,31 @@
       ]
     },
     {
-      "name": "Benny's Backrooms",
+      "name": "Ghost in the SQL Data",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Daydream Cat: DreamSpirits Idle Adventure",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
       "nameRisk": 7,
       "strategicCount": 1,
-      "sourceCount": 4,
+      "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-indie",
+        "steam-upcoming-wishlist",
         "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
+        "steam-popular-new"
       ]
     },
     {
-      "name": "LINKODE",
+      "name": "No Death No Life",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 5,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
@@ -1024,14 +1039,14 @@
       ]
     },
     {
-      "name": "Tama In-Between",
+      "name": "Escape from Prompt: Rogue AI",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 6,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
