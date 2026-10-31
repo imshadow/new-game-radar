@@ -1,69 +1,70 @@
 {
-  "generatedAt": "2026-10-30T20:46:39.242Z",
+  "generatedAt": "2026-10-31T00:09:22.494Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1520,
+  "pendingSeo": 1510,
   "channelCounts": {
-    "pending": 291,
-    "wiki": 367,
-    "online": 862
+    "pending": 292,
+    "wiki": 373,
+    "online": 845
   },
   "fastClassCounts": {
-    "pending:pending": 291,
-    "wiki:pending": 367,
-    "online:pending": 862
+    "pending:pending": 292,
+    "wiki:pending": 373,
+    "online:pending": 845
   },
   "strategicCounts": {
-    "pending:0": 291,
-    "wiki:0": 337,
-    "wiki:1": 30,
-    "online:1": 800,
-    "online:2": 15,
-    "online:0": 47
+    "pending:0": 292,
+    "wiki:1": 15,
+    "online:1": 783,
+    "wiki:0": 357,
+    "wiki:2": 1,
+    "online:2": 16,
+    "online:0": 46
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 812
+      "count": 796
     },
     {
       "id": "itch-newest-web",
-      "count": 811
+      "count": 795
     },
     {
       "id": "itch-new-feed",
-      "count": 810
+      "count": 793
     },
     {
       "id": "steam-upcoming",
-      "count": 358
+      "count": 366
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 291
+      "count": 297
     },
     {
       "id": "trends-rising-7d",
-      "count": 223
+      "count": 224
     },
     {
       "id": "trends-rising-30d",
-      "count": 123
+      "count": 122
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 96
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 72
+      "count": 95
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 71
+      "count": 73
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 69
+      "count": 71
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 71
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -75,31 +76,35 @@
     },
     {
       "id": "github-html5-games",
-      "count": 47
+      "count": 46
     },
     {
       "id": "github-game",
-      "count": 47
+      "count": 46
     },
     {
       "id": "hn-showhn",
       "count": 43
     },
     {
-      "id": "steam-latest-indie",
-      "count": 27
-    },
-    {
-      "id": "steam-new",
-      "count": 27
-    },
-    {
       "id": "itch-new-popular-web",
-      "count": 15
+      "count": 16
     },
     {
       "id": "itch-popular",
-      "count": 15
+      "count": 16
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 11
+    },
+    {
+      "id": "steam-new",
+      "count": 11
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 8
     },
     {
       "id": "press-new",
@@ -114,8 +119,8 @@
       "count": 5
     },
     {
-      "id": "steam-popular-new",
-      "count": 4
+      "id": "steam-popular-new-indie",
+      "count": 2
     },
     {
       "id": "itch-featured-feed",
@@ -126,18 +131,6 @@
       "count": 2
     },
     {
-      "id": "gog-new-arrivals",
-      "count": 1
-    },
-    {
-      "id": "gog-new",
-      "count": 1
-    },
-    {
-      "id": "steam-top-wishlist",
-      "count": 1
-    },
-    {
       "id": "newgrounds-latest",
       "count": 1
     },
@@ -146,7 +139,7 @@
       "count": 1
     },
     {
-      "id": "steam-popular-new-indie",
+      "id": "steam-top-wishlist",
       "count": 1
     },
     {
@@ -172,25 +165,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Goliath Necro",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -252,6 +226,25 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Goliath Necro",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -428,6 +421,24 @@
       ]
     },
     {
+      "name": "OBSESSED With Fashion",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "The Murmuring Depths",
       "channel": "online",
       "fastClass": "pending",
@@ -446,22 +457,44 @@
       ]
     },
     {
+      "name": "Monster Hatcher",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
       "name": "Rat Game",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 19,
+      "discoveryScore": 20,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
       "strategicCount": 1,
-      "sourceCount": 5,
+      "sourceCount": 7,
       "sourceIds": [
         "steam-upcoming-wishlist",
         "steam-upcoming",
         "newgrounds-latest",
         "newgrounds-new",
-        "steam-upcoming-indie"
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -557,6 +590,125 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cooking Rat with Laser Gun",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Alice in Wonderland",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Stalks",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Spot the Difference",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Torchlight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Lit Rogue",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Fantoma SRL",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -889,165 +1041,6 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Orbita",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Pub Manager Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Burrow Roll",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "SLOW ORBIT: Idle Planet Conquest",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Business Rivals",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Mining Days",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Can 'Em All",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Pot Smasher",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Prison Fury",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
       ]
     }
   ]
