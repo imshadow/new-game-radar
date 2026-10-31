@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-10-31T11:16:43.231Z",
+  "generatedAt": "2026-10-31T16:08:36.434Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1500,
+  "pendingSeo": 1495,
   "channelCounts": {
     "pending": 296,
-    "wiki": 429,
-    "online": 775
+    "online": 772,
+    "wiki": 427
   },
   "fastClassCounts": {
     "pending:pending": 296,
-    "wiki:pending": 429,
-    "online:pending": 775
+    "online:pending": 772,
+    "wiki:pending": 427
   },
   "strategicCounts": {
     "pending:0": 296,
-    "wiki:1": 9,
-    "wiki:2": 2,
-    "online:1": 718,
-    "wiki:0": 418,
+    "online:1": 715,
+    "wiki:0": 417,
+    "wiki:1": 10,
     "online:2": 16,
     "online:0": 41
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 731
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 730
-    },
-    {
-      "id": "itch-new-feed",
       "count": 728
     },
     {
+      "id": "itch-newest-web",
+      "count": 727
+    },
+    {
+      "id": "itch-new-feed",
+      "count": 725
+    },
+    {
       "id": "steam-upcoming",
-      "count": 420
+      "count": 418
     },
     {
       "id": "steam-upcoming-indie",
@@ -64,7 +63,7 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 71
+      "count": 69
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -95,20 +94,16 @@
       "count": 16
     },
     {
-      "id": "press-new",
-      "count": 8
-    },
-    {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 9
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 9
     },
     {
-      "id": "steam-popular-new",
-      "count": 7
+      "id": "press-new",
+      "count": 8
     },
     {
       "id": "alphabetagamer",
@@ -119,16 +114,16 @@
       "count": 5
     },
     {
-      "id": "itch-featured-feed",
+      "id": "steam-popular-new",
       "count": 3
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 2
     },
     {
       "id": "itch-featured",
-      "count": 3
-    },
-    {
-      "id": "steam-popular-new-indie",
-      "count": 3
+      "count": 2
     },
     {
       "id": "newgrounds-latest",
@@ -136,6 +131,10 @@
     },
     {
       "id": "newgrounds-new",
+      "count": 1
+    },
+    {
+      "id": "steam-popular-new-indie",
       "count": 1
     },
     {
@@ -457,46 +456,6 @@
       ]
     },
     {
-      "name": "Can 'Em All",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Monster Hatcher",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
       "name": "Rat Game",
       "channel": "online",
       "fastClass": "pending",
@@ -610,6 +569,176 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Bobina Legends",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Prank Calls",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "I Just Want to Dream",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Don't Let the Boss See",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 3,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "ZooPazl",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Space Painters",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Erebus Cradle Sneak Peek",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Möbius Strip",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mr Tri-Chain",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ginger Bread",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -902,142 +1031,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Brud's Redemption is Over.",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "A Felinthropic Endeavor",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Melloworld!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cooking Rat with Laser Gun",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Alice in Wonderland",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Stalks",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Spot the Difference",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Torchlight",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
