@@ -1,46 +1,47 @@
 {
-  "generatedAt": "2026-11-02T06:51:18.192Z",
+  "generatedAt": "2026-11-02T17:04:06.736Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1499,
+  "pendingSeo": 1498,
   "channelCounts": {
-    "pending": 303,
-    "online": 764,
-    "wiki": 432
+    "wiki": 475,
+    "online": 717,
+    "pending": 306
   },
   "fastClassCounts": {
-    "pending:pending": 303,
-    "online:pending": 764,
-    "wiki:pending": 432
+    "wiki:pending": 475,
+    "online:pending": 717,
+    "pending:pending": 306
   },
   "strategicCounts": {
-    "pending:0": 303,
-    "online:1": 694,
-    "wiki:0": 418,
-    "wiki:1": 12,
+    "wiki:1": 21,
+    "wiki:0": 452,
+    "online:1": 642,
+    "pending:0": 305,
     "wiki:2": 2,
-    "online:2": 19,
-    "online:0": 51
+    "online:2": 20,
+    "online:0": 55,
+    "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 711
+      "count": 659
     },
     {
       "id": "itch-newest-web",
-      "count": 709
+      "count": 657
     },
     {
       "id": "itch-new-feed",
-      "count": 708
+      "count": 656
     },
     {
       "id": "steam-upcoming",
-      "count": 426
+      "count": 469
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 357
+      "count": 398
     },
     {
       "id": "trends-rising-7d",
@@ -48,7 +49,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 126
+      "count": 125
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -60,7 +61,7 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 75
+      "count": 78
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -72,19 +73,27 @@
     },
     {
       "id": "github-html5-games",
-      "count": 51
+      "count": 55
     },
     {
       "id": "github-game",
-      "count": 51
-    },
-    {
-      "id": "trends-rising-30d-itch-io",
-      "count": 48
+      "count": 55
     },
     {
       "id": "hn-showhn",
-      "count": 44
+      "count": 48
+    },
+    {
+      "id": "trends-rising-30d-itch-io",
+      "count": 47
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 19
+    },
+    {
+      "id": "steam-new",
+      "count": 19
     },
     {
       "id": "itch-new-popular-web",
@@ -95,16 +104,8 @@
       "count": 19
     },
     {
-      "id": "steam-latest-indie",
-      "count": 11
-    },
-    {
-      "id": "steam-new",
-      "count": 11
-    },
-    {
       "id": "steam-popular-new",
-      "count": 7
+      "count": 8
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -120,15 +121,15 @@
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 3
+      "count": 4
     },
     {
       "id": "itch-featured-feed",
-      "count": 2
+      "count": 3
     },
     {
       "id": "itch-featured",
-      "count": 2
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -140,6 +141,14 @@
     },
     {
       "id": "steam-top-wishlist",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     },
     {
@@ -156,6 +165,22 @@
     }
   ],
   "samples": [
+    {
+      "name": "Expand io",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
     {
       "name": "Idle Watt Machine",
       "channel": "online",
@@ -181,25 +206,6 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Rats vs Robots",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -264,6 +270,25 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Rats vs Robots",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -697,6 +722,125 @@
       ]
     },
     {
+      "name": "Lights On, PLease!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Bit Runner",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Salvation of This City",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 11,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cultivation Life",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "NEXA QUEST",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Adventure Together",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cinder Horde",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "Tale of the taoist",
       "channel": "online",
       "fastClass": "pending",
@@ -902,142 +1046,6 @@
     },
     {
       "name": "Stack Tower",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Christmas Search and Find for Kids",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Entre deux mondes",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "RGBGB INFINITY",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "My Little Zoo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "LOVE IN SHANGHAI:HEARTBEAT 24 HOURS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Vloppy Birb",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "WolfSpider60",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "JURU KUNCI",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
