@@ -1,23 +1,22 @@
 {
-  "generatedAt": "2026-11-03T14:42:57.522Z",
+  "generatedAt": "2026-11-03T20:42:05.858Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1456,
+  "pendingSeo": 1441,
   "channelCounts": {
-    "wiki": 495,
     "pending": 302,
-    "online": 659
+    "wiki": 507,
+    "online": 632
   },
   "fastClassCounts": {
-    "wiki:pending": 495,
     "pending:pending": 302,
-    "online:pending": 659
+    "wiki:pending": 507,
+    "online:pending": 632
   },
   "strategicCounts": {
-    "wiki:1": 34,
     "pending:0": 301,
-    "online:1": 580,
-    "wiki:2": 2,
-    "wiki:0": 459,
+    "wiki:1": 42,
+    "online:1": 553,
+    "wiki:0": 465,
     "online:2": 20,
     "online:0": 59,
     "pending:1": 1
@@ -25,23 +24,23 @@
   "topSources": [
     {
       "id": "itch-new",
-      "count": 596
+      "count": 569
     },
     {
       "id": "itch-newest-web",
-      "count": 594
+      "count": 567
     },
     {
       "id": "itch-new-feed",
-      "count": 593
+      "count": 566
     },
     {
       "id": "steam-upcoming",
-      "count": 487
+      "count": 497
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 420
+      "count": 433
     },
     {
       "id": "trends-rising-7d",
@@ -49,11 +48,11 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 121
+      "count": 123
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 94
+      "count": 92
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -65,11 +64,11 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 71
+      "count": 70
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 60
+      "count": 62
     },
     {
       "id": "github-html5-games",
@@ -81,7 +80,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 46
+      "count": 49
     },
     {
       "id": "hn-showhn",
@@ -89,11 +88,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 30
+      "count": 35
     },
     {
       "id": "steam-new",
-      "count": 30
+      "count": 35
     },
     {
       "id": "itch-new-popular-web",
@@ -105,7 +104,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 9
     },
     {
       "id": "press-new",
@@ -129,7 +128,7 @@
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 3
+      "count": 2
     },
     {
       "id": "newgrounds-latest",
@@ -144,15 +143,15 @@
       "count": 2
     },
     {
+      "id": "steam-top-wishlist",
+      "count": 1
+    },
+    {
       "id": "gog-new-arrivals",
       "count": 1
     },
     {
       "id": "gog-new",
-      "count": 1
-    },
-    {
-      "id": "steam-top-wishlist",
       "count": 1
     },
     {
@@ -541,47 +540,6 @@
       ]
     },
     {
-      "name": "BOOST VECTOR EX",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 7,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-upcoming-indie",
-        "steam-popular-new",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Night Plane",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
       "name": "Find The Clover",
       "channel": "online",
       "fastClass": "pending",
@@ -725,7 +683,7 @@
       ]
     },
     {
-      "name": "Mégacnop",
+      "name": "Bezpieczny autobus",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -742,75 +700,7 @@
       ]
     },
     {
-      "name": "BAKI BAKI PC",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Next Door",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sim Planet",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lane Drift",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Vairaxis 3D",
+      "name": "Clicker - Bento",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -827,153 +717,298 @@
       ]
     },
     {
-      "name": "Silver the Hedgehog CHICKEN MOD",
+      "name": "Turris Deorum",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Custom Crossword Generator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Last Delivery",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Potato Please",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Mycelarium",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Loftia",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Atom By Atom",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Colorizing: Sunrise",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "In Triplicate",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "SCRAPBOX",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Blocade",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "One More Floor",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "The Wake Event",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Tumble Tavern",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Solo Cards",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "The Abyss’s Last Breath",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 4,
       "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Tyre Hop",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lumen",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "HEART ABYSS",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 6,
+      "sourceCount": 4,
       "sourceIds": [
         "steam-upcoming-indie",
         "steam-upcoming",
         "steam-latest-indie",
-        "steam-new",
-        "gog-new-arrivals",
-        "gog-new"
+        "steam-new"
       ]
     },
     {
-      "name": "Brotato: Primal Dread",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Godzilla: Destroy All Monsters Melee Remastered",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Culdcept BEGINS",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Usagi Shima: Bunny Island",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "House of the Lost: Revived",
+      "name": "Jawless Fish Races",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 7,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
@@ -984,7 +1019,7 @@
       ]
     },
     {
-      "name": "Terminidle",
+      "name": "Liani",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1002,7 +1037,7 @@
       ]
     },
     {
-      "name": "Celestial Routes",
+      "name": "Traffic Architect",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1011,59 +1046,24 @@
       "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 4,
+      "sourceCount": 5,
       "sourceIds": [
-        "steam-upcoming-indie",
+        "steam-upcoming-wishlist",
         "steam-upcoming",
+        "steam-upcoming-indie",
         "steam-latest-indie",
         "steam-new"
       ]
     },
     {
-      "name": "TRACE//5",
+      "name": "Lagrange Front Idle",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "No Scope CEO",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "東方異線境 ~ Touhou: Glitched Border",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
