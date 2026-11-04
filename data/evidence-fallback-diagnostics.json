@@ -1,47 +1,47 @@
 {
-  "generatedAt": "2026-11-04T07:29:57.648Z",
+  "generatedAt": "2026-11-04T15:50:22.005Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1413,
+  "pendingSeo": 1411,
   "channelCounts": {
     "pending": 311,
-    "online": 620,
-    "wiki": 482
+    "wiki": 507,
+    "online": 593
   },
   "fastClassCounts": {
     "pending:pending": 311,
-    "online:pending": 620,
-    "wiki:pending": 482
+    "wiki:pending": 507,
+    "online:pending": 593
   },
   "strategicCounts": {
-    "pending:0": 309,
-    "online:1": 554,
-    "wiki:1": 19,
-    "wiki:2": 1,
-    "wiki:0": 462,
-    "online:2": 20,
-    "online:0": 46,
-    "pending:1": 2
+    "pending:0": 310,
+    "wiki:1": 31,
+    "wiki:2": 2,
+    "online:1": 527,
+    "wiki:0": 474,
+    "online:2": 18,
+    "online:0": 48,
+    "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 570
+      "count": 540
     },
     {
       "id": "itch-newest-web",
-      "count": 568
+      "count": 538
     },
     {
       "id": "itch-new-feed",
-      "count": 567
+      "count": 538
     },
     {
       "id": "steam-upcoming",
-      "count": 473
+      "count": 500
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 407
+      "count": 432
     },
     {
       "id": "trends-rising-7d",
@@ -49,23 +49,23 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 125
+      "count": 142
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 98
+      "count": 99
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 89
+      "count": 88
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 73
+      "count": 76
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 70
+      "count": 73
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -73,51 +73,51 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 51
+      "count": 52
     },
     {
       "id": "github-html5-games",
-      "count": 47
+      "count": 49
     },
     {
       "id": "github-game",
-      "count": 47
+      "count": 49
     },
     {
       "id": "hn-showhn",
-      "count": 45
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 19
-    },
-    {
-      "id": "itch-popular",
-      "count": 19
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 13
+      "count": 44
     },
     {
       "id": "steam-latest-indie",
-      "count": 10
+      "count": 25
     },
     {
       "id": "steam-new",
-      "count": 10
+      "count": 25
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 6
+      "count": 21
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 18
+    },
+    {
+      "id": "itch-popular",
+      "count": 18
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 12
     },
     {
       "id": "itch-featured-feed",
-      "count": 5
+      "count": 4
     },
     {
       "id": "itch-featured",
-      "count": 5
+      "count": 4
     },
     {
       "id": "press-new",
@@ -140,6 +140,10 @@
       "count": 2
     },
     {
+      "id": "poki-new",
+      "count": 2
+    },
+    {
       "id": "steam-feed-topsellers",
       "count": 2
     },
@@ -148,37 +152,11 @@
       "count": 1
     },
     {
-      "id": "crazygames-new",
-      "count": 1
-    },
-    {
-      "id": "poki-new",
-      "count": 1
-    },
-    {
       "id": "indiegamesplus",
       "count": 1
     }
   ],
   "samples": [
-    {
-      "name": "Idle Resistance Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 14,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "crazygames-new"
-      ]
-    },
     {
       "name": "Idle Watt Machine",
       "channel": "online",
@@ -444,25 +422,6 @@
       ]
     },
     {
-      "name": "Demon Kitty Trials!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Gold Fever: Gold Mining & Panning Simulator",
       "channel": "online",
       "fastClass": "pending",
@@ -536,22 +495,41 @@
       ]
     },
     {
-      "name": "Pixel Siege",
+      "name": "Gravity Courier",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 18,
+      "discoveryScore": 16,
       "platforms": 2,
       "browserPlayable": true,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 5,
+      "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
         "github-html5-games",
-        "github-game"
+        "github-game",
+        "poki-new"
+      ]
+    },
+    {
+      "name": "Traffic Architect",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -576,24 +554,6 @@
       ]
     },
     {
-      "name": "Find The Clover",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Rat Game",
       "channel": "online",
       "fastClass": "pending",
@@ -612,6 +572,24 @@
         "steam-upcoming-indie",
         "steam-popular-new",
         "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Find The Clover",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -957,105 +935,125 @@
       ]
     },
     {
-      "name": "Latern Village",
-      "channel": "online",
+      "name": "Horses of Hoofprint Bay",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Deadflock",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Pokémon Rumblefield",
-      "channel": "online",
+      "name": "Dungeons & Dynasties",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Bomb Arena",
-      "channel": "online",
+      "name": "Death at Fleming Manor",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "politicos kombat",
-      "channel": "online",
+      "name": "Brotato: Primal Dread",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Nightmare Gallery",
-      "channel": "online",
+      "name": "Dirt & Viscera: The Great War",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 15,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Heroes & Co.",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Circuit Pulse",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     }
   ]
