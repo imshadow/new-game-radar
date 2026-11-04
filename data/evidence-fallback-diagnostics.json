@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-11-04T15:50:22.005Z",
+  "generatedAt": "2026-11-04T21:35:53.827Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1411,
+  "pendingSeo": 1393,
   "channelCounts": {
-    "pending": 311,
-    "wiki": 507,
-    "online": 593
+    "wiki": 529,
+    "pending": 313,
+    "online": 551
   },
   "fastClassCounts": {
-    "pending:pending": 311,
-    "wiki:pending": 507,
-    "online:pending": 593
+    "wiki:pending": 529,
+    "pending:pending": 313,
+    "online:pending": 551
   },
   "strategicCounts": {
-    "pending:0": 310,
-    "wiki:1": 31,
-    "wiki:2": 2,
-    "online:1": 527,
-    "wiki:0": 474,
+    "wiki:2": 1,
+    "pending:0": 312,
+    "wiki:1": 43,
+    "online:1": 481,
+    "wiki:0": 485,
     "online:2": 18,
-    "online:0": 48,
+    "online:0": 52,
     "pending:1": 1
   },
   "topSources": [
     {
+      "id": "steam-upcoming",
+      "count": 519
+    },
+    {
       "id": "itch-new",
-      "count": 540
+      "count": 495
     },
     {
       "id": "itch-newest-web",
-      "count": 538
+      "count": 493
     },
     {
       "id": "itch-new-feed",
-      "count": 538
-    },
-    {
-      "id": "steam-upcoming",
-      "count": 500
+      "count": 493
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 432
+      "count": 452
     },
     {
       "id": "trends-rising-7d",
-      "count": 242
+      "count": 243
     },
     {
       "id": "trends-rising-30d",
-      "count": 142
+      "count": 143
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -57,15 +57,15 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 88
+      "count": 89
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 76
+      "count": 74
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 73
+      "count": 74
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -77,11 +77,11 @@
     },
     {
       "id": "github-html5-games",
-      "count": 49
+      "count": 52
     },
     {
       "id": "github-game",
-      "count": 49
+      "count": 52
     },
     {
       "id": "hn-showhn",
@@ -89,11 +89,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 25
+      "count": 36
     },
     {
       "id": "steam-new",
-      "count": 25
+      "count": 36
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -109,7 +109,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 12
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -124,12 +124,12 @@
       "count": 4
     },
     {
-      "id": "steam-popular-new-indie",
+      "id": "alphabetagamer",
       "count": 3
     },
     {
-      "id": "alphabetagamer",
-      "count": 3
+      "id": "steam-popular-new-indie",
+      "count": 2
     },
     {
       "id": "newgrounds-latest",
@@ -140,15 +140,19 @@
       "count": 2
     },
     {
-      "id": "poki-new",
-      "count": 2
-    },
-    {
       "id": "steam-feed-topsellers",
       "count": 2
     },
     {
       "id": "steam-top-wishlist",
+      "count": 1
+    },
+    {
+      "id": "steam-feed-newreleases",
+      "count": 1
+    },
+    {
+      "id": "poki-new",
       "count": 1
     },
     {
@@ -495,58 +499,19 @@
       ]
     },
     {
-      "name": "Gravity Courier",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "github-html5-games",
-        "github-game",
-        "poki-new"
-      ]
-    },
-    {
-      "name": "Traffic Architect",
+      "name": "Sushiamo",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 20,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 0,
+      "nameRisk": 5,
       "strategicCount": 2,
-      "sourceCount": 7,
+      "sourceCount": 6,
       "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
         "steam-upcoming-indie",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "BOOST VECTOR EX",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 7,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
         "steam-upcoming",
-        "steam-upcoming-indie",
         "steam-popular-new",
         "steam-latest-indie",
         "steam-new",
@@ -593,23 +558,6 @@
       ]
     },
     {
-      "name": "Under Pressure",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 13,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
       "name": "Last Light",
       "channel": "online",
       "fastClass": "pending",
@@ -626,6 +574,23 @@
         "itch-new-feed",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Under Pressure",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
@@ -680,92 +645,7 @@
       ]
     },
     {
-      "name": "Đám Cưới",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Merge the Depths",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "سوبر مغامرة Super Adventure",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 18,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Turn on a light?",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Fruit Crash",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ChromaBound: The Radiant Leap",
+      "name": "Arkkinoita",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -782,7 +662,24 @@
       ]
     },
     {
-      "name": "Clutch 30-0",
+      "name": "Final Garrison",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ultimate Car Racing",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -799,58 +696,7 @@
       ]
     },
     {
-      "name": "Sponko Coneys Take Despair.",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ROCKET LAUNCH DETECTED",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Bridge Garden",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Slap Boy: 4 Years of Slaps",
+      "name": "Final 2D Platformer",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -867,14 +713,14 @@
       ]
     },
     {
-      "name": "Follow the Bomb!",
+      "name": "SlimeBlind",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -884,24 +730,7 @@
       ]
     },
     {
-      "name": "CITY ROBOT REPAIR",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Into Ember Depths",
+      "name": "Projet Élysée",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -918,14 +747,14 @@
       ]
     },
     {
-      "name": "NIGHT RIDE — Alpha v0.1",
+      "name": "Orbitfall",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 4,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -935,7 +764,58 @@
       ]
     },
     {
-      "name": "Horses of Hoofprint Bay",
+      "name": "Monster League: Rift Bound",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Return the Colors",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Eternal Palace Sakura",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Playrooms",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -952,65 +832,14 @@
       ]
     },
     {
-      "name": "Dungeons & Dynasties",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Death at Fleming Manor",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Brotato: Primal Dread",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Dirt & Viscera: The Great War",
+      "name": "Good Boy, Good Girl!",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 15,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
@@ -1021,7 +850,133 @@
       ]
     },
     {
-      "name": "Heroes & Co.",
+      "name": "Souterrain",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Wickwood",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Heroes of Underhollow",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 12,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Linear Chess",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "TinyBriks",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Way Too Many Eggs",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Starshapes",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "The Maze: In Dark",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1039,7 +994,25 @@
       ]
     },
     {
-      "name": "Circuit Pulse",
+      "name": "rest: in a dark room",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Rind Town",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1047,6 +1020,42 @@
       "platforms": 0,
       "browserPlayable": false,
       "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Table of War",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 20,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Spincremental",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 16,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
