@@ -1,50 +1,51 @@
 {
-  "generatedAt": "2026-11-06T11:33:21.482Z",
+  "generatedAt": "2026-11-06T18:29:38.197Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1323,
+  "pendingSeo": 1297,
   "channelCounts": {
-    "wiki": 568,
-    "pending": 316,
-    "online": 439
+    "wiki": 588,
+    "pending": 314,
+    "online": 395
   },
   "fastClassCounts": {
-    "wiki:pending": 568,
-    "pending:pending": 316,
-    "online:pending": 439
+    "wiki:pending": 588,
+    "pending:pending": 314,
+    "online:pending": 395
   },
   "strategicCounts": {
-    "wiki:1": 39,
-    "pending:0": 314,
-    "online:1": 360,
-    "wiki:0": 529,
-    "online:2": 19,
-    "online:0": 60,
+    "wiki:1": 32,
+    "pending:0": 312,
+    "wiki:2": 1,
+    "online:1": 316,
+    "wiki:0": 555,
+    "online:2": 21,
+    "online:0": 58,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 560
+      "count": 579
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 488
+      "count": 504
     },
     {
       "id": "itch-new",
-      "count": 373
+      "count": 330
     },
     {
       "id": "itch-newest-web",
-      "count": 372
+      "count": 329
     },
     {
       "id": "itch-new-feed",
-      "count": 371
+      "count": 328
     },
     {
       "id": "trends-rising-7d",
-      "count": 247
+      "count": 246
     },
     {
       "id": "trends-rising-30d",
@@ -56,11 +57,11 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 94
+      "count": 93
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 81
+      "count": 86
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -72,11 +73,11 @@
     },
     {
       "id": "github-html5-games",
-      "count": 60
+      "count": 58
     },
     {
       "id": "github-game",
-      "count": 60
+      "count": 58
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -88,11 +89,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 33
+      "count": 25
     },
     {
       "id": "steam-new",
-      "count": 33
+      "count": 25
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -108,14 +109,10 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 8
+      "count": 11
     },
     {
       "id": "press-new",
-      "count": 8
-    },
-    {
-      "id": "alphabetagamer",
       "count": 7
     },
     {
@@ -127,6 +124,14 @@
       "count": 6
     },
     {
+      "id": "alphabetagamer",
+      "count": 6
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 2
+    },
+    {
       "id": "newgrounds-latest",
       "count": 2
     },
@@ -135,11 +140,23 @@
       "count": 2
     },
     {
-      "id": "steam-popular-new-indie",
-      "count": 1
+      "id": "y8-new",
+      "count": 2
     },
     {
       "id": "steam-top-wishlist",
+      "count": 1
+    },
+    {
+      "id": "gog-new-arrivals",
+      "count": 1
+    },
+    {
+      "id": "gog-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     },
     {
@@ -156,6 +173,40 @@
     }
   ],
   "samples": [
+    {
+      "name": "Slime Merge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 14,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "y8-new"
+      ]
+    },
+    {
+      "name": "The Shadow Marksman: Master of Kunai",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
     {
       "name": "Sleigh the Spire 🎄🎁",
       "channel": "online",
@@ -494,6 +545,27 @@
       ]
     },
     {
+      "name": "Hull Rupture",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
       "name": "Rat Game",
       "channel": "online",
       "fastClass": "pending",
@@ -637,41 +709,7 @@
       ]
     },
     {
-      "name": "Cat-fisher",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Gillbert",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dig Up",
+      "name": "Copymaw: The 50 Floors of Flesh",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -688,7 +726,7 @@
       ]
     },
     {
-      "name": "Trả Giá Chợ Bến Thành",
+      "name": "Dozer (LD60)",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -705,14 +743,14 @@
       ]
     },
     {
-      "name": "AFTERROOM",
+      "name": "Bolt Bots: Screw Sort Puzzle",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 4,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -722,54 +760,173 @@
       ]
     },
     {
-      "name": "Migung",
+      "name": "Atrapa al bichito",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Trispooler",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "WORKS: Motorsport Factory",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new"
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "matematikduyasi",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Emo.io",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Afterline",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mochi & the Moon",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Gatepocket",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ragnarrow – Stickman Archery",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Turing's Judgment",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "SUMOVERSE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Lost garbage",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
       ]
     },
     {
@@ -791,6 +948,23 @@
     },
     {
       "name": "ROB RUN",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Elven Huntress: Sunveil",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -841,61 +1015,7 @@
       ]
     },
     {
-      "name": "Nie Xiaoqian",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Junkyard Reseller",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Order's Burger",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Soul Snake 3D",
+      "name": "The Resonance Initiative",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -913,25 +1033,7 @@
       ]
     },
     {
-      "name": "Defense The Drone",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "AMMO DUMP",
+      "name": "Akgwi Slash",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -949,25 +1051,7 @@
       ]
     },
     {
-      "name": "Noa and the Bandits' Den",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 7,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Crimson Solstice",
+      "name": "It's About Pirates",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -976,82 +1060,11 @@
       "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 4,
+      "sourceCount": 5,
       "sourceIds": [
-        "steam-upcoming-indie",
+        "steam-upcoming-wishlist",
         "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "KESSLER: Orbital Incremental",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
         "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Deadlight: A Zombie Chronicle",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "The Car Dealer",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 12,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Hking's Block Arena",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
         "steam-latest-indie",
         "steam-new"
       ]
