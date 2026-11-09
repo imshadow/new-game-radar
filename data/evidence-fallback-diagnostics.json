@@ -1,46 +1,47 @@
 {
-  "generatedAt": "2026-11-09T01:59:47.981Z",
+  "generatedAt": "2026-11-09T09:46:35.814Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1275,
+  "pendingSeo": 1284,
   "channelCounts": {
-    "pending": 311,
-    "online": 404,
-    "wiki": 560
+    "pending": 310,
+    "wiki": 569,
+    "online": 405
   },
   "fastClassCounts": {
-    "pending:pending": 311,
-    "online:pending": 404,
-    "wiki:pending": 560
+    "pending:pending": 310,
+    "wiki:pending": 569,
+    "online:pending": 405
   },
   "strategicCounts": {
-    "pending:0": 309,
-    "online:1": 348,
+    "pending:0": 308,
+    "wiki:2": 2,
+    "online:1": 346,
+    "wiki:1": 16,
     "wiki:0": 551,
-    "wiki:1": 9,
-    "online:2": 19,
-    "online:0": 37,
+    "online:2": 20,
+    "online:0": 39,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 556
+      "count": 567
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 485
+      "count": 494
     },
     {
       "id": "itch-new",
-      "count": 361
+      "count": 359
     },
     {
       "id": "itch-newest-web",
-      "count": 360
+      "count": 358
     },
     {
       "id": "itch-new-feed",
-      "count": 360
+      "count": 358
     },
     {
       "id": "trends-rising-7d",
@@ -48,23 +49,23 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 156
+      "count": 159
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 104
+      "count": 103
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 96
+      "count": 97
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 80
+      "count": 83
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 77
+      "count": 78
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -75,20 +76,20 @@
       "count": 49
     },
     {
-      "id": "hn-showhn",
-      "count": 38
-    },
-    {
       "id": "github-html5-games",
-      "count": 37
+      "count": 39
     },
     {
       "id": "github-game",
-      "count": 37
+      "count": 39
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 35
+      "count": 37
+    },
+    {
+      "id": "hn-showhn",
+      "count": 37
     },
     {
       "id": "itch-new-popular-web",
@@ -100,11 +101,15 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 8
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 8
+      "count": 14
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 7
     },
     {
       "id": "itch-featured-feed",
@@ -116,11 +121,15 @@
     },
     {
       "id": "press-new",
-      "count": 6
+      "count": 4
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 3
     },
     {
       "id": "alphabetagamer",
-      "count": 5
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -131,15 +140,15 @@
       "count": 2
     },
     {
-      "id": "steam-popular-new",
-      "count": 2
-    },
-    {
-      "id": "steam-popular-new-indie",
+      "id": "steam-top-wishlist",
       "count": 1
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "y8-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     },
     {
@@ -157,21 +166,19 @@
   ],
   "samples": [
     {
-      "name": "Sleigh the Spire 🎄🎁",
+      "name": "Skyway Drift",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
+      "discoveryScore": 12,
+      "platforms": 2,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 0,
       "strategicCount": 2,
-      "sourceCount": 4,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
+        "y8-new",
+        "lagged-new"
       ]
     },
     {
@@ -229,6 +236,24 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Sleigh the Spire 🎄🎁",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -492,6 +517,48 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Hull Rupture",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Traffic Architect",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -986,57 +1053,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lights, A Physics Sandbox",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Open Waters",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cloverdale: a dice town builder",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
