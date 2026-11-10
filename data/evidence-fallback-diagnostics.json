@@ -1,59 +1,59 @@
 {
-  "generatedAt": "2026-11-10T10:29:37.142Z",
+  "generatedAt": "2026-11-10T18:18:40.961Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1281,
+  "pendingSeo": 1287,
   "channelCounts": {
-    "pending": 311,
-    "wiki": 573,
-    "online": 397
+    "wiki": 595,
+    "pending": 313,
+    "online": 379
   },
   "fastClassCounts": {
-    "pending:pending": 311,
-    "wiki:pending": 573,
-    "online:pending": 397
+    "wiki:pending": 595,
+    "pending:pending": 313,
+    "online:pending": 379
   },
   "strategicCounts": {
-    "pending:0": 310,
-    "wiki:1": 31,
-    "wiki:2": 1,
-    "online:1": 302,
-    "wiki:0": 541,
-    "online:2": 19,
-    "online:0": 76,
+    "wiki:1": 38,
+    "pending:0": 312,
+    "wiki:2": 2,
+    "online:1": 290,
+    "wiki:0": 555,
+    "online:2": 20,
+    "online:0": 69,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 567
+      "count": 588
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 493
+      "count": 511
     },
     {
       "id": "itch-new",
-      "count": 314
+      "count": 303
     },
     {
       "id": "itch-newest-web",
-      "count": 313
+      "count": 302
     },
     {
       "id": "itch-new-feed",
-      "count": 313
+      "count": 301
     },
     {
       "id": "trends-rising-7d",
-      "count": 247
+      "count": 249
     },
     {
       "id": "trends-rising-30d",
-      "count": 164
+      "count": 166
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 101
+      "count": 103
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -61,7 +61,7 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 87
+      "count": 95
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -69,11 +69,11 @@
     },
     {
       "id": "github-html5-games",
-      "count": 76
+      "count": 69
     },
     {
       "id": "github-game",
-      "count": 76
+      "count": 69
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -85,7 +85,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 44
+      "count": 46
     },
     {
       "id": "hn-showhn",
@@ -93,11 +93,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 21
+      "count": 27
     },
     {
       "id": "steam-new",
-      "count": 21
+      "count": 27
     },
     {
       "id": "itch-new-popular-web",
@@ -109,7 +109,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 13
+      "count": 16
     },
     {
       "id": "itch-featured-feed",
@@ -125,6 +125,10 @@
     },
     {
       "id": "steam-popular-new-indie",
+      "count": 3
+    },
+    {
+      "id": "steam-feed-topsellers",
       "count": 3
     },
     {
@@ -152,15 +156,11 @@
       "count": 1
     },
     {
-      "id": "newgrounds-daily-top",
+      "id": "crazygames-new",
       "count": 1
     },
     {
-      "id": "newgrounds-top",
-      "count": 1
-    },
-    {
-      "id": "steam-feed-topsellers",
+      "id": "y8-new",
       "count": 1
     },
     {
@@ -174,21 +174,19 @@
   ],
   "samples": [
     {
-      "name": "Season Shift",
+      "name": "Space Survivors: Bug Swarm",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 15,
+      "discoveryScore": 12,
       "platforms": 2,
       "browserPlayable": true,
       "nameRisk": 0,
       "strategicCount": 2,
-      "sourceCount": 4,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "newgrounds-daily-top",
-        "newgrounds-top"
+        "crazygames-new",
+        "y8-new"
       ]
     },
     {
@@ -493,6 +491,24 @@
       ]
     },
     {
+      "name": "Eco Power Towns",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "OBSESSED With Fashion",
       "channel": "online",
       "fastClass": "pending",
@@ -508,6 +524,27 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "TANUKI: Pon's Summer",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -590,11 +627,28 @@
       ]
     },
     {
-      "name": "ЭХО · ECHO",
+      "name": "jogo do menino maluquinho",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 13,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "ЭХО · ECHO",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 11,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
@@ -649,6 +703,108 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Hunters",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Monkee Quest",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "LuckySeven",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "DnD style",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "xonix",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Erased Faces",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -777,228 +933,27 @@
       ]
     },
     {
-      "name": "Shiba crossing",
-      "channel": "online",
+      "name": "After the Wane",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sef Saga",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Blood Vigil",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Rune Rise",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Oath of Gods",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 6,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 6,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "gog-new-arrivals",
+        "gog-new"
       ]
     },
     {
-      "name": "Contrapé",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sprunked: S",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "جادوئی کتاب (Livro Mágico)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Padre Ortodoxo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Amazon Fight",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "PongHalloween",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Guilty Pleasure",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "The Lost Light Of Christmas",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 7,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Neo Junk City",
+      "name": "Booster Pack Heroes",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1015,20 +970,53 @@
       ]
     },
     {
-      "name": "Stick A Fork",
+      "name": "Ashes of the Singularity II",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 20,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 6,
+      "nameRisk": 7,
       "strategicCount": 1,
-      "sourceCount": 4,
+      "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-indie",
+        "steam-upcoming-wishlist",
         "steam-upcoming",
-        "steam-popular-new-indie",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Annihilated",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "DreamWorks Shrek 2 Remastered",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
         "steam-popular-new"
       ]
     },
@@ -1051,6 +1039,23 @@
     },
     {
       "name": "Eternal Palace Sakura",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Replay Value: Second Hand Games",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
