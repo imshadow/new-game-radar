@@ -1,51 +1,50 @@
 {
-  "generatedAt": "2026-11-11T10:54:29.367Z",
+  "generatedAt": "2026-11-11T18:43:16.094Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1290,
+  "pendingSeo": 1293,
   "channelCounts": {
-    "wiki": 581,
-    "pending": 314,
-    "online": 395
+    "wiki": 614,
+    "pending": 312,
+    "online": 367
   },
   "fastClassCounts": {
-    "wiki:pending": 581,
-    "pending:pending": 314,
-    "online:pending": 395
+    "wiki:pending": 614,
+    "pending:pending": 312,
+    "online:pending": 367
   },
   "strategicCounts": {
-    "wiki:1": 26,
-    "pending:0": 313,
-    "wiki:2": 2,
-    "online:1": 305,
-    "wiki:0": 553,
+    "wiki:0": 579,
+    "pending:0": 311,
+    "wiki:1": 35,
+    "online:1": 268,
+    "online:0": 81,
     "online:2": 18,
-    "online:0": 72,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 573
+      "count": 605
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 500
+      "count": 528
     },
     {
       "id": "itch-new",
-      "count": 316
+      "count": 279
     },
     {
       "id": "itch-newest-web",
-      "count": 315
+      "count": 278
     },
     {
       "id": "itch-new-feed",
-      "count": 314
+      "count": 277
     },
     {
       "id": "trends-rising-7d",
-      "count": 250
+      "count": 247
     },
     {
       "id": "trends-rising-30d",
@@ -53,31 +52,31 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 103
+      "count": 102
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 100
+      "count": 99
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 89
+      "count": 96
+    },
+    {
+      "id": "github-html5-games",
+      "count": 81
+    },
+    {
+      "id": "github-game",
+      "count": 81
     },
     {
       "id": "trends-rising-30d-horror-game",
       "count": 77
     },
     {
-      "id": "github-html5-games",
-      "count": 72
-    },
-    {
-      "id": "github-game",
-      "count": 72
-    },
-    {
       "id": "trends-rising-7d-itch-io",
-      "count": 59
+      "count": 58
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -89,15 +88,15 @@
     },
     {
       "id": "hn-showhn",
-      "count": 36
+      "count": 38
     },
     {
       "id": "steam-latest-indie",
-      "count": 22
+      "count": 26
     },
     {
       "id": "steam-new",
-      "count": 22
+      "count": 26
     },
     {
       "id": "itch-new-popular-web",
@@ -109,15 +108,15 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 11
     },
     {
       "id": "press-new",
-      "count": 7
+      "count": 8
     },
     {
       "id": "alphabetagamer",
-      "count": 6
+      "count": 7
     },
     {
       "id": "itch-featured-feed",
@@ -129,7 +128,15 @@
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 4
+      "count": 3
+    },
+    {
+      "id": "gog-new-arrivals",
+      "count": 3
+    },
+    {
+      "id": "gog-new",
+      "count": 3
     },
     {
       "id": "steam-feed-topsellers",
@@ -158,6 +165,24 @@
   ],
   "samples": [
     {
+      "name": "Sleigh the Spire 🎄🎁",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
       "name": "One Like = One Prayer",
       "channel": "online",
       "fastClass": "pending",
@@ -174,24 +199,6 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Sleigh the Spire 🎄🎁",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
       ]
     },
     {
@@ -476,44 +483,21 @@
       ]
     },
     {
-      "name": "Safari-TV",
-      "channel": "wiki",
+      "name": "Find The Clover",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 4,
       "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Hull Rupture",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 7,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
         "steam-upcoming-indie",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
+        "steam-upcoming",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -535,24 +519,6 @@
         "steam-upcoming-indie",
         "steam-popular-new",
         "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Find The Clover",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
@@ -678,6 +644,193 @@
       ]
     },
     {
+      "name": "Incremental Fortress",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "No Pasaran",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "GUNVECTOR",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Black Hole Cthun",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ruta 66",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pixel Academy The Stolen Spellbooks",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Lucky Plate",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Comet Corridor (Free Demo)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "smarty sprint",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Kedai Kuih Cik Intan Stamp",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Level Design Hero",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "线｜LINE",
       "channel": "online",
       "fastClass": "pending",
@@ -780,275 +933,129 @@
       ]
     },
     {
-      "name": "Escaposaurus - Mafia en Plastique",
-      "channel": "online",
+      "name": "Rejected Draft",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
-      "name": "Backtrack or Bust",
-      "channel": "online",
+      "name": "MONOMOON",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Jelly Dash",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Hutlegs",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Paper Friends: Home Time",
-      "channel": "online",
+      "name": "Farm & Feast",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Wall World Strategy",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "gog-new-arrivals",
+        "gog-new"
+      ]
+    },
+    {
+      "name": "Eternal Palace Sakura",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "夢回金庸v1",
-      "channel": "online",
+      "name": "Ice Cream Truck Simulator",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Castlebound",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "love-all",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "CEIFA: Hora Extra",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "HELPR - Task Dispatch",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Glodge",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mole Tunnels",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Zero Point · QUANTA 10",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Fish Falls",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Seven Shots",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Decohere · QUANTA 09",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Everett · QUANTA 08",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     }
   ]
