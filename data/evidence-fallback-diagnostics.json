@@ -1,81 +1,82 @@
 {
-  "generatedAt": "2026-11-12T01:04:14.538Z",
+  "generatedAt": "2026-11-12T08:20:22.525Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1284,
+  "pendingSeo": 1296,
   "channelCounts": {
-    "pending": 309,
-    "wiki": 595,
-    "online": 380
+    "pending": 313,
+    "wiki": 597,
+    "online": 386
   },
   "fastClassCounts": {
-    "pending:pending": 309,
-    "wiki:pending": 595,
-    "online:pending": 380
+    "pending:pending": 313,
+    "wiki:pending": 597,
+    "online:pending": 386
   },
   "strategicCounts": {
-    "pending:0": 309,
-    "wiki:1": 28,
-    "online:1": 279,
-    "online:0": 82,
-    "wiki:0": 567,
-    "online:2": 19
+    "pending:0": 312,
+    "wiki:1": 26,
+    "online:1": 283,
+    "online:0": 84,
+    "wiki:0": 571,
+    "online:2": 19,
+    "pending:1": 1
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 583
+      "count": 584
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 510
+      "count": 509
     },
     {
       "id": "itch-new",
-      "count": 291
+      "count": 295
     },
     {
       "id": "itch-newest-web",
-      "count": 290
+      "count": 294
     },
     {
       "id": "itch-new-feed",
-      "count": 288
+      "count": 293
     },
     {
       "id": "trends-rising-7d",
-      "count": 248
+      "count": 253
     },
     {
       "id": "trends-rising-30d",
-      "count": 170
+      "count": 171
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 103
+      "count": 104
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 100
+      "count": 102
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 91
+      "count": 93
     },
     {
       "id": "github-html5-games",
-      "count": 82
+      "count": 84
     },
     {
       "id": "github-game",
-      "count": 82
+      "count": 84
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 74
+      "count": 75
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 57
+      "count": 59
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -91,11 +92,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 19
+      "count": 20
     },
     {
       "id": "itch-popular",
-      "count": 19
+      "count": 20
     },
     {
       "id": "steam-latest-indie",
@@ -107,34 +108,26 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 12
+      "count": 10
     },
     {
       "id": "press-new",
-      "count": 8
+      "count": 10
     },
     {
       "id": "alphabetagamer",
-      "count": 7
+      "count": 9
     },
     {
       "id": "itch-featured-feed",
-      "count": 4
+      "count": 5
     },
     {
       "id": "itch-featured",
-      "count": 4
+      "count": 5
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 3
-    },
-    {
-      "id": "newgrounds-latest",
-      "count": 3
-    },
-    {
-      "id": "newgrounds-new",
       "count": 3
     },
     {
@@ -142,16 +135,16 @@
       "count": 3
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "newgrounds-latest",
       "count": 2
     },
     {
-      "id": "gog-new-arrivals",
-      "count": 1
+      "id": "newgrounds-new",
+      "count": 2
     },
     {
-      "id": "gog-new",
-      "count": 1
+      "id": "steam-top-wishlist",
+      "count": 2
     },
     {
       "id": "poki-new",
@@ -164,21 +157,22 @@
   ],
   "samples": [
     {
-      "name": "Car Games",
+      "name": "Incremental Fortress",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 11,
-      "platforms": 2,
+      "discoveryScore": 17,
+      "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 9,
+      "nameRisk": 0,
       "strategicCount": 2,
-      "sourceCount": 4,
+      "sourceCount": 5,
       "sourceIds": [
         "itch-newest-web",
         "itch-new",
-        "newgrounds-latest",
-        "newgrounds-new"
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -661,6 +655,312 @@
       ]
     },
     {
+      "name": "House Always Wins",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "PooSniper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Rockblaze Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Guild Adventures Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "İK Kabusu",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "EARTH GUARDIAN",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Santa's Yarn Blanket",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "MATH FACE: Arithmetic Shooter",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cosmic Miner 3D",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "False Sun",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cell Evolution",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "DEAR USER",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Astryon",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Fire Birdian",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Tiny Realms Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Stop or Go!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Tank Guys",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ball-Bot",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "Zombie Drift",
       "channel": "online",
       "fastClass": "pending",
@@ -737,312 +1037,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 18,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Toy Tank Royale",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "HydroHoops '76",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Black Orbit — Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Back To Life Series",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Roadside Harvest: Farm Tycoon",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "As aventuras de um jogador",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Incremental Fortress",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "No Pasaran",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "GUNVECTOR",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Black Hole Cthun",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Ruta 66",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Pixel Academy The Stolen Spellbooks",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Lucky Plate",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Comet Corridor (Free Demo)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "smarty sprint",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Kedai Kuih Cik Intan Stamp",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Level Design Hero",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "线｜LINE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
