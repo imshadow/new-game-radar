@@ -1,23 +1,23 @@
 {
-  "scannedAt": "2026-11-14T18:50:50.474Z",
+  "scannedAt": "2026-11-14T22:57:29.110Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 414,
+  "totalAdded": 384,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 35
+      "added": 36
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 7
+      "added": 2
     },
     {
       "ok": true,
@@ -45,7 +45,7 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 41
+      "added": 46
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 10
+      "added": 2
     },
     {
       "ok": true,
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 44
+      "added": 41
     },
     {
       "ok": false,
@@ -106,15 +106,15 @@
       "ok": true,
       "sourceId": "armorgames-new",
       "sourceName": "Armor Games 首页推荐",
-      "total": 47,
-      "added": 25
+      "total": 40,
+      "added": 19
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-wishlist",
       "sourceName": "Steam 热门即将推出",
       "total": 50,
-      "added": 19
+      "added": 25
     },
     {
       "ok": true,
@@ -148,22 +148,22 @@
       "ok": true,
       "sourceId": "github-html5-games",
       "sourceName": "GitHub 新建 HTML5 游戏仓库",
-      "total": 49,
-      "added": 31
+      "total": 48,
+      "added": 21
     },
     {
       "ok": true,
       "sourceId": "steam-upcoming-indie",
       "sourceName": "Steam 即将推出的独立游戏",
       "total": 50,
-      "added": 46
+      "added": 39
     },
     {
       "ok": true,
       "sourceId": "steam-popular-new-indie",
       "sourceName": "Steam 独立游戏热门新发行",
-      "total": 50,
-      "added": 47
+      "total": 48,
+      "added": 44
     },
     {
       "ok": true,
@@ -183,8 +183,8 @@
       "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "total": 8,
-      "added": 2
+      "total": 12,
+      "added": 6
     },
     {
       "ok": true,
@@ -198,7 +198,7 @@
       "sourceId": "trends-rising-7d-indie-game",
       "sourceName": "Trends上涨 7天 · indie game",
       "total": 23,
-      "added": 9
+      "added": 5
     },
     {
       "ok": true,
@@ -211,63 +211,63 @@
       "ok": true,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "total": 16,
-      "added": 5
+      "total": 15,
+      "added": 3
     },
     {
       "ok": true,
       "sourceId": "trends-rising-30d-horror-game",
       "sourceName": "Trends上涨 30天 · horror game",
-      "total": 13,
-      "added": 1
+      "total": 16,
+      "added": 3
     }
   ],
   "seoVerified": 0,
   "seoErrors": 0,
-  "seoBlocked": 5,
+  "seoBlocked": 0,
   "seoFreePath": {
-    "queueSize": 20,
-    "attempted": 5,
+    "queueSize": 0,
+    "attempted": 0,
     "verified": 0,
     "failed": 0,
-    "blocked": 5,
-    "abortedAfter": 5,
-    "skipped": false,
+    "blocked": 0,
+    "abortedAfter": 0,
+    "skipped": true,
     "blockedUntil": "2026-11-15T00:51:20.323Z"
   },
   "fastModelVersion": 3,
-  "fastPassedCount": 194,
-  "fastWatchCount": 430,
-  "fastRejectedCount": 1099,
+  "fastPassedCount": 201,
+  "fastWatchCount": 428,
+  "fastRejectedCount": 1103,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 13,
+  "trendsVerified": 3,
   "trendErrors": 0,
   "trendBatchRan": true,
-  "trendQueueSize": 13,
+  "trendQueueSize": 3,
   "risingDiscoveryRan": true,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 1476,
-  "trendEligibleCount": 149,
+  "seoPassedCount": 1485,
+  "trendEligibleCount": 151,
   "trendPendingCount": 0,
-  "trendValidatedCount": 148,
+  "trendValidatedCount": 151,
   "risingCount": 32,
   "globalRisingCount": 4,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 9,
-    "watch": 789,
-    "reject": 59,
-    "pending": 2140,
+    "watch": 787,
+    "reject": 60,
+    "pending": 2141,
     "error": 3
   },
   "trendProvider": "google-trends-api",
   "trendProviderCounts": {
-    "google-trends-api": 148
+    "google-trends-api": 151
   },
   "serpApiConfigured": false,
   "serpApiUsage": {
@@ -282,7 +282,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-11-14T18:50:48.787Z",
+    "checkedAt": "2026-11-14T22:57:27.805Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -301,7 +301,7 @@
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
     "serper+autocomplete": 737,
-    "evidence-fallback": 945,
+    "evidence-fallback": 942,
     "duckduckgo+autocomplete": 54
   },
   "seoClassificationCounts": {
@@ -355,8 +355,8 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 1102,
-    "wiki": 1551,
+    "online": 1110,
+    "wiki": 1543,
     "pending": 347
   },
   "wikiPrelaunchModelVersion": 2,
@@ -364,7 +364,7 @@
     "priority": 0,
     "prepare": 4,
     "watch": 20,
-    "weak": 1527
+    "weak": 1519
   },
   "serperVerification": {
     "rushMode": true,
@@ -413,7 +413,7 @@
         "quotaStopped": true
       }
     },
-    "ranAt": "2026-11-14T18:53:56.975Z"
+    "ranAt": "2026-11-14T22:58:34.271Z"
   },
   "seoErrorCandidates": 3,
   "serperConfiguredSlots": 3,
@@ -454,43 +454,31 @@
         "lastError": null
       }
     },
-    "updatedAt": "2026-11-14T18:53:56.974Z"
+    "updatedAt": "2026-11-14T22:58:34.270Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 1277,
-    "eligibleCount": 13,
-    "queueSize": 13,
-    "verified": 13,
+    "pendingCount": 1268,
+    "eligibleCount": 1,
+    "queueSize": 1,
+    "verified": 1,
     "channelVerified": {
-      "online": 4,
-      "wiki": 9,
+      "online": 0,
+      "wiki": 1,
       "pending": 0
     },
     "fastRecalculated": {
-      "pass": 5,
+      "pass": 0,
       "watch": 1,
-      "weak": 7,
+      "weak": 0,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "Trauma lab",
-      "krillion",
-      "Moonfall",
-      "backrooms",
-      "Witchbrook",
-      "Chisel Me This",
-      "Elementys",
-      "Bings",
-      "Corporate Dash",
-      "Hill-Z",
-      "Dungebra",
-      "Horns of Deliverance",
-      "DinoBones: Tidy Up the Museum"
+      "Snake Echos"
     ],
-    "ranAt": "2026-11-14T18:53:57.771Z"
+    "ranAt": "2026-11-14T22:58:34.933Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -512,10 +500,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-11-14T18:53:59.168Z"
+    "ranAt": "2026-11-14T22:58:36.011Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-11-14T18:53:59.233Z",
+    "checkedAt": "2026-11-14T22:58:36.068Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 0,
     "workingKeys": 0,
@@ -572,14 +560,14 @@
     "monthlyLimit": 0,
     "dailyLimit": 0,
     "accounts": {},
-    "updatedAt": "2026-11-14T18:53:59.356Z"
+    "updatedAt": "2026-11-14T22:58:36.196Z"
   },
   "serpApiQuotaFill": {
     "configuredSlots": 0
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 268,
+      "validated": 269,
       "rising": 16,
       "recommended": 0
     },
@@ -625,16 +613,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 282,
-      "wiki": 932
+      "online": 280,
+      "wiki": 929
     },
     "pendingByTier": {
-      "strong": 16,
+      "strong": 14,
       "secondary": 318,
-      "strategic": 880
+      "strategic": 877
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-11-14T18:54:00.087Z"
+    "ranAt": "2026-11-14T22:58:36.986Z"
   }
 }
