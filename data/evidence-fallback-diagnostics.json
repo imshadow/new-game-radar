@@ -1,52 +1,51 @@
 {
-  "generatedAt": "2026-11-14T13:39:32.247Z",
+  "generatedAt": "2026-11-14T18:53:57.235Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1293,
+  "pendingSeo": 1277,
   "channelCounts": {
-    "pending": 326,
-    "online": 445,
-    "wiki": 522
+    "wiki": 513,
+    "online": 434,
+    "pending": 330
   },
   "fastClassCounts": {
-    "pending:pending": 326,
-    "online:pending": 445,
-    "wiki:pending": 522
+    "wiki:pending": 513,
+    "online:pending": 434,
+    "pending:pending": 330
   },
   "strategicCounts": {
-    "pending:0": 322,
-    "online:1": 335,
-    "online:0": 92,
-    "wiki:0": 495,
-    "online:2": 17,
-    "wiki:1": 22,
+    "wiki:0": 500,
+    "online:2": 18,
+    "pending:0": 325,
+    "online:1": 353,
     "online:3": 1,
-    "wiki:2": 5,
-    "pending:1": 4
+    "online:0": 62,
+    "wiki:1": 13,
+    "pending:1": 5
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 509
+      "count": 491
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 425
+      "count": 415
     },
     {
       "id": "itch-new",
-      "count": 346
+      "count": 359
     },
     {
       "id": "itch-newest-web",
-      "count": 345
+      "count": 358
     },
     {
       "id": "itch-new-feed",
-      "count": 343
+      "count": 356
     },
     {
       "id": "trends-rising-7d",
-      "count": 265
+      "count": 266
     },
     {
       "id": "trends-rising-30d",
@@ -54,23 +53,15 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 116
-    },
-    {
-      "id": "steam-upcoming-wishlist",
-      "count": 105
+      "count": 117
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 100
     },
     {
-      "id": "github-html5-games",
-      "count": 92
-    },
-    {
-      "id": "github-game",
-      "count": 92
+      "id": "steam-upcoming-wishlist",
+      "count": 94
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -85,6 +76,14 @@
       "count": 61
     },
     {
+      "id": "github-html5-games",
+      "count": 54
+    },
+    {
+      "id": "github-game",
+      "count": 54
+    },
+    {
       "id": "trends-rising-30d-itch-io",
       "count": 50
     },
@@ -94,27 +93,19 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 19
+      "count": 20
     },
     {
       "id": "itch-popular",
-      "count": 19
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 18
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 15
-    },
-    {
-      "id": "steam-new",
-      "count": 15
+      "count": 20
     },
     {
       "id": "press-new",
-      "count": 13
+      "count": 19
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 18
     },
     {
       "id": "itch-featured-feed",
@@ -125,19 +116,35 @@
       "count": 10
     },
     {
-      "id": "alphabetagamer",
-      "count": 10
+      "id": "steam-latest-indie",
+      "count": 9
     },
     {
-      "id": "steam-popular-new-indie",
+      "id": "steam-new",
       "count": 9
+    },
+    {
+      "id": "armorgames-new",
+      "count": 9
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 6
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 5
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
       "count": 3
     },
     {
-      "id": "indiegamesplus",
+      "id": "steam-popular-new-indie",
       "count": 3
     },
     {
@@ -149,15 +156,19 @@
       "count": 2
     },
     {
-      "id": "gog-new-arrivals",
-      "count": 1
+      "id": "steam-feed-topsellers",
+      "count": 2
     },
     {
-      "id": "gog-new",
+      "id": "y8-new",
       "count": 1
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "indiegamesplus",
       "count": 1
     }
   ],
@@ -206,11 +217,11 @@
       ]
     },
     {
-      "name": "Incremental Fortress",
+      "name": "quack-quack",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -240,6 +251,25 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Incremental Fortress",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -486,107 +516,20 @@
       ]
     },
     {
-      "name": "Fat Goblins",
-      "channel": "wiki",
+      "name": "Moonfall",
+      "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Ski-E-O! Ski Resort Tycoon",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 7,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-upcoming-indie",
-        "steam-popular-new",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Water TD",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new",
-        "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Gloom Break",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
-      "name": "Giggleland",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
+      "discoveryScore": 14,
+      "platforms": 2,
+      "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
       "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-upcoming-indie",
-        "steam-popular-new",
-        "steam-latest-indie",
-        "steam-new",
-        "steam-popular-new-indie",
-        "trends-rising-7d-indie-game",
-        "trends-rising-7d"
+        "github-html5-games",
+        "github-game",
+        "y8-new"
       ]
     },
     {
@@ -739,6 +682,210 @@
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 11,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Save the heart",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Luck66-A Hotel that you want-2",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mana Trek Demo - Browser",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Quadriep.io FirstTest",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mira: The Ancient Journey",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ore Blaster",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Caldos & Cia",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Mysthaven",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Plants vs. Zombies: Harvest Season",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ter noite",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Elevator Chaos",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Ex Nihilo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -912,159 +1059,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sobreescritura",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Addies Kansas City, Kansas Edition",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Dreamcatcher / Ловец снов",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mistroot",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Cornered",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Una tarde con William",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Addies Kansas City, Missouri Edition",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Fatal Slot",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Vein Glory",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
