@@ -1,87 +1,88 @@
 {
-  "generatedAt": "2026-11-15T21:46:51.317Z",
+  "generatedAt": "2026-11-16T01:30:41.339Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1282,
+  "pendingSeo": 1304,
   "channelCounts": {
-    "pending": 324,
-    "online": 462,
-    "wiki": 496
+    "wiki": 509,
+    "pending": 330,
+    "online": 465
   },
   "fastClassCounts": {
-    "pending:pending": 324,
-    "online:pending": 462,
-    "wiki:pending": 496
+    "wiki:pending": 509,
+    "pending:pending": 330,
+    "online:pending": 465
   },
   "strategicCounts": {
-    "pending:0": 321,
+    "wiki:1": 19,
+    "wiki:0": 485,
+    "pending:0": 323,
     "online:3": 1,
-    "online:1": 390,
-    "wiki:0": 487,
-    "wiki:1": 9,
-    "online:0": 53,
-    "online:2": 18,
-    "pending:1": 3
+    "online:1": 392,
+    "wiki:2": 5,
+    "online:0": 55,
+    "online:2": 17,
+    "pending:1": 7
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 488
+      "count": 501
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 408
-    },
-    {
-      "id": "itch-new",
-      "count": 401
+      "count": 411
     },
     {
       "id": "itch-newest-web",
       "count": 400
     },
     {
+      "id": "itch-new",
+      "count": 400
+    },
+    {
       "id": "itch-new-feed",
-      "count": 398
+      "count": 397
     },
     {
       "id": "trends-rising-7d",
-      "count": 258
+      "count": 264
     },
     {
       "id": "trends-rising-30d",
-      "count": 180
+      "count": 185
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 113
+      "count": 115
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 98
+      "count": 112
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 97
+      "count": 100
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 76
+      "count": 78
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 62
+      "count": 65
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 60
+      "count": 62
     },
     {
       "id": "github-html5-games",
-      "count": 53
+      "count": 55
     },
     {
       "id": "github-game",
-      "count": 53
+      "count": 55
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -100,28 +101,40 @@
       "count": 19
     },
     {
-      "id": "press-new",
-      "count": 10
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 9
-    },
-    {
-      "id": "steam-new",
-      "count": 9
-    },
-    {
-      "id": "alphabetagamer",
-      "count": 9
+      "id": "steam-popular-new",
+      "count": 17
     },
     {
       "id": "itch-featured-feed",
-      "count": 8
+      "count": 14
     },
     {
       "id": "itch-featured",
+      "count": 14
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 12
+    },
+    {
+      "id": "steam-new",
+      "count": 12
+    },
+    {
+      "id": "press-new",
+      "count": 11
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 10
+    },
+    {
+      "id": "steam-popular-new-indie",
       "count": 8
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -132,23 +145,19 @@
       "count": 2
     },
     {
-      "id": "steam-popular-new",
+      "id": "newgrounds-daily-top",
       "count": 2
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "newgrounds-top",
       "count": 2
     },
     {
-      "id": "steam-popular-new-indie",
+      "id": "gog-new-arrivals",
       "count": 1
     },
     {
-      "id": "y8-new",
-      "count": 1
-    },
-    {
-      "id": "lagged-new",
+      "id": "gog-new",
       "count": 1
     },
     {
@@ -179,22 +188,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Bike Hill 3D",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 12,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 2,
-      "sourceIds": [
-        "y8-new",
-        "lagged-new"
       ]
     },
     {
@@ -494,6 +487,110 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Ski-E-O! Ski Resort Tycoon",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Water TD",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Fat Goblins",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Gloom Break",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Giggleland",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 9,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new-indie",
+        "trends-rising-7d-indie-game",
+        "trends-rising-7d"
       ]
     },
     {
@@ -965,74 +1062,6 @@
     },
     {
       "name": "Singing Frog",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Togheter",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "LifeLine",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Moonshard",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Speed 1v1 Showdown",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
