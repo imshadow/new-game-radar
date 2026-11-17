@@ -1,68 +1,68 @@
 {
-  "generatedAt": "2026-11-16T18:57:30.692Z",
+  "generatedAt": "2026-11-17T02:33:25.109Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1312,
+  "pendingSeo": 1322,
   "channelCounts": {
-    "wiki": 515,
-    "pending": 334,
-    "online": 463
+    "pending": 333,
+    "wiki": 522,
+    "online": 467
   },
   "fastClassCounts": {
-    "wiki:pending": 515,
-    "pending:pending": 334,
-    "online:pending": 463
+    "pending:pending": 333,
+    "wiki:pending": 522,
+    "online:pending": 467
   },
   "strategicCounts": {
-    "wiki:1": 25,
-    "wiki:0": 488,
     "pending:0": 330,
+    "wiki:0": 479,
+    "wiki:1": 38,
+    "online:1": 382,
+    "wiki:2": 5,
     "online:3": 1,
-    "online:1": 384,
-    "wiki:2": 2,
-    "online:0": 62,
-    "online:2": 16,
-    "pending:1": 4
+    "online:0": 67,
+    "online:2": 17,
+    "pending:1": 3
   },
   "topSources": [
     {
       "id": "steam-upcoming",
-      "count": 508
+      "count": 515
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 419
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 393
+      "count": 425
     },
     {
       "id": "itch-new",
-      "count": 393
+      "count": 392
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 391
     },
     {
       "id": "itch-new-feed",
-      "count": 390
+      "count": 389
     },
     {
       "id": "trends-rising-7d",
-      "count": 270
+      "count": 274
     },
     {
       "id": "trends-rising-30d",
-      "count": 184
+      "count": 186
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 120
+      "count": 119
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 110
+      "count": 111
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 101
+      "count": 104
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -70,35 +70,39 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 66
+      "count": 67
     },
     {
       "id": "github-html5-games",
-      "count": 62
+      "count": 67
     },
     {
       "id": "github-game",
-      "count": 62
+      "count": 67
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 61
+      "count": 62
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 47
+      "count": 49
     },
     {
       "id": "hn-showhn",
-      "count": 43
+      "count": 39
     },
     {
       "id": "steam-latest-indie",
-      "count": 22
+      "count": 28
     },
     {
       "id": "steam-new",
-      "count": 22
+      "count": 28
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 19
     },
     {
       "id": "itch-new-popular-web",
@@ -109,32 +113,28 @@
       "count": 18
     },
     {
-      "id": "steam-popular-new",
-      "count": 9
-    },
-    {
       "id": "itch-featured-feed",
-      "count": 9
+      "count": 11
     },
     {
       "id": "itch-featured",
-      "count": 9
+      "count": 11
     },
     {
-      "id": "press-new",
+      "id": "steam-popular-new-indie",
       "count": 8
     },
     {
-      "id": "alphabetagamer",
+      "id": "press-new",
       "count": 6
     },
     {
       "id": "steam-top-wishlist",
-      "count": 4
+      "count": 5
     },
     {
-      "id": "steam-popular-new-indie",
-      "count": 3
+      "id": "alphabetagamer",
+      "count": 4
     },
     {
       "id": "newgrounds-latest",
@@ -149,11 +149,11 @@
       "count": 2
     },
     {
-      "id": "gog-new-arrivals",
+      "id": "y8-new",
       "count": 1
     },
     {
-      "id": "gog-new",
+      "id": "lagged-new",
       "count": 1
     },
     {
@@ -178,6 +178,41 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Blocktrail 2048",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "y8-new",
+        "lagged-new"
+      ]
+    },
+    {
+      "name": "Crush It!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -408,25 +443,6 @@
       ]
     },
     {
-      "name": "Idle Watt Machine",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Eco Power Towns",
       "channel": "online",
       "fastClass": "pending",
@@ -463,7 +479,48 @@
       ]
     },
     {
-      "name": "just volleyball",
+      "name": "Prerolled",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Ski-E-O! Ski Resort Tycoon",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Fat Goblins",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -474,12 +531,32 @@
       "strategicCount": 2,
       "sourceCount": 6,
       "sourceIds": [
-        "steam-upcoming-wishlist",
+        "steam-upcoming-indie",
         "steam-upcoming",
-        "steam-popular-new",
         "steam-latest-indie",
         "steam-new",
+        "steam-popular-new",
         "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Gloom Break",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -650,7 +727,7 @@
       ]
     },
     {
-      "name": "Mountain Drive",
+      "name": "Cozy Fantasy Fishing",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -667,7 +744,7 @@
       ]
     },
     {
-      "name": "Punchnaut",
+      "name": "Bubblewaltz",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -684,7 +761,7 @@
       ]
     },
     {
-      "name": "Zombie Shoother",
+      "name": "No Walls!",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -701,7 +778,7 @@
       ]
     },
     {
-      "name": "Crush It!",
+      "name": "HELL VEX",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -718,7 +795,7 @@
       ]
     },
     {
-      "name": "TRUST ME BRO",
+      "name": "Controller Quest",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -735,177 +812,7 @@
       ]
     },
     {
-      "name": "ISLANDERSON",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Night Wash",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Beastvale",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Blobbies",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Paperfold Dynasty",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sandwich Slammer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Port Merchant · تاجر الميناء",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Hong Kong Mahjong (跑馬仔)",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Who Took the EGG",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "JAPANESE BUSINESS MANNERS QUIZ",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Downcast Web port",
+      "name": "The Quiet Valley",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -922,14 +829,14 @@
       ]
     },
     {
-      "name": "Gontran: The Gate's Merchant (WebGl)",
+      "name": "Spinny Shop — Fruit Basket Puzzle",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 3,
+      "nameRisk": 4,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -939,7 +846,7 @@
       ]
     },
     {
-      "name": "aim arena konsol",
+      "name": "Safari Photo Snapper",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -956,7 +863,7 @@
       ]
     },
     {
-      "name": "Pocket Greenhouse",
+      "name": "Wobble Cup",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -973,88 +880,197 @@
       ]
     },
     {
-      "name": "Cart Ride Adventure",
-      "channel": "online",
+      "name": "Warpack",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-popular-new",
+        "steam-popular-new-indie"
       ]
     },
     {
-      "name": "Luling Eight Duel | 炉石双遗·炉岭八人",
-      "channel": "online",
+      "name": "Playrooms",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "trends-rising-7d-horror-game",
+        "trends-rising-7d"
+      ]
+    },
+    {
+      "name": "Topdeck Automat",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Obey Me! Sinner's Choice: Lucifer",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Les Héros de Tulette",
-      "channel": "online",
+      "name": "Trees Hate You",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Shrink ray delivery",
-      "channel": "online",
+      "name": "JOHN GLEEP",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Below The Wind",
-      "channel": "online",
+      "name": "Backseat Champions",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Sloppy Forgeries",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "alphabetagamer",
+        "press-new",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "Rejected Draft",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-popular-new",
+        "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Evidence Vault",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
+      ]
+    },
+    {
+      "name": "WARDOGS - Movember Pack",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     }
   ]
