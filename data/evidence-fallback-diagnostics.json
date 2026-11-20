@@ -1,75 +1,76 @@
 {
-  "generatedAt": "2026-11-20T07:10:32.524Z",
+  "generatedAt": "2026-11-20T16:09:23.730Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1363,
+  "pendingSeo": 1387,
   "channelCounts": {
-    "wiki": 414,
-    "pending": 341,
-    "online": 608
+    "wiki": 417,
+    "online": 629,
+    "pending": 341
   },
   "fastClassCounts": {
-    "wiki:pending": 414,
-    "pending:pending": 341,
-    "online:pending": 608
+    "wiki:pending": 417,
+    "online:pending": 629,
+    "pending:pending": 341
   },
   "strategicCounts": {
-    "wiki:1": 19,
-    "wiki:0": 395,
-    "pending:0": 334,
+    "wiki:1": 33,
+    "wiki:0": 383,
     "online:3": 1,
-    "online:1": 488,
-    "online:0": 106,
+    "online:1": 487,
+    "pending:0": 334,
+    "wiki:2": 1,
     "online:2": 13,
+    "online:0": 128,
     "pending:1": 7
   },
   "topSources": [
     {
-      "id": "itch-new",
-      "count": 492
+      "id": "itch-newest-web",
+      "count": 490
     },
     {
-      "id": "itch-newest-web",
-      "count": 491
+      "id": "itch-new",
+      "count": 490
     },
     {
       "id": "itch-new-feed",
-      "count": 486
+      "count": 484
     },
     {
       "id": "steam-upcoming",
-      "count": 408
+      "count": 412
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 328
+      "count": 325
     },
     {
       "id": "trends-rising-7d",
-      "count": 262
+      "count": 261
     },
     {
       "id": "trends-rising-30d",
-      "count": 199
+      "count": 198
     },
     {
       "id": "trends-rising-7d-indie-game",
       "count": 117
     },
     {
+      "id": "github-html5-games",
+      "count": 115
+    },
+    {
+      "id": "github-game",
+      "count": 115
+    },
+    {
       "id": "steam-upcoming-wishlist",
-      "count": 99
+      "count": 105
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 95
-    },
-    {
-      "id": "github-html5-games",
-      "count": 93
-    },
-    {
-      "id": "github-game",
-      "count": 93
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -81,15 +82,23 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 62
-    },
-    {
-      "id": "trends-rising-30d-itch-io",
-      "count": 51
+      "count": 61
     },
     {
       "id": "hn-showhn",
+      "count": 51
+    },
+    {
+      "id": "trends-rising-30d-itch-io",
       "count": 50
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 28
+    },
+    {
+      "id": "steam-new",
+      "count": 28
     },
     {
       "id": "itch-new-popular-web",
@@ -100,24 +109,16 @@
       "count": 17
     },
     {
-      "id": "steam-latest-indie",
-      "count": 13
-    },
-    {
-      "id": "steam-new",
-      "count": 13
-    },
-    {
       "id": "armorgames-new",
       "count": 13
     },
     {
       "id": "itch-featured-feed",
-      "count": 11
+      "count": 12
     },
     {
       "id": "itch-featured",
-      "count": 11
+      "count": 12
     },
     {
       "id": "steam-popular-new",
@@ -128,11 +129,19 @@
       "count": 5
     },
     {
-      "id": "indiegamesplus",
+      "id": "press-new",
+      "count": 4
+    },
+    {
+      "id": "gog-new-arrivals",
       "count": 3
     },
     {
-      "id": "press-new",
+      "id": "gog-new",
+      "count": 3
+    },
+    {
+      "id": "indiegamesplus",
       "count": 3
     },
     {
@@ -157,6 +166,10 @@
     },
     {
       "id": "newgrounds-new",
+      "count": 1
+    },
+    {
+      "id": "alphabetagamer",
       "count": 1
     },
     {
@@ -425,6 +438,26 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Gloom Break",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -981,71 +1014,58 @@
       ]
     },
     {
-      "name": "Stratapath TD",
-      "channel": "online",
+      "name": "Playrooms",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 5,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "trends-rising-7d-horror-game",
+        "trends-rising-7d"
       ]
     },
     {
-      "name": "Ward Nine",
-      "channel": "online",
+      "name": "Sloppy Forgeries",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 5,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "alphabetagamer",
+        "press-new",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "Bigfoot Bonk",
-      "channel": "online",
+      "name": "SULFUR",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "umping with dushon",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-popular-new",
+        "trends-rising-7d-indie-game",
+        "trends-rising-7d"
       ]
     }
   ]
