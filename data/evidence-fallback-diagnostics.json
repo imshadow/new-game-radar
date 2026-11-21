@@ -1,84 +1,83 @@
 {
-  "generatedAt": "2026-11-21T18:17:07.500Z",
+  "generatedAt": "2026-11-21T23:19:24.700Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1372,
+  "pendingSeo": 1370,
   "channelCounts": {
-    "wiki": 397,
-    "pending": 343,
-    "online": 632
+    "pending": 345,
+    "online": 633,
+    "wiki": 392
   },
   "fastClassCounts": {
-    "wiki:pending": 397,
-    "pending:pending": 343,
-    "online:pending": 632
+    "pending:pending": 345,
+    "online:pending": 633,
+    "wiki:pending": 392
   },
   "strategicCounts": {
-    "wiki:1": 5,
-    "wiki:0": 391,
-    "pending:0": 342,
+    "pending:0": 344,
+    "online:1": 533,
     "online:3": 1,
-    "online:1": 542,
-    "wiki:2": 1,
-    "online:0": 76,
-    "online:2": 13,
+    "wiki:0": 391,
+    "online:2": 14,
+    "wiki:1": 1,
+    "online:0": 85,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 547
+      "count": 539
     },
     {
       "id": "itch-new",
-      "count": 547
+      "count": 539
     },
     {
       "id": "itch-new-feed",
-      "count": 541
+      "count": 533
     },
     {
       "id": "steam-upcoming",
-      "count": 391
+      "count": 388
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 303
+      "count": 301
     },
     {
       "id": "trends-rising-7d",
-      "count": 267
+      "count": 264
     },
     {
       "id": "trends-rising-30d",
-      "count": 197
+      "count": 205
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 119
+      "count": 117
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 102
+      "count": 101
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 98
+      "count": 97
+    },
+    {
+      "id": "github-html5-games",
+      "count": 85
+    },
+    {
+      "id": "github-game",
+      "count": 85
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 84
     },
     {
-      "id": "github-html5-games",
-      "count": 76
-    },
-    {
-      "id": "github-game",
-      "count": 76
-    },
-    {
       "id": "trends-rising-30d-horror-game",
-      "count": 70
+      "count": 77
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -90,47 +89,47 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 49
+      "count": 51
     },
     {
       "id": "itch-new-popular-web",
-      "count": 18
+      "count": 19
     },
     {
       "id": "itch-popular",
-      "count": 18
+      "count": 19
     },
     {
       "id": "press-new",
-      "count": 8
-    },
-    {
-      "id": "alphabetagamer",
       "count": 7
     },
     {
-      "id": "itch-featured-feed",
+      "id": "alphabetagamer",
       "count": 6
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 5
     },
     {
       "id": "itch-featured",
-      "count": 6
-    },
-    {
-      "id": "steam-popular-new",
       "count": 5
     },
     {
       "id": "steam-top-wishlist",
-      "count": 5
+      "count": 4
     },
     {
       "id": "steam-latest-indie",
-      "count": 5
+      "count": 3
     },
     {
       "id": "steam-new",
-      "count": 5
+      "count": 3
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 2
     },
     {
       "id": "newgrounds-latest",
@@ -170,6 +169,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Idle Drop Merge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -414,26 +432,6 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Gloom Break",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new",
-        "itch-featured-feed",
-        "itch-featured"
       ]
     },
     {
@@ -887,23 +885,6 @@
       ]
     },
     {
-      "name": "Idle Drop Merge",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
       "name": "Bunker Tap",
       "channel": "online",
       "fastClass": "pending",
@@ -1031,6 +1012,23 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Forest Chaos",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
