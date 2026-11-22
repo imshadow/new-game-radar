@@ -1,58 +1,58 @@
 {
-  "generatedAt": "2026-11-22T11:20:50.483Z",
+  "generatedAt": "2026-11-22T18:41:15.179Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1379,
+  "pendingSeo": 1381,
   "channelCounts": {
     "wiki": 396,
-    "online": 640,
-    "pending": 343
+    "pending": 340,
+    "online": 645
   },
   "fastClassCounts": {
     "wiki:pending": 396,
-    "online:pending": 640,
-    "pending:pending": 343
+    "pending:pending": 340,
+    "online:pending": 645
   },
   "strategicCounts": {
-    "wiki:1": 5,
-    "wiki:0": 391,
+    "wiki:1": 7,
+    "wiki:0": 389,
+    "pending:0": 340,
+    "online:3": 1,
+    "online:1": 521,
     "online:2": 14,
-    "pending:0": 343,
-    "online:1": 516,
-    "online:0": 109,
-    "online:3": 1
+    "online:0": 109
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 522
+      "count": 526
     },
     {
       "id": "itch-new",
-      "count": 522
+      "count": 526
     },
     {
       "id": "itch-new-feed",
-      "count": 516
+      "count": 520
     },
     {
       "id": "steam-upcoming",
-      "count": 390
+      "count": 389
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 301
+      "count": 299
     },
     {
       "id": "trends-rising-7d",
-      "count": 273
+      "count": 271
     },
     {
       "id": "trends-rising-30d",
-      "count": 206
+      "count": 201
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 122
+      "count": 121
     },
     {
       "id": "github-html5-games",
@@ -64,19 +64,19 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 103
+      "count": 104
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 97
+      "count": 96
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 86
+      "count": 85
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 74
+      "count": 71
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -84,11 +84,11 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 53
+      "count": 52
     },
     {
       "id": "hn-showhn",
-      "count": 51
+      "count": 50
     },
     {
       "id": "itch-new-popular-web",
@@ -103,32 +103,32 @@
       "count": 7
     },
     {
+      "id": "steam-latest-indie",
+      "count": 6
+    },
+    {
+      "id": "steam-new",
+      "count": 6
+    },
+    {
       "id": "alphabetagamer",
       "count": 6
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
       "count": 5
     },
     {
-      "id": "steam-latest-indie",
-      "count": 5
-    },
-    {
-      "id": "steam-new",
-      "count": 5
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 4
-    },
-    {
       "id": "itch-featured-feed",
-      "count": 4
+      "count": 5
     },
     {
       "id": "itch-featured",
-      "count": 4
+      "count": 5
     },
     {
       "id": "newgrounds-latest",
@@ -173,26 +173,21 @@
       ]
     },
     {
-      "name": "Trauma lab",
+      "name": "Of The World",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
+      "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 12,
       "strategicCount": 2,
-      "sourceCount": 9,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular",
-        "trends-rising-7d-itch-io",
-        "trends-rising-7d",
-        "trends-rising-30d-itch-io",
-        "trends-rising-30d"
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -599,6 +594,125 @@
       ]
     },
     {
+      "name": "AIdle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Magic wizard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Lantern Garden",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "↻ Regenerate",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Kriegsmarine Down",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Coopers adventure",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Cinemental",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
       "name": "One-on-One Basketball 64",
       "channel": "online",
       "fastClass": "pending",
@@ -906,125 +1020,6 @@
     },
     {
       "name": "Blind SPOT",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Manawood",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "MALTERNA THANKSGIVING CHALLENGE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Yard Keeper",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Hash#",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Pug Fujão",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Luz en la Estación",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Nightfall: Lucifer",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
