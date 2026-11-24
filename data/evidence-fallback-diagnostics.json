@@ -1,54 +1,55 @@
 {
-  "generatedAt": "2026-11-23T19:31:16.161Z",
+  "generatedAt": "2026-11-24T04:30:06.399Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1398,
+  "pendingSeo": 1409,
   "channelCounts": {
-    "wiki": 415,
-    "pending": 343,
-    "online": 640
+    "wiki": 394,
+    "pending": 349,
+    "online": 666
   },
   "fastClassCounts": {
-    "wiki:pending": 415,
-    "pending:pending": 343,
-    "online:pending": 640
+    "wiki:pending": 394,
+    "pending:pending": 349,
+    "online:pending": 666
   },
   "strategicCounts": {
-    "wiki:1": 34,
-    "wiki:0": 381,
-    "pending:0": 343,
-    "online:1": 520,
+    "wiki:1": 21,
+    "wiki:0": 373,
+    "pending:0": 342,
     "online:3": 1,
+    "online:1": 544,
     "online:2": 12,
-    "online:0": 107
+    "online:0": 109,
+    "pending:1": 7
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 524
+      "count": 543
     },
     {
       "id": "itch-new",
-      "count": 524
+      "count": 543
     },
     {
       "id": "itch-new-feed",
-      "count": 518
+      "count": 537
     },
     {
       "id": "steam-upcoming",
-      "count": 412
+      "count": 382
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 319
+      "count": 292
     },
     {
       "id": "trends-rising-7d",
-      "count": 274
+      "count": 273
     },
     {
       "id": "trends-rising-30d",
-      "count": 202
+      "count": 201
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -56,19 +57,19 @@
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 107
+      "count": 106
     },
     {
       "id": "github-html5-games",
-      "count": 107
+      "count": 103
     },
     {
       "id": "github-game",
-      "count": 107
+      "count": 103
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 100
+      "count": 99
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -80,7 +81,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 70
+      "count": 69
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -88,15 +89,7 @@
     },
     {
       "id": "hn-showhn",
-      "count": 50
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 32
-    },
-    {
-      "id": "steam-new",
-      "count": 32
+      "count": 51
     },
     {
       "id": "itch-new-popular-web",
@@ -107,7 +100,35 @@
       "count": 17
     },
     {
+      "id": "steam-latest-indie",
+      "count": 15
+    },
+    {
+      "id": "steam-new",
+      "count": 15
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 11
+    },
+    {
+      "id": "itch-featured",
+      "count": 11
+    },
+    {
       "id": "steam-popular-new",
+      "count": 10
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 7
+    },
+    {
+      "id": "press-new",
+      "count": 7
+    },
+    {
+      "id": "armorgames-new",
       "count": 6
     },
     {
@@ -115,20 +136,16 @@
       "count": 5
     },
     {
-      "id": "itch-featured-feed",
-      "count": 4
+      "id": "newgrounds-daily-top",
+      "count": 5
     },
     {
-      "id": "itch-featured",
-      "count": 4
+      "id": "newgrounds-top",
+      "count": 5
     },
     {
-      "id": "alphabetagamer",
-      "count": 4
-    },
-    {
-      "id": "press-new",
-      "count": 4
+      "id": "steam-feed-topsellers",
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -392,25 +409,6 @@
       ]
     },
     {
-      "name": "Trees Hate You",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 5,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Rat Game",
       "channel": "online",
       "fastClass": "pending",
@@ -429,6 +427,25 @@
         "steam-upcoming-indie",
         "steam-popular-new",
         "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Trees Hate You",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -454,7 +471,7 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 16,
+      "discoveryScore": 14,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
@@ -544,6 +561,278 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Tuk-Tuk Garage",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "banana simulator",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "THE FLOOR IS NOT LAVA",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Cinderstar",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Space Torment",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Health kitchen",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "AFTERIMAGE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Azide Prairie",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Arconia Defenders",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "NeonWake.io",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Pathogen Pursuit",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Shadow of Afterimage",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Night At Castle Dracula",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Rocket Boost",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Strat",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Espadislas",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 10,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -754,292 +1043,6 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Sky Hopper",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "SpellBlitz",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Playrooms",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 5,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new",
-        "trends-rising-7d-horror-game",
-        "trends-rising-7d"
-      ]
-    },
-    {
-      "name": "SULFUR",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-popular-new",
-        "trends-rising-7d-indie-game",
-        "trends-rising-7d"
-      ]
-    },
-    {
-      "name": "Scawy Game",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "steam-popular-new",
-        "trends-rising-7d-horror-game",
-        "trends-rising-7d"
-      ]
-    },
-    {
-      "name": "Sloppy Forgeries",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 5,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "alphabetagamer",
-        "press-new",
-        "steam-popular-new"
-      ]
-    },
-    {
-      "name": "Raiding Season",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Follyvale",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Undervein",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Hoard",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Orby vs Rects",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Christmas Market: Tidy Up Together",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 4,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "GNOMINAL",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Örnöga: Idle & Loot",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Pheles Rebirth",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
-      ]
-    },
-    {
-      "name": "Nightclub Security",
-      "channel": "wiki",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 19,
-      "platforms": 0,
-      "browserPlayable": false,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 4,
-      "sourceIds": [
-        "steam-upcoming-indie",
-        "steam-upcoming",
-        "steam-latest-indie",
-        "steam-new"
       ]
     }
   ]
