@@ -1,79 +1,78 @@
 {
-  "generatedAt": "2026-11-24T04:30:06.399Z",
+  "generatedAt": "2026-11-24T15:20:06.780Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1409,
+  "pendingSeo": 1423,
   "channelCounts": {
-    "wiki": 394,
-    "pending": 349,
-    "online": 666
+    "wiki": 391,
+    "pending": 339,
+    "online": 693
   },
   "fastClassCounts": {
-    "wiki:pending": 394,
-    "pending:pending": 349,
-    "online:pending": 666
+    "wiki:pending": 391,
+    "pending:pending": 339,
+    "online:pending": 693
   },
   "strategicCounts": {
-    "wiki:1": 21,
-    "wiki:0": 373,
-    "pending:0": 342,
+    "wiki:1": 34,
+    "wiki:0": 357,
+    "pending:0": 339,
+    "online:1": 542,
     "online:3": 1,
-    "online:1": 544,
-    "online:2": 12,
-    "online:0": 109,
-    "pending:1": 7
+    "online:2": 14,
+    "online:0": 136
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 543
+      "count": 542
     },
     {
       "id": "itch-new",
-      "count": 543
+      "count": 542
     },
     {
       "id": "itch-new-feed",
-      "count": 537
+      "count": 536
     },
     {
       "id": "steam-upcoming",
-      "count": 382
+      "count": 379
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 292
+      "count": 288
     },
     {
       "id": "trends-rising-7d",
-      "count": 273
+      "count": 269
     },
     {
       "id": "trends-rising-30d",
-      "count": 201
-    },
-    {
-      "id": "trends-rising-7d-indie-game",
-      "count": 117
-    },
-    {
-      "id": "steam-upcoming-wishlist",
-      "count": 106
+      "count": 199
     },
     {
       "id": "github-html5-games",
-      "count": 103
+      "count": 126
     },
     {
       "id": "github-game",
-      "count": 103
+      "count": 126
+    },
+    {
+      "id": "trends-rising-7d-indie-game",
+      "count": 114
+    },
+    {
+      "id": "steam-upcoming-wishlist",
+      "count": 108
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 99
+      "count": 97
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 85
+      "count": 83
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -81,7 +80,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 69
+      "count": 68
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -89,7 +88,15 @@
     },
     {
       "id": "hn-showhn",
-      "count": 51
+      "count": 52
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 26
+    },
+    {
+      "id": "steam-new",
+      "count": 26
     },
     {
       "id": "itch-new-popular-web",
@@ -100,52 +107,60 @@
       "count": 17
     },
     {
-      "id": "steam-latest-indie",
-      "count": 15
-    },
-    {
-      "id": "steam-new",
-      "count": 15
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 11
-    },
-    {
-      "id": "itch-featured",
-      "count": 11
-    },
-    {
       "id": "steam-popular-new",
-      "count": 10
-    },
-    {
-      "id": "alphabetagamer",
-      "count": 7
-    },
-    {
-      "id": "press-new",
-      "count": 7
+      "count": 12
     },
     {
       "id": "armorgames-new",
-      "count": 6
+      "count": 10
     },
     {
       "id": "steam-top-wishlist",
       "count": 5
     },
     {
-      "id": "newgrounds-daily-top",
+      "id": "press-new",
       "count": 5
     },
     {
-      "id": "newgrounds-top",
-      "count": 5
+      "id": "itch-featured-feed",
+      "count": 4
+    },
+    {
+      "id": "itch-featured",
+      "count": 4
     },
     {
       "id": "steam-feed-topsellers",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 4
+    },
+    {
+      "id": "alphabetagamer",
       "count": 3
+    },
+    {
+      "id": "steam-popular-new-indie",
+      "count": 2
+    },
+    {
+      "id": "crazygames-new",
+      "count": 2
+    },
+    {
+      "id": "y8-new",
+      "count": 2
+    },
+    {
+      "id": "indiegamesplus",
+      "count": 2
     },
     {
       "id": "newgrounds-latest",
@@ -153,10 +168,6 @@
     },
     {
       "id": "newgrounds-new",
-      "count": 1
-    },
-    {
-      "id": "steam-popular-new-indie",
       "count": 1
     },
     {
@@ -183,6 +194,38 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Eggcavation",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "crazygames-new",
+        "y8-new"
+      ]
+    },
+    {
+      "name": "Escape the Giant Cat",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 12,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 2,
+      "sourceIds": [
+        "crazygames-new",
+        "y8-new"
       ]
     },
     {
@@ -227,7 +270,7 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
@@ -409,6 +452,25 @@
       ]
     },
     {
+      "name": "Trees Hate You",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Rat Game",
       "channel": "online",
       "fastClass": "pending",
@@ -427,25 +489,6 @@
         "steam-upcoming-indie",
         "steam-popular-new",
         "steam-popular-new-indie"
-      ]
-    },
-    {
-      "name": "Trees Hate You",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 5,
-      "sourceIds": [
-        "steam-upcoming-wishlist",
-        "steam-upcoming",
-        "steam-popular-new",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
@@ -859,190 +902,164 @@
       ]
     },
     {
-      "name": "Dig Up Treasure!",
-      "channel": "online",
+      "name": "Playrooms",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "trends-rising-7d-horror-game",
+        "trends-rising-7d"
+      ]
+    },
+    {
+      "name": "SULFUR",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-popular-new",
+        "trends-rising-7d-indie-game",
+        "trends-rising-7d"
+      ]
+    },
+    {
+      "name": "Scawy Game",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 9,
+      "strategicCount": 1,
+      "sourceCount": 3,
+      "sourceIds": [
+        "steam-popular-new",
+        "trends-rising-7d-horror-game",
+        "trends-rising-7d"
+      ]
+    },
+    {
+      "name": "Late Night Duty",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Dear President",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 8,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Tool Tidy",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Fruit Store Simulator",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 6,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "Sprunki - KSI Treatment",
-      "channel": "online",
+      "name": "Chinese Pancake Simulator",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Last Order",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Bonsai & Cards",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Stippled: Galleries",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Forty Tabs",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Ricorkchet",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "행운의 진화 군단 · FORTUNE FORGE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Floating Genomic Capsule",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "RECHARGE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Breakivo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Orbit Dodge",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     }
   ]
