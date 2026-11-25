@@ -1,71 +1,71 @@
 {
-  "generatedAt": "2026-11-25T08:28:58.166Z",
+  "generatedAt": "2026-11-25T18:54:37.043Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1412,
+  "pendingSeo": 1440,
   "channelCounts": {
-    "wiki": 394,
-    "pending": 338,
-    "online": 680
+    "wiki": 403,
+    "pending": 346,
+    "online": 691
   },
   "fastClassCounts": {
-    "wiki:pending": 394,
-    "pending:pending": 338,
-    "online:pending": 680
+    "wiki:pending": 403,
+    "pending:pending": 346,
+    "online:pending": 691
   },
   "strategicCounts": {
-    "wiki:1": 19,
-    "wiki:0": 375,
-    "pending:0": 331,
+    "wiki:1": 30,
+    "wiki:0": 373,
+    "pending:0": 339,
     "online:3": 1,
     "online:1": 560,
     "online:2": 12,
-    "online:0": 107,
+    "online:0": 118,
     "pending:1": 7
   },
   "topSources": [
     {
       "id": "itch-newest-web",
-      "count": 562
+      "count": 560
     },
     {
       "id": "itch-new",
-      "count": 562
+      "count": 560
     },
     {
       "id": "itch-new-feed",
-      "count": 556
+      "count": 553
     },
     {
       "id": "steam-upcoming",
-      "count": 362
+      "count": 367
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 270
+      "count": 276
     },
     {
       "id": "trends-rising-7d",
-      "count": 262
+      "count": 267
     },
     {
       "id": "trends-rising-30d",
-      "count": 195
+      "count": 200
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 110
+      "count": 114
     },
     {
       "id": "steam-upcoming-wishlist",
-      "count": 107
+      "count": 111
     },
     {
       "id": "github-html5-games",
-      "count": 97
+      "count": 109
     },
     {
       "id": "github-game",
-      "count": 97
+      "count": 109
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -73,31 +73,39 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 82
+      "count": 83
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 69
+      "count": 70
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 66
+      "count": 67
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 52
+      "count": 55
     },
     {
       "id": "hn-showhn",
-      "count": 51
+      "count": 54
     },
     {
       "id": "press-new",
-      "count": 27
+      "count": 33
     },
     {
       "id": "alphabetagamer",
-      "count": 25
+      "count": 30
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 24
+    },
+    {
+      "id": "steam-new",
+      "count": 24
     },
     {
       "id": "itch-new-popular-web",
@@ -106,18 +114,6 @@
     {
       "id": "itch-popular",
       "count": 16
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 11
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 11
-    },
-    {
-      "id": "steam-new",
-      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -132,6 +128,10 @@
       "count": 10
     },
     {
+      "id": "steam-popular-new",
+      "count": 9
+    },
+    {
       "id": "steam-top-wishlist",
       "count": 5
     },
@@ -144,11 +144,11 @@
       "count": 4
     },
     {
-      "id": "steam-feed-topsellers",
-      "count": 2
+      "id": "indiegamesplus",
+      "count": 3
     },
     {
-      "id": "indiegamesplus",
+      "id": "steam-feed-topsellers",
       "count": 2
     },
     {
@@ -161,6 +161,14 @@
     },
     {
       "id": "steam-popular-new-indie",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     },
     {
@@ -190,21 +198,19 @@
       ]
     },
     {
-      "name": "Of The World",
+      "name": "Ellies Thanksgiving Feast Party",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
+      "discoveryScore": 12,
+      "platforms": 2,
       "browserPlayable": true,
-      "nameRisk": 12,
+      "nameRisk": 5,
       "strategicCount": 2,
-      "sourceCount": 4,
+      "sourceCount": 2,
       "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
+        "y8-new",
+        "lagged-new"
       ]
     },
     {
@@ -224,6 +230,24 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Of The World",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -359,25 +383,6 @@
       ]
     },
     {
-      "name": "One Like = One Prayer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Musgoria: Guardians of the Valley",
       "channel": "online",
       "fastClass": "pending",
@@ -411,6 +416,28 @@
         "itch-new",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "backrooms",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 8,
+      "sourceIds": [
+        "trends-rising-7d-horror-game",
+        "trends-rising-7d",
+        "trends-rising-30d-horror-game",
+        "trends-rising-30d",
+        "github-html5-games",
+        "github-game",
+        "itch-newest-web",
+        "itch-new"
       ]
     },
     {
@@ -451,6 +478,26 @@
         "steam-upcoming-indie",
         "steam-popular-new",
         "steam-popular-new-indie"
+      ]
+    },
+    {
+      "name": "Ragdoll sandbox",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "trends-rising-7d-itch-io",
+        "trends-rising-7d",
+        "trends-rising-30d-itch-io",
+        "trends-rising-30d"
       ]
     },
     {
@@ -514,23 +561,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "ЭХО · ECHO",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 11,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -880,173 +910,164 @@
       ]
     },
     {
-      "name": "banana simulator",
-      "channel": "online",
+      "name": "Playrooms",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 5,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new",
+        "trends-rising-7d-horror-game",
+        "trends-rising-7d"
       ]
     },
     {
-      "name": "THE FLOOR IS NOT LAVA",
-      "channel": "online",
+      "name": "When Chests Rain Tons of Loot",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 3,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
-      "name": "The Cinderstar",
-      "channel": "online",
+      "name": "SULFUR",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Space Torment",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Health kitchen",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "AFTERIMAGE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 5,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-popular-new",
+        "trends-rising-7d-indie-game",
+        "trends-rising-7d"
       ]
     },
     {
-      "name": "Azide Prairie",
-      "channel": "online",
+      "name": "TCG Shop Life",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "Arconia Defenders",
-      "channel": "online",
+      "name": "Son of Beach",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "NeonWake.io",
-      "channel": "online",
+      "name": "STASIS LAST RAIL",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
-      "name": "Pathogen Pursuit",
-      "channel": "online",
+      "name": "Clip Out: Backrooms",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
-      "sourceCount": 3,
+      "sourceCount": 4,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Limited-time Game Bundle Challenge",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Take This Thing Out Of Me",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 3,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
       ]
     }
   ]
