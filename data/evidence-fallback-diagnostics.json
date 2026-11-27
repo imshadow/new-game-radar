@@ -1,83 +1,83 @@
 {
-  "generatedAt": "2026-11-27T12:13:13.742Z",
+  "generatedAt": "2026-11-27T21:14:24.443Z",
   "totalCandidates": 3000,
-  "pendingSeo": 1468,
+  "pendingSeo": 1472,
   "channelCounts": {
-    "wiki": 321,
-    "pending": 362,
-    "online": 785
+    "wiki": 374,
+    "pending": 353,
+    "online": 745
   },
   "fastClassCounts": {
-    "wiki:pending": 321,
-    "pending:pending": 362,
-    "online:pending": 785
+    "wiki:pending": 374,
+    "pending:pending": 353,
+    "online:pending": 745
   },
   "strategicCounts": {
-    "wiki:0": 292,
-    "pending:0": 355,
+    "wiki:0": 333,
+    "pending:0": 353,
+    "wiki:1": 40,
     "online:3": 1,
-    "wiki:1": 29,
-    "online:1": 612,
-    "online:0": 162,
-    "online:2": 10,
-    "pending:1": 7
+    "wiki:2": 1,
+    "online:1": 595,
+    "online:0": 139,
+    "online:2": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 591
+      "count": 595
     },
     {
       "id": "itch-newest-web",
-      "count": 590
+      "count": 594
     },
     {
       "id": "itch-new-feed",
-      "count": 584
+      "count": 588
     },
     {
       "id": "steam-upcoming",
-      "count": 310
+      "count": 341
     },
     {
       "id": "trends-rising-7d",
-      "count": 281
+      "count": 277
     },
     {
       "id": "steam-upcoming-indie",
-      "count": 224
+      "count": 251
     },
     {
       "id": "trends-rising-30d",
-      "count": 201
+      "count": 199
     },
     {
       "id": "github-html5-games",
-      "count": 150
+      "count": 132
     },
     {
       "id": "github-game",
-      "count": 150
+      "count": 132
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 119
-    },
-    {
-      "id": "trends-rising-7d-horror-game",
-      "count": 103
+      "count": 117
     },
     {
       "id": "steam-upcoming-wishlist",
+      "count": 107
+    },
+    {
+      "id": "trends-rising-7d-horror-game",
       "count": 102
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 86
+      "count": 85
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 72
+      "count": 71
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -85,50 +85,42 @@
     },
     {
       "id": "hn-showhn",
-      "count": 57
+      "count": 59
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 54
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 32
-    },
-    {
-      "id": "itch-popular",
-      "count": 32
+      "count": 53
     },
     {
       "id": "steam-latest-indie",
-      "count": 22
+      "count": 35
     },
     {
       "id": "steam-new",
-      "count": 22
+      "count": 35
     },
     {
-      "id": "armorgames-new",
-      "count": 13
+      "id": "press-new",
+      "count": 31
+    },
+    {
+      "id": "alphabetagamer",
+      "count": 29
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 15
+    },
+    {
+      "id": "itch-popular",
+      "count": 15
     },
     {
       "id": "steam-popular-new",
       "count": 11
     },
     {
-      "id": "itch-featured-feed",
-      "count": 10
-    },
-    {
-      "id": "itch-featured",
-      "count": 10
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 8
-    },
-    {
-      "id": "newgrounds-top",
+      "id": "armorgames-new",
       "count": 8
     },
     {
@@ -136,20 +128,24 @@
       "count": 5
     },
     {
-      "id": "press-new",
-      "count": 5
+      "id": "newgrounds-daily-top",
+      "count": 4
     },
     {
-      "id": "alphabetagamer",
+      "id": "newgrounds-top",
+      "count": 4
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 3
+    },
+    {
+      "id": "itch-featured",
       "count": 3
     },
     {
       "id": "steam-popular-new-indie",
-      "count": 2
-    },
-    {
-      "id": "steam-feed-topsellers",
-      "count": 2
+      "count": 3
     },
     {
       "id": "indiegamesplus",
@@ -165,6 +161,10 @@
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "steam-feed-topsellers",
       "count": 1
     }
   ],
@@ -385,7 +385,7 @@
       "browserPlayable": true,
       "nameRisk": 5,
       "strategicCount": 1,
-      "sourceCount": 8,
+      "sourceCount": 10,
       "sourceIds": [
         "trends-rising-7d-horror-game",
         "trends-rising-7d",
@@ -394,7 +394,30 @@
         "github-html5-games",
         "github-game",
         "itch-newest-web",
-        "itch-new"
+        "itch-new",
+        "alphabetagamer",
+        "press-new"
+      ]
+    },
+    {
+      "name": "Am I Nima",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 7,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-popular-new",
+        "steam-latest-indie",
+        "steam-new",
+        "steam-popular-new-indie"
       ]
     },
     {
@@ -476,6 +499,25 @@
       ]
     },
     {
+      "name": "Parcel Panic",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 18,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "steam-upcoming-indie",
+        "steam-upcoming"
+      ]
+    },
+    {
       "name": "Dance of Elements",
       "channel": "online",
       "fastClass": "pending",
@@ -527,7 +569,7 @@
       ]
     },
     {
-      "name": "Lab Life(实验室人生)",
+      "name": "sprunki reversed (windy's take)",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -544,14 +586,14 @@
       ]
     },
     {
-      "name": "Trickle Down",
+      "name": "Dynamic Revolution v1 (IBS 2)",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 10,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 4,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
@@ -561,58 +603,7 @@
       ]
     },
     {
-      "name": "BLADE HORDE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Star Scarp",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "sprunki 18 shifted but vineria massecre",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "100 Days — Survival Strategy",
+      "name": "Erlauntza",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -629,7 +620,7 @@
       ]
     },
     {
-      "name": "HOSTILE.EXE",
+      "name": "Fluído Newton",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -646,224 +637,20 @@
       ]
     },
     {
-      "name": "Mine and Refine Incremental",
-      "channel": "online",
+      "name": "Our Life: Now & Forever",
+      "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "JITOME USAGI RUNNER",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
+      "discoveryScore": 20,
+      "platforms": 0,
+      "browserPlayable": false,
       "nameRisk": 0,
       "strategicCount": 1,
       "sourceCount": 3,
       "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Featherbound",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "CoCo’s Room",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Il cortile delle uova",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Stamp or Deny",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Nano mals",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Swallow Town",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Hidden Rush",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Mournful-Chirp",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Schnauz",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Brainrot Champions Cup",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Builder Story",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 10,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 1,
-      "sourceCount": 3,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed"
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-popular-new"
       ]
     },
     {
@@ -903,7 +690,187 @@
       ]
     },
     {
-      "name": "Just Weeding",
+      "name": "Port Solano City: Gangster War",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 15,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Gravity Chaos: Video Store",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Lianur: Shadows of the Divine",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 7,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Sincerely, Your Diary",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Drawbacks: Draw, Guess, Sabotage",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Paint the Town",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "ORYFT",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 5,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Winky!: Find the Golden Ticket",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "BABKA-TERROR",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Royal Guard: Hive Rescue",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Mapping Creator",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -922,7 +889,7 @@
       ]
     },
     {
-      "name": "暴走拆城 (Rampage Demolition)",
+      "name": "Patch Zero",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -940,7 +907,43 @@
       ]
     },
     {
-      "name": "Just a Villager MMORPG",
+      "name": "Crash Protocol: The Wrong Directive",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 4,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "Boardgame Nights",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 19,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 0,
+      "strategicCount": 1,
+      "sourceCount": 4,
+      "sourceIds": [
+        "steam-upcoming-indie",
+        "steam-upcoming",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "MovingLog",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -958,7 +961,7 @@
       ]
     },
     {
-      "name": "Pest Protocol",
+      "name": "Awake or Sleep: Anomaly",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
@@ -976,14 +979,14 @@
       ]
     },
     {
-      "name": "Dice Tiny Town",
+      "name": "Summonforge: Idle RPG",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 19,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 0,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
@@ -994,14 +997,14 @@
       ]
     },
     {
-      "name": "Mole & Ore",
+      "name": "Magical Rune Tower: Sort the Alchemist Tower",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 19,
+      "discoveryScore": 17,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 0,
+      "nameRisk": 3,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
@@ -1012,14 +1015,33 @@
       ]
     },
     {
-      "name": "Infinite Loop: Incremental",
+      "name": "Football Referee Life Simulator 26",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 19,
+      "discoveryScore": 17,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 0,
+      "nameRisk": 19,
+      "strategicCount": 1,
+      "sourceCount": 5,
+      "sourceIds": [
+        "steam-upcoming-wishlist",
+        "steam-upcoming",
+        "steam-upcoming-indie",
+        "steam-latest-indie",
+        "steam-new"
+      ]
+    },
+    {
+      "name": "The Ashen Crown",
+      "channel": "wiki",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 16,
+      "platforms": 0,
+      "browserPlayable": false,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
@@ -1030,11 +1052,11 @@
       ]
     },
     {
-      "name": "GhostomVillage",
+      "name": "Mind the Clown: Reborn",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 19,
+      "discoveryScore": 16,
       "platforms": 0,
       "browserPlayable": false,
       "nameRisk": 5,
@@ -1048,14 +1070,14 @@
       ]
     },
     {
-      "name": "2D Hates 3D",
+      "name": "For Our King",
       "channel": "wiki",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 19,
+      "discoveryScore": 16,
       "platforms": 0,
       "browserPlayable": false,
-      "nameRisk": 12,
+      "nameRisk": 6,
       "strategicCount": 1,
       "sourceCount": 4,
       "sourceIds": [
